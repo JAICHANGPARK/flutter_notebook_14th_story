@@ -13,6 +13,13 @@ class ClothesHomePage extends StatelessWidget {
           child: Row(
             children: [
 
+              Column(
+                children: [
+                  Icon(Icons.home),
+                  
+                ],
+              )
+
             ],
           ),
         ),
