@@ -10,7 +10,7 @@ class ClothesHomePage extends StatelessWidget {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
         child: Container(
-          height: 72,
+          height: 64,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -26,7 +26,10 @@ class ClothesHomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
-                          Icon(Icons.home_outlined,  color: Colors.orangeAccent,),
+                          Icon(
+                            Icons.home_outlined,
+                            color: Colors.orangeAccent,
+                          ),
                           CircleAvatar(
                             radius: 2,
                             backgroundColor: Colors.orangeAccent,
@@ -50,8 +53,10 @@ class ClothesHomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
-                          Icon(Icons.apps_outlined,
-                            color: Colors.orangeAccent,),
+                          Icon(
+                            Icons.apps_outlined,
+                            color: Colors.orangeAccent,
+                          ),
                           CircleAvatar(
                             radius: 2,
                             backgroundColor: Colors.orangeAccent,
@@ -84,6 +89,27 @@ class ClothesHomePage extends StatelessWidget {
                       );
                     }
                     return Icon(Icons.favorite_border);
+                  },
+                  valueListenable: _pageIndex,
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  _pageIndex.value = 3;
+                },
+                child: ValueListenableBuilder<int>(
+                  builder: (context, idx, child) {
+                    if (idx == 3) {
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.perm_identity, color: Colors.orangeAccent),
+                          CircleAvatar(radius: 2, backgroundColor: Colors.orangeAccent)
+                        ],
+                      );
+                    }
+                    return Icon(Icons.perm_identity);
                   },
                   valueListenable: _pageIndex,
                 ),
