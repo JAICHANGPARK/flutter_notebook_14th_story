@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep851_clothes_app/controller/page_controller.dart';
 import 'package:get/get.dart';
 
 class ClothesHomePage extends StatelessWidget {
@@ -8,7 +9,7 @@ class ClothesHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final pageController = Get.put(PageController());
+    final pageController = Get.put(ClothPageController());
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
         child: Container(
