@@ -46,7 +46,8 @@ class ClothesHomePage extends StatelessWidget {
                 child: ValueListenableBuilder<int>(
                   builder: (context, idx, child) {
                     if (idx == 1) {
-                      return Column(   crossAxisAlignment: CrossAxisAlignment.center,
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
                           Icon(Icons.apps_outlined),
@@ -58,6 +59,30 @@ class ClothesHomePage extends StatelessWidget {
                       );
                     }
                     return Icon(Icons.apps_outlined);
+                  },
+                  valueListenable: _pageIndex,
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  _pageIndex.value = 2;
+                },
+                child: ValueListenableBuilder<int>(
+                  builder: (context, idx, child) {
+                    if (idx == 2) {
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(
+                            Icons.favorite_border,
+                            color: Colors.orangeAccent,
+                          ),
+                          CircleAvatar(radius: 2, backgroundColor: Colors.orangeAccent)
+                        ],
+                      );
+                    }
+                    return Icon(Icons.favorite_border);
                   },
                   valueListenable: _pageIndex,
                 ),
