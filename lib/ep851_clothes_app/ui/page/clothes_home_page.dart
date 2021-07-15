@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ClothesHomePage extends StatelessWidget {
   final ValueNotifier<int> _pageIndex = ValueNotifier<int>(0);
@@ -7,6 +8,7 @@ class ClothesHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final pageController = Get.put(PageController());
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
         child: Container(
