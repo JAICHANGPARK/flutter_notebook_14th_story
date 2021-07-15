@@ -17,7 +17,7 @@ class ClothesHomeBottomNavBar extends StatelessWidget {
           children: [
             GestureDetector(
               onTap: () {
-                c.setPage(0);
+                c.setPage(0.obs);
               },
               child:  c.pageIndex.toInt() == 0 ? Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -36,7 +36,7 @@ class ClothesHomeBottomNavBar extends StatelessWidget {
             ),
             GestureDetector(
                 onTap: () {
-                  c.setPage(1);
+                  c.setPage(1.obs);
                 },
                 child:  c.pageIndex.toInt() == 1 ? Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
