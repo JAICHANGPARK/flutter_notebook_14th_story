@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ClothesHomePage extends StatelessWidget {
-  ValueNotifier<int> _pageIndex = ValueNotifier<int>(0);
+  final ValueNotifier<int> _pageIndex = ValueNotifier<int>(0);
   ClothesHomePage({Key? key}) : super(key: key);
 
   @override
@@ -12,11 +12,11 @@ class ClothesHomePage extends StatelessWidget {
           height: 72,
           child: Row(
             children: [
-
               Column(
                 children: [
                   Icon(Icons.home),
-                  
+                  CircleAvatar(radius: 2,
+                  backgroundColor: Colors.orangeAccent,)
                 ],
               )
 
