@@ -12,6 +12,8 @@ class ClothesHomePage extends StatelessWidget {
         child: Container(
           height: 72,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               GestureDetector(
                 onTap: () {
@@ -21,8 +23,10 @@ class ClothesHomePage extends StatelessWidget {
                   builder: (context, idx, child) {
                     if (idx == 0) {
                       return Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
-                          Icon(Icons.home),
+                          Icon(Icons.home_outlined),
                           CircleAvatar(
                             radius: 2,
                             backgroundColor: Colors.orangeAccent,
@@ -30,7 +34,30 @@ class ClothesHomePage extends StatelessWidget {
                         ],
                       );
                     }
-                    return Icon(Icons.home);
+                    return Icon(Icons.home_outlined);
+                  },
+                  valueListenable: _pageIndex,
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  _pageIndex.value = 1;
+                },
+                child: ValueListenableBuilder<int>(
+                  builder: (context, idx, child) {
+                    if (idx == 1) {
+                      return Column(   crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.apps_outlined),
+                          CircleAvatar(
+                            radius: 2,
+                            backgroundColor: Colors.orangeAccent,
+                          )
+                        ],
+                      );
+                    }
+                    return Icon(Icons.apps_outlined);
                   },
                   valueListenable: _pageIndex,
                 ),
