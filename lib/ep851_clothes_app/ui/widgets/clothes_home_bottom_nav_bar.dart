@@ -35,68 +35,125 @@ class ClothesHomeBottomNavBar extends StatelessWidget {
               ): Icon(Icons.home_outlined)
             ),
             GestureDetector(
-              onTap: () {
-                _pageIndex.value = 1;
-              },
-              child: ValueListenableBuilder<int>(
-                builder: (context, idx, child) {
-                  if (idx == 1) {
-                    return Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.apps_outlined, color: Colors.orangeAccent),
-                        CircleAvatar(radius: 2, backgroundColor: Colors.orangeAccent)
-                      ],
-                    );
-                  }
-                  return Icon(Icons.apps_outlined);
+                onTap: () {
+                  c.setPage(1);
                 },
-                valueListenable: _pageIndex,
-              ),
+                child:  c.pageIndex.toInt() == 1 ? Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Icon(
+                      Icons.home_outlined,
+                      color: Colors.orangeAccent,
+                    ),
+                    CircleAvatar(
+                      radius: 2,
+                      backgroundColor: Colors.orangeAccent,
+                    )
+                  ],
+                ): Icon(Icons.home_outlined)
             ),
             GestureDetector(
-              onTap: () {
-                _pageIndex.value = 2;
-              },
-              child: ValueListenableBuilder<int>(
-                builder: (context, idx, child) {
-                  if (idx == 2) {
-                    return Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.favorite_border, color: Colors.orangeAccent),
-                        CircleAvatar(radius: 2, backgroundColor: Colors.orangeAccent)
-                      ],
-                    );
-                  }
-                  return Icon(Icons.favorite_border);
+                onTap: () {
+                  c.setPage(2);
                 },
-                valueListenable: _pageIndex,
-              ),
+                child:  c.pageIndex.toInt() == 2 ? Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Icon(
+                      Icons.home_outlined,
+                      color: Colors.orangeAccent,
+                    ),
+                    CircleAvatar(
+                      radius: 2,
+                      backgroundColor: Colors.orangeAccent,
+                    )
+                  ],
+                ): Icon(Icons.home_outlined)
             ),
             GestureDetector(
-              onTap: () {
-                _pageIndex.value = 3;
-              },
-              child: ValueListenableBuilder<int>(
-                builder: (context, idx, child) {
-                  if (idx == 3) {
-                    return Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.perm_identity, color: Colors.orangeAccent),
-                        CircleAvatar(radius: 2, backgroundColor: Colors.orangeAccent)
-                      ],
-                    );
-                  }
-                  return Icon(Icons.perm_identity);
+                onTap: () {
+                  c.setPage(3);
                 },
-                valueListenable: _pageIndex,
-              ),
-            )
+                child:  c.pageIndex.toInt() ==3 ? Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Icon(
+                      Icons.home_outlined,
+                      color: Colors.orangeAccent,
+                    ),
+                    CircleAvatar(
+                      radius: 2,
+                      backgroundColor: Colors.orangeAccent,
+                    )
+                  ],
+                ): Icon(Icons.home_outlined)
+            ),
+            // GestureDetector(
+            //   onTap: () {
+            //     _pageIndex.value = 1;
+            //   },
+            //   child: ValueListenableBuilder<int>(
+            //     builder: (context, idx, child) {
+            //       if (idx == 1) {
+            //         return Column(
+            //           crossAxisAlignment: CrossAxisAlignment.center,
+            //           mainAxisAlignment: MainAxisAlignment.center,
+            //           children: const [
+            //             Icon(Icons.apps_outlined, color: Colors.orangeAccent),
+            //             CircleAvatar(radius: 2, backgroundColor: Colors.orangeAccent)
+            //           ],
+            //         );
+            //       }
+            //       return Icon(Icons.apps_outlined);
+            //     },
+            //     valueListenable: _pageIndex,
+            //   ),
+            // ),
+            // GestureDetector(
+            //   onTap: () {
+            //     _pageIndex.value = 2;
+            //   },
+            //   child: ValueListenableBuilder<int>(
+            //     builder: (context, idx, child) {
+            //       if (idx == 2) {
+            //         return Column(
+            //           crossAxisAlignment: CrossAxisAlignment.center,
+            //           mainAxisAlignment: MainAxisAlignment.center,
+            //           children: const [
+            //             Icon(Icons.favorite_border, color: Colors.orangeAccent),
+            //             CircleAvatar(radius: 2, backgroundColor: Colors.orangeAccent)
+            //           ],
+            //         );
+            //       }
+            //       return Icon(Icons.favorite_border);
+            //     },
+            //     valueListenable: _pageIndex,
+            //   ),
+            // ),
+            // GestureDetector(
+            //   onTap: () {
+            //     _pageIndex.value = 3;
+            //   },
+            //   child: ValueListenableBuilder<int>(
+            //     builder: (context, idx, child) {
+            //       if (idx == 3) {
+            //         return Column(
+            //           crossAxisAlignment: CrossAxisAlignment.center,
+            //           mainAxisAlignment: MainAxisAlignment.center,
+            //           children: const [
+            //             Icon(Icons.perm_identity, color: Colors.orangeAccent),
+            //             CircleAvatar(radius: 2, backgroundColor: Colors.orangeAccent)
+            //           ],
+            //         );
+            //       }
+            //       return Icon(Icons.perm_identity);
+            //     },
+            //     valueListenable: _pageIndex,
+            //   ),
+            // )
           ],
         ),
       ),
