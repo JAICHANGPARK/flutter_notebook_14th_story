@@ -26,7 +26,7 @@ class ClothesHomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
-                          Icon(Icons.home_outlined),
+                          Icon(Icons.home_outlined,  color: Colors.orangeAccent,),
                           CircleAvatar(
                             radius: 2,
                             backgroundColor: Colors.orangeAccent,
@@ -50,7 +50,8 @@ class ClothesHomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
-                          Icon(Icons.apps_outlined),
+                          Icon(Icons.apps_outlined,
+                            color: Colors.orangeAccent,),
                           CircleAvatar(
                             radius: 2,
                             backgroundColor: Colors.orangeAccent,
