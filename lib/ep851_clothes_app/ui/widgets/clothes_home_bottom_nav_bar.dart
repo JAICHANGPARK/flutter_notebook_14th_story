@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep851_clothes_app/controller/page_controller.dart';
 import 'package:get/get.dart';
 
 class ClothesHomeBottomNavBar extends StatelessWidget {
@@ -6,7 +7,7 @@ class ClothesHomeBottomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   
+    final ClothPageController c = Get.find();
     return BottomAppBar(
       child: Container(
         height: 64,
@@ -16,30 +17,22 @@ class ClothesHomeBottomNavBar extends StatelessWidget {
           children: [
             GestureDetector(
               onTap: () {
-                _pageIndex.value = 0;
+                c.setPage(0);
               },
-              child: ValueListenableBuilder<int>(
-                builder: (context, idx, child) {
-                  if (idx == 0) {
-                    return Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(
-                          Icons.home_outlined,
-                          color: Colors.orangeAccent,
-                        ),
-                        CircleAvatar(
-                          radius: 2,
-                          backgroundColor: Colors.orangeAccent,
-                        )
-                      ],
-                    );
-                  }
-                  return Icon(Icons.home_outlined);
-                },
-                valueListenable: _pageIndex,
-              ),
+              child:  c.pageIndex.toInt() == 0 ? Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Icon(
+                    Icons.home_outlined,
+                    color: Colors.orangeAccent,
+                  ),
+                  CircleAvatar(
+                    radius: 2,
+                    backgroundColor: Colors.orangeAccent,
+                  )
+                ],
+              ): Icon(Icons.home_outlined)
             ),
             GestureDetector(
               onTap: () {
