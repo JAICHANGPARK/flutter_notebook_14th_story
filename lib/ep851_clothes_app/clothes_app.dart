@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'ui/page/clothes_home_page.dart';
 class ClothesApp extends StatelessWidget {
@@ -6,7 +7,7 @@ class ClothesApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       home: ClothesHomePage(),
     );
   }
