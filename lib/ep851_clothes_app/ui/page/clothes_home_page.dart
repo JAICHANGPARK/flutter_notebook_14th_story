@@ -53,14 +53,8 @@ class ClothesHomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
-                          Icon(
-                            Icons.apps_outlined,
-                            color: Colors.orangeAccent,
-                          ),
-                          CircleAvatar(
-                            radius: 2,
-                            backgroundColor: Colors.orangeAccent,
-                          )
+                          Icon(Icons.apps_outlined, color: Colors.orangeAccent),
+                          CircleAvatar(radius: 2, backgroundColor: Colors.orangeAccent)
                         ],
                       );
                     }
@@ -80,10 +74,7 @@ class ClothesHomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
-                          Icon(
-                            Icons.favorite_border,
-                            color: Colors.orangeAccent,
-                          ),
+                          Icon(Icons.favorite_border, color: Colors.orangeAccent),
                           CircleAvatar(radius: 2, backgroundColor: Colors.orangeAccent)
                         ],
                       );
