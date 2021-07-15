@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class ClothesHomePage extends StatelessWidget {
   final ValueNotifier<int> _pageIndex = ValueNotifier<int>(0);
+
   ClothesHomePage({Key? key}) : super(key: key);
 
   @override
@@ -12,14 +13,28 @@ class ClothesHomePage extends StatelessWidget {
           height: 72,
           child: Row(
             children: [
-              Column(
-                children: [
-                  Icon(Icons.home),
-                  CircleAvatar(radius: 2,
-                  backgroundColor: Colors.orangeAccent,)
-                ],
+              GestureDetector(
+                onTap: () {
+                  _pageIndex.value = 0;
+                },
+                child: ValueListenableBuilder<int>(
+                  builder: (context, idx, child) {
+                    if (idx == 0) {
+                      return Column(
+                        children: const [
+                          Icon(Icons.home),
+                          CircleAvatar(
+                            radius: 2,
+                            backgroundColor: Colors.orangeAccent,
+                          )
+                        ],
+                      );
+                    }
+                    return Icon(Icons.home);
+                  },
+                  valueListenable: _pageIndex,
+                ),
               )
-
             ],
           ),
         ),
