@@ -18,6 +18,16 @@ class ClothesHomePage extends StatelessWidget {
             Row(
               children: [
                 Text("Howdy, What Are You Looking For?👀"),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8)
+                  ),
+                  child: Center(
+                    child: Icon(Icons.shopping_cart_outlined),
+
+                  ),
+                )
               ],
             )
 
