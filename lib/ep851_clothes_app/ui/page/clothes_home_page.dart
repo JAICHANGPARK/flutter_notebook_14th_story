@@ -70,14 +70,17 @@ class ClothesHomePage extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 8,),
             SizedBox(
               height: 32,
               child: Placeholder(),
             ),
+            SizedBox(height: 8,),
             SizedBox(
               height: MediaQuery.of(context).size.height / 2.5,
               child: Placeholder(),
             ),
+            SizedBox(height: 8,),
             SizedBox(
               height: MediaQuery.of(context).size.height / 5,
               child: Placeholder(),
