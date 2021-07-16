@@ -12,6 +12,7 @@ class ClothesHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final pageController = Get.put(ClothPageController());
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Column(
           children: [
@@ -77,12 +78,12 @@ class ClothesHomePage extends StatelessWidget {
             ),
             SizedBox(height: 8,),
             SizedBox(
-              height: MediaQuery.of(context).size.height / 2.5,
+              height: MediaQuery.of(context).size.height / 2.7,
               child: Placeholder(),
             ),
             SizedBox(height: 8,),
             SizedBox(
-              height: MediaQuery.of(context).size.height / 5,
+              height: MediaQuery.of(context).size.height / 4.5,
               child: Placeholder(),
             )
           ],
