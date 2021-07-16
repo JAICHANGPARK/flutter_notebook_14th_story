@@ -47,12 +47,15 @@ class ClothesHomePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(flex: 10, child: Container(
+                        height: double.infinity,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           color: Colors.white
                         ),
                         child: TextField(
-
+                            decoration: InputDecoration(
+                              border: InputBorder.none
+                            ),
                         ),
                       )),
                       SizedBox(width: 8),
@@ -66,6 +69,10 @@ class ClothesHomePage extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+            SizedBox(
+              height: 32,
+              child: Placeholder(),
             )
           ],
         ),
