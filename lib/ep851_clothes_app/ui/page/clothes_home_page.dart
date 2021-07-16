@@ -12,10 +12,17 @@ class ClothesHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final pageController = Get.put(ClothPageController());
     return Scaffold(
-      body: Column(
-        children: [
-          
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Text("Howdy, What Are You Looking For?👀"),
+              ],
+            )
+
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
