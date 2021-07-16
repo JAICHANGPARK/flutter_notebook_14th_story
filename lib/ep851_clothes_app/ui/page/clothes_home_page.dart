@@ -41,13 +41,13 @@ class ClothesHomePage extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             SizedBox(
-              height: 62,
+              height: 52,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
                 child: Container(
                   child: Row(
                     children: [
-                      Expanded(flex: 10, child: Container(
+                      Expanded(flex: 12, child: Container(
                         height: double.infinity,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
