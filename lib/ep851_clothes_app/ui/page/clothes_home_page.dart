@@ -56,6 +56,7 @@ class ClothesHomePage extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.orangeAccent,
+                              borderRadius: BorderRadius.circular(8)
                             ),
                           )),
                     ],
