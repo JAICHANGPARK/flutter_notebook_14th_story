@@ -44,15 +44,15 @@ class ClothesHomePage extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
                 child: Container(
-                  color: Colors.blue,
                   child: Row(
                     children: [
                       Expanded(flex: 10, child: Container(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8)
+                          borderRadius: BorderRadius.circular(8),
+                          color: Colors.white
                         ),
                         child: TextField(
-                          
+
                         ),
                       )),
                       SizedBox(width: 8),
