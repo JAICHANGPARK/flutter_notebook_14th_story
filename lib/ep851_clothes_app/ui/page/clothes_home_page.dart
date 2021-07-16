@@ -43,13 +43,16 @@ class ClothesHomePage extends StatelessWidget {
             ),
             SizedBox(
               height: 62,
-              child: Container(
-                color: Colors.blue,
-                child: Row(
-                  children: [
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
-                  ],
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: Container(
+                  color: Colors.blue,
+                  child: Row(
+                    children: [
+                      Expanded(flex:10,child: Placeholder()),
+                      Expanded(flex: 2,child: Placeholder()),
+                    ],
+                  ),
                 ),
               ),
             )
