@@ -12,6 +12,11 @@ class ClothesHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final pageController = Get.put(ClothPageController());
     return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 64,
