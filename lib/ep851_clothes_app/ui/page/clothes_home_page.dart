@@ -47,17 +47,20 @@ class ClothesHomePage extends StatelessWidget {
                   color: Colors.blue,
                   child: Row(
                     children: [
-                      Expanded(flex: 10, child: Placeholder()),
-                      SizedBox(
-                        width: 8,
-                      ),
+                      Expanded(flex: 10, child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: TextField(
+                          
+                        ),
+                      )),
+                      SizedBox(width: 8),
                       Expanded(
                           flex: 2,
                           child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.orangeAccent,
-                              borderRadius: BorderRadius.circular(8)
-                            ),
+                            decoration:
+                                BoxDecoration(color: Colors.orangeAccent, borderRadius: BorderRadius.circular(8)),
                           )),
                     ],
                   ),
