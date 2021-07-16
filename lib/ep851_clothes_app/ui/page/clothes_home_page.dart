@@ -38,9 +38,7 @@ class ClothesHomePage extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(
-              height: 16
-            ),
+            const SizedBox(height: 16),
             SizedBox(
               height: 62,
               child: Padding(
@@ -49,8 +47,17 @@ class ClothesHomePage extends StatelessWidget {
                   color: Colors.blue,
                   child: Row(
                     children: [
-                      Expanded(flex:10,child: Placeholder()),
-                      Expanded(flex: 2,child: Placeholder()),
+                      Expanded(flex: 10, child: Placeholder()),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Expanded(
+                          flex: 2,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.orangeAccent,
+                            ),
+                          )),
                     ],
                   ),
                 ),
