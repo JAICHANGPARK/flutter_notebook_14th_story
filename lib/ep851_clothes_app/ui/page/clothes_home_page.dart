@@ -30,7 +30,7 @@ class ClothesHomePage extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(8)
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Icon(Icons.shopping_cart_outlined),
 
                     ),
