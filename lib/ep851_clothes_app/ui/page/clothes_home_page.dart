@@ -38,13 +38,19 @@ class ClothesHomePage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
-              height: 16,
+            const SizedBox(
+              height: 16
             ),
             SizedBox(
               height: 62,
               child: Container(
                 color: Colors.blue,
+                child: Row(
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
               ),
             )
           ],
