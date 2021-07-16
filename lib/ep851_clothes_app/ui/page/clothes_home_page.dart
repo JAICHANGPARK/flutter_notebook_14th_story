@@ -20,30 +20,33 @@ class ClothesHomePage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text("Howdy, What Are You\nLooking For?👀",
-                  textAlign: TextAlign.start,
-                  style: TextStyle(fontSize: 16,
-                  fontWeight: FontWeight.bold),),
+                  const Text(
+                    "Howdy, What Are You\nLooking For?👀",
+                    textAlign: TextAlign.start,
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
                   Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(8)
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     child: const Center(
                       child: Icon(Icons.shopping_cart_outlined),
-
                     ),
                   )
                 ],
               ),
             ),
-            SizedBox(height: 16,),
-            SizedBox(height: 62,
-            child: Container(
-              color: Colors.blue,
-            ),)
-
+            SizedBox(
+              height: 16,
+            ),
+            SizedBox(
+              height: 62,
+              child: Container(
+                color: Colors.blue,
+              ),
+            )
           ],
         ),
       ),
