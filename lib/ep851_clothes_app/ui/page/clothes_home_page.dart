@@ -16,8 +16,10 @@ class ClothesHomePage extends StatelessWidget {
         child: Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Howdy, What Are You Looking For?👀"),
+                Text("Howdy, What Are You\nLooking For?👀",
+                textAlign: TextAlign.start,),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
