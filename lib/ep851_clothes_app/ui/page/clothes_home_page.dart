@@ -15,24 +15,34 @@ class ClothesHomePage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text("Howdy, What Are You\nLooking For?👀",
-                textAlign: TextAlign.start,),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(8)
-                  ),
-                  child: Center(
-                    child: Icon(Icons.shopping_cart_outlined),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text("Howdy, What Are You\nLooking For?👀",
+                  textAlign: TextAlign.start,
+                  style: TextStyle(fontSize: 16,
+                  fontWeight: FontWeight.bold),),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(8)
+                    ),
+                    child: Center(
+                      child: Icon(Icons.shopping_cart_outlined),
 
-                  ),
-                )
-              ],
-            )
+                    ),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(height: 16,),
+            SizedBox(height: 62,
+            child: Container(
+              color: Colors.blue,
+            ),)
 
           ],
         ),
