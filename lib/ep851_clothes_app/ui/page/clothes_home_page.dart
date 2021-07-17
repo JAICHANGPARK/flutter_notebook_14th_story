@@ -113,7 +113,9 @@ class ClothesHomePage extends StatelessWidget {
                             color: Colors.orange[50],
                             borderRadius: BorderRadius.circular(4)
                         ),
-                        child: Text("T-Shirt"),
+                        child: Text("T-Shirt",style: TextStyle(
+                          fontSize: 12,
+                        ),),
                       ),
                     ),
                     Container(
@@ -122,7 +124,9 @@ class ClothesHomePage extends StatelessWidget {
                           color: Colors.orange[50],
                           borderRadius: BorderRadius.circular(4)
                       ),
-                      child: Text("Dress"),
+                      child: Text("Dress",style: TextStyle(
+                        fontSize: 12,
+                      ),),
                     )
                   ],
                 ),
