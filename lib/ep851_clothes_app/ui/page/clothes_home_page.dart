@@ -136,7 +136,7 @@ class ClothesHomePage extends StatelessWidget {
             SizedBox(
               height: MediaQuery.of(context).size.height / 2.7,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(left: 8, top: 8),
                 child: Column(
                   children: [
                     Row(
