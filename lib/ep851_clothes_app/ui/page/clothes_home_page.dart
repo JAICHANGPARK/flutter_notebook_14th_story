@@ -141,17 +141,28 @@ class ClothesHomePage extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Text("New Arrival"),
+                        Text(
+                          "New Arrival",
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         Spacer(),
-                        Text("View All", style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.orangeAccent,
-                        ),),
-                        SizedBox(width: 4,),
+                        Text(
+                          "View All",
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.orangeAccent,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 4,
+                        ),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.orangeAccent,
-                            borderRadius: BorderRadius.circular(4)
+                            borderRadius: BorderRadius.circular(4),
                           ),
                           child: Center(
                             child: Icon(
