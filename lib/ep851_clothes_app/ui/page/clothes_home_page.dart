@@ -54,19 +54,23 @@ class ClothesHomePage extends StatelessWidget {
                             decoration: BoxDecoration(borderRadius: BorderRadius.circular(8), color: Colors.white),
                             padding: EdgeInsets.symmetric(horizontal: 8),
                             child: TextField(
-                              decoration: InputDecoration(border: InputBorder.none,
-                              icon: Icon(Icons.search),
-                              hintText: "Search Aesthethic Shirt",
-                              hintStyle: TextStyle(
-                                color: Colors.grey[300]
-                              )),
+                              decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                  icon: Icon(Icons.search),
+                                  hintText: "Search Aesthethic Shirt",
+                                  hintStyle: TextStyle(color: Colors.grey[300])),
                             ),
                           )),
                       SizedBox(width: 8),
                       Expanded(
                           flex: 2,
                           child: Container(
-                            
+                            child: Center(
+                              child: Icon(
+                                Icons.tune_outlined,
+                                color: Colors.white,
+                              ),
+                            ),
                             decoration:
                                 BoxDecoration(color: Colors.orangeAccent, borderRadius: BorderRadius.circular(8)),
                           )),
