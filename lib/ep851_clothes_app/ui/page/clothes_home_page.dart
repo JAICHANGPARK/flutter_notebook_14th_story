@@ -205,9 +205,11 @@ class ClothesHomePage extends StatelessWidget {
                                       children: [
                                         Positioned(
                                           child: CircleAvatar(
+                                            radius: 12,
                                             backgroundColor: Colors.white,
                                             child: Icon(
                                               Icons.favorite,
+                                              size: 16,
                                             ),
                                             foregroundColor: Colors.red,
                                           ),
@@ -220,7 +222,11 @@ class ClothesHomePage extends StatelessWidget {
                                   flex: 5,
                                 ),
                                 Expanded(
-                                  child: Placeholder(),
+                                  child: Column(
+                                    children: [
+
+                                    ],
+                                  ),
                                   flex: 3,
                                 ),
                               ],
