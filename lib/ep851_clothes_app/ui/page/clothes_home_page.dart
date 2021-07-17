@@ -223,6 +223,7 @@ class ClothesHomePage extends StatelessWidget {
                                 ),
                                 Expanded(
                                   child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                     children: [
                                         Text("9ucci oversize"),
                                       Text("Hoodie"),
