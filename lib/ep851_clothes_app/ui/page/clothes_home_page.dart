@@ -226,7 +226,10 @@ class ClothesHomePage extends StatelessWidget {
                                     children: [
                                         Text("9ucci oversize"),
                                       Text("Hoodie"),
-                                      Text("")
+                                      Text("\$79.99", style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.orangeAccent
+                                      ),)
                                     ],
                                   ),
                                   flex: 3,
