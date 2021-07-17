@@ -189,6 +189,13 @@ class ClothesHomePage extends StatelessWidget {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(12),
                             ),
+                            padding: EdgeInsets.all(8),
+                            child: Column(
+                              children: [
+                                Expanded(child: Container(), flex: 5,),
+                                Expanded(child: Placeholder(), flex: 3,),
+                              ],
+                            ),
                           ),
                         );
                       },
