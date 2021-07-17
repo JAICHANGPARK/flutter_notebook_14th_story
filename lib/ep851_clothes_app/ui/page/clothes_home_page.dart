@@ -47,18 +47,15 @@ class ClothesHomePage extends StatelessWidget {
                 child: Container(
                   child: Row(
                     children: [
-                      Expanded(flex: 12, child: Container(
-                        height: double.infinity,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: Colors.white
-                        ),
-                        child: TextField(
-                            decoration: InputDecoration(
-                              border: InputBorder.none
+                      Expanded(
+                          flex: 12,
+                          child: Container(
+                            height: double.infinity,
+                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(8), color: Colors.white),
+                            child: TextField(
+                              decoration: InputDecoration(border: InputBorder.none),
                             ),
-                        ),
-                      )),
+                          )),
                       SizedBox(width: 8),
                       Expanded(
                           flex: 2,
@@ -71,17 +68,23 @@ class ClothesHomePage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 8,),
+            SizedBox(
+              height: 8,
+            ),
             SizedBox(
               height: 32,
               child: Placeholder(),
             ),
-            SizedBox(height: 8,),
+            SizedBox(
+              height: 8,
+            ),
             SizedBox(
               height: MediaQuery.of(context).size.height / 2.7,
               child: Placeholder(),
             ),
-            SizedBox(height: 8,),
+            SizedBox(
+              height: 8,
+            ),
             SizedBox(
               height: MediaQuery.of(context).size.height / 4.5,
               child: Placeholder(),
