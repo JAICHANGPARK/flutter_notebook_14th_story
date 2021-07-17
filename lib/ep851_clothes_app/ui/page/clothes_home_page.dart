@@ -55,10 +55,13 @@ class ClothesHomePage extends StatelessWidget {
                             padding: EdgeInsets.symmetric(horizontal: 8),
                             child: TextField(
                               decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  icon: Icon(Icons.search),
-                                  hintText: "Search Aesthethic Shirt",
-                                  hintStyle: TextStyle(color: Colors.grey[300])),
+                                border: InputBorder.none,
+                                icon: Icon(Icons.search),
+                                hintText: "Search Aesthethic Shirt",
+                                hintStyle: TextStyle(
+                                  color: Colors.grey[300],
+                                ),
+                              ),
                             ),
                           )),
                       SizedBox(width: 8),
@@ -71,8 +74,10 @@ class ClothesHomePage extends StatelessWidget {
                                 color: Colors.white,
                               ),
                             ),
-                            decoration:
-                                BoxDecoration(color: Colors.orangeAccent, borderRadius: BorderRadius.circular(8)),
+                            decoration: BoxDecoration(
+                              color: Colors.orangeAccent,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
                           )),
                     ],
                   ),
