@@ -139,40 +139,43 @@ class ClothesHomePage extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 8, top: 8),
                 child: Column(
                   children: [
-                    Row(
-                      children: [
-                        Text(
-                          "New Arrival",
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Spacer(),
-                        Text(
-                          "View All",
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.orangeAccent,
-                          ),
-                        ),
-                        SizedBox(
-                          width: 4,
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.orangeAccent,
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                          child: Center(
-                            child: Icon(
-                              Icons.keyboard_arrow_right,
-                              color: Colors.white,
-                              size: 12,
+                    Padding(
+                      padding: const EdgeInsets.only(right: 8),
+                      child: Row(
+                        children: [
+                          Text(
+                            "New Arrival",
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                        )
-                      ],
+                          Spacer(),
+                          Text(
+                            "View All",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.orangeAccent,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 4,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.orangeAccent,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Center(
+                              child: Icon(
+                                Icons.keyboard_arrow_right,
+                                color: Colors.white,
+                                size: 12,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
