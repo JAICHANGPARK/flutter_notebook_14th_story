@@ -185,8 +185,9 @@ class ClothesHomePage extends StatelessWidget {
                           padding: const EdgeInsets.only(right: 8, top: 12, bottom: 8),
                           child: Container(
                             width: MediaQuery.of(context).size.width / 1.8,
-                            decoration: const  BoxDecoration(
+                            decoration: BoxDecoration(
                               color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
                             ),
                           ),
                         );
