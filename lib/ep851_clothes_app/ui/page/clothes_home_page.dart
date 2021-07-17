@@ -108,10 +108,20 @@ class ClothesHomePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Container(
+                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                        decoration: BoxDecoration(
+                            color: Colors.orange[50],
+                            borderRadius: BorderRadius.circular(4)
+                        ),
                         child: Text("T-Shirt"),
                       ),
                     ),
                     Container(
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                      decoration: BoxDecoration(
+                          color: Colors.orange[50],
+                          borderRadius: BorderRadius.circular(4)
+                      ),
                       child: Text("Dress"),
                     )
                   ],
