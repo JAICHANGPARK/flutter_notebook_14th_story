@@ -182,7 +182,7 @@ class ClothesHomePage extends StatelessWidget {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index){
                         return  Padding(
-                          padding: const EdgeInsets.only(right: 8, top: 12, bottom: 8),
+                          padding: const EdgeInsets.only(right: 16, top: 12, bottom: 8),
                           child: Container(
                             width: MediaQuery.of(context).size.width / 1.8,
                             decoration: BoxDecoration(
