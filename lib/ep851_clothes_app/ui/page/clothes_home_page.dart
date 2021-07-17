@@ -181,10 +181,13 @@ class ClothesHomePage extends StatelessWidget {
                         child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index){
-                        return  Container(
-                          width: MediaQuery.of(context).size.width / 1.8,
-                          decoration: const  BoxDecoration(
-                            color: Colors.white,
+                        return  Padding(
+                          padding: const EdgeInsets.only(right: 8, top: 12, bottom: 8),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width / 1.8,
+                            decoration: const  BoxDecoration(
+                              color: Colors.white,
+                            ),
                           ),
                         );
                       },
