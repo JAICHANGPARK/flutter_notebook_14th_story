@@ -250,7 +250,11 @@ class ClothesHomePage extends StatelessWidget {
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height / 4.5,
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  
+                ],
+              ),
             )
           ],
         ),
