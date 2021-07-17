@@ -195,14 +195,26 @@ class ClothesHomePage extends StatelessWidget {
                                 Expanded(
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(8),
+                                        borderRadius: BorderRadius.circular(8),
                                         image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2015/06/04/20/36/girl-797837_960_720.jpg"),
-                                      fit: BoxFit.cover,
-                                    )),
+                                          image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2015/06/04/20/36/girl-797837_960_720.jpg"),
+                                          fit: BoxFit.cover,
+                                        )),
                                     child: Stack(
-                                      children: [],
+                                      children: [
+                                        Positioned(
+                                          child: CircleAvatar(
+                                            backgroundColor: Colors.white,
+                                            child: Icon(
+                                              Icons.favorite,
+                                            ),
+                                            foregroundColor: Colors.red,
+                                          ),
+                                          right: 8,
+                                          top: 8,
+                                        )
+                                      ],
                                     ),
                                   ),
                                   flex: 5,
