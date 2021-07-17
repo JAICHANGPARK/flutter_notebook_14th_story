@@ -134,7 +134,7 @@ class ClothesHomePage extends StatelessWidget {
               height: 8,
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height / 2.7,
+              height: MediaQuery.of(context).size.height / 2.5,
               child: Padding(
                 padding: const EdgeInsets.only(left: 8, top: 8),
                 child: Column(
@@ -246,13 +246,50 @@ class ClothesHomePage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 8,
+              height: 16,
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height / 4.5,
+              height: MediaQuery.of(context).size.height / 5.1,
               child: Column(
                 children: [
-                  
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    child: Row(
+                      children: [
+                        Text(
+                          "Best Of Sell",
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Spacer(),
+                        Text(
+                          "View All",
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.orangeAccent,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 4,
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.orangeAccent,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Center(
+                            child: Icon(
+                              Icons.keyboard_arrow_right,
+                              color: Colors.white,
+                              size: 12,
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             )
