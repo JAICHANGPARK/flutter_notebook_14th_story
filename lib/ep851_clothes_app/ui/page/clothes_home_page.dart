@@ -195,6 +195,7 @@ class ClothesHomePage extends StatelessWidget {
                                 Expanded(
                                   child: Container(
                                     decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
                                         image: DecorationImage(
                                       image: NetworkImage(
                                           "https://cdn.pixabay.com/photo/2015/06/04/20/36/girl-797837_960_720.jpg"),
