@@ -180,8 +180,8 @@ class ClothesHomePage extends StatelessWidget {
                     Expanded(
                         child: ListView.builder(
                       scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index){
-                        return  Padding(
+                      itemBuilder: (context, index) {
+                        return Padding(
                           padding: const EdgeInsets.only(right: 16, top: 12, bottom: 8),
                           child: Container(
                             width: MediaQuery.of(context).size.width / 1.8,
@@ -192,14 +192,29 @@ class ClothesHomePage extends StatelessWidget {
                             padding: EdgeInsets.all(8),
                             child: Column(
                               children: [
-                                Expanded(child: Container(), flex: 5,),
-                                Expanded(child: Placeholder(), flex: 3,),
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2015/06/04/20/36/girl-797837_960_720.jpg"),
+                                      fit: BoxFit.cover,
+                                    )),
+                                    child: Stack(
+                                      children: [],
+                                    ),
+                                  ),
+                                  flex: 5,
+                                ),
+                                Expanded(
+                                  child: Placeholder(),
+                                  flex: 3,
+                                ),
                               ],
                             ),
                           ),
                         );
                       },
-
                     ))
                   ],
                 ),
