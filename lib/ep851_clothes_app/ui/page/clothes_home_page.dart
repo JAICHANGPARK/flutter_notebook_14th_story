@@ -224,7 +224,9 @@ class ClothesHomePage extends StatelessWidget {
                                 Expanded(
                                   child: Column(
                                     children: [
-
+                                        Text("9ucci oversize"),
+                                      Text("Hoodie"),
+                                      Text("")
                                     ],
                                   ),
                                   flex: 3,
