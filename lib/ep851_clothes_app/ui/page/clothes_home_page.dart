@@ -89,25 +89,33 @@ class ClothesHomePage extends StatelessWidget {
             ),
             SizedBox(
               height: 32,
-              child: Row(
-                children: [
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: Row(
+                  children: [
 
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                    decoration: BoxDecoration(
-                      color: Colors.brown[100],
-                      borderRadius: BorderRadius.circular(4)
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.orange[50],
+                        borderRadius: BorderRadius.circular(4)
+                      ),
+                      child: Text("Woman",style: TextStyle(
+                        fontSize: 12,
+                      ),),
                     ),
 
-                    child: Text("Woman"),
-                  ),
-                  Container(
-                    child: Text("T-Shirt"),
-                  ),
-                  Container(
-                    child: Text("Dress"),
-                  )
-                ],
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Container(
+                        child: Text("T-Shirt"),
+                      ),
+                    ),
+                    Container(
+                      child: Text("Dress"),
+                    )
+                  ],
+                ),
               ),
             ),
             SizedBox(
