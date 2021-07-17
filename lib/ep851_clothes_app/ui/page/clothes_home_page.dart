@@ -176,7 +176,11 @@ class ClothesHomePage extends StatelessWidget {
                           )
                         ],
                       ),
-                    )
+                    ),
+                    Expanded(
+                        child: ListView(
+                      children: [],
+                    ))
                   ],
                 ),
               ),
