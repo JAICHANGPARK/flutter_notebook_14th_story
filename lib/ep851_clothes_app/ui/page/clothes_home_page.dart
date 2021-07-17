@@ -179,7 +179,15 @@ class ClothesHomePage extends StatelessWidget {
                     ),
                     Expanded(
                         child: ListView(
-                      children: [],
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 1.8,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
                     ))
                   ],
                 ),
