@@ -34,15 +34,26 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [Text("Price"),
-                      Text("\$79.99")],
+                    children: [
+                      Text(
+                        "Price",
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.grey,
+                        ),
+                      ),
+                      Text(
+                        "\$79.99",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      )
+                    ],
                   ),
                   SizedBox(
                     width: 24,
                   ),
                   Expanded(
                       child: Container(
-                        height: double.infinity,
+                    height: double.infinity,
                     decoration: BoxDecoration(color: Colors.orangeAccent, borderRadius: BorderRadius.circular(16)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
