@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ClothesDetailPage extends StatefulWidget {
   final String? img;
@@ -38,11 +39,14 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            CircleAvatar(
-                              backgroundColor: Colors.grey[300],
-                              radius: 16,
-                              foregroundColor: Colors.black.withOpacity(0.4),
-                              child: Icon(Icons.keyboard_arrow_left),
+                            GestureDetector(
+                              onTap: () => Get.back(),
+                              child: CircleAvatar(
+                                backgroundColor: Colors.grey[300],
+                                radius: 16,
+                                foregroundColor: Colors.black.withOpacity(0.4),
+                                child: Icon(Icons.keyboard_arrow_left),
+                              ),
                             ),
                             CircleAvatar(
                               backgroundColor: Colors.grey[300],
