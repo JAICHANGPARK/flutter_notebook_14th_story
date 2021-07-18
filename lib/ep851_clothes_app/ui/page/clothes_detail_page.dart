@@ -28,7 +28,7 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.only(left: 16, right: 16, bottom: 16, top: 16),
               child: Row(
                 children: [
                   Column(
