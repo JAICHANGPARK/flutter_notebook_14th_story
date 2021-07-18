@@ -38,14 +38,20 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            CircleAvatar(backgroundColor: Colors.grey[300],
-                            radius: 16,
-                            foregroundColor: Colors.black.withOpacity(0.4),
-                            child: Icon(Icons.keyboard_arrow_left),),
-                          CircleAvatar(
-                            radius: 16,
-                            backgroundColor: Colors.grey[300],)
-                    ],))
+                            CircleAvatar(
+                              backgroundColor: Colors.grey[300],
+                              radius: 16,
+                              foregroundColor: Colors.black.withOpacity(0.4),
+                              child: Icon(Icons.keyboard_arrow_left),
+                            ),
+                            CircleAvatar(
+                              backgroundColor: Colors.grey[300],
+                              radius: 16,
+                              foregroundColor: Colors.black.withOpacity(0.4),
+                              child: Icon(Icons.more_horiz),
+                            ),
+                          ],
+                        ))
                   ],
                 ),
               ),
