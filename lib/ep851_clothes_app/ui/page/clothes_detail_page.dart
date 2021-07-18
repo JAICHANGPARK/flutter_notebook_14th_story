@@ -18,12 +18,24 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: Column(
-        children: [
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(child: Placeholder(), flex: 10,),
+            Expanded(child: Placeholder(), flex: 5,),
+            Expanded(child: Row(
+              children: [
+                Column(
+                  children: [
+                    Text("Price"),
+                    Text("\$79.99")
+                  ],
+                ),
+                Expanded(child: Placeholder()),
+              ],
+            ), flex: 2,),
+          ],
+        ),
       )
     );
   }
