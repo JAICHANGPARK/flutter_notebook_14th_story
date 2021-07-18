@@ -16,6 +16,13 @@ class ClothesDetailPage extends StatefulWidget {
 class _ClothesDetailPageState extends State<ClothesDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+
+      body: Column(
+        children: [
+
+        ],
+      )
+    );
   }
 }
