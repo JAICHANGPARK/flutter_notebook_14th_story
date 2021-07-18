@@ -3,6 +3,8 @@ import 'package:flutter_notebook_14th_story/ep851_clothes_app/controller/page_co
 import 'package:flutter_notebook_14th_story/ep851_clothes_app/ui/widgets/clothes_home_bottom_nav_bar.dart';
 import 'package:get/get.dart';
 
+import 'clothes_detail_page.dart';
+
 class ClothesHomePage extends StatelessWidget {
   final ValueNotifier<int> _pageIndex = ValueNotifier<int>(0);
 
@@ -185,9 +187,9 @@ class ClothesHomePage extends StatelessWidget {
                             return Padding(
                               padding: const EdgeInsets.only(right: 16, top: 12, bottom: 8),
                               child: GestureDetector(
-                                onTap: (
-                                    Get.to(ClothesDetailPage());
-                                ),
+                                onTap: (){
+                                  Get.to(ClothesDetailPage());
+                                },
                                 child: Container(
                                   width: MediaQuery
                                       .of(context)
