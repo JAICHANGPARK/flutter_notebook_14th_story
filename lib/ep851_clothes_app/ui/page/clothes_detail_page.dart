@@ -25,7 +25,22 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
                     color: Colors.orangeAccent,
-                    image: DecorationImage(image: NetworkImage(widget.img ?? ""))),
+                    image: DecorationImage(
+                      image: NetworkImage(widget.img ?? ""),
+                      fit: BoxFit.cover,
+                    )),
+                child: Stack(
+                  children: [
+                    Positioned(
+                        left: 16,
+                        top: 16,
+                        right: 16,
+                        child: Row(children: [
+                            CircleAvatar(backgroundColor: Colors.grey[300],),
+                          CircleAvatar(backgroundColor: Colors.grey[300],)
+                    ],))
+                  ],
+                ),
               ),
             ),
             flex: 10,
