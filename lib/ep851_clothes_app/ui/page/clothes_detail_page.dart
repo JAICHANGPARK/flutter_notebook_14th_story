@@ -19,7 +19,15 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
       child: Column(
         children: [
           Expanded(
-            child: Placeholder(),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(16),
+                    color: Colors.orangeAccent,
+                    image: DecorationImage(image: NetworkImage(widget.img ?? ""))),
+              ),
+            ),
             flex: 10,
           ),
           Expanded(
