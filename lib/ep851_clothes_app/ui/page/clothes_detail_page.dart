@@ -20,9 +20,24 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
 
       body: Column(
         children: [
-
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
         ],
       )
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
