@@ -23,16 +23,30 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
           children: [
             Expanded(child: Placeholder(), flex: 10,),
             Expanded(child: Placeholder(), flex: 5,),
-            Expanded(child: Row(
-              children: [
-                Column(
-                  children: [
-                    Text("Price"),
-                    Text("\$79.99")
-                  ],
-                ),
-                Expanded(child: Placeholder()),
-              ],
+            Expanded(child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Column(
+                    children: [
+                      Text("Price"),
+                      Text("\$79.99")
+                    ],
+                  ),
+                  SizedBox(width: 24,),
+                  Expanded(child:Container(
+                    decoration: BoxDecoration(
+                      color: Colors.orangeAccent,
+                      borderRadius: BorderRadius.circular(16)
+                    ),
+                    child: Row(
+                      children: [
+
+                      ],
+                    ),
+                  )),
+                ],
+              ),
             ), flex: 2,),
           ],
         ),
