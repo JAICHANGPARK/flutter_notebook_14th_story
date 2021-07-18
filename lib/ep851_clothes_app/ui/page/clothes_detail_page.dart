@@ -32,7 +32,10 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
               child: Row(
                 children: [
                   Column(
-                    children: [Text("Price"), Text("\$79.99")],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [Text("Price"),
+                      Text("\$79.99")],
                   ),
                   SizedBox(
                     width: 24,
