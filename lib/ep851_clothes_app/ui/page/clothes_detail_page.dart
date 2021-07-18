@@ -39,8 +39,11 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                   ),
                   Expanded(
                       child: Container(
+                        height: double.infinity,
                     decoration: BoxDecoration(color: Colors.orangeAccent, borderRadius: BorderRadius.circular(16)),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
                           "Add to Cart",
