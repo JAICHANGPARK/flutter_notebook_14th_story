@@ -132,7 +132,10 @@ class ClothesHomePage extends StatelessWidget {
             ),
             SizedBox(height: 8),
             SizedBox(
-              height: MediaQuery.of(context).size.height / 2.5,
+              height: MediaQuery
+                  .of(context)
+                  .size
+                  .height / 2.5,
               child: Padding(
                 padding: const EdgeInsets.only(left: 8, top: 8),
                 child: Column(
@@ -177,68 +180,76 @@ class ClothesHomePage extends StatelessWidget {
                     ),
                     Expanded(
                         child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 16, top: 12, bottom: 8),
-                          child: Container(
-                            width: MediaQuery.of(context).size.width / 1.8,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            padding: EdgeInsets.all(8),
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(8),
-                                        image: DecorationImage(
-                                          image: NetworkImage(
-                                              "https://cdn.pixabay.com/photo/2015/06/04/20/36/girl-797837_960_720.jpg"),
-                                          fit: BoxFit.cover,
-                                        )),
-                                    child: Stack(
-                                      children: [
-                                        Positioned(
-                                          child: CircleAvatar(
-                                            radius: 12,
-                                            backgroundColor: Colors.white,
-                                            child: Icon(
-                                              Icons.favorite,
-                                              size: 16,
-                                            ),
-                                            foregroundColor: Colors.red,
-                                          ),
-                                          right: 8,
-                                          top: 8,
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                  flex: 5,
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 16, top: 12, bottom: 8),
+                              child: GestureDetector(
+                                onTap: (
+                                    Get.to(ClothesDetailPage());
                                 ),
-                                Expanded(
+                                child: Container(
+                                  width: MediaQuery
+                                      .of(context)
+                                      .size
+                                      .width / 1.8,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  padding: EdgeInsets.all(8),
                                   child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                     children: [
-                                      Text("9ucci oversize"),
-                                      Text("Hoodie"),
-                                      Text(
-                                        "\$79.99",
-                                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orangeAccent),
-                                      )
+                                      Expanded(
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.circular(8),
+                                              image: DecorationImage(
+                                                image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2015/06/04/20/36/girl-797837_960_720.jpg"),
+                                                fit: BoxFit.cover,
+                                              )),
+                                          child: Stack(
+                                            children: [
+                                              Positioned(
+                                                child: CircleAvatar(
+                                                  radius: 12,
+                                                  backgroundColor: Colors.white,
+                                                  child: Icon(
+                                                    Icons.favorite,
+                                                    size: 16,
+                                                  ),
+                                                  foregroundColor: Colors.red,
+                                                ),
+                                                right: 8,
+                                                top: 8,
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        flex: 5,
+                                      ),
+                                      Expanded(
+                                        child: Column(
+                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                          children: [
+                                            Text("9ucci oversize"),
+                                            Text("Hoodie"),
+                                            Text(
+                                              "\$79.99",
+                                              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orangeAccent),
+                                            )
+                                          ],
+                                        ),
+                                        flex: 3,
+                                      ),
                                     ],
                                   ),
-                                  flex: 3,
                                 ),
-                              ],
-                            ),
-                          ),
-                        );
-                      },
-                    ))
+                              ),
+                            );
+                          },
+                        ))
                   ],
                 ),
               ),
@@ -247,7 +258,10 @@ class ClothesHomePage extends StatelessWidget {
               height: 16,
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height / 5.1,
+              height: MediaQuery
+                  .of(context)
+                  .size
+                  .height / 5.1,
               child: Column(
                 children: [
                   Padding(
@@ -290,9 +304,9 @@ class ClothesHomePage extends StatelessWidget {
                   ),
                   Expanded(
                       child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Placeholder(),
-                  )),
+                        padding: const EdgeInsets.all(8.0),
+                        child: Placeholder(),
+                      )),
                 ],
               ),
             )
