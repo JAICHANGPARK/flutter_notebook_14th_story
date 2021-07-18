@@ -130,9 +130,7 @@ class ClothesHomePage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
-              height: 8,
-            ),
+            SizedBox(height: 8),
             SizedBox(
               height: MediaQuery.of(context).size.height / 2.5,
               child: Padding(
@@ -225,12 +223,12 @@ class ClothesHomePage extends StatelessWidget {
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                     children: [
-                                        Text("9ucci oversize"),
+                                      Text("9ucci oversize"),
                                       Text("Hoodie"),
-                                      Text("\$79.99", style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.orangeAccent
-                                      ),)
+                                      Text(
+                                        "\$79.99",
+                                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orangeAccent),
+                                      )
                                     ],
                                   ),
                                   flex: 3,
@@ -290,7 +288,8 @@ class ClothesHomePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Expanded(child: Padding(
+                  Expanded(
+                      child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Placeholder(),
                   )),
