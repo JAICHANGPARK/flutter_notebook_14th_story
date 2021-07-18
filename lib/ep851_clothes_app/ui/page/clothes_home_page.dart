@@ -188,7 +188,9 @@ class ClothesHomePage extends StatelessWidget {
                               padding: const EdgeInsets.only(right: 16, top: 12, bottom: 8),
                               child: GestureDetector(
                                 onTap: (){
-                                  Get.to(ClothesDetailPage());
+                                  Get.to(ClothesDetailPage(
+                                    img: "https://cdn.pixabay.com/photo/2015/06/04/20/36/girl-797837_960_720.jpg",
+                                  ));
                                 },
                                 child: Container(
                                   width: MediaQuery
