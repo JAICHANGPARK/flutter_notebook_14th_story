@@ -88,9 +88,7 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                       )
                     ],
                   ),
-                  SizedBox(
-                    width: 24,
-                  ),
+                  SizedBox(width: 24),
                   Expanded(
                       child: Container(
                     height: double.infinity,
