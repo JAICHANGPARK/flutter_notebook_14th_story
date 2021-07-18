@@ -60,7 +60,7 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                 ),
               ),
             ),
-            flex: 10,
+            flex: 12,
           ),
           Expanded(
             child: Placeholder(),
