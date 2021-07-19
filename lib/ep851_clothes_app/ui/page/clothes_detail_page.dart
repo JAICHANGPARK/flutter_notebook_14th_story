@@ -110,11 +110,49 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          border: Border.all(color: Colors.grey[400]!),
+                          border: Border.all(color: Colors.grey[300]!),
                           borderRadius: BorderRadius.circular(4)
                         ),
-                        padding: EdgeInsets.all(8),
+                        padding: EdgeInsets.all(12),
                         child: Text("S"),
+                      ),
+                      SizedBox(width: 8,),
+                      Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(color: Colors.grey[300]!),
+                            borderRadius: BorderRadius.circular(4)
+                        ),
+                        padding: EdgeInsets.all(12),
+                        child: Text("M"),
+                      ), SizedBox(width: 8,),
+                      Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(color: Colors.grey[300]!),
+                            borderRadius: BorderRadius.circular(4)
+                        ),
+                        padding: EdgeInsets.all(12),
+                        child: Text("L"),
+                      ), SizedBox(width: 8,),
+                      Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(color: Colors.grey[300]!),
+                            borderRadius: BorderRadius.circular(4)
+                        ),
+                        padding: EdgeInsets.all(12),
+                        child: Text("XL"),
+                      ),
+                      SizedBox(width: 8,),
+                      Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(color: Colors.grey[300]!),
+                            borderRadius: BorderRadius.circular(4)
+                        ),
+                        padding: EdgeInsets.all(12),
+                        child: Text("XXL"),
                       )
                     ],
                   )
