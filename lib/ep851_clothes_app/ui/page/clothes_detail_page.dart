@@ -102,7 +102,7 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                     ],
                   ),
                   Text(
-                    "${lorem(paragraphs: 1, words: 48)}",
+                    "${lorem(paragraphs: 1, words: 32)}",
                     style: TextStyle(fontSize: 12, color: Colors.grey),
                   ),
                   Row(
@@ -110,7 +110,7 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          border: Border.all(color: Colors.grey[400]),
+                          border: Border.all(color: Colors.grey[400]!),
                           borderRadius: BorderRadius.circular(4)
                         ),
                         padding: EdgeInsets.all(8),
