@@ -110,9 +110,10 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          border: Border.all(color: Colors.grey),
+                          border: Border.all(color: Colors.grey[400]),
                           borderRadius: BorderRadius.circular(4)
                         ),
+                        padding: EdgeInsets.all(8),
                         child: Text("S"),
                       )
                     ],
