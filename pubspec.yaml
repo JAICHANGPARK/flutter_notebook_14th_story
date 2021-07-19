@@ -14,6 +14,7 @@ dependencies:
 
   cupertino_icons: ^1.0.3
   get: any
+  flutter_lorem: ^2.0.0
 
 dev_dependencies:
   flutter_test:
