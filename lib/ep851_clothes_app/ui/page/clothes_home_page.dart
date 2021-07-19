@@ -190,6 +190,7 @@ class ClothesHomePage extends StatelessWidget {
                                 onTap: (){
                                   Get.to(ClothesDetailPage(
                                     img: "https://cdn.pixabay.com/photo/2015/06/04/20/36/girl-797837_960_720.jpg",
+                                    title: "9ucci Oversize Hoodie",
                                   ));
                                 },
                                 child: Container(
