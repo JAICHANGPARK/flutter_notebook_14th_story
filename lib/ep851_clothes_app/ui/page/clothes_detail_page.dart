@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lorem/flutter_lorem.dart';
 import 'package:get/get.dart';
 
 class ClothesDetailPage extends StatefulWidget {
@@ -93,11 +94,14 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                   ),
                   Row(
                     children: [
-                      Icon(Icons.star_border, color: Colors.orangeAccent,),
+                      Icon(
+                        Icons.star_border,
+                        color: Colors.orangeAccent,
+                      ),
                       Text("4.5 (2.7k)"),
-
                     ],
-                  )
+                  ),
+                  Text("${lorem(paragraphs: 1, words: 48)}")
                 ],
               ),
             ),
