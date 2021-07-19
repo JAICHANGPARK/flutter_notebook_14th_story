@@ -66,8 +66,21 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
             child: Column(
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("${widget.title}")
+                    Text(
+                      "${widget.title}",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Container(
+                      child: Icon(
+                        Icons.favorite,
+                        color: Colors.red,
+                      ),
+                    )
                   ],
                 )
               ],
