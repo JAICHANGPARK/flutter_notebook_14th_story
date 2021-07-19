@@ -63,11 +63,11 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
             flex: 12,
           ),
           Expanded(
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Row(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                children: [
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
@@ -91,8 +91,15 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                       )
                     ],
                   ),
-                )
-              ],
+                  Row(
+                    children: [
+                      Icon(Icons.star_border, color: Colors.orangeAccent,),
+                      Text("4.5 (2.7k)"),
+
+                    ],
+                  )
+                ],
+              ),
             ),
             flex: 5,
           ),
