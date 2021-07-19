@@ -191,6 +191,8 @@ class ClothesHomePage extends StatelessWidget {
                                   Get.to(ClothesDetailPage(
                                     img: "https://cdn.pixabay.com/photo/2015/06/04/20/36/girl-797837_960_720.jpg",
                                     title: "9ucci Oversize Hoodie",
+                                    price: 79.99,
+
                                   ));
                                 },
                                 child: Container(
