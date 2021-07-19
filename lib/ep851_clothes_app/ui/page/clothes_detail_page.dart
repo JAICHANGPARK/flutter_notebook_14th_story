@@ -67,6 +67,7 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
