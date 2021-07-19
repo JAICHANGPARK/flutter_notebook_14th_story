@@ -65,7 +65,11 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
           Expanded(
             child: Column(
               children: [
-                
+                Row(
+                  children: [
+                    Text("${widget.title}")
+                  ],
+                )
               ],
             ),
             flex: 5,
