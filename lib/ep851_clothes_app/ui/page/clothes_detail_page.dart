@@ -101,7 +101,22 @@ class _ClothesDetailPageState extends State<ClothesDetailPage> {
                       Text("4.5 (2.7k)"),
                     ],
                   ),
-                  Text("${lorem(paragraphs: 1, words: 48)}")
+                  Text(
+                    "${lorem(paragraphs: 1, words: 48)}",
+                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(color: Colors.grey),
+                          borderRadius: BorderRadius.circular(4)
+                        ),
+                        child: Text("S"),
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
