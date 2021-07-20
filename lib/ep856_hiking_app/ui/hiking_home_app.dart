@@ -59,7 +59,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
-          padding: EdgeInsets.symmetric(horizontal: 16),
+          padding: EdgeInsets.symmetric(horizontal: 24),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -75,33 +75,17 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    LineIcons.mapMarker,
-                    size: 32,
-                  ),
+                  Icon(LineIcons.mapMarker, size: 32),
                   SizedBox(height: 8),
-                  Container(
-                    height: 3,
-                    width: 24,
-                    decoration: BoxDecoration(color: Colors.green),
-                  )
+                  Container(height: 3, width: 24, decoration: BoxDecoration(color: Colors.green))
                 ],
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    LineIcons.heart,
-                    size: 32,
-                  ),
-                  SizedBox(
-                    height: 8,
-                  ),
-                  Container(
-                    height: 3,
-                    width: 24,
-                    decoration: BoxDecoration(color: Colors.green),
-                  )
+                  Icon(LineIcons.heart, size: 32),
+                  SizedBox(height: 8),
+                  Container(height: 3, width: 24, decoration: BoxDecoration(color: Colors.green))
                 ],
               )
             ],
