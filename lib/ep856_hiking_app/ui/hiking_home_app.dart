@@ -11,7 +11,13 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
     );
   }
 }
