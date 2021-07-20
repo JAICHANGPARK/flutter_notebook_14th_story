@@ -62,8 +62,10 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
           padding: EdgeInsets.symmetric(horizontal: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
                 Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(LineIcons.home,
                     size: 32,),
