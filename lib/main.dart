@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'ep851_clothes_app/clothes_app.dart';
+import 'ep856_hiking_app/hiking_app.dart';
 
 void main() {
-  runApp(const ClothesApp());
+  runApp(const HikingApp());
 }
