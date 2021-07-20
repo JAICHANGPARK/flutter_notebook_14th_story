@@ -78,7 +78,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                     Icon(
                       _bottomIndex == 0 ? Icons.home : LineIcons.home,
                       size: 32,
-                      color: Colors.green,
+                      color: _bottomIndex == 0 ? Colors.green : Colors.grey,
                     ),
                     SizedBox(height: 8),
                     Container(
@@ -110,14 +110,28 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                   ],
                 ),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(LineIcons.heart, size: 32),
-                  SizedBox(height: 8),
-                  Container(height: 3, width: 24, decoration: BoxDecoration(color: Colors.green))
-                ],
-              )
+              GestureDetector(
+                onTap: (){
+                  setState(() {
+                    _bottomIndex = 2;
+                  });
+                },
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      _bottomIndex == 2 ? Icons.favorite : LineIcons.heartAlt,
+                      size: 32,
+                      color: _bottomIndex == 2 ? Colors.green : Colors.grey,
+                    ),
+                    SizedBox(height: 8),
+                    Container(
+                        height: 3,
+                        width: 24,
+                        decoration: BoxDecoration(color: _bottomIndex == 2 ? Colors.green : Colors.white))
+                  ],
+                ),
+              ),
             ],
           ),
         ),
