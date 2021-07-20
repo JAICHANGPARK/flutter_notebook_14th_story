@@ -9,6 +9,7 @@ class HikingHomeApp extends StatefulWidget {
 }
 
 class _HikingHomeAppState extends State<HikingHomeApp> {
+  int _bottomIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,13 +65,20 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(LineIcons.home, size: 32),
-                  SizedBox(height: 8),
-                  Container(height: 3, width: 24, decoration: BoxDecoration(color: Colors.green))
-                ],
+              GestureDetector(
+                onTap: (){
+                  setState(() {
+                    _bottomIndex = 0;
+                  });
+                },
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon( _bottomIndex ==0 ? Icons.home : LineIcons.home, size: 32),
+                    SizedBox(height: 8),
+                    Container(height: 3, width: 24, decoration: BoxDecoration(color: Colors.green))
+                  ],
+                ),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
