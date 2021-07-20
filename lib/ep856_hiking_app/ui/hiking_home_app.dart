@@ -63,16 +63,46 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
             children: [
                 Column(
                   children: [
-                    Icon(LineIcons.home),
+                    Icon(LineIcons.home,
+                    size: 32,),
+                    SizedBox(height: 8,),
                     Container(
                       height: 3,
-                      width: 32,
+                      width: 24,
                       decoration: BoxDecoration(
                         color: Colors.green
                       ),
                     )
                   ],
-                )
+                ),
+              Column(
+                children: [
+                  Icon(LineIcons.mapMarker,
+                    size: 32,),
+                  SizedBox(height: 8,),
+                  Container(
+                    height: 3,
+                    width: 24,
+                    decoration: BoxDecoration(
+                        color: Colors.green
+                    ),
+                  )
+                ],
+              ),
+              Column(
+                children: [
+                  Icon(LineIcons.heart,
+                    size: 32,),
+                  SizedBox(height: 8,),
+                  Container(
+                    height: 3,
+                    width: 24,
+                    decoration: BoxDecoration(
+                        color: Colors.green
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),
