@@ -59,7 +59,9 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
+          padding: EdgeInsets.symmetric(horizontal: 16),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
                 Column(
                   children: [
