@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 
 class HikingHomeApp extends StatefulWidget {
   HikingHomeApp({Key? key}) : super(key: key);
@@ -57,9 +58,21 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
+          height: 72,
           child: Row(
             children: [
-              
+                Column(
+                  children: [
+                    Icon(LineIcons.home),
+                    Container(
+                      height: 3,
+                      width: 32,
+                      decoration: BoxDecoration(
+                        color: Colors.green
+                      ),
+                    )
+                  ],
+                )
             ],
           ),
         ),
