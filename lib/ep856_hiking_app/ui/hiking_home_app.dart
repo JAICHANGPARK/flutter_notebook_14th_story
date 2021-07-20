@@ -14,7 +14,20 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            
+              Row(
+                children: [
+                  Expanded(child: Placeholder()),
+                  Expanded(
+                      flex: 3,
+                      child: Row(
+                    children: [
+                      Icon(Icons.location_on),
+                      Text("Carpathians, Ukraine")
+                    ],
+                  )),
+                  Expanded(child: Placeholder()),
+                ],
+              )
           ],
         ),
       ),
