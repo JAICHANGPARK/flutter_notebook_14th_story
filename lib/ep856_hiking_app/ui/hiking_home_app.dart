@@ -26,11 +26,27 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                     onPressed: () {},
                   )),
                   Expanded(
-                      flex: 3,
+                      flex: 4,
                       child: Row(
-                        children: [Icon(Icons.location_on), Text("Carpathians, Ukraine")],
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.location_on),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text("Carpathians, Ukraine")
+                        ],
                       )),
-                  Expanded(child: Placeholder()),
+                  Expanded(child: Center(
+                    child: Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        color: Colors.grey
+                      ),
+                    ),
+                  ),
+                  ),
                 ],
               )
             ],
