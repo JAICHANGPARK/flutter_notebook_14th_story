@@ -64,46 +64,43 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(LineIcons.home,
-                    size: 32,),
-                    SizedBox(height: 8,),
-                    Container(
-                      height: 3,
-                      width: 24,
-                      decoration: BoxDecoration(
-                        color: Colors.green
-                      ),
-                    )
-                  ],
-                ),
               Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(LineIcons.mapMarker,
-                    size: 32,),
-                  SizedBox(height: 8,),
+                  Icon(LineIcons.home, size: 32),
+                  SizedBox(height: 8),
+                  Container(height: 3, width: 24, decoration: BoxDecoration(color: Colors.green))
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    LineIcons.mapMarker,
+                    size: 32,
+                  ),
+                  SizedBox(height: 8),
                   Container(
                     height: 3,
                     width: 24,
-                    decoration: BoxDecoration(
-                        color: Colors.green
-                    ),
+                    decoration: BoxDecoration(color: Colors.green),
                   )
                 ],
               ),
               Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(LineIcons.heart,
-                    size: 32,),
-                  SizedBox(height: 8,),
+                  Icon(
+                    LineIcons.heart,
+                    size: 32,
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
                   Container(
                     height: 3,
                     width: 24,
-                    decoration: BoxDecoration(
-                        color: Colors.green
-                    ),
+                    decoration: BoxDecoration(color: Colors.green),
                   )
                 ],
               )
