@@ -10,6 +10,7 @@ class HikingHomeApp extends StatefulWidget {
 
 class _HikingHomeAppState extends State<HikingHomeApp> {
   int _bottomIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,13 +61,13 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
-          padding: EdgeInsets.symmetric(horizontal: 24),
+          padding: EdgeInsets.symmetric(horizontal: 48),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               GestureDetector(
-                onTap: (){
+                onTap: () {
                   setState(() {
                     _bottomIndex = 0;
                   });
@@ -74,19 +75,40 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon( _bottomIndex ==0 ? Icons.home : LineIcons.home, size: 32),
+                    Icon(
+                      _bottomIndex == 0 ? Icons.home : LineIcons.home,
+                      size: 32,
+                      color: Colors.green,
+                    ),
                     SizedBox(height: 8),
-                    Container(height: 3, width: 24, decoration: BoxDecoration(color: Colors.green))
+                    Container(
+                        height: 3,
+                        width: 24,
+                        decoration: BoxDecoration(color: _bottomIndex == 0 ? Colors.green : Colors.white))
                   ],
                 ),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(LineIcons.mapMarker, size: 32),
-                  SizedBox(height: 8),
-                  Container(height: 3, width: 24, decoration: BoxDecoration(color: Colors.green))
-                ],
+              GestureDetector(
+                onTap: (){
+                  setState(() {
+                    _bottomIndex = 1;
+                  });
+                },
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      _bottomIndex == 1 ? Icons.location_on : LineIcons.mapMarker,
+                      size: 32,
+                      color: _bottomIndex == 1 ? Colors.green : Colors.grey,
+                    ),
+                    SizedBox(height: 8),
+                    Container(
+                        height: 3,
+                        width: 24,
+                        decoration: BoxDecoration(color: _bottomIndex == 1 ? Colors.green : Colors.white))
+                  ],
+                ),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
