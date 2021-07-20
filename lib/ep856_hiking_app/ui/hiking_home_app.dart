@@ -10,6 +10,8 @@ class HikingHomeApp extends StatefulWidget {
 class _HikingHomeAppState extends State<HikingHomeApp> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SingleChildScrollView(),
+    );
   }
 }
