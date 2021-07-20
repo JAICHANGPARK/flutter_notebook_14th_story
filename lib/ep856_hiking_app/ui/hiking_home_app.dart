@@ -55,6 +55,15 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
           ),
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          child: Row(
+            children: [
+              
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
