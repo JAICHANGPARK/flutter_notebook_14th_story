@@ -30,22 +30,24 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.location_on),
+                          Icon(
+                            Icons.location_on,
+                            color: Colors.green,
+                          ),
                           SizedBox(
                             width: 8,
                           ),
                           Text("Carpathians, Ukraine")
                         ],
                       )),
-                  Expanded(child: Center(
-                    child: Container(
-                      height: 42,
-                      width: 42,
-                      decoration: BoxDecoration(
-                        color: Colors.grey
+                  Expanded(
+                    child: Center(
+                      child: Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
                       ),
                     ),
-                  ),
                   ),
                 ],
               )
