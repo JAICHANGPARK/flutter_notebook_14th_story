@@ -51,7 +51,10 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 16),
-              child: Text("Let's go hiking, Alina!"),
+              child: Text(
+                "Let's go hiking, Dream!",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ),
             Container(
               height: 52,
