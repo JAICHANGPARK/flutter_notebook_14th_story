@@ -84,13 +84,13 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                     Icon(
                       _bottomIndex == 0 ? Icons.home : LineIcons.home,
                       size: 32,
-                      color: _bottomIndex == 0 ? Colors.green : Colors.grey,
+                      color: _bottomIndex == 0 ? hikingGreenColor : Colors.grey,
                     ),
                     SizedBox(height: 8),
                     Container(
                         height: 3,
                         width: 24,
-                        decoration: BoxDecoration(color: _bottomIndex == 0 ? Colors.green : Colors.white))
+                        decoration: BoxDecoration(color: _bottomIndex == 0 ? hikingGreenColor : Colors.white))
                   ],
                 ),
               ),
