@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
@@ -23,13 +24,16 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
             Row(
               children: [
                 Expanded(
-                    child: IconButton(
-                  icon: Icon(Icons.apps),
-                  color: hikingGreenColor,
-                  onPressed: () {},
+                    child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: IconButton(
+                    icon: Icon(Icons.apps),
+                    color: hikingGreenColor,
+                    onPressed: () {},
+                  ),
                 )),
                 Expanded(
-                    flex: 4,
+                    flex: 6,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -50,7 +54,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16),
+              padding: const EdgeInsets.symmetric(vertical: 24),
               child: Text(
                 "Let's go hiking, Dream!",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -59,7 +63,10 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
             Container(
               height: 52,
               width: double.infinity,
-              decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+              decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
+              child: TextField(
+                decoration: InputDecoration(border: InputBorder.none),
+              ),
             )
           ],
         ),
