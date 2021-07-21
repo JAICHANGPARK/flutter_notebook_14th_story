@@ -89,7 +89,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                 ),
               ),
               GestureDetector(
-                onTap: (){
+                onTap: () {
                   setState(() {
                     _bottomIndex = 1;
                   });
@@ -111,7 +111,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                 ),
               ),
               GestureDetector(
-                onTap: (){
+                onTap: () {
                   setState(() {
                     _bottomIndex = 2;
                   });
