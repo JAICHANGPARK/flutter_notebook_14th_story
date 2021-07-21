@@ -53,6 +53,12 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
         ],
       ),
     ),
+    Container(
+      color: Colors.blue,
+    ),
+    Container(
+      color: Colors.green,
+    )
   ];
 
   @override
