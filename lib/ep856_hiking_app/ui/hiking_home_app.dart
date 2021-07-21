@@ -65,7 +65,9 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
               width: double.infinity,
               decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
               child: TextField(
-                decoration: InputDecoration(border: InputBorder.none),
+                decoration: InputDecoration(
+                    border: InputBorder.none, icon: Icon(Icons.search),
+                    hintText: "Search your location"),
               ),
             )
           ],
