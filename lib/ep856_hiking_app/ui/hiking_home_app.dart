@@ -10,6 +10,7 @@ class HikingHomeApp extends StatefulWidget {
 
 class _HikingHomeAppState extends State<HikingHomeApp> {
   int _bottomIndex = 0;
+  Color _greenColor = Color(0xff); // 41 118 83 29 76 53
   List<Widget> _widgetItems = [
     SingleChildScrollView(
       child: Column(
