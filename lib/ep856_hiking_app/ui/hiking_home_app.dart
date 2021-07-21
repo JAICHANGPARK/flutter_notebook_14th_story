@@ -75,13 +75,40 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
               child: Text("Choose your skill level"),
             ),
             SizedBox(
-              height: 42,
+              height: 36,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(
                     decoration: BoxDecoration(
                       color: hikingGreenColor,
+                      borderRadius: BorderRadius.circular(4)
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                    child: Center(
+                      child: Text(
+                        "Easy",
+                        style: TextStyle(fontSize: 16, color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(4)
+                    ),
+                    padding:const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                    child: const Center(
+                      child: Text(
+                        "Medium",
+                        style: TextStyle(fontSize: 16, color: Colors.grey),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: hikingGreenColor,
+                        borderRadius: BorderRadius.circular(4)
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                     child: Center(
