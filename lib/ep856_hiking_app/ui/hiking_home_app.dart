@@ -21,10 +21,8 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
             children: [
               Expanded(
                   child: IconButton(
-                icon: Icon(
-                  Icons.apps,
-                ),
-                color: Colors.grey,
+                icon: Icon(Icons.apps),
+                color: hikingGreenColor,
                 onPressed: () {},
               )),
               Expanded(
@@ -32,13 +30,8 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(
-                        Icons.location_on,
-                        color: Colors.green,
-                      ),
-                      SizedBox(
-                        width: 8,
-                      ),
+                      Icon(Icons.location_on, color: hikingGreenColor),
+                      SizedBox(width: 8),
                       Text("Carpathians, Ukraine")
                     ],
                   )),
@@ -47,7 +40,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                   child: Container(
                     height: 42,
                     width: 42,
-                    decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+                    decoration: BoxDecoration(color: hikingGreenColor, borderRadius: BorderRadius.circular(4)),
                   ),
                 ),
               ),
@@ -106,13 +99,13 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                     Icon(
                       _bottomIndex == 1 ? Icons.location_on : LineIcons.mapMarker,
                       size: 32,
-                      color: _bottomIndex == 1 ?hikingGreenColor : Colors.grey,
+                      color: _bottomIndex == 1 ? hikingGreenColor : Colors.grey,
                     ),
                     SizedBox(height: 8),
                     Container(
                         height: 3,
                         width: 24,
-                        decoration: BoxDecoration(color: _bottomIndex == 1 ?hikingGreenColor : Colors.white))
+                        decoration: BoxDecoration(color: _bottomIndex == 1 ? hikingGreenColor : Colors.white))
                   ],
                 ),
               ),
@@ -134,7 +127,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                     Container(
                         height: 3,
                         width: 24,
-                        decoration: BoxDecoration(color: _bottomIndex == 2 ? hikingGreenColor: Colors.white))
+                        decoration: BoxDecoration(color: _bottomIndex == 2 ? hikingGreenColor : Colors.white))
                   ],
                 ),
               ),
