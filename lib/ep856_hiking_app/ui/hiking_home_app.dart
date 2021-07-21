@@ -13,55 +13,53 @@ class HikingHomeApp extends StatefulWidget {
 class _HikingHomeAppState extends State<HikingHomeApp> {
   int _bottomIndex = 0;
 
-  List<Widget> _widgetItems = [
+  final List<Widget> _widgetItems = [
     SingleChildScrollView(
-      child: Column(
-        children: [
-          Row(
-            children: [
-              Expanded(
-                  child: IconButton(
-                icon: Icon(Icons.apps),
-                color: hikingGreenColor,
-                onPressed: () {},
-              )),
-              Expanded(
-                  flex: 4,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.location_on, color: hikingGreenColor),
-                      SizedBox(width: 8),
-                      Text("Carpathians, Ukraine")
-                    ],
-                  )),
-              Expanded(
-                child: Center(
-                  child: Container(
-                    height: 42,
-                    width: 42,
-                    decoration: BoxDecoration(color: hikingGreenColor, borderRadius: BorderRadius.circular(4)),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Expanded(
+                    child: IconButton(
+                  icon: Icon(Icons.apps),
+                  color: hikingGreenColor,
+                  onPressed: () {},
+                )),
+                Expanded(
+                    flex: 4,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.location_on, color: hikingGreenColor),
+                        SizedBox(width: 8),
+                        Text("Carpathians, Ukraine")
+                      ],
+                    )),
+                Expanded(
+                  child: Center(
+                    child: Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(color: hikingGreenColor, borderRadius: BorderRadius.circular(4)),
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16),
-            child: Text("Let's go hiking, Alina!"),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: Text("Let's go hiking, Alina!"),
+            ),
+            Container(
               height: 52,
               width: double.infinity,
-              decoration: BoxDecoration(
-                color: Colors.grey,
-                borderRadius: BorderRadius.circular(8)
-              ),
-            ),
-          )
-        ],
+              decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+            )
+          ],
+        ),
       ),
     ),
     Container(color: Colors.blue),
