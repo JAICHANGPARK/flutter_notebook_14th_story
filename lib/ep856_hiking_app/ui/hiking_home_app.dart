@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
-
+Color hikingGreenColor = Color(0xff297653); // 4
 class HikingHomeApp extends StatefulWidget {
   HikingHomeApp({Key? key}) : super(key: key);
 
@@ -10,7 +10,7 @@ class HikingHomeApp extends StatefulWidget {
 
 class _HikingHomeAppState extends State<HikingHomeApp> {
   int _bottomIndex = 0;
-  Color _greenColor = Color(0xff); // 41 118 83 29 76 53
+
   List<Widget> _widgetItems = [
     SingleChildScrollView(
       child: Column(
@@ -58,7 +58,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
       color: Colors.blue,
     ),
     Container(
-      color: Colors.green,
+      color: hikingGreenColor,
     )
   ];
 
