@@ -72,8 +72,8 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text("Choose yout skill level"),
+              padding: const EdgeInsets.symmetric(vertical: 24),
+              child: Text("Choose your skill level"),
             ),
 
             SizedBox(
@@ -81,7 +81,12 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-
+                  Container(
+                    child: Text("Easy", style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white
+                    ),),
+                  )
                 ],
               ),
             )
