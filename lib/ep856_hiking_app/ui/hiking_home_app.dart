@@ -47,15 +47,18 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(vertical: 16),
             child: Text("Let's go hiking, Alina!"),
           ),
-          Container(
-            height: 64,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              color: Colors.grey,
-              borderRadius: BorderRadius.circular(8)
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 52,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.circular(8)
+              ),
             ),
           )
         ],
