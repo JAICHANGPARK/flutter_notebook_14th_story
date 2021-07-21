@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
+
 Color hikingGreenColor = Color(0xff297653); // 4
+
 class HikingHomeApp extends StatefulWidget {
   HikingHomeApp({Key? key}) : super(key: key);
 
@@ -54,12 +56,8 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
         ],
       ),
     ),
-    Container(
-      color: Colors.blue,
-    ),
-    Container(
-      color: hikingGreenColor,
-    )
+    Container(color: Colors.blue),
+    Container(color: hikingGreenColor)
   ];
 
   @override
