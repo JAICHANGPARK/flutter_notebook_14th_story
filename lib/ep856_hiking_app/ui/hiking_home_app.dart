@@ -75,7 +75,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
               child: Text("Choose your skill level"),
             ),
             SizedBox(
-              height: 52,
+              height: 42,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
