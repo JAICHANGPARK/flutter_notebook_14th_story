@@ -106,13 +106,13 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                     Icon(
                       _bottomIndex == 1 ? Icons.location_on : LineIcons.mapMarker,
                       size: 32,
-                      color: _bottomIndex == 1 ? Colors.green : Colors.grey,
+                      color: _bottomIndex == 1 ?hikingGreenColor : Colors.grey,
                     ),
                     SizedBox(height: 8),
                     Container(
                         height: 3,
                         width: 24,
-                        decoration: BoxDecoration(color: _bottomIndex == 1 ? Colors.green : Colors.white))
+                        decoration: BoxDecoration(color: _bottomIndex == 1 ?hikingGreenColor : Colors.white))
                   ],
                 ),
               ),
@@ -128,13 +128,13 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                     Icon(
                       _bottomIndex == 2 ? Icons.favorite : LineIcons.heartAlt,
                       size: 32,
-                      color: _bottomIndex == 2 ? Colors.green : Colors.grey,
+                      color: _bottomIndex == 2 ? hikingGreenColor : Colors.grey,
                     ),
                     SizedBox(height: 8),
                     Container(
                         height: 3,
                         width: 24,
-                        decoration: BoxDecoration(color: _bottomIndex == 2 ? Colors.green : Colors.white))
+                        decoration: BoxDecoration(color: _bottomIndex == 2 ? hikingGreenColor: Colors.white))
                   ],
                 ),
               ),
