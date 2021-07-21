@@ -83,9 +83,12 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                     decoration: BoxDecoration(
                       color: hikingGreenColor,
                     ),
-                    child: Text(
-                      "Easy",
-                      style: TextStyle(fontSize: 16, color: Colors.white),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                    child: Center(
+                      child: Text(
+                        "Easy",
+                        style: TextStyle(fontSize: 16, color: Colors.white),
+                      ),
                     ),
                   )
                 ],
