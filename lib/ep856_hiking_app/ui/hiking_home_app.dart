@@ -163,6 +163,21 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                       Expanded(
                         child: Container(
                           decoration: BoxDecoration(color: Colors.grey[300]!),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text("Tagidna"),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Text("Easy"),
+                                  Text("7 h"),
+                                  Text("15 km")
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                         flex: 4,
                       ),
