@@ -134,8 +134,13 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
             ),
             GridView.count(crossAxisCount: 2,
             children: [Container(
-              decoration: BoxDecoration(),
-            )],),
+              decoration: BoxDecoration(
+                color: Colors.green
+              ),
+            ),
+
+
+            ],),
           ],
         ),
       ),
