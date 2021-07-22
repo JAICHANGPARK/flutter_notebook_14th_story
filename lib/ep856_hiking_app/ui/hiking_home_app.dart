@@ -128,9 +128,22 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
             ),
             GridView.count(
               crossAxisCount: 2,
+              shrinkWrap: true,
+              mainAxisSpacing: 16,
+              crossAxisSpacing: 16,
               children: List.generate(10, (index) =>  Container(
-                decoration: BoxDecoration(color: Colors.green),
-              ),), 
+                decoration: BoxDecoration(color: Colors.green,
+                borderRadius: BorderRadius.circular(4),
+                  image: DecorationImage(
+                    image: NetworkImage("")
+                  )
+                ),
+                child: Column(
+                  children: [
+
+                  ],
+                ),
+              ),),
             ),
           ],
         ),
