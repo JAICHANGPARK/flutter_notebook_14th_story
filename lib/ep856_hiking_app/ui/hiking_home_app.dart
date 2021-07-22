@@ -80,10 +80,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(
-                    decoration: BoxDecoration(
-                      color: hikingGreenColor,
-                      borderRadius: BorderRadius.circular(4)
-                    ),
+                    decoration: BoxDecoration(color: hikingGreenColor, borderRadius: BorderRadius.circular(4)),
                     padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                     child: Center(
                       child: Text(
@@ -95,11 +92,8 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Container(
-                      decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(4)
-                      ),
-                      padding:const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                      decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                       child: const Center(
                         child: Text(
                           "Medium",
@@ -109,11 +103,8 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                     ),
                   ),
                   Container(
-                    decoration: BoxDecoration(
-                        color: Colors.grey[300],
-                        borderRadius: BorderRadius.circular(4)
-                    ),
-                    padding:const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                    decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
+                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                     child: const Center(
                       child: Text(
                         "Hard",
@@ -128,19 +119,19 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Select yout trails"),
-                IconButton(onPressed: (){}, icon: Icon(Icons.tune_outlined),
-                color: Colors.grey,)
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.tune_outlined),
+                  color: Colors.grey,
+                )
               ],
             ),
-            GridView.count(crossAxisCount: 2,
-            children: [Container(
-              decoration: BoxDecoration(
-                color: Colors.green
-              ),
+            GridView.count(
+              crossAxisCount: 2,
+              children: List.generate(10, (index) =>  Container(
+                decoration: BoxDecoration(color: Colors.green),
+              ),), 
             ),
-
-
-            ],),
           ],
         ),
       ),
