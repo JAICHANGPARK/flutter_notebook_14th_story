@@ -147,8 +147,8 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                         child: Stack(
                           children: [
                             Positioned(
-                              right: 12,
-                                top: 12,
+                              right: 8,
+                                top: 8,
                                 child: IconButton(
                               color: Colors.white,
                               icon: Icon(
