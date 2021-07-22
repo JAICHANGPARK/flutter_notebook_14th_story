@@ -123,7 +123,8 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                   ),
                 ],
               ),
-            )
+            ),
+            
           ],
         ),
       ),
