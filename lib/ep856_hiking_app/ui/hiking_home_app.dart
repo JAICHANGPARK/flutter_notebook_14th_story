@@ -176,9 +176,15 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                                Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  const Text("Easy"),
-                                  const Text("7 h"),
-                                  const Text("15 km")
+                                  const Text("Easy", style: TextStyle(
+                                    color: Colors.grey
+                                  ),),
+                                  const Text("7 h", style: TextStyle(
+                                      color: Colors.grey
+                                  ),),
+                                  const Text("15 km", style: TextStyle(
+                                      color: Colors.grey
+                                  ),)
                                 ],
                               )
                             ],
