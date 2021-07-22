@@ -131,20 +131,40 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
               shrinkWrap: true,
               mainAxisSpacing: 16,
               crossAxisSpacing: 16,
-              children: List.generate(10, (index) =>  Container(
-                decoration: BoxDecoration(color: Colors.green,
-                borderRadius: BorderRadius.circular(4),
-                  image: DecorationImage(
-                    image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/20/08/17/squirrel-1842152__340.jpg"),
-                    fit: BoxFit.cover
-                  )
+              children: List.generate(
+                10,
+                (index) => Container(
+                  decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.circular(4),
+                      image: DecorationImage(
+                          image:
+                              NetworkImage("https://cdn.pixabay.com/photo/2016/11/20/08/17/squirrel-1842152__340.jpg"),
+                          fit: BoxFit.cover)),
+                  child: Column(
+                    children: [
+                      Expanded(
+                        child: Stack(
+                          children: [
+                            Positioned(
+                                child: IconButton(
+                              color: Colors.white,
+                              icon: Icon(
+                                Icons.favorite,
+                              ),
+                            ))
+                          ],
+                        ),
+                        flex: 6,
+                      ),
+                      Expanded(
+                        child: Placeholder(),
+                        flex: 4,
+                      ),
+                    ],
+                  ),
                 ),
-                child: Column(
-                  children: [
-
-                  ],
-                ),
-              ),),
+              ),
             ),
           ],
         ),
