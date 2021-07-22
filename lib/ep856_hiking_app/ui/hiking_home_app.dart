@@ -124,7 +124,18 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                 ],
               ),
             ),
-            
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Select yout trails"),
+                IconButton(onPressed: (){}, icon: Icon(Icons.tune_outlined),
+                color: Colors.grey,)
+              ],
+            ),
+            GridView.count(crossAxisCount: 2,
+            children: [Container(
+              decoration: BoxDecoration(),
+            )],),
           ],
         ),
       ),
