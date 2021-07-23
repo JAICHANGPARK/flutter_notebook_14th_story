@@ -6,6 +6,25 @@ class HikingDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                Expanded(
+                    flex: 4,
+                    child: Placeholder()),
+                SizedBox(width: 16,),
+                Expanded(
+                    flex: 9,
+                    child: Placeholder()),
+              ],
+            ),
+          ),
+        ),
+      ),
       body: NestedScrollView(
         body: Column(
           children: [
