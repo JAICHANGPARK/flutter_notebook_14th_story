@@ -20,7 +20,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
   void initState() {
     // TODO: implement initState
     super.initState();
-   
+
   }
 
   final List<Widget> _widgetItems = [
