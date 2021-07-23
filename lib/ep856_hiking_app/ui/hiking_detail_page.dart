@@ -16,7 +16,11 @@ class HikingDetailPage extends StatelessWidget {
               expandedHeight: MediaQuery.of(context).size.height / 2.5,
               flexibleSpace: Stack(
                 children: [
-
+                  Positioned(
+                      child: Image.network(
+                    "https://cdn.pixabay.com/photo/2018/04/03/20/29/forest-3287976_960_720.jpg",
+                    fit: BoxFit.cover,
+                  ))
                 ],
               ),
             ),
