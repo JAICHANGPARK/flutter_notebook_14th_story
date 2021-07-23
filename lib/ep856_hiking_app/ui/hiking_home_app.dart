@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
+import 'hiking_detail_page.dart';
+
 Color hikingGreenColor = Color(0xff297653); // 4
 
 class HikingHomeApp extends StatefulWidget {
@@ -13,6 +15,8 @@ class HikingHomeApp extends StatefulWidget {
 
 class _HikingHomeAppState extends State<HikingHomeApp> {
   int _bottomIndex = 0;
+  GlobalKey<ScaffoldState> _globalKey = GlobalKey();
+
 
   final List<Widget> _widgetItems = [
     SingleChildScrollView(
@@ -135,7 +139,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                 10,
                 (index) => GestureDetector(
                   onTap: (){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=> HikingDetailPage()));
+                    Navigator.of(_globalKey.currentContext!).push(MaterialPageRoute(builder: (context)=> HikingDetailPage()));
                   },
                   child: Container(
                     decoration: BoxDecoration(
@@ -213,6 +217,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _globalKey.currentContext,
       body: SafeArea(child: _widgetItems.elementAt(_bottomIndex)),
       bottomNavigationBar: BottomAppBar(
         child: Container(
