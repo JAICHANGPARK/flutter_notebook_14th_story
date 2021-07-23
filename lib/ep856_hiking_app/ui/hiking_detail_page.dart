@@ -5,6 +5,22 @@ class HikingDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: NestedScrollView(
+        body: Column(
+          children: [
+
+          ],
+        ),
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+          return [
+            const SliverAppBar(
+
+            )
+          ];
+        },
+
+      ),
+    );
   }
 }
