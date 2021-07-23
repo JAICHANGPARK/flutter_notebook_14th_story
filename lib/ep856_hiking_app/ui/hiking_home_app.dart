@@ -167,13 +167,13 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Padding(
+                              const Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 16),
                                 child: const Text("Tagidna",style: TextStyle(
                                   fontSize: 16
                                 ),),
                               ),
-                               Row(
+                               const Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
                                   const Text("Easy", style: TextStyle(
