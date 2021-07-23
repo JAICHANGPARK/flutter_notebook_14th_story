@@ -133,66 +133,71 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
               crossAxisSpacing: 16,
               children: List.generate(
                 10,
-                (index) => Container(
-                  decoration: BoxDecoration(
-                      color: Colors.green,
-                      borderRadius: BorderRadius.circular(4),
-                      image: DecorationImage(
-                          image:
-                              NetworkImage("https://cdn.pixabay.com/photo/2016/11/20/08/17/squirrel-1842152__340.jpg"),
-                          fit: BoxFit.cover)),
-                  child: Column(
-                    children: [
-                      Expanded(
-                        child: Stack(
-                          children: [
-                            Positioned(
-                                right: 8,
-                                top: 8,
-                                child: IconButton(
-                                  color: Colors.white,
-                                  icon: Icon(
-                                    Icons.favorite,
-                                  ),
-                                  onPressed: () {},
-                                ))
-                          ],
-                        ),
-                        flex: 6,
-                      ),
-                      Expanded(
-                        child: Container(
-                          decoration: BoxDecoration(color: Colors.grey[300]!),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                (index) => GestureDetector(
+                  onTap: (){
+                    
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.green,
+                        borderRadius: BorderRadius.circular(4),
+                        image: DecorationImage(
+                            image:
+                                NetworkImage("https://cdn.pixabay.com/photo/2016/11/20/08/17/squirrel-1842152__340.jpg"),
+                            fit: BoxFit.cover)),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Stack(
                             children: [
-                              const Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 16),
-                                child: const Text("Tagidna",style: TextStyle(
-                                  fontSize: 16
-                                ),),
-                              ),
-                               const Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  const Text("Easy", style: TextStyle(
-                                    color: Colors.grey
-                                  ),),
-                                  const Text("7 h", style: TextStyle(
-                                      color: Colors.grey
-                                  ),),
-                                  const Text("15 km", style: TextStyle(
-                                      color: Colors.grey
-                                  ),)
-                                ],
-                              )
+                              Positioned(
+                                  right: 8,
+                                  top: 8,
+                                  child: IconButton(
+                                    color: Colors.white,
+                                    icon: Icon(
+                                      Icons.favorite,
+                                    ),
+                                    onPressed: () {},
+                                  ))
                             ],
                           ),
+                          flex: 6,
                         ),
-                        flex: 4,
-                      ),
-                    ],
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(color: Colors.grey[300]!),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                const Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                                  child: const Text("Tagidna",style: TextStyle(
+                                    fontSize: 16
+                                  ),),
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    const Text("Easy", style: TextStyle(
+                                      color: Colors.grey
+                                    ),),
+                                    const Text("7 h", style: TextStyle(
+                                        color: Colors.grey
+                                    ),),
+                                    const Text("15 km", style: TextStyle(
+                                        color: Colors.grey
+                                    ),)
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                          flex: 4,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
