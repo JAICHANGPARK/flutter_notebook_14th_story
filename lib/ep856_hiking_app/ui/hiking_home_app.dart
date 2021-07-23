@@ -5,7 +5,7 @@ import 'package:line_icons/line_icons.dart';
 import 'hiking_detail_page.dart';
 
 Color hikingGreenColor = Color(0xff297653); // 4
-
+GlobalKey<ScaffoldState>  _globalKey = GlobalKey<ScaffoldState>();
 class HikingHomeApp extends StatefulWidget {
   HikingHomeApp({Key? key}) : super(key: key);
 
@@ -15,8 +15,13 @@ class HikingHomeApp extends StatefulWidget {
 
 class _HikingHomeAppState extends State<HikingHomeApp> {
   int _bottomIndex = 0;
-  GlobalKey<ScaffoldState> _globalKey = GlobalKey();
 
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+   
+  }
 
   final List<Widget> _widgetItems = [
     SingleChildScrollView(
