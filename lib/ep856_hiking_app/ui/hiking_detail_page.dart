@@ -15,7 +15,13 @@ class HikingDetailPage extends StatelessWidget {
               children: [
                 Expanded(
                     flex: 4,
-                    child: Placeholder()),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300]!,
+                        borderRadius: BorderRadius.circular(4)
+                      ),
+                      child: Text("Preview", ),
+                    )),
                 SizedBox(width: 16,),
                 Expanded(
                     flex: 9,
