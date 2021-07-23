@@ -217,7 +217,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: _globalKey.currentContext,
+      key: _globalKey,
       body: SafeArea(child: _widgetItems.elementAt(_bottomIndex)),
       bottomNavigationBar: BottomAppBar(
         child: Container(
