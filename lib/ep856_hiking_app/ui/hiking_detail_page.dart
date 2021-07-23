@@ -52,6 +52,8 @@ class HikingDetailPage extends StatelessWidget {
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return [
             SliverAppBar(
+              floating: true,
+              pinned: true,
               expandedHeight: MediaQuery.of(context).size.height / 2.5,
               flexibleSpace: Stack(
                 children: [
