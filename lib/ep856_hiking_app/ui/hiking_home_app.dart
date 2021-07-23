@@ -135,7 +135,7 @@ class _HikingHomeAppState extends State<HikingHomeApp> {
                 10,
                 (index) => GestureDetector(
                   onTap: (){
-                    
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=> HikingDetailPage()));
                   },
                   child: Container(
                     decoration: BoxDecoration(
