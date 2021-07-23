@@ -8,7 +8,11 @@ class HikingDetailPage extends StatelessWidget {
     return Scaffold(
       body: NestedScrollView(
         body: Column(
-          children: [],
+          children: [
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+          ],
         ),
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return [
@@ -17,6 +21,10 @@ class HikingDetailPage extends StatelessWidget {
               flexibleSpace: Stack(
                 children: [
                   Positioned(
+                    left: 0,
+                      right: 0,
+                      bottom: 0,
+                      top: 0,
                       child: Image.network(
                     "https://cdn.pixabay.com/photo/2018/04/03/20/29/forest-3287976_960_720.jpg",
                     fit: BoxFit.cover,
