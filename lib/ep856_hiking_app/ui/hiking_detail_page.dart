@@ -39,7 +39,7 @@ class HikingDetailPage extends StatelessWidget {
                 flex: 5,
                 child:   Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("${lorem(paragraphs: 1, words: 48)}"),
+              child: SingleChildScrollView(child: Text("${lorem(paragraphs: 1, words: 120)}")),
             )),
             Expanded(
                 flex: 5,
