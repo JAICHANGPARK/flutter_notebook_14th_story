@@ -13,9 +13,9 @@ class HikingDetailPage extends StatelessWidget {
         body: Column(
           children: [
             Expanded(
-
+                flex: 2,
                 child: Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(8.0),
               child: SingleChildScrollView(
                 child: Column(
                   children: [
@@ -35,8 +35,15 @@ class HikingDetailPage extends StatelessWidget {
                 ),
               ),
             )),
-            Expanded(child:   Text("${lorem(paragraphs: 1, words: 48)}")),
-            Expanded(child: Placeholder()),
+            Expanded(
+                flex: 5,
+                child:   Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text("${lorem(paragraphs: 1, words: 48)}"),
+            )),
+            Expanded(
+                flex: 5,
+                child: Placeholder()),
           ],
         ),
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
