@@ -12,7 +12,9 @@ class HikingDetailPage extends StatelessWidget {
       body: NestedScrollView(
         body: Column(
           children: [
-            Expanded(child: Padding(
+            Expanded(
+
+                child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: SingleChildScrollView(
                 child: Column(
@@ -28,12 +30,12 @@ class HikingDetailPage extends StatelessWidget {
                         color: hikingGreenColor,),
                       ],
                     ),
-                    Text("${lorem(paragraphs: 1, words: 48)}")
+
                   ],
                 ),
               ),
             )),
-            Expanded(child: Placeholder()),
+            Expanded(child:   Text("${lorem(paragraphs: 1, words: 48)}")),
             Expanded(child: Placeholder()),
           ],
         ),
