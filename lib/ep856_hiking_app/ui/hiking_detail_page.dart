@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lorem/flutter_lorem.dart';
 import 'package:flutter_notebook_14th_story/ep856_hiking_app/ui/hiking_home_app.dart';
 
 class HikingDetailPage extends StatelessWidget {
@@ -13,16 +14,23 @@ class HikingDetailPage extends StatelessWidget {
           children: [
             Expanded(child: Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Yagidna mountain"),
-                      IconButton(onPressed: (){}, icon: Icon(Icons.favorite)),
-                    ],
-                  )
-                ],
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Yagidna mountain", style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold
+                        ),),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.favorite),
+                        color: hikingGreenColor,),
+                      ],
+                    ),
+                    Text("${lorem(paragraphs: 1, words: 48)}")
+                  ],
+                ),
               ),
             )),
             Expanded(child: Placeholder()),
