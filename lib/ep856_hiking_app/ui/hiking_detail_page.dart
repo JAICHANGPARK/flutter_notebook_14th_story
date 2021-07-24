@@ -32,7 +32,15 @@ class HikingDetailPage extends StatelessWidget {
                       child: Image.network(
                         "https://cdn.pixabay.com/photo/2018/04/03/20/29/forest-3287976_960_720.jpg",
                         fit: BoxFit.cover,
-                      ))
+                      )),
+                  Positioned(child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(4)
+                    ),
+                    child: Icon(Icons.more_vert,),
+                  ), right: 16,
+                  top: 76,),
                 ],
               ),
             ),
