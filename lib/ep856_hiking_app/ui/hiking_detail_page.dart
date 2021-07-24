@@ -51,6 +51,7 @@ class HikingDetailPage extends StatelessWidget {
             SliverAppBar(
               floating: true,
               pinned: true,
+              title: Text("Yagidna mountain"),
               expandedHeight: MediaQuery.of(context).size.height / 2.5,
               flexibleSpace: Stack(
                 children: [
