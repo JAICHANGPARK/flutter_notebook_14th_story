@@ -51,21 +51,50 @@ class HikingDetailPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Column(
-                        children: [
-                          Expanded(child: Row(
-                            children: [
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                            ],
-                          )),
-                          Expanded(child: Row(
-                            children: [
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                            ],
-                          )),
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          children: [
+                            Expanded(child: Row(
+                              children: [
+                                Expanded(child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text("Easy", style: TextStyle(
+                                      fontWeight: FontWeight.bold
+                                    ),),
+                                    SizedBox(height: 4,),
+                                    Text("difficulty", style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey
+                                    ),),
+                                  ],
+                                )),
+                                Expanded(child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text("1216 m", style: TextStyle(
+                                        fontWeight: FontWeight.bold
+                                    ),),
+                                    SizedBox(height: 4,),
+                                    Text("highest point", style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.grey
+                                    ),),
+                                  ],
+                                )),
+                              ],
+                            )),
+                            Expanded(child: Row(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                              ],
+                            )),
+                          ],
+                        ),
                       ),
                       flex: 6,
                     ),
