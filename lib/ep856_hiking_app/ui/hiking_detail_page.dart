@@ -7,40 +7,7 @@ class HikingDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomAppBar(
-        child: Container(
-          height: 64,
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              children: [
-                Expanded(
-                    flex: 4,
-                    child: Container(
-                      decoration: BoxDecoration(color: Colors.grey[300]!, borderRadius: BorderRadius.circular(4)),
-                      child: Center(
-                          child: Text(
-                        "Preview",
-                      )),
-                    )),
-                SizedBox(
-                  width: 16,
-                ),
-                Expanded(
-                    flex: 9,
-                    child: Container(
-                      decoration: BoxDecoration(color: hikingGreenColor, borderRadius: BorderRadius.circular(4)),
-                      child: Center(
-                          child: Text(
-                        "Start trail",
-                        style: TextStyle(color: Colors.white),
-                      )),
-                    )),
-              ],
-            ),
-          ),
-        ),
-      ),
+
       body: NestedScrollView(
         body: Column(
           children: [
@@ -71,6 +38,40 @@ class HikingDetailPage extends StatelessWidget {
             ),
           ];
         },
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 64,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                Expanded(
+                    flex: 4,
+                    child: Container(
+                      decoration: BoxDecoration(color: Colors.grey[300]!, borderRadius: BorderRadius.circular(4)),
+                      child: Center(
+                          child: Text(
+                            "Preview",
+                          )),
+                    )),
+                SizedBox(
+                  width: 16,
+                ),
+                Expanded(
+                    flex: 9,
+                    child: Container(
+                      decoration: BoxDecoration(color: hikingGreenColor, borderRadius: BorderRadius.circular(4)),
+                      child: Center(
+                          child: Text(
+                            "Start trail",
+                            style: TextStyle(color: Colors.white),
+                          )),
+                    )),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
