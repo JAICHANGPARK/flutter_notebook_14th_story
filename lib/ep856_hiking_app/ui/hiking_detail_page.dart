@@ -89,8 +89,34 @@ class HikingDetailPage extends StatelessWidget {
                             )),
                             Expanded(child: Row(
                               children: [
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
+                                Expanded(child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text("15 km", style: TextStyle(
+                                        fontWeight: FontWeight.bold
+                                    ),),
+                                    SizedBox(height: 4,),
+                                    Text("distance", style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.grey
+                                    ),),
+                                  ],
+                                )),
+                                Expanded(child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text("7 hours", style: TextStyle(
+                                        fontWeight: FontWeight.bold
+                                    ),),
+                                    SizedBox(height: 4,),
+                                    Text("time", style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.grey
+                                    ),),
+                                  ],
+                                )),
                               ],
                             )),
                           ],
