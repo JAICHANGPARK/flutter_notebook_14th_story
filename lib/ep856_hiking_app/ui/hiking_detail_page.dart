@@ -46,13 +46,30 @@ class HikingDetailPage extends StatelessWidget {
                     style: TextStyle(fontSize: 13, color: Colors.grey),
                   )),
                 )),
-            Expanded(flex: 5, child: Row(
-              children: [
-                Expanded(child: Placeholder(), flex: 6,),
-                SizedBox(width: 16,),
-                Expanded(child: Placeholder(), flex: 5,),
-              ],
-            )),
+            Expanded(
+                flex: 5,
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Placeholder(),
+                      flex: 6,
+                    ),
+                    SizedBox(
+                      width: 16,
+                    ),
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300]!,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Stack(),
+                      ),
+                      flex: 5,
+                    ),
+                  ],
+                )),
           ],
         ),
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
