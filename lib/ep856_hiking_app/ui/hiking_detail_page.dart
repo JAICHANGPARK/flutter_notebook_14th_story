@@ -51,7 +51,22 @@ class HikingDetailPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Placeholder(),
+                      child: Column(
+                        children: [
+                          Expanded(child: Row(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                            ],
+                          )),
+                          Expanded(child: Row(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                            ],
+                          )),
+                        ],
+                      ),
                       flex: 6,
                     ),
                     SizedBox(
