@@ -8,42 +8,45 @@ class HikingDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: NestedScrollView(
         body: Column(
           children: [
             Expanded(
                 flex: 2,
                 child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  padding: const EdgeInsets.all(8.0),
+                  child: SingleChildScrollView(
+                    child: Column(
                       children: [
-                        Text("Yagidna mountain", style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold
-                        ),),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.favorite),
-                        color: hikingGreenColor,),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Yagidna mountain",
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.favorite),
+                              color: hikingGreenColor,
+                            ),
+                          ],
+                        ),
                       ],
                     ),
-
-                  ],
-                ),
-              ),
-            )),
+                  ),
+                )),
             Expanded(
                 flex: 5,
-                child:   Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: SingleChildScrollView(child: Text("${lorem(paragraphs: 1, words: 120)}")),
-            )),
-            Expanded(
-                flex: 5,
-                child: Placeholder()),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SingleChildScrollView(
+                      child: Text(
+                    "${lorem(paragraphs: 1, words: 120)}",
+                    style: TextStyle(fontSize: 13, color: Colors.grey),
+                  )),
+                )),
+            Expanded(flex: 5, child: Placeholder()),
           ],
         ),
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
@@ -64,14 +67,16 @@ class HikingDetailPage extends StatelessWidget {
                         "https://cdn.pixabay.com/photo/2018/04/03/20/29/forest-3287976_960_720.jpg",
                         fit: BoxFit.cover,
                       )),
-                  Positioned(child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(4)
+                  Positioned(
+                    child: Container(
+                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
+                      child: Icon(
+                        Icons.more_vert,
+                      ),
                     ),
-                    child: Icon(Icons.more_vert,),
-                  ), right: 16,
-                  top: 76,),
+                    right: 16,
+                    top: 76,
+                  ),
                 ],
               ),
             ),
@@ -91,8 +96,8 @@ class HikingDetailPage extends StatelessWidget {
                       decoration: BoxDecoration(color: Colors.grey[300]!, borderRadius: BorderRadius.circular(4)),
                       child: Center(
                           child: Text(
-                            "Preview",
-                          )),
+                        "Preview",
+                      )),
                     )),
                 SizedBox(
                   width: 16,
@@ -103,9 +108,9 @@ class HikingDetailPage extends StatelessWidget {
                       decoration: BoxDecoration(color: hikingGreenColor, borderRadius: BorderRadius.circular(4)),
                       child: Center(
                           child: Text(
-                            "Start trail",
-                            style: TextStyle(color: Colors.white),
-                          )),
+                        "Start trail",
+                        style: TextStyle(color: Colors.white),
+                      )),
                     )),
               ],
             ),
