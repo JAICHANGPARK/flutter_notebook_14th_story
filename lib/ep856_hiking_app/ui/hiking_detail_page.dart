@@ -62,7 +62,8 @@ class HikingDetailPage extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text("Easy", style: TextStyle(
-                                      fontWeight: FontWeight.bold
+                                      fontWeight: FontWeight.bold,
+                                        fontSize: 16
                                     ),),
                                     SizedBox(height: 4,),
                                     Text("difficulty", style: TextStyle(
@@ -76,7 +77,8 @@ class HikingDetailPage extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text("1216 m", style: TextStyle(
-                                        fontWeight: FontWeight.bold
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16
                                     ),),
                                     SizedBox(height: 4,),
                                     Text("highest point", style: TextStyle(
@@ -94,7 +96,8 @@ class HikingDetailPage extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text("15 km", style: TextStyle(
-                                        fontWeight: FontWeight.bold
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16
                                     ),),
                                     SizedBox(height: 4,),
                                     Text("distance", style: TextStyle(
@@ -108,7 +111,8 @@ class HikingDetailPage extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text("7 hours", style: TextStyle(
-                                        fontWeight: FontWeight.bold
+                                        fontWeight: FontWeight.bold,
+                                      fontSize: 16
                                     ),),
                                     SizedBox(height: 4,),
                                     Text("time", style: TextStyle(
