@@ -11,7 +11,20 @@ class HikingDetailPage extends StatelessWidget {
       body: NestedScrollView(
         body: Column(
           children: [
-            Expanded(child: Placeholder()),
+            Expanded(child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Yagidna mountain"),
+                      IconButton(onPressed: (){}, icon: Icon(Icons.favorite)),
+                    ],
+                  )
+                ],
+              ),
+            )),
             Expanded(child: Placeholder()),
             Expanded(child: Placeholder()),
           ],
