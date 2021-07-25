@@ -26,11 +26,17 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                       child: PhysicalModel(
                         color: Colors.black.withOpacity(0.2),
                         elevation: 2,
-                        borderRadius: ,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(16),
+                          topRight: Radius.circular(16),
+                        ),
                         child: Container(
-                          decoration: BoxDecoration(color: Theme.of(context).cardColor,
-                            borderRadius: 
-                          ),
+                          decoration: BoxDecoration(
+                              color: Theme.of(context).cardColor,
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(16),
+                                topRight: Radius.circular(16),
+                              )),
                         ),
                       ),
                       left: 0,
