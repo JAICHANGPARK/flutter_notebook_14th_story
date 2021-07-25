@@ -29,7 +29,13 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                       )
                     ],
                   ), flex: 2,),
-                  Expanded(child: SingleChildScrollView(), flex: 15,),
+                  Expanded(child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        
+                      ],
+                    ),
+                  ), flex: 15,),
                 ],
               ),
               flex: 18,
