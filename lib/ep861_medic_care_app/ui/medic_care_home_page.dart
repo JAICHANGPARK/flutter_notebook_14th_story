@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MedicCareHomePage extends StatefulWidget {
   MedicCareHomePage({Key? key}) : super(key: key);
@@ -43,7 +44,8 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Icon(Icons.home),
-                                  Text("Home",)
+                                  SizedBox(width: 8,),
+                                  Text("Home")
                                 ],
                               )),
                               Expanded(child: Placeholder()),
