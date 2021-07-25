@@ -16,7 +16,12 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
         child: Column(
           children: [
             Expanded(
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  Expanded(child: Placeholder()),
+                  Expanded(child: Placeholder()),
+                ],
+              ),
               flex: 18,
             ),
             Expanded(
