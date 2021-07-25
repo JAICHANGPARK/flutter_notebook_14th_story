@@ -32,7 +32,7 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                   Expanded(child: SingleChildScrollView(
                     child: Column(
                       children: [
-                        
+
                       ],
                     ),
                   ), flex: 15,),
