@@ -48,7 +48,9 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                                   Text("Home")
                                 ],
                               )),
-                              Expanded(child: Placeholder()),
+                              Expanded(child: Center(
+                                child: Icon(Icons.settings_outlined),
+                              )),
                             ],
                           ),
                         ),
