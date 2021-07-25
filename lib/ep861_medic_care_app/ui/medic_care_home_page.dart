@@ -41,7 +41,8 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                             children: [
                               Expanded(child: Row(
                                 children: [
-                                  
+                                  Icon(Icons.home),
+                                  Text("Home",)
                                 ],
                               )),
                               Expanded(child: Placeholder()),
