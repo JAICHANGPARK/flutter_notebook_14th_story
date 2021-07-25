@@ -37,6 +37,16 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                                 topLeft: Radius.circular(16),
                                 topRight: Radius.circular(16),
                               )),
+                          child: Row(
+                            children: [
+                              Expanded(child: Row(
+                                children: [
+                                  
+                                ],
+                              )),
+                              Expanded(child: Placeholder()),
+                            ],
+                          ),
                         ),
                       ),
                       left: 0,
