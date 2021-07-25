@@ -40,6 +40,7 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                           child: Row(
                             children: [
                               Expanded(child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Icon(Icons.home),
                                   Text("Home",)
