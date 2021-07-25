@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MedicCareHomePage extends StatefulWidget {
-  const MedicCareHomePage({Key? key}) : super(key: key);
+   MedicCareHomePage({Key? key}) : super(key: key);
 
   @override
   _MedicCareHomePageState createState() => _MedicCareHomePageState();
