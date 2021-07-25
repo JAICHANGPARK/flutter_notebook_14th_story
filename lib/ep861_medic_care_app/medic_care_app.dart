@@ -9,6 +9,8 @@ class MedicCareApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: MedicCareHomePage(),
+      darkTheme: ThemeData.dark(),
+      theme: ThemeData.light(),
     );
   }
 }
