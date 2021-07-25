@@ -16,6 +16,7 @@ dependencies:
   get: any
   flutter_lorem: ^2.0.0
   line_icons: ^2.0.1
+  google_fonts: any
 
 dev_dependencies:
   flutter_test:
