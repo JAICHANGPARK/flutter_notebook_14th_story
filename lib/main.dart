@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'ep856_hiking_app/hiking_app.dart';
+import 'ep861_medic_care_app/medic_care_app.dart';
 
 void main() {
-  runApp(const HikingApp());
+  runApp(MedicCareApp());
 }
