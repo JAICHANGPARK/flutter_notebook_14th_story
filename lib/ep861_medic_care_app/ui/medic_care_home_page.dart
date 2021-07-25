@@ -10,6 +10,12 @@ class MedicCareHomePage extends StatefulWidget {
 class _MedicCareHomePageState extends State<MedicCareHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(child: Placeholder()),
+        ],
+      ),
+    );
   }
 }
