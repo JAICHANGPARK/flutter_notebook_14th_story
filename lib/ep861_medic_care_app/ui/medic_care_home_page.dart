@@ -20,7 +20,6 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
             ),
             Expanded(
               child: Container(
-                decoration: BoxDecoration(color: Colors.blue),
                 child: Stack(
                   children: [
                     Positioned(
