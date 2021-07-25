@@ -13,7 +13,9 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder(),flex: 15,),
+          Expanded(child: Placeholder(), flex: 2,),
+
         ],
       ),
     );
