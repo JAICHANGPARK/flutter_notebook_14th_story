@@ -18,8 +18,18 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
             Expanded(
               child: Column(
                 children: [
-                  Expanded(child: Placeholder(), flex: 2,),
-                  Expanded(child: Placeholder(), flex: 15,),
+                  Expanded(child: Row(
+                    children: [
+                      CircleAvatar(),
+                      Column(
+                        children: [
+                          Text("Good Morning."),
+                          Text("Dreamwalker"),
+                        ],
+                      )
+                    ],
+                  ), flex: 2,),
+                  Expanded(child: SingleChildScrollView(), flex: 15,),
                 ],
               ),
               flex: 18,
