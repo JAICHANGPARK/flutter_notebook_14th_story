@@ -23,7 +23,16 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                 child: Stack(
                   children: [
                     Positioned(
-                      child: Container(color: Colors.pink),
+                      child: PhysicalModel(
+                        color: Colors.black.withOpacity(0.2),
+                        elevation: 2,
+                        borderRadius: ,
+                        child: Container(
+                          decoration: BoxDecoration(color: Theme.of(context).cardColor,
+                            borderRadius: 
+                          ),
+                        ),
+                      ),
                       left: 0,
                       right: 0,
                       bottom: 0,
@@ -31,14 +40,13 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                     ),
                     Positioned(
                       child: FloatingActionButton(
-                        onPressed: () {  },
+                        onPressed: () {},
                         child: Icon(Icons.add),
                       ),
                       left: 0,
                       right: 0,
                       top: 0,
-
-                      )
+                    )
                   ],
                 ),
               ),
