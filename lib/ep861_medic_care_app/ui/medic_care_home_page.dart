@@ -20,16 +20,26 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
             ),
             Expanded(
               child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.blue
-                ),
+                decoration: BoxDecoration(color: Colors.blue),
                 child: Stack(
                   children: [
-                    Positioned(child: Container(
-                      color: Colors.pink,
-                    ), left: 0,right: 0,
-                    bottom: 0,
-                    top: 16,)
+                    Positioned(
+                      child: Container(color: Colors.pink),
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      top: 16,
+                    ),
+                    Positioned(
+                      child: FloatingActionButton(
+                        onPressed: () {  },
+                        child: Icon(Icons.add),
+                      ),
+                      left: 0,
+                      right: 0,
+                      top: 0,
+
+                      )
                   ],
                 ),
               ),
