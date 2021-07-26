@@ -35,7 +35,9 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Good Morning."),
-                              Text("Dreamwalker"),
+                              Text("Dreamwalker", style: TextStyle(
+                                fontWeight: FontWeight.bold
+                              ),),
                             ],
                           )
                         ],
