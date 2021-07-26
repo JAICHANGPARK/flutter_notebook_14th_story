@@ -19,23 +19,27 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
               child: Column(
                 children: [
                   Expanded(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        CircleAvatar
-                          (
-                          radius: 28,
-                        ),
-                        SizedBox(width: 16,),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Good Morning."),
-                            Text("Dreamwalker"),
-                          ],
-                        )
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          CircleAvatar(
+                            radius: 28,
+                          ),
+                          SizedBox(
+                            width: 16,
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Good Morning."),
+                              Text("Dreamwalker"),
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                     flex: 2,
                   ),
@@ -44,9 +48,7 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                       child: Column(
                         children: [
                           Row(
-                            children: [
-
-                            ],
+                            children: [],
                           )
                         ],
                       ),
