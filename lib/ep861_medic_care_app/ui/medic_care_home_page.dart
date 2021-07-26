@@ -18,24 +18,28 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
             Expanded(
               child: Column(
                 children: [
-                  Expanded(child: Row(
-                    children: [
-                      CircleAvatar(),
-                      Column(
-                        children: [
-                          Text("Good Morning."),
-                          Text("Dreamwalker"),
-                        ],
-                      )
-                    ],
-                  ), flex: 2,),
-                  Expanded(child: SingleChildScrollView(
-                    child: Column(
+                  Expanded(
+                    child: Row(
                       children: [
-
+                        CircleAvatar(),
+                        Column(
+                          children: [
+                            Text("Good Morning."),
+                            Text("Dreamwalker"),
+                          ],
+                        )
                       ],
                     ),
-                  ), flex: 15,),
+                    flex: 2,
+                  ),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [],
+                      ),
+                    ),
+                    flex: 15,
+                  ),
                 ],
               ),
               flex: 18,
@@ -61,15 +65,19 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                               )),
                           child: Row(
                             children: [
-                              Expanded(child: Row(
+                              Expanded(
+                                  child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Icon(Icons.home),
-                                  SizedBox(width: 8,),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
                                   Text("Home")
                                 ],
                               )),
-                              Expanded(child: Center(
+                              Expanded(
+                                  child: Center(
                                 child: Icon(Icons.settings_outlined),
                               )),
                             ],
