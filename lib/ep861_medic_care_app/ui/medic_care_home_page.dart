@@ -20,9 +20,12 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                 children: [
                   Expanded(
                     child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         CircleAvatar(),
                         Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Good Morning."),
                             Text("Dreamwalker"),
