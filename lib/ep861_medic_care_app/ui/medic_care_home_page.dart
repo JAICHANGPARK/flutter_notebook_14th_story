@@ -54,7 +54,9 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("July 07"),
+                                Text("July 07", style: TextStyle(
+                                  fontWeight: FontWeight.bold
+                                ),),
                                 IconButton(onPressed: (){}, icon: Icon(Icons.calendar_today_outlined))
                               ],
                             )
