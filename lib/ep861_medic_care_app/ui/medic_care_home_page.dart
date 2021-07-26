@@ -50,7 +50,10 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                       child: Column(
                         children: [
                           Row(
-                            children: [],
+                            children: [
+                              Text("July 07"),
+                              IconButton(onPressed: (){}, icon: Icon(Icons.calendar_today_outlined))
+                            ],
                           )
                         ],
                       ),
