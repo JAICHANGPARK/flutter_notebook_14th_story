@@ -64,6 +64,7 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                             ),
                             DatePicker(
                               DateTime.now(),
+                              selectionColor: Colors.blue,
                             ),
                             Row(
                               children: [
@@ -71,7 +72,36 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                                 color: Colors.orangeAccent,),
                                 Text("Morning"),
                                 Expanded(
-
+                                  child: SizedBox(
+                                    child: const Divider(
+                                      indent: 16,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                IconButton(onPressed: (){}, icon: Icon(Icons.wb_twighlight),
+                                  color: Colors.red,),
+                                Text("Afternoon"),
+                                Expanded(
+                                  child: SizedBox(
+                                    child: const Divider(
+                                      indent: 16,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                IconButton(onPressed: (){}, icon: Icon(Icons.nights_stay_outlined),
+                                  color: Colors.indigo,),
+                                Text("Evening"),
+                                Expanded(
                                   child: SizedBox(
                                     child: const Divider(
                                       indent: 16,
