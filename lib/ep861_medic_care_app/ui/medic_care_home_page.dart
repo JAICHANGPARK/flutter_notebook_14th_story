@@ -1,3 +1,4 @@
+import 'package:date_picker_timeline/date_picker_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -55,11 +56,15 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text("July 07", style: TextStyle(
-                                  fontWeight: FontWeight.bold
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16
                                 ),),
                                 IconButton(onPressed: (){}, icon: Icon(Icons.calendar_today_outlined))
                               ],
-                            )
+                            ),
+                            DatePicker(
+                              DateTime.now(),
+                            ),
                           ],
                         ),
                       ),
