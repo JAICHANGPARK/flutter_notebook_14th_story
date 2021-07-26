@@ -17,6 +17,7 @@ dependencies:
   flutter_lorem: ^2.0.0
   line_icons: ^2.0.1
   google_fonts: any
+  date_picker_timeline: any
 
 dev_dependencies:
   flutter_test:
