@@ -65,6 +65,22 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                             DatePicker(
                               DateTime.now(),
                             ),
+                            Row(
+                              children: [
+                                IconButton(onPressed: (){}, icon: Icon(Icons.wb_sunny_outlined),
+                                color: Colors.orangeAccent,),
+                                Text("Morning"),
+                                Expanded(
+
+                                  child: SizedBox(
+                                    child: const Divider(
+                                      indent: 16,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            )
                           ],
                         ),
                       ),
