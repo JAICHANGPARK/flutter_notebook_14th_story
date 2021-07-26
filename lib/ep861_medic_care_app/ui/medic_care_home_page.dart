@@ -23,6 +23,7 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         CircleAvatar(),
+                        SizedBox(width: 16,),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,7 +39,13 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
-                        children: [],
+                        children: [
+                          Row(
+                            children: [
+
+                            ],
+                          )
+                        ],
                       ),
                     ),
                     flex: 15,
