@@ -47,15 +47,19 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                   ),
                   Expanded(
                     child: SingleChildScrollView(
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Text("July 07"),
-                              IconButton(onPressed: (){}, icon: Icon(Icons.calendar_today_outlined))
-                            ],
-                          )
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("July 07"),
+                                IconButton(onPressed: (){}, icon: Icon(Icons.calendar_today_outlined))
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     flex: 15,
