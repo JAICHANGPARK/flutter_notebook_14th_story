@@ -22,7 +22,10 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        CircleAvatar(),
+                        CircleAvatar
+                          (
+                          radius: 28,
+                        ),
                         SizedBox(width: 16,),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
