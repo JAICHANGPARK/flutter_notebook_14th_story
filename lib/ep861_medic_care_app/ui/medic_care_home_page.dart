@@ -84,7 +84,7 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                               ],
                             ),
                             MedicCardWidget(),
-                            SizedBox(height: 12,),
+                            SizedBox(height: 8,),
                             MedicCardWidget(),
                             Row(
                               children: [
@@ -102,7 +102,7 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                               ],
                             ),
                             MedicCardWidget(),
-                            SizedBox(height: 12,),
+                            SizedBox(height: 8,),
                             MedicCardWidget(),
                             Row(
                               children: [
@@ -119,7 +119,9 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                                 ),
                               ],
                             ),
-                            
+                            MedicCardWidget(),
+                            SizedBox(height: 12,),
+                            MedicCardWidget(),
                           ],
                         ),
                       ),
