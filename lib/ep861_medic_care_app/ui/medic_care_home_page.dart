@@ -84,6 +84,7 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                               ],
                             ),
                             MedicCardWidget(),
+                            SizedBox(height: 12,),
                             MedicCardWidget(),
                             Row(
                               children: [
