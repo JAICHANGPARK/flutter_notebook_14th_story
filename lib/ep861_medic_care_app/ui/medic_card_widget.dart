@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MedicCardWidget extends StatelessWidget {
-  const MedicCardWidget({Key? key}) : super(key: key);
+  MedicCardWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class MedicCardWidget extends StatelessWidget {
       color: Theme.of(context).cardColor,
       child: Column(
         children: [
-          
+
         ],
       ),
     );
