@@ -13,21 +13,29 @@ class MedicCardWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-          Row(
-            children: [
-              Icon(Icons.medication_outlined, color: Colors.greenAccent,),
-              Text("Drug", style: TextStyle(
-                color: Colors.greenAccent,
-              ),),
-
-            ],
-          ),
-            Text("Folic Acid"),
             Row(
               children: [
-                Text("2 Pills"),
-                Text("02:00 am")
+                Icon(
+                  Icons.medication_outlined,
+                  color: Colors.greenAccent,
+                ),
+                Text(
+                  "Drug",
+                  style: TextStyle(
+                    color: Colors.greenAccent,
+                  ),
+                ),
               ],
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 4),
+              child: Text("Folic Acid", style: TextStyle(
+                fontSize: 16
+              ),),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [Text("2 Pills"), Text("02:00 am")],
             )
           ],
         ),
