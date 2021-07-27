@@ -2,6 +2,8 @@ import 'package:date_picker_timeline/date_picker_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'medic_card_widget.dart';
+
 class MedicCareHomePage extends StatefulWidget {
   MedicCareHomePage({Key? key}) : super(key: key);
 
@@ -81,6 +83,8 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                                 ),
                               ],
                             ),
+                            MedicCardWidget(),
+                            MedicCardWidget(),
                             Row(
                               children: [
                                 IconButton(onPressed: (){}, icon: Icon(Icons.wb_twighlight),
