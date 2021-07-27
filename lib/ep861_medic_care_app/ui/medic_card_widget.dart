@@ -7,6 +7,7 @@ class MedicCardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 3,
+
       color: Theme.of(context).cardColor,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -15,7 +16,9 @@ class MedicCardWidget extends StatelessWidget {
           Row(
             children: [
               Icon(Icons.medication_outlined, color: Colors.tealAccent,),
-              Text("Drug")
+              Text("Drug", style: TextStyle(
+                color: Colors.tealAccent,
+              ),)
             ],
           )
           ],
