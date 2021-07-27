@@ -15,12 +15,14 @@ class MedicCardWidget extends StatelessWidget {
           children: [
           Row(
             children: [
-              Icon(Icons.medication_outlined, color: Colors.tealAccent,),
+              Icon(Icons.medication_outlined, color: Colors.greenAccent,),
               Text("Drug", style: TextStyle(
-                color: Colors.tealAccent,
-              ),)
+                color: Colors.greenAccent,
+              ),),
+
             ],
-          )
+          ),
+            Text("Folic Acid"),
           ],
         ),
       ),
