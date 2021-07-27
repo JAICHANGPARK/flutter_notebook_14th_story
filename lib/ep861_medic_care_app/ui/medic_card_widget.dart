@@ -7,10 +7,18 @@ class MedicCardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       color: Theme.of(context).cardColor,
-      child: Column(
-        children: [
-
-        ],
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+          Row(
+            children: [
+              Icon(Icons.medication_outlined, color: Colors.tealAccent,),
+              Text("Drug")
+            ],
+          )
+          ],
+        ),
       ),
     );
   }
