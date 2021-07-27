@@ -101,6 +101,9 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                                 ),
                               ],
                             ),
+                            MedicCardWidget(),
+                            SizedBox(height: 12,),
+                            MedicCardWidget(),
                             Row(
                               children: [
                                 IconButton(onPressed: (){}, icon: Icon(Icons.nights_stay_outlined),
@@ -115,7 +118,8 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                                   ),
                                 ),
                               ],
-                            )
+                            ),
+                            
                           ],
                         ),
                       ),
