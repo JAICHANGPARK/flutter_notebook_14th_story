@@ -178,9 +178,11 @@ class _MedicCareHomePageState extends State<MedicCareHomePage> {
                       top: 16,
                     ),
                     Positioned(
-                      child: FloatingActionButton(
-                        onPressed: () {},
-                        child: Icon(Icons.add),
+                      child: Center(
+                        child: FloatingActionButton(
+                          onPressed: () {},
+                          child: Icon(Icons.add),
+                        ),
                       ),
                       left: 0,
                       right: 0,
