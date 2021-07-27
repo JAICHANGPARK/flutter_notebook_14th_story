@@ -18,11 +18,14 @@ class MedicCardWidget extends StatelessWidget {
                 Icon(
                   Icons.medication_outlined,
                   color: Colors.greenAccent,
+                  size: 14,
                 ),
+
                 Text(
                   "Drug",
                   style: TextStyle(
                     color: Colors.greenAccent,
+                    fontSize: 12
                   ),
                 ),
               ],
@@ -35,7 +38,10 @@ class MedicCardWidget extends StatelessWidget {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [Text("2 Pills"), Text("02:00 am")],
+              children: [Text("2 Pills", style: TextStyle(
+                  fontSize: 12,
+                color: Colors.grey
+              ),), Text("02:00 am")],
             )
           ],
         ),
