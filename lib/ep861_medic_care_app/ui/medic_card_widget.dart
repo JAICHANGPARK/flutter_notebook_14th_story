@@ -20,28 +20,29 @@ class MedicCardWidget extends StatelessWidget {
                   color: Colors.greenAccent,
                   size: 14,
                 ),
-
                 Text(
                   "Drug",
-                  style: TextStyle(
-                    color: Colors.greenAccent,
-                    fontSize: 12
-                  ),
+                  style: TextStyle(color: Colors.greenAccent, fontSize: 12),
                 ),
               ],
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 4),
-              child: Text("Folic Acid", style: TextStyle(
-                fontSize: 16
-              ),),
+              child: Text(
+                "Folic Acid",
+                style: TextStyle(fontSize: 16),
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [Text("2 Pills", style: TextStyle(
-                  fontSize: 12,
-                color: Colors.grey
-              ),), Text("02:00 am")],
+              children: [
+                Text(
+                  "2 Pills",
+                  style: TextStyle(fontSize: 12, color: Colors.grey),
+                ),
+                Text("02:00 am",
+                  style: TextStyle(fontSize: 12, color: Colors.grey),)
+              ],
             )
           ],
         ),
