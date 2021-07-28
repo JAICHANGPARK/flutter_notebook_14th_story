@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 Color backgroundColor = Color(0xff27272c);
 Color deepDarkColor = Color(0xff17171b);
+Color deepPurpleColor = Color(0xff9292e4);
+Color lightPurpleColor = Color(0xffb9b9e3);
 
 class MedicalHomePage extends StatefulWidget {
   const MedicalHomePage({Key? key}) : super(key: key);
