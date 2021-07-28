@@ -43,7 +43,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                   child: FloatingActionButton(onPressed: () {  },
                   ),
                 ),
-                bottom: 0,
+                bottom: 24,
                 left: 0,
                 right: 0,
               )
