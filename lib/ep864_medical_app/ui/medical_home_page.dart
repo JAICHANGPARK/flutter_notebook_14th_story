@@ -37,7 +37,14 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                     height: 64,
                     decoration: BoxDecoration(color: deepDarkColor),
                     child: Row(
-                      children: [],
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                        SizedBox(width: 64,),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                      ],
                     ),
                   )),
               Positioned(
