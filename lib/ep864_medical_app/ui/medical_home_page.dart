@@ -39,11 +39,11 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        IconButton(onPressed: (){}, icon: Icon(Icons.home)),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.home), color: Colors.white,),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.home), color: Colors.white,),
                         SizedBox(width: 64,),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.home)),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.home)),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.home), color: Colors.white,),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.home), color: Colors.white,),
                       ],
                     ),
                   )),
