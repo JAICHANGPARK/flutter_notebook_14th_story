@@ -33,10 +33,20 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                   right: 0,
                   child: Container(
                     height: 64,
-                    decoration: BoxDecoration(
-                      color: deepDarkColor
+                    decoration: BoxDecoration(color: deepDarkColor),
+                    child: Row(
+                      children: [],
                     ),
-                  ))
+                  )),
+              Positioned(
+                child: Center(
+                  child: FloatingActionButton(onPressed: () {  },
+                  ),
+                ),
+                bottom: 0,
+                left: 0,
+                right: 0,
+              )
             ],
           ),
         ));
