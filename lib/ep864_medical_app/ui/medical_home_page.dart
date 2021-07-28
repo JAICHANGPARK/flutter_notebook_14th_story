@@ -43,6 +43,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
               Positioned(
                 child: Center(
                   child: FloatingActionButton(onPressed: () {  },
+                    backgroundColor: deepPurpleColor,
                   ),
                 ),
                 bottom: 24,
