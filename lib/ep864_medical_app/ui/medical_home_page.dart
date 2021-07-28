@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 Color backgroundColor = Color(0xff27272c);
+Color deepDarkColor = Color(0xff17171b);
 
 class MedicalHomePage extends StatefulWidget {
   const MedicalHomePage({Key? key}) : super(key: key);
@@ -32,6 +33,9 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                   right: 0,
                   child: Container(
                     height: 64,
+                    decoration: BoxDecoration(
+                      color: deepDarkColor
+                    ),
                   ))
             ],
           ),
