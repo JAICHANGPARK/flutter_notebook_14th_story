@@ -40,10 +40,10 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         IconButton(onPressed: (){}, icon: Icon(Icons.home), color: Colors.white,),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.home), color: Colors.white,),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.card_membership), color: Colors.white,),
                         SizedBox(width: 64,),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.home), color: Colors.white,),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.home), color: Colors.white,),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.person), color: Colors.white,),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.settings), color: Colors.white,),
                       ],
                     ),
                   )),
