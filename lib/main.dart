@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ep861_medic_care_app/medic_care_app.dart';
+import 'ep864_medical_app/medical_app.dart';
 
-void main() => runApp(MedicCareApp());
+void main() => runApp(MedicalApp());
