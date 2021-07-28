@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'ui/medical_home_page.dart';
 
-
 class MedicalApp extends StatelessWidget {
-  const MedicalApp({Key? key}) : super(key: key);
+  MedicalApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
