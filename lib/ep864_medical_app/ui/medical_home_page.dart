@@ -54,23 +54,32 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                   ),
                                   Expanded(
                                     child: Center(
-                                      child: Container(
-                                        height: 52,
-                                        width: 52,
-                                        child: Stack(
-                                          children: [
-                                            Positioned(child: Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.white.withOpacity(0.2),
-                                                borderRadius: BorderRadius.circular(8)
+                                      child: Align(
+                                        alignment: Alignment.centerRight,
+                                        child: Container(
+                                          height: 58,
+                                          width: 58,
+                                          child: Stack(
+                                            children: [
+                                              Positioned(child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white.withOpacity(0.2),
+                                                  borderRadius: BorderRadius.circular(8)
+                                                ),
                                               ),
-                                            ),
-                                            left: 0,
-                                            right: 0,
-                                            top: 0,
-                                            bottom: 0,),
-
-                                          ],
+                                              left: 6,
+                                              right: 6,
+                                              top: 6,
+                                              bottom: 6,),
+                                              Positioned(
+                                                  right: 0,
+                                                  top: 0,
+                                                  child: CircleAvatar(
+                                                radius: 6,
+                                                backgroundColor: lightPurpleColor,
+                                              ))
+                                            ],
+                                          ),
                                         ),
                                       ),
                                     ),
