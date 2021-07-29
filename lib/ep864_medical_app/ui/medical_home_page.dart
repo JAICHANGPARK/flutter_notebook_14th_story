@@ -30,10 +30,13 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                         children: [
                           Expanded(
                             child: Row(
-                              children: [
+                              children: const [
                                 Expanded(
-                                  child: CircleAvatar(
-                                    radius: 32,
+                                  child: Align(
+                                    alignment: Alignment.centerLeft,
+                                    child: CircleAvatar(
+                                      radius: 32,
+                                    ),
                                   ),
                                 ),
                                 Expanded(
