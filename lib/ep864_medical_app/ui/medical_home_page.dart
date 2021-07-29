@@ -71,6 +71,10 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                                   decoration: BoxDecoration(
                                                       color: Colors.white.withOpacity(0.2),
                                                       borderRadius: BorderRadius.circular(8)),
+                                                  child: Center(
+                                                    child: Icon(Icons.notifications,
+                                                    color: Colors.white,),
+                                                  ),
                                                 ),
                                                 left: 6,
                                                 right: 6,
