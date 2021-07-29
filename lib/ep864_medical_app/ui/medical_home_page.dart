@@ -24,10 +24,10 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                 child: Column(
                   children: [
                     Expanded(
-                        flex: 3,
+                        flex: 5,
                         child: Placeholder(color: Colors.purple,)),
                     Expanded(
-                        flex: 2,
+                        flex: 4,
                         child: Placeholder(color: Colors.purple,)),
                     Expanded(
                         flex: 10,
