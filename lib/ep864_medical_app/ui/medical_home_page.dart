@@ -32,7 +32,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Row(
-                                children:  [
+                                children: [
                                   Expanded(
                                     child: Align(
                                       alignment: Alignment.centerLeft,
@@ -45,11 +45,15 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("Apr. 2021", style: TextStyle(
-                                          color: Colors.white
-                                        ),),
-                                        IconButton(onPressed: (){}, icon: Icon(Icons.keyboard_arrow_down),
-                                        color: Colors.white,),
+                                        Text(
+                                          "Apr. 2021",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                        IconButton(
+                                          onPressed: () {},
+                                          icon: Icon(Icons.keyboard_arrow_down),
+                                          color: Colors.white,
+                                        ),
                                       ],
                                     ),
                                   ),
@@ -62,23 +66,24 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                           width: 58,
                                           child: Stack(
                                             children: [
-                                              Positioned(child: Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.white.withOpacity(0.2),
-                                                  borderRadius: BorderRadius.circular(8)
+                                              Positioned(
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.white.withOpacity(0.2),
+                                                      borderRadius: BorderRadius.circular(8)),
                                                 ),
+                                                left: 6,
+                                                right: 6,
+                                                top: 6,
+                                                bottom: 6,
                                               ),
-                                              left: 6,
-                                              right: 6,
-                                              top: 6,
-                                              bottom: 6,),
                                               Positioned(
                                                   right: 0,
                                                   top: 0,
                                                   child: CircleAvatar(
-                                                radius: 8,
-                                                backgroundColor: lightPurpleColor,
-                                              ))
+                                                    radius: 8,
+                                                    backgroundColor: lightPurpleColor,
+                                                  ))
                                             ],
                                           ),
                                         ),
@@ -104,7 +109,8 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                     height: 4,
                                   ),
                                   Text("You have 15 patients today",
-                                      style: TextStyle(color: Colors.grey, fontSize: 20, fontWeight: FontWeight.normal)),
+                                      style:
+                                          TextStyle(color: Colors.grey, fontSize: 20, fontWeight: FontWeight.normal)),
                                 ],
                               ),
                             ),
