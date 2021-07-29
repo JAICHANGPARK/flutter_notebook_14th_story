@@ -44,20 +44,23 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                             ),
                           ),
                           Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: const [
-                                Text(
-                                  "Good morning. Dr. Dream",
-                                  style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
-                                ),
-                                SizedBox(
-                                  height: 4,
-                                ),
-                                Text("You have 15 patients today",
-                                    style: TextStyle(color: Colors.grey, fontSize: 20, fontWeight: FontWeight.normal)),
-                              ],
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: const [
+                                  Text(
+                                    "Good morning. Dr. Dream",
+                                    style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text("You have 15 patients today",
+                                      style: TextStyle(color: Colors.grey, fontSize: 20, fontWeight: FontWeight.normal)),
+                                ],
+                              ),
                             ),
                           ),
                         ],
