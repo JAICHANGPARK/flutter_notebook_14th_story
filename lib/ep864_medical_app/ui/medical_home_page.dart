@@ -75,7 +75,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                                   right: 0,
                                                   top: 0,
                                                   child: CircleAvatar(
-                                                radius: 6,
+                                                radius: 8,
                                                 backgroundColor: lightPurpleColor,
                                               ))
                                             ],
