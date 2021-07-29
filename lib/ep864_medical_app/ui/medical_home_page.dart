@@ -57,10 +57,18 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                       child: Container(
                                         height: 52,
                                         width: 52,
-                                        color: Colors.white,
                                         child: Stack(
                                           children: [
-
+                                            Positioned(child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white.withOpacity(0.2),
+                                                borderRadius: BorderRadius.circular(8)
+                                              ),
+                                            ),
+                                            left: 0,
+                                            right: 0,
+                                            top: 0,
+                                            bottom: 0,),
 
                                           ],
                                         ),
