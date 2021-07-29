@@ -32,7 +32,9 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                             child: Row(
                               children: [
                                 Expanded(
-                                  child: Placeholder(),
+                                  child: CircleAvatar(
+                                    radius: 32,
+                                  ),
                                 ),
                                 Expanded(
                                   child: Placeholder(),
