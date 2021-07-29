@@ -37,11 +37,10 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                               ),
                             ),
                             Expanded(
-                              child: Row(
+                              child: Column(
                                 children: [
-                                  Expanded(child: Placeholder(),),
-                                  Expanded(child: Placeholder(),),
-                                  Expanded(child: Placeholder(),),
+                                  Expanded(child: Text("Good morning. Dr. Dream")),
+                                  Expanded(child: Text("You have 15 patients today"),),
                                 ],
                               ),
                             ),
