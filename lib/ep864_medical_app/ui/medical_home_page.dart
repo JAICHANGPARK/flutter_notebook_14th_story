@@ -29,23 +29,26 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
-                            child: Row(
-                              children: const [
-                                Expanded(
-                                  child: Align(
-                                    alignment: Alignment.centerLeft,
-                                    child: CircleAvatar(
-                                      radius: 32,
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Row(
+                                children: const [
+                                  Expanded(
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: CircleAvatar(
+                                        radius: 32,
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Expanded(
-                                  child: Placeholder(),
-                                ),
-                                Expanded(
-                                  child: Placeholder(),
-                                ),
-                              ],
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                           Expanded(
