@@ -25,9 +25,26 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                   children: [
                     Expanded(
                         flex: 5,
-                        child: Row(
+                        child: Column(
                           children: [
-                            Expanded(),
+                            Expanded(
+                              child: Row(
+                                children: [
+                                  Expanded(child: Placeholder(),),
+                                  Expanded(child: Placeholder(),),
+                                  Expanded(child: Placeholder(),),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Row(
+                                children: [
+                                  Expanded(child: Placeholder(),),
+                                  Expanded(child: Placeholder(),),
+                                  Expanded(child: Placeholder(),),
+                                ],
+                              ),
+                            ),
                           ],
                         ),),
                     Expanded(
