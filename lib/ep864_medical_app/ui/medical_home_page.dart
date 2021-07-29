@@ -25,7 +25,11 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                   children: [
                     Expanded(
                         flex: 5,
-                        child: Placeholder(color: Colors.purple,)),
+                        child: Row(
+                          children: [
+                            Expanded(),
+                          ],
+                        ),),
                     Expanded(
                         flex: 4,
                         child: Placeholder(color: Colors.purple,)),
