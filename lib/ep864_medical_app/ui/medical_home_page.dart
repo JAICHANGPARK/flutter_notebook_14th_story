@@ -43,6 +43,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                   ),
                                   Expanded(
                                     child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
                                         Text("Apr. 2021", style: TextStyle(
                                           color: Colors.white
