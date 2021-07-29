@@ -23,9 +23,15 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
               Positioned(
                 child: Column(
                   children: [
-                    Expanded(child: Placeholder(color: Colors.purple,)),
-                    Expanded(child: Placeholder(color: Colors.purple,)),
-                    Expanded(child: Placeholder(color: Colors.purple,))
+                    Expanded(
+                        flex: 3,
+                        child: Placeholder(color: Colors.purple,)),
+                    Expanded(
+                        flex: 2,
+                        child: Placeholder(color: Colors.purple,)),
+                    Expanded(
+                        flex: 10,
+                        child: Placeholder(color: Colors.purple,))
                   ],
                 ),
                 left: 0,
