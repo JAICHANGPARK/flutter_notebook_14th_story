@@ -32,7 +32,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Row(
-                                children: const [
+                                children:  [
                                   Expanded(
                                     child: Align(
                                       alignment: Alignment.centerLeft,
@@ -42,7 +42,14 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                     ),
                                   ),
                                   Expanded(
-                                    child: Placeholder(),
+                                    child: Row(
+                                      children: [
+                                        Text("Apr. 2021", style: TextStyle(
+                                          color: Colors.white
+                                        ),),
+                                        IconButton(onPressed: (){}, icon: Icon(Icons.keyboard_arrow_down)),
+                                      ],
+                                    ),
                                   ),
                                   Expanded(
                                     child: Placeholder(),
