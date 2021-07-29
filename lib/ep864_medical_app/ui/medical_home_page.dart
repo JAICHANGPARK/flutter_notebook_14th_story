@@ -38,9 +38,11 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                             ),
                             Expanded(
                               child: Column(
-                                children: [
-                                  Expanded(child: Text("Good morning. Dr. Dream")),
-                                  Expanded(child: Text("You have 15 patients today"),),
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: const [
+                                  Text("Good morning. Dr. Dream"),
+                                  Text("You have 15 patients today"),
                                 ],
                               ),
                             ),
