@@ -47,12 +47,25 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                         Text("Apr. 2021", style: TextStyle(
                                           color: Colors.white
                                         ),),
-                                        IconButton(onPressed: (){}, icon: Icon(Icons.keyboard_arrow_down)),
+                                        IconButton(onPressed: (){}, icon: Icon(Icons.keyboard_arrow_down),
+                                        color: Colors.white,),
                                       ],
                                     ),
                                   ),
                                   Expanded(
-                                    child: Placeholder(),
+                                    child: Center(
+                                      child: Container(
+                                        height: 52,
+                                        width: 52,
+                                        color: Colors.white,
+                                        child: Stack(
+                                          children: [
+
+
+                                          ],
+                                        ),
+                                      ),
+                                    ),
                                   ),
                                 ],
                               ),
