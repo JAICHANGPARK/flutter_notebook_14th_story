@@ -26,6 +26,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                     Expanded(
                         flex: 5,
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(
                               child: Row(
@@ -41,7 +42,12 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: const [
-                                  Text("Good morning. Dr. Dream"),
+                                  Text("Good morning. Dr. Dream",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold
+                                  ),),
                                   Text("You have 15 patients today"),
                                 ],
                               ),
