@@ -161,9 +161,13 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                         Expanded(
                                           child: Center(
                                             child: CircleAvatar(
-                                              radius: 26,
-                                              co
-                                              child: Text("${_calItems[index].day}"),
+                                              radius: 30,
+                                              backgroundColor: Colors.white.withOpacity(0.2),
+                                              foregroundColor: Colors.white,
+                                              child: Text("${_calItems[index].day}",
+                                              style: TextStyle(
+                                                fontSize: 16
+                                              ),),
                                             ),
                                           ),
                                         ),
