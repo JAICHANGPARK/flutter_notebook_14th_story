@@ -5,13 +5,12 @@ Color deepDarkColor = Color(0xff17171b);
 Color deepPurpleColor = Color(0xff9292e4);
 Color lightPurpleColor = Color(0xffb9b9e3);
 
-
-class CalDate{
+class CalDate {
   int day;
   String weekend;
   bool isEvent;
-  CalDate(this.day, this.weekend, {this.isEvent = false});
 
+  CalDate(this.day, this.weekend, {this.isEvent = false});
 }
 
 class MedicalHomePage extends StatefulWidget {
@@ -22,15 +21,23 @@ class MedicalHomePage extends StatefulWidget {
 }
 
 class _MedicalHomePageState extends State<MedicalHomePage> {
-  final List<CalDate> _calItems = List.generate(10, (index) => CalDate(DateTime.now().add(Duration(
-    days: index,
-  )).day, "Tue",
-  isEvent: index % 4 == 0 ? true : false));
+  final List<CalDate> _calItems = List.generate(
+      10,
+      (index) => CalDate(
+          DateTime.now()
+              .add(Duration(
+                days: index,
+              ))
+              .day,
+          "Tue",
+          isEvent: index % 4 == 0 ? true : false));
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -145,7 +152,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                     Expanded(
                         flex: 4,
                         child: Container(
-                          padding: const  EdgeInsets.symmetric(vertical: 8),
+                          padding: const EdgeInsets.symmetric(vertical: 8),
                           child: ListView.builder(
                             itemCount: _calItems.length,
                             scrollDirection: Axis.horizontal,
@@ -163,21 +170,28 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                             radius: 30,
                                             backgroundColor: Colors.white.withOpacity(0.2),
                                             foregroundColor: Colors.white,
-                                            child: Text("${_calItems[index].day}",
-                                            style: TextStyle(
-                                              fontSize: 16
-                                            ),),
+                                            child: Text(
+                                              "${_calItems[index].day}",
+                                              style: TextStyle(fontSize: 16),
+                                            ),
                                           ),
                                         ),
                                       ),
-                                      Expanded(child: Center(child: Text("${_calItems[index].weekend}",
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        color: Colors.white
-                                      ),)),
+                                      Expanded(
+                                        child: Center(
+                                            child: Text(
+                                          "${_calItems[index].weekend}",
+                                          style: TextStyle(fontSize: 16, color: Colors.white),
+                                        )),
                                       ),
-                                      Expanded(child: Container(),),
+                                      Expanded(
+                                        child: _calItems[index].isEvent ?
+                                        Container(
+                                          child: Center(
 
+                                          ),
+                                        ) : Container(),
+                                      ),
                                     ],
                                   ),
                                 ),
