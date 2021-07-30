@@ -144,18 +144,16 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                     Expanded(
                         flex: 4,
                         child: Container(
-                          color: Colors.blue,
                           padding: EdgeInsets.symmetric(vertical: 8),
                           child: ListView.builder(
                             itemCount: _calItems.length,
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (BuildContext context, int index) {
                               return Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 8),
+                                padding: const EdgeInsets.symmetric(horizontal: 4),
                                 child: SizedBox(
                                   width: 72,
                                   child: Container(
-                                    color: Colors.red,
                                     child: Column(
                                       children: [
                                         Expanded(
@@ -171,7 +169,12 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                             ),
                                           ),
                                         ),
-                                        Expanded(child: Center(child: Text("${_calItems[index].weekend}"))),
+                                        Expanded(child: Center(child: Text("${_calItems[index].weekend}",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.white
+                                        ),)),
+                                        ),
                                         Expanded(child: Container(),),
 
                                       ],
