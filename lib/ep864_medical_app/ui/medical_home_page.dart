@@ -146,7 +146,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                         child: Container(
                           color: Colors.blue,
                           child: ListView.builder(
-                            itemCount: 10,
+                            itemCount: _calItems.length,
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (BuildContext context, int index) {
                               return Padding(
@@ -159,8 +159,9 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                       children: [
                                         CircleAvatar(
                                           radius: 26,
+                                          child: Text("${_calItems[index].day}"),
                                         ),
-                                        Text()
+                                        Text("${_calItems[index].weekend}")
                                       ],
                                     ),
                                   ),
