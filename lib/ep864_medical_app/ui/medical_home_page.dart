@@ -72,8 +72,10 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                                       color: Colors.white.withOpacity(0.2),
                                                       borderRadius: BorderRadius.circular(8)),
                                                   child: Center(
-                                                    child: Icon(Icons.notifications,
-                                                    color: Colors.white,),
+                                                    child: Icon(
+                                                      Icons.notifications,
+                                                      color: Colors.white,
+                                                    ),
                                                   ),
                                                 ),
                                                 left: 6,
@@ -124,12 +126,24 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                     ),
                     Expanded(
                         flex: 4,
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-
-                        )
-
-                    ),
+                        child: Container(
+                          color: Colors.blue,
+                          child: ListView.builder(
+                            itemCount: 10,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (BuildContext context, int index) {
+                              return Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 8),
+                                child: SizedBox(
+                                  width: 64,
+                                  child: Container(
+                                    color: Colors.red,
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        )),
                     Expanded(
                         flex: 10,
                         child: Placeholder(
