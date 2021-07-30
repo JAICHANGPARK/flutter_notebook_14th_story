@@ -135,9 +135,14 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                               return Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 8),
                                 child: SizedBox(
-                                  width: 64,
+                                  width: 72,
                                   child: Container(
                                     color: Colors.red,
+                                    child: Column(
+                                      children: [
+                                        CircleAvatar()
+                                      ],
+                                    ),
                                   ),
                                 ),
                               );
@@ -145,7 +150,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                           ),
                         )),
                     Expanded(
-                        flex: 10,
+                        flex: 12,
                         child: Placeholder(
                           color: Colors.purple,
                         ))
