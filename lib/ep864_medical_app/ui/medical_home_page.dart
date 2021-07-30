@@ -5,6 +5,15 @@ Color deepDarkColor = Color(0xff17171b);
 Color deepPurpleColor = Color(0xff9292e4);
 Color lightPurpleColor = Color(0xffb9b9e3);
 
+
+class CalDate{
+  int day;
+  String weekend;
+
+  CalDate(this.day, this.weekend);
+
+}
+
 class MedicalHomePage extends StatefulWidget {
   const MedicalHomePage({Key? key}) : super(key: key);
 
@@ -13,6 +22,14 @@ class MedicalHomePage extends StatefulWidget {
 }
 
 class _MedicalHomePageState extends State<MedicalHomePage> {
+  final List<CalDate> _calItems = List.generate(10, (index) => CalDate(DateTime.now().add(Duration(
+    days: index,
+  )).day, "Tue"));
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -140,7 +157,10 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                     color: Colors.red,
                                     child: Column(
                                       children: [
-                                        CircleAvatar()
+                                        CircleAvatar(
+                                          radius: 26,
+                                        ),
+                                        Text()
                                       ],
                                     ),
                                   ),
