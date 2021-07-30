@@ -124,9 +124,12 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                     ),
                     Expanded(
                         flex: 4,
-                        child: Placeholder(
-                          color: Colors.purple,
-                        )),
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+
+                        )
+
+                    ),
                     Expanded(
                         flex: 10,
                         child: Placeholder(
