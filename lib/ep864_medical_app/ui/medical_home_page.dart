@@ -144,7 +144,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                     Expanded(
                         flex: 4,
                         child: Container(
-                          padding: EdgeInsets.symmetric(vertical: 8),
+                          padding: const  EdgeInsets.symmetric(vertical: 8),
                           child: ListView.builder(
                             itemCount: _calItems.length,
                             scrollDirection: Axis.horizontal,
@@ -153,32 +153,31 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                 padding: const EdgeInsets.symmetric(horizontal: 4),
                                 child: SizedBox(
                                   width: 72,
-                                  child: Container(
-                                    child: Column(
-                                      children: [
-                                        Expanded(
-                                          child: Center(
-                                            child: CircleAvatar(
-                                              radius: 30,
-                                              backgroundColor: Colors.white.withOpacity(0.2),
-                                              foregroundColor: Colors.white,
-                                              child: Text("${_calItems[index].day}",
-                                              style: TextStyle(
-                                                fontSize: 16
-                                              ),),
-                                            ),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Expanded(
+                                        child: Center(
+                                          child: CircleAvatar(
+                                            radius: 30,
+                                            backgroundColor: Colors.white.withOpacity(0.2),
+                                            foregroundColor: Colors.white,
+                                            child: Text("${_calItems[index].day}",
+                                            style: TextStyle(
+                                              fontSize: 16
+                                            ),),
                                           ),
                                         ),
-                                        Expanded(child: Center(child: Text("${_calItems[index].weekend}",
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          color: Colors.white
-                                        ),)),
-                                        ),
-                                        Expanded(child: Container(),),
+                                      ),
+                                      Expanded(child: Center(child: Text("${_calItems[index].weekend}",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.white
+                                      ),)),
+                                      ),
+                                      Expanded(child: Container(),),
 
-                                      ],
-                                    ),
+                                    ],
                                   ),
                                 ),
                               );
