@@ -145,6 +145,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                         flex: 4,
                         child: Container(
                           color: Colors.blue,
+                          padding: EdgeInsets.symmetric(vertical: 8),
                           child: ListView.builder(
                             itemCount: _calItems.length,
                             scrollDirection: Axis.horizontal,
@@ -157,11 +158,18 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                     color: Colors.red,
                                     child: Column(
                                       children: [
-                                        CircleAvatar(
-                                          radius: 26,
-                                          child: Text("${_calItems[index].day}"),
+                                        Expanded(
+                                          child: Center(
+                                            child: CircleAvatar(
+                                              radius: 26,
+                                              co
+                                              child: Text("${_calItems[index].day}"),
+                                            ),
+                                          ),
                                         ),
-                                        Text("${_calItems[index].weekend}")
+                                        Expanded(child: Center(child: Text("${_calItems[index].weekend}"))),
+                                        Expanded(child: Container(),),
+
                                       ],
                                     ),
                                   ),
