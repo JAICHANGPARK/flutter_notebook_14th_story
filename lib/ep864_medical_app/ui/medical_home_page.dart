@@ -165,9 +165,10 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Expanded(
+                                  flex:2,
                                         child: Center(
                                           child: CircleAvatar(
-                                            radius: 30,
+                                            radius: 32,
                                             backgroundColor: Colors.white.withOpacity(0.2),
                                             foregroundColor: Colors.white,
                                             child: Text(
@@ -177,6 +178,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                           ),
                                         ),
                                       ),
+                                      SizedBox(height: 8,),
                                       Expanded(
                                         child: Center(
                                             child: Text(
@@ -186,10 +188,11 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                       ),
                                       Expanded(
                                         child: _calItems[index].isEvent ?
-                                        Container(
-                                          child: Center(
-
-                                          ),
+                                        Center(
+                                            child: CircleAvatar(
+                                              radius: 4,
+                                              backgroundColor: deepPurpleColor,
+                                            ),
                                         ) : Container(),
                                       ),
                                     ],
