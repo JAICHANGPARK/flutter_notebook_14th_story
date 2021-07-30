@@ -9,8 +9,8 @@ Color lightPurpleColor = Color(0xffb9b9e3);
 class CalDate{
   int day;
   String weekend;
-
-  CalDate(this.day, this.weekend);
+  bool isEvent;
+  CalDate(this.day, this.weekend, {this.isEvent = false});
 
 }
 
@@ -24,7 +24,8 @@ class MedicalHomePage extends StatefulWidget {
 class _MedicalHomePageState extends State<MedicalHomePage> {
   final List<CalDate> _calItems = List.generate(10, (index) => CalDate(DateTime.now().add(Duration(
     days: index,
-  )).day, "Tue"));
+  )).day, "Tue",
+  isEvent: index % 4 == 0 ? true : false));
   @override
   void initState() {
     // TODO: implement initState
@@ -41,7 +42,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                 child: Column(
                   children: [
                     Expanded(
-                      flex: 5,
+                      flex: 6,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -185,7 +186,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                           ),
                         )),
                     Expanded(
-                        flex: 12,
+                        flex: 15,
                         child: Placeholder(
                           color: Colors.purple,
                         ))
