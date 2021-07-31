@@ -217,9 +217,17 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                 child: Row(
                                   children: [
                                     Expanded(flex: 3,child: Text(
-                                        doctorScheduleItems[index].timeIndex ?? "-"
+                                        doctorScheduleItems[index].timeIndex ?? "-",
+                                      style: TextStyle(
+                                        color: Colors.white
+                                      ),
                                     )),
-                                    Expanded(flex: 10,child: Container()),
+                                    Expanded(flex: 10,child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.white.withOpacity(0.2),
+                                        borderRadius: BorderRadius.circular(16)
+                                      ),
+                                    )),
                                   ],
                                 ),
                               ),
