@@ -6,5 +6,5 @@ class DoctorSchedule {
   String? time;
   bool? isDone;
 
-  DoctorSchedule(this.avatarImg, this.title, this.subtitle, this.timeIndex, this.time, this.isDone);
+  DoctorSchedule({this.avatarImg, this.title, this.subtitle, this.timeIndex, this.time, this.isDone = false});
 }
