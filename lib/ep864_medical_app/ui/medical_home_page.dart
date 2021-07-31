@@ -232,7 +232,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                     Expanded(flex: 10,child: Container(
                                       decoration: BoxDecoration(
                                         color: Colors.white.withOpacity(0.2),
-                                        borderRadius: BorderRadius.circular(16)
+                                        borderRadius: BorderRadius.circular(24)
                                       ),
                                     )),
                                   ],
