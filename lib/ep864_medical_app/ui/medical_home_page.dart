@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep864_medical_app/mock/mock_schedule.dart';
 
 Color backgroundColor = Color(0xff27272c);
 Color deepDarkColor = Color(0xff17171b);
@@ -165,7 +166,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Expanded(
-                                  flex:2,
+                                        flex: 2,
                                         child: Center(
                                           child: CircleAvatar(
                                             radius: 32,
@@ -178,7 +179,9 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                           ),
                                         ),
                                       ),
-                                      SizedBox(height: 8,),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
                                       Expanded(
                                         child: Center(
                                             child: Text(
@@ -187,13 +190,14 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                         )),
                                       ),
                                       Expanded(
-                                        child: _calItems[index].isEvent ?
-                                        Center(
-                                            child: CircleAvatar(
-                                              radius: 4,
-                                              backgroundColor: deepPurpleColor,
-                                            ),
-                                        ) : Container(),
+                                        child: _calItems[index].isEvent
+                                            ? Center(
+                                                child: CircleAvatar(
+                                                  radius: 4,
+                                                  backgroundColor: deepPurpleColor,
+                                                ),
+                                              )
+                                            : Container(),
                                       ),
                                     ],
                                   ),
@@ -204,8 +208,24 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                         )),
                     Expanded(
                         flex: 15,
-                        child: Placeholder(
-                          color: Colors.purple,
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: SizedBox(
+                                height: 160,
+                                child: Row(
+                                  children: [
+                                    Expanded(flex: 3,child: Text(
+                                        doctorScheduleItems[index].timeIndex ?? "-"
+                                    )),
+                                    Expanded(flex: 10,child: Container()),
+                                  ],
+                                ),
+                              ),
+                            );
+                          },
+                          itemCount: doctorScheduleItems.length,
                         ))
                   ],
                 ),
