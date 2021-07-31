@@ -213,7 +213,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                             return Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: SizedBox(
-                                height: 160,
+                                height: 140,
                                 child: Row(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -223,7 +223,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                         alignment: Alignment.topCenter,
                                         child: Text(
                                             doctorScheduleItems[index].timeIndex ?? "-",
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                             color: Colors.white
                                           ),
                                         ),
@@ -231,7 +231,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                     )),
                                     Expanded(flex: 10,child: Container(
                                       decoration: BoxDecoration(
-                                        color: Colors.white.withOpacity(0.2),
+                                        color: Colors.white.withOpacity(0.08),
                                         borderRadius: BorderRadius.circular(24)
                                       ),
                                     )),
