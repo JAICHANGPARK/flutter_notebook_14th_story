@@ -28,7 +28,7 @@ class MedicalCardWidget extends StatelessWidget {
           Expanded(
               flex: 10,
               child: Container(
-                padding: const EdgeInsets.all(8),
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
