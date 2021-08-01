@@ -28,8 +28,18 @@ class MedicalCardWidget extends StatelessWidget {
           Expanded(
               flex: 10,
               child: Container(
+                padding: EdgeInsets.all(8),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      backgroundImage: NetworkImage(doctorSchedule.avatarImg!),
+                    ),
+                    Expanded(child: Column())
+                  ],
+                ),
                 decoration:
-                    BoxDecoration(color: Colors.white.withOpacity(0.08), borderRadius: BorderRadius.circular(24)),
+                    BoxDecoration(color: Colors.white.withOpacity(0.08),
+                        borderRadius: BorderRadius.circular(24)),
               )),
         ],
       ),
