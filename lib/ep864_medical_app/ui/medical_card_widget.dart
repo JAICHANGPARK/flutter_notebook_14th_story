@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep864_medical_app/model/schedule.dart';
 
 class MedicalCardWidget extends StatelessWidget {
-  DoctorSchedule  _doctorSchedule;
-  const MedicalCardWidget({Key? key}) : super(key: key);
+  DoctorSchedule? doctorSchedule;
+
+  const MedicalCardWidget({Key? key, this.doctorSchedule}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class MedicalCardWidget extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.topCenter,
                   child: Text(
-                    doctorScheduleItems[index].timeIndex ?? "-",
+                    doctorSchedule.timeIndex ?? "-",
                     style: const TextStyle(color: Colors.white),
                   ),
                 ),
@@ -27,9 +28,8 @@ class MedicalCardWidget extends StatelessWidget {
           Expanded(
               flex: 10,
               child: Container(
-                decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.08),
-                    borderRadius: BorderRadius.circular(24)),
+                decoration:
+                    BoxDecoration(color: Colors.white.withOpacity(0.08), borderRadius: BorderRadius.circular(24)),
               )),
         ],
       ),
