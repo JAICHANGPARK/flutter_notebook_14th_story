@@ -28,8 +28,9 @@ class MedicalCardWidget extends StatelessWidget {
           Expanded(
               flex: 10,
               child: Container(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     CircleAvatar(
                       backgroundImage: NetworkImage(doctorSchedule.avatarImg!),
