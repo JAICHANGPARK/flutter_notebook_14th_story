@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep864_medical_app/model/schedule.dart';
 
 class MedicalCardWidget extends StatelessWidget {
-  DoctorSchedule? doctorSchedule;
+  DoctorSchedule doctorSchedule;
 
-  const MedicalCardWidget({Key? key, this.doctorSchedule}) : super(key: key);
+  MedicalCardWidget({Key? key, required this.doctorSchedule}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
