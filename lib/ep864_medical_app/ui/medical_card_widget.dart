@@ -44,9 +44,17 @@ class MedicalCardWidget extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("${doctorSchedule.title}"),
-                                  Text("${doctorSchedule.subtitle}"),
+                                  Text("${doctorSchedule.title}", style: TextStyle(
+                                    color: Colors.white
+                                  ),),
+                                  SizedBox(height: 4,),
+                                  Text("${doctorSchedule.subtitle}",
+                                  style: TextStyle(
+                                    color: Colors.white.withOpacity(0.2),
+                                    fontSize: 12
+                                  ),),
                                 ],
                               ),
                               doctorSchedule.isDone!
