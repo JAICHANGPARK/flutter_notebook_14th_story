@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep864_medical_app/mock/mock_schedule.dart';
 
+import 'medical_card_widget.dart';
+
 Color backgroundColor = Color(0xff27272c);
 Color deepDarkColor = Color(0xff17171b);
 Color deepPurpleColor = Color(0xff9292e4);
@@ -212,7 +214,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                           itemBuilder: (context, index) {
                             return Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child:
+                              child: MedicalCardWidget()doctorScheduleItems
                             );
                           },
                           itemCount: doctorScheduleItems.length,
