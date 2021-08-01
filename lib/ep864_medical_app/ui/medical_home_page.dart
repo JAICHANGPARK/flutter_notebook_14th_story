@@ -217,24 +217,25 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                                 child: Row(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Expanded(flex: 3,child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Align(
-                                        alignment: Alignment.topCenter,
-                                        child: Text(
-                                            doctorScheduleItems[index].timeIndex ?? "-",
-                                          style: const TextStyle(
-                                            color: Colors.white
+                                    Expanded(
+                                        flex: 3,
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Align(
+                                            alignment: Alignment.topCenter,
+                                            child: Text(
+                                              doctorScheduleItems[index].timeIndex ?? "-",
+                                              style: const TextStyle(color: Colors.white),
+                                            ),
                                           ),
-                                        ),
-                                      ),
-                                    )),
-                                    Expanded(flex: 10,child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.white.withOpacity(0.08),
-                                        borderRadius: BorderRadius.circular(24)
-                                      ),
-                                    )),
+                                        )),
+                                    Expanded(
+                                        flex: 10,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              color: Colors.white.withOpacity(0.08),
+                                              borderRadius: BorderRadius.circular(24)),
+                                        )),
                                   ],
                                 ),
                               ),
@@ -269,9 +270,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                           icon: Icon(Icons.card_membership),
                           color: Colors.white,
                         ),
-                        SizedBox(
-                          width: 64,
-                        ),
+                        SizedBox(width: 64),
                         IconButton(
                           onPressed: () {},
                           icon: Icon(Icons.person),
