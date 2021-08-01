@@ -35,36 +35,41 @@ class MedicalCardWidget extends StatelessWidget {
                     CircleAvatar(
                       backgroundImage: NetworkImage(doctorSchedule.avatarImg!),
                     ),
-                    Expanded(child: Column(
+                    Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 12),
+                          child: Column(
                       children: [
-                        Row(
-                          children: [
-                            Column(
-                              children: [
-                                Text("${doctorSchedule.title}"),
-                                Text("${doctorSchedule.subtitle}"),
-                              ],
-                            ),
-                            doctorSchedule.isDone! ?
-                                Container(
-                                  height: 38,
-                                  width: 38,
-                                  decoration: BoxDecoration(),
-                                ) :
-                            Container(
-                              height: 38,
-                              width: 38,
-                              decoration: BoxDecoration(),
-                            )
-                          ],
-                        )
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                children: [
+                                  Text("${doctorSchedule.title}"),
+                                  Text("${doctorSchedule.subtitle}"),
+                                ],
+                              ),
+                              doctorSchedule.isDone!
+                                  ? Container(
+                                      height: 32,
+                                      width: 32,
+                                      decoration: BoxDecoration(
+                                          color: Colors.greenAccent, borderRadius: BorderRadius.circular(4)),
+                                    )
+                                  : Container(
+                                      height: 38,
+                                      width: 38,
+                                      decoration: BoxDecoration(),
+                                    )
+                            ],
+                          )
                       ],
-                    ))
+                    ),
+                        ))
                   ],
                 ),
                 decoration:
-                    BoxDecoration(color: Colors.white.withOpacity(0.08),
-                        borderRadius: BorderRadius.circular(24)),
+                    BoxDecoration(color: Colors.white.withOpacity(0.08), borderRadius: BorderRadius.circular(24)),
               )),
         ],
       ),
