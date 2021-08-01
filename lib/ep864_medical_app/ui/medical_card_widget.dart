@@ -37,24 +37,26 @@ class MedicalCardWidget extends StatelessWidget {
                     ),
                     Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 12),
-                          child: Column(
-                      children: [
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      child: Column(
+                        children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("${doctorSchedule.title}", style: TextStyle(
-                                    color: Colors.white
-                                  ),),
-                                  SizedBox(height: 4,),
-                                  Text("${doctorSchedule.subtitle}",
-                                  style: TextStyle(
-                                    color: Colors.white.withOpacity(0.2),
-                                    fontSize: 12
-                                  ),),
+                                  Text(
+                                    "${doctorSchedule.title}",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text(
+                                    "${doctorSchedule.subtitle}",
+                                    style: TextStyle(color: Colors.white.withOpacity(0.2), fontSize: 12),
+                                  ),
                                 ],
                               ),
                               doctorSchedule.isDone!
@@ -62,18 +64,26 @@ class MedicalCardWidget extends StatelessWidget {
                                       height: 32,
                                       width: 32,
                                       decoration: BoxDecoration(
-                                          color: Colors.greenAccent, borderRadius: BorderRadius.circular(4)),
+                                          color: Colors.greenAccent, borderRadius: BorderRadius.circular(6)),
+                                      child: Center(
+                                        child: Icon(
+                                          Icons.done,
+                                          color: Colors.white,
+                                        ),
+                                      ),
                                     )
                                   : Container(
-                                      height: 38,
-                                      width: 38,
-                                      decoration: BoxDecoration(),
+                                      height: 32,
+                                      width: 32,
+                                      decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.2),
+                                          borderRadius: BorderRadius.circular(6)),
                                     )
                             ],
                           )
-                      ],
-                    ),
-                        ))
+                        ],
+                      ),
+                    ))
                   ],
                 ),
                 decoration:
