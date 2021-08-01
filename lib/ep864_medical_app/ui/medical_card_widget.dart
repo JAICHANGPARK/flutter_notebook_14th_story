@@ -39,6 +39,7 @@ class MedicalCardWidget extends StatelessWidget {
                         child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 12),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -81,7 +82,8 @@ class MedicalCardWidget extends StatelessWidget {
                                     )
                             ],
                           ),
-                          Text("${doctorSchedule.time}", )
+                          Text("${doctorSchedule.time}",
+                            style: TextStyle(color: Colors.white.withOpacity(0.2), fontSize: 12),)
                         ],
                       ),
                     ))
