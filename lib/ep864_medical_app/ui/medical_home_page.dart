@@ -213,9 +213,10 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                         child: ListView.builder(
                           itemBuilder: (context, index) {
                             return Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: MedicalCardWidget()doctorScheduleItems
-                            );
+                                padding: const EdgeInsets.all(8.0),
+                                child: MedicalCardWidget(
+                                  doctorSchedule: doctorScheduleItems[index],
+                                ));
                           },
                           itemCount: doctorScheduleItems.length,
                         ))
