@@ -35,7 +35,31 @@ class MedicalCardWidget extends StatelessWidget {
                     CircleAvatar(
                       backgroundImage: NetworkImage(doctorSchedule.avatarImg!),
                     ),
-                    Expanded(child: Column())
+                    Expanded(child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text("${doctorSchedule.title}"),
+                                Text("${doctorSchedule.subtitle}"),
+                              ],
+                            ),
+                            doctorSchedule.isDone! ?
+                                Container(
+                                  height: 38,
+                                  width: 38,
+                                  decoration: BoxDecoration(),
+                                ) :
+                            Container(
+                              height: 38,
+                              width: 38,
+                              decoration: BoxDecoration(),
+                            )
+                          ],
+                        )
+                      ],
+                    ))
                   ],
                 ),
                 decoration:
