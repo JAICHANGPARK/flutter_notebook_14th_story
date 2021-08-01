@@ -65,7 +65,7 @@ class MedicalCardWidget extends StatelessWidget {
                                       width: 32,
                                       decoration: BoxDecoration(
                                           color: Colors.greenAccent, borderRadius: BorderRadius.circular(6)),
-                                      child: Center(
+                                      child: const Center(
                                         child: Icon(
                                           Icons.done,
                                           color: Colors.white,
@@ -80,7 +80,8 @@ class MedicalCardWidget extends StatelessWidget {
                                           borderRadius: BorderRadius.circular(6)),
                                     )
                             ],
-                          )
+                          ),
+                          Text("${doctorSchedule.time}", )
                         ],
                       ),
                     ))
