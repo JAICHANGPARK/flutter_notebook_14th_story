@@ -212,33 +212,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                           itemBuilder: (context, index) {
                             return Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: SizedBox(
-                                height: 140,
-                                child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Expanded(
-                                        flex: 3,
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Align(
-                                            alignment: Alignment.topCenter,
-                                            child: Text(
-                                              doctorScheduleItems[index].timeIndex ?? "-",
-                                              style: const TextStyle(color: Colors.white),
-                                            ),
-                                          ),
-                                        )),
-                                    Expanded(
-                                        flex: 10,
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                              color: Colors.white.withOpacity(0.08),
-                                              borderRadius: BorderRadius.circular(24)),
-                                        )),
-                                  ],
-                                ),
-                              ),
+                              child:
                             );
                           },
                           itemCount: doctorScheduleItems.length,
