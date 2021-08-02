@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep864_medical_app/model/schedule.dart';
 
+import 'medical_detail_page.dart';
+
 class MedicalCardWidget extends StatelessWidget {
   DoctorSchedule doctorSchedule;
 
@@ -10,7 +12,7 @@ class MedicalCardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: (){
-        
+        Navigator.of(context).push(MaterialPageRoute(builder: (context)=> MedicalDetailPage()));
       },
       child: SizedBox(
         height: 140,
