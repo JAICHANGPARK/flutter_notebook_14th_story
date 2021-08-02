@@ -32,7 +32,17 @@ class MedicalDetailPage extends StatelessWidget {
             ),
             Expanded(
               child: Row(
-                children: [],
+                children: [
+                  CircleAvatar(
+                    radius: 32,
+                  ),
+                  Column(
+                    children: [
+                      Text("Dreamwalker"),
+                      Text("27 yo Flutter Lover")
+                    ],
+                  )
+                ],
               ),
               flex: 3,
             ),
