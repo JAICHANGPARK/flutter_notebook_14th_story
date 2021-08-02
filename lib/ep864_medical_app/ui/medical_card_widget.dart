@@ -52,9 +52,7 @@ class MedicalCardWidget extends StatelessWidget {
                                     "${doctorSchedule.title}",
                                     style: TextStyle(color: Colors.white),
                                   ),
-                                  SizedBox(
-                                    height: 4,
-                                  ),
+                                  SizedBox(height: 4),
                                   Text(
                                     "${doctorSchedule.subtitle}",
                                     style: TextStyle(color: Colors.white.withOpacity(0.2), fontSize: 12),
@@ -78,13 +76,14 @@ class MedicalCardWidget extends StatelessWidget {
                                       height: 32,
                                       width: 32,
                                       decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(0.2),
-                                          borderRadius: BorderRadius.circular(6)),
+                                          color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(6)),
                                     )
                             ],
                           ),
-                          Text("${doctorSchedule.time}",
-                            style: TextStyle(color: Colors.white.withOpacity(0.2), fontSize: 12),)
+                          Text(
+                            "${doctorSchedule.time}",
+                            style: TextStyle(color: Colors.white.withOpacity(0.2), fontSize: 12),
+                          )
                         ],
                       ),
                     ))
