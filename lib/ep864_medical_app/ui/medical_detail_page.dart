@@ -30,28 +30,36 @@ class MedicalDetailPage extends StatelessWidget {
                 ],
               ),
             ),
-            Expanded(child: Row(
-              children: [
-
-              ],
-            ), flex: 3,),
-            Expanded(child: Row(
-              children: [
-                Expanded(child: Placeholder()),
-                Expanded(child: Placeholder()),
-              ],
-            ), flex: 6,),
-            Expanded(child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index){
-              return Container();
-            }), flex: 2,),
-            Expanded(child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(36),
-                color: Colors.white.withOpacity(0.1)
+            Expanded(
+              child: Row(
+                children: [],
               ),
-            ), flex: 8,),
+              flex: 3,
+            ),
+            Expanded(
+              child: Row(
+                children: [
+                  Expanded(child: Placeholder()),
+                  Expanded(child: Placeholder()),
+                ],
+              ),
+              flex: 6,
+            ),
+            Expanded(
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return Container();
+                  }),
+              flex: 2,
+            ),
+            Expanded(
+              child: Container(
+                decoration:
+                    BoxDecoration(borderRadius: BorderRadius.circular(36), color: Colors.white.withOpacity(0.1)),
+              ),
+              flex: 8,
+            ),
           ],
         ),
       ),
