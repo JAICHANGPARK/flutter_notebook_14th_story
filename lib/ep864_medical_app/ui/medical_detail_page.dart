@@ -31,7 +31,12 @@ class MedicalDetailPage extends StatelessWidget {
               ),
             ),
             Expanded(child: Placeholder(), flex: 3,),
-            Expanded(child: Placeholder(), flex: 6,),
+            Expanded(child: Row(
+              children: [
+                Expanded(child: Placeholder()),
+                Expanded(child: Placeholder()),
+              ],
+            ), flex: 6,),
             Expanded(child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index){
