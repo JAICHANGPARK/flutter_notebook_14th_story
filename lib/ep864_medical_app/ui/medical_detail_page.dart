@@ -30,7 +30,11 @@ class MedicalDetailPage extends StatelessWidget {
                 ],
               ),
             ),
-            Expanded(child: Placeholder(), flex: 3,),
+            Expanded(child: Row(
+              children: [
+
+              ],
+            ), flex: 3,),
             Expanded(child: Row(
               children: [
                 Expanded(child: Placeholder()),
