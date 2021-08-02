@@ -32,7 +32,11 @@ class MedicalDetailPage extends StatelessWidget {
             ),
             Expanded(child: Placeholder(), flex: 3,),
             Expanded(child: Placeholder(), flex: 6,),
-            Expanded(child: Placeholder(), flex: 2,),
+            Expanded(child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index){
+              return Container();
+            }), flex: 2,),
             Expanded(child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(36),
