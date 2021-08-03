@@ -63,7 +63,27 @@ class MDetailPage extends StatelessWidget {
             Expanded(
               child: Row(
                 children: [
-                  Expanded(child: Placeholder()),
+                  Expanded(child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.1)
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text("SYS"),
+                            Icon(Icons.favorite),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Text("136"),
+                            Text("mmHg")
+                          ],
+                        )
+                      ],
+                    ),
+                  )),
                   Expanded(child: Placeholder()),
                 ],
               ),
