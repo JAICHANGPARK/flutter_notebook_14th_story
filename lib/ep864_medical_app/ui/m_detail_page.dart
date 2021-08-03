@@ -36,17 +36,19 @@ class MDetailPage extends StatelessWidget {
                     radius: 32,
                   ),
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Dreamwalker", style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 24,
-                      ),),
-                      Text("27 yo Flutter Lover",
-
-                      style: TextStyle(
-                        fontSize: 24,
-                        color: Colors.white.withOpacity(0.15)
-                      ),)
+                      Text(
+                        "Dreamwalker",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                        ),
+                      ),
+                      Text(
+                        "27 yo Flutter Lover",
+                        style: TextStyle(fontSize: 22, color: Colors.white.withOpacity(0.15)),
+                      )
                     ],
                   )
                 ],
@@ -74,7 +76,7 @@ class MDetailPage extends StatelessWidget {
             Expanded(
               child: Container(
                 decoration:
-                BoxDecoration(borderRadius: BorderRadius.circular(36), color: Colors.white.withOpacity(0.1)),
+                    BoxDecoration(borderRadius: BorderRadius.circular(36), color: Colors.white.withOpacity(0.1)),
               ),
               flex: 8,
             ),
