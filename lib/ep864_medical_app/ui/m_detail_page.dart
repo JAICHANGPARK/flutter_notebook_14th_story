@@ -85,8 +85,14 @@ class MDetailPage extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Text("136"),
-                              Text("mmHg")
+                              Text("136", style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 36
+                              ),),
+                              Text(" mmHg",  style: TextStyle(
+                                  color: Colors.white.withOpacity(0.15),
+                                  fontSize: 16
+                              ),)
                             ],
                           )
                         ],
