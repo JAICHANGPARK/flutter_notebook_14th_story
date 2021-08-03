@@ -190,10 +190,35 @@ class MDetailPage extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Divider(
-                          color: Colors.grey,
-                          height: 32,
+                        Divider(color: Colors.grey, height: 32),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Startus",
+                              style: TextStyle(color: Colors.white.withOpacity(0.2)),
+                            ),
+                            Text(
+                              "Hospital",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
                         ),
+                        Divider(color: Colors.grey, height: 32),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Startus",
+                              style: TextStyle(color: Colors.white.withOpacity(0.2)),
+                            ),
+                            Text(
+                              "Hospital",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                        Divider(color: Colors.grey, height: 32),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
