@@ -3,10 +3,6 @@ import 'package:flutter_notebook_14th_story/ep864_medical_app/mock/mock_schedule
 
 import 'medical_card_widget.dart';
 
-Color backgroundColor = Color(0xff27272c);
-Color deepDarkColor = Color(0xff17171b);
-Color deepPurpleColor = Color(0xff9292e4);
-Color lightPurpleColor = Color(0xffb9b9e3);
 
 class CalDate {
   int day;
