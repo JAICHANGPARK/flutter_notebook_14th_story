@@ -4,7 +4,7 @@ import 'package:flutter_notebook_14th_story/ep864_medical_app/model/schedule.dar
 import 'medical_detail_page.dart';
 
 class MedicalCardWidget extends StatelessWidget {
-  DoctorSchedule doctorSchedule;
+  final DoctorSchedule doctorSchedule;
 
   MedicalCardWidget({Key? key, required this.doctorSchedule}) : super(key: key);
 
@@ -58,7 +58,7 @@ class MedicalCardWidget extends StatelessWidget {
                                       "${doctorSchedule.title}",
                                       style: TextStyle(color: Colors.white),
                                     ),
-                                    SizedBox(height: 4),
+                                    const SizedBox(height: 4),
                                     Text(
                                       "${doctorSchedule.subtitle}",
                                       style: TextStyle(color: Colors.white.withOpacity(0.2), fontSize: 12),
