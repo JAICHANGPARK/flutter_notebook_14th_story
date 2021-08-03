@@ -171,10 +171,7 @@ class MDetailPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 24),
                       child: Text(
                         "General information",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24
-                        ),
+                        style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
                     ),
                     Expanded(
@@ -183,8 +180,31 @@ class MDetailPage extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text("Date of birth"),
-                            Text("01 Jan 1900"),
+                            Text(
+                              "Date of birth",
+                              style: TextStyle(color: Colors.white.withOpacity(0.2)),
+                            ),
+                            Text(
+                              "01 Jan 1900",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                        Divider(
+                          color: Colors.grey,
+                          height: 32,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Startus",
+                              style: TextStyle(color: Colors.white.withOpacity(0.2)),
+                            ),
+                            Text(
+                              "Hospital",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ],
                         )
                       ],
