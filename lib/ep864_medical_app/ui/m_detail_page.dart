@@ -37,8 +37,16 @@ class MDetailPage extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      Text("Dreamwalker"),
-                      Text("27 yo Flutter Lover")
+                      Text("Dreamwalker", style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                      ),),
+                      Text("27 yo Flutter Lover",
+
+                      style: TextStyle(
+                        fontSize: 24,
+                        color: Colors.white.withOpacity(0.15)
+                      ),)
                     ],
                   )
                 ],
