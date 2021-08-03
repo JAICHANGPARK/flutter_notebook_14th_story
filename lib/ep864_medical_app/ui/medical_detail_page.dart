@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
-import 'medical_home_page.dart';
 
-class MedicalDetailPage extends StatelessWidget {
+class MedicalDetailPage extends StatefulWidget {
   const MedicalDetailPage({Key? key}) : super(key: key);
 
   @override
+  State<MedicalDetailPage> createState() => _MedicalDetailPageState();
+}
+
+class _MedicalDetailPageState extends State<MedicalDetailPage> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColor,
       body: SafeArea(
         child: Column(
           children: [
@@ -58,6 +61,7 @@ class MedicalDetailPage extends StatelessWidget {
             Expanded(
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
+                  itemCount: 5,
                   itemBuilder: (context, index) {
                     return Container();
                   }),
