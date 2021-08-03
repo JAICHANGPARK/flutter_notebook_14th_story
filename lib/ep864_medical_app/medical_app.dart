@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'ui/medical_home_page.dart';
+import 'ui/m_detail_page.dart';
+
 
 class MedicalApp extends StatelessWidget {
   MedicalApp({Key? key}) : super(key: key);
@@ -8,7 +9,7 @@ class MedicalApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MedicalHomePage(),
+      home: MDetailPage(),
     );
   }
 }
