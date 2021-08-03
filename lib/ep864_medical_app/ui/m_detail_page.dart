@@ -48,7 +48,9 @@ class MDetailPage extends StatelessWidget {
                             fontSize: 22,
                           ),
                         ),
-                        SizedBox(height: 8,),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Text(
                           "27 yo Flutter Lover",
                           style: TextStyle(fontSize: 22, color: Colors.white.withOpacity(0.15)),
@@ -63,13 +65,12 @@ class MDetailPage extends StatelessWidget {
             Expanded(
               child: Row(
                 children: [
-                  Expanded(child: Padding(
+                  Expanded(
+                      child: Padding(
                     padding: const EdgeInsets.all(12.0),
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(16)
-                      ),
+                      decoration:
+                          BoxDecoration(color: Colors.white.withOpacity(0.1), borderRadius: BorderRadius.circular(16)),
                       padding: EdgeInsets.all(16),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -77,29 +78,75 @@ class MDetailPage extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("SYS", style: TextStyle(
+                              Text(
+                                "SYS",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Icon(
+                                Icons.favorite,
                                 color: Colors.white,
-                              ),),
-                              Icon(Icons.favorite,color: Colors.white,),
+                              ),
                             ],
                           ),
                           Row(
                             children: [
-                              Text("136", style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 36
-                              ),),
-                              Text(" mmHg",  style: TextStyle(
-                                  color: Colors.white.withOpacity(0.15),
-                                  fontSize: 16
-                              ),)
+                              Text(
+                                "136",
+                                style: TextStyle(color: Colors.white, fontSize: 36),
+                              ),
+                              Text(
+                                " mmHg",
+                                style: TextStyle(color: Colors.white.withOpacity(0.15), fontSize: 16),
+                              )
                             ],
                           )
                         ],
                       ),
                     ),
                   )),
-                  Expanded(child: Placeholder()),
+                  Expanded(
+                      child: Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: Container(
+                      decoration:
+                          BoxDecoration(color: Colors.white.withOpacity(0.1), borderRadius: BorderRadius.circular(16)),
+                      padding: EdgeInsets.all(16),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Sleep time",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Icon(
+                                Icons.nightlight_round,
+                                color: Colors.white,
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "8",
+                                style: TextStyle(color: Colors.white, fontSize: 36),
+                              ),
+                              Text(
+                                " hours",
+                                style: TextStyle(color: Colors.white.withOpacity(0.15), fontSize: 16),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  )),
                 ],
               ),
               flex: 6,
@@ -115,12 +162,23 @@ class MDetailPage extends StatelessWidget {
             ),
             Expanded(
               child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 24),
                 decoration:
                     BoxDecoration(borderRadius: BorderRadius.circular(36), color: Colors.white.withOpacity(0.1)),
                 child: Column(
                   children: [
-                    Text("General information"),
-                    Expanded(child: ListView(
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 24),
+                      child: Text(
+                        "General information",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 24
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                        child: ListView(
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
