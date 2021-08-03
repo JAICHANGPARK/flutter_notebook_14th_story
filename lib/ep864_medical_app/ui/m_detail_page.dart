@@ -70,14 +70,17 @@ class MDetailPage extends StatelessWidget {
                         color: Colors.white.withOpacity(0.1),
                         borderRadius: BorderRadius.circular(16)
                       ),
-                      padding: EdgeInsets.all(8),
+                      padding: EdgeInsets.all(16),
                       child: Column(
                         
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("SYS"),
-                              Icon(Icons.favorite),
+                              Text("SYS", style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                              Icon(Icons.favorite,color: Colors.white,),
                             ],
                           ),
                           Row(
