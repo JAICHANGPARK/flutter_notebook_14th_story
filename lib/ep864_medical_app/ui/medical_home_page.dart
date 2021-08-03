@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep864_medical_app/mock/mock_schedule.dart';
 
+import '../medical_app.dart';
 import 'medical_card_widget.dart';
 
 
