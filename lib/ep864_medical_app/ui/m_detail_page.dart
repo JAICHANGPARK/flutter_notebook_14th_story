@@ -35,22 +35,26 @@ class MDetailPage extends StatelessWidget {
                   CircleAvatar(
                     radius: 32,
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "Dreamwalker",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 22,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Dreamwalker",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 22,
+                          ),
                         ),
-                      ),
-                      Text(
-                        "27 yo Flutter Lover",
-                        style: TextStyle(fontSize: 22, color: Colors.white.withOpacity(0.15)),
-                      )
-                    ],
+                        SizedBox(height: 8,),
+                        Text(
+                          "27 yo Flutter Lover",
+                          style: TextStyle(fontSize: 22, color: Colors.white.withOpacity(0.15)),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
@@ -78,6 +82,22 @@ class MDetailPage extends StatelessWidget {
               child: Container(
                 decoration:
                     BoxDecoration(borderRadius: BorderRadius.circular(36), color: Colors.white.withOpacity(0.1)),
+                child: Column(
+                  children: [
+                    Text("General information"),
+                    Expanded(child: ListView(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text("Date of birth"),
+                            Text("01 Jan 1900"),
+                          ],
+                        )
+                      ],
+                    ))
+                  ],
+                ),
               ),
               flex: 8,
             ),
