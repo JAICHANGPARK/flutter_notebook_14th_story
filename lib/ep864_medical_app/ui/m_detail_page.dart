@@ -64,7 +64,7 @@ class MDetailPage extends StatelessWidget {
               child: Row(
                 children: [
                   Expanded(child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(12.0),
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.1),
@@ -72,7 +72,7 @@ class MDetailPage extends StatelessWidget {
                       ),
                       padding: EdgeInsets.all(16),
                       child: Column(
-                        
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
