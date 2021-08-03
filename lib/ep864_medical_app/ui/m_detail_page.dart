@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep864_medical_app/medical_app.dart';
 
 class MDetailPage extends StatelessWidget {
   const MDetailPage({Key? key}) : super(key: key);
@@ -6,6 +7,7 @@ class MDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgroundColor,
       body: SafeArea(
         child: Column(
           children: [
