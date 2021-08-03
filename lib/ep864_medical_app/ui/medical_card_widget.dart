@@ -6,13 +6,13 @@ import 'medical_detail_page.dart';
 class MedicalCardWidget extends StatelessWidget {
   final DoctorSchedule doctorSchedule;
 
-  MedicalCardWidget({Key? key, required this.doctorSchedule}) : super(key: key);
+  const MedicalCardWidget({Key? key, required this.doctorSchedule}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: (){
-        Navigator.of(context).push(MaterialPageRoute(builder: (context)=> MedicalDetailPage()));
+        Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const MedicalDetailPage()));
       },
       child: SizedBox(
         height: 140,
