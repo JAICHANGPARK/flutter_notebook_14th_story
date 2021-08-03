@@ -37,6 +37,7 @@ class MDetailPage extends StatelessWidget {
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Dreamwalker",
