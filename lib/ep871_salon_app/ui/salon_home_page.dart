@@ -13,8 +13,18 @@ class _SalonHomePageState extends State<SalonHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
+        selectedLabelStyle: TextStyle(
+          fontSize: 12
+        ),
+        type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home")
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Booking"),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Manage"),
+          BottomNavigationBarItem(icon: Icon(Icons.storefront), label: "MyBooking")
         ],
       ),
     );
