@@ -11,6 +11,12 @@ class SalonHomePage extends StatefulWidget {
 class _SalonHomePageState extends State<SalonHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home")
+        ],
+      ),
+    );
   }
 }
