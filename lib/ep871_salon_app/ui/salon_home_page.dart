@@ -30,6 +30,7 @@ with SingleTickerProviderStateMixin
       ),
       bottomNavigationBar: BottomNavigationBar(
         onTap: (idx){
+          _pageController.jumpToPage(idx);
           setState(() {
             _pageIndex = idx;
           });
