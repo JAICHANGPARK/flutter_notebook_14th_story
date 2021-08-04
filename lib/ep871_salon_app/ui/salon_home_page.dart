@@ -7,13 +7,23 @@ class SalonHomePage extends StatefulWidget {
   _SalonHomePageState createState() => _SalonHomePageState();
 }
 
-class _SalonHomePageState extends State<SalonHomePage> {
+class _SalonHomePageState extends State<SalonHomePage>
+with SingleTickerProviderStateMixin
+{
   int _pageIndex = 0;
   late PageController _pageController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
+        controller: _pageController,
         children: [
 
         ],
