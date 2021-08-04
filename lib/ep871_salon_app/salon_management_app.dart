@@ -6,6 +6,8 @@ class SalonManagementApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MateiralApp();
+    return MaterialApp(
+      home: SalonHomePage(),
+    );
   }
 }
