@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SalonHomePage extends StatefulWidget {
   const SalonHomePage({Key? key}) : super(key: key);
 
@@ -9,16 +8,26 @@ class SalonHomePage extends StatefulWidget {
 }
 
 class _SalonHomePageState extends State<SalonHomePage> {
+  int _pageIndex = 0;
+  late PageController _pageController;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
+      body: PageView(
+        children: [
 
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        onTap: (idx){
+          setState(() {
+            _pageIndex = idx;
+          });
+        },
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
-        selectedLabelStyle: TextStyle(
-          fontSize: 12
-        ),
+        selectedLabelStyle: TextStyle(fontSize: 10),
+        unselectedLabelStyle: TextStyle(fontSize: 10),
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
