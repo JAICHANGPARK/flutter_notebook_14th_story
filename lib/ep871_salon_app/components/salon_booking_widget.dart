@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep871_salon_app/model/category.dart';
 
-class SalonBookingWidget extends StatelessWidget {
+class SalonBookingWidget extends StatefulWidget {
   const SalonBookingWidget({Key? key}) : super(key: key);
 
+  @override
+  State<SalonBookingWidget> createState() => _SalonBookingWidgetState();
+}
+
+class _SalonBookingWidgetState extends State<SalonBookingWidget> {
+  var _index = 0;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -26,12 +32,21 @@ class SalonBookingWidget extends StatelessWidget {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                            decoration: BoxDecoration(),
-                            child: Center(
-                              child: Text(categoryItems[index].title ?? ""),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          child: GestureDetector(
+                            onTap: (){
+                              setState(() {
+                                _index = index;
+                              });
+                            },
+                            child: Container(
+                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              decoration: BoxDecoration(
+                                color: _index == index ? Colors.black :Colors.grey[400]
+                              ),
+                              child: Center(
+                                child: Text(categoryItems[index].title ?? ""),
+                              ),
                             ),
                           ),
                         );
