@@ -14,7 +14,7 @@ class SalonBookingWidget extends StatelessWidget {
               decoration: BoxDecoration(color: Colors.white),
               child: Column(
                 children: [
-                  Expanded(
+                 const  Expanded(
                       child: Center(
                           child: Text(
                     "My Bookings",
@@ -29,6 +29,9 @@ class SalonBookingWidget extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            decoration: BoxDecoration(
+
+                            ),
                             child: Center(
                               child: Text(categoryItems[index].title ?? ""),
                             ),
