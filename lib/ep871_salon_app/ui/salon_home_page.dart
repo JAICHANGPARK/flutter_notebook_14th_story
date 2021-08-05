@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep871_salon_app/components/salon_booking_widget.dart';
 
 class SalonHomePage extends StatefulWidget {
   const SalonHomePage({Key? key}) : super(key: key);
@@ -26,7 +27,7 @@ class _SalonHomePageState extends State<SalonHomePage> with SingleTickerProvider
         physics: NeverScrollableScrollPhysics(),
         children: [
           Container(color: Colors.green,),
-          Container(color: Colors.red,),
+          SalonBookingWidget(),
           Container(color: Colors.blue,),
           Container(color: Colors.orange,),
         ],
