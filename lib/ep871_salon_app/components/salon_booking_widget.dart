@@ -10,8 +10,6 @@ class SalonBookingWidget extends StatelessWidget {
         Expanded(
             flex: 4,
             child: Container(
-              height: double.infinity,
-              width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white
               ),
