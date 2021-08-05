@@ -22,15 +22,24 @@ class _SalonHomePageState extends State<SalonHomePage> with SingleTickerProvider
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(
-        controller: _pageController,
-        physics: NeverScrollableScrollPhysics(),
-        children: [
-          Container(color: Colors.green,),
-          SalonBookingWidget(),
-          Container(color: Colors.blue,),
-          Container(color: Colors.orange,),
-        ],
+      backgroundColor: Colors.grey[300],
+      body: SafeArea(
+        child: PageView(
+          controller: _pageController,
+          physics: NeverScrollableScrollPhysics(),
+          children: [
+            Container(
+              color: Colors.green,
+            ),
+            SalonBookingWidget(),
+            Container(
+              color: Colors.blue,
+            ),
+            Container(
+              color: Colors.orange,
+            ),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         onTap: (idx) {
@@ -47,8 +56,7 @@ class _SalonHomePageState extends State<SalonHomePage> with SingleTickerProvider
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.receipt_long
-          ), label: "Booking"),
+          BottomNavigationBarItem(icon: Icon(Icons.receipt_long), label: "Booking"),
           BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Manage"),
           BottomNavigationBarItem(icon: Icon(Icons.storefront), label: "MyBooking")
         ],
