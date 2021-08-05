@@ -7,8 +7,17 @@ class SalonBookingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(child: Placeholder()),
-        Expanded(child: Placeholder()),
+        Expanded(
+            flex: 4,
+            child: Column(
+              children: [
+
+              ],
+            )),
+        
+        Expanded(
+            flex: 15,
+            child: Placeholder()),
       ],
     );
   }
