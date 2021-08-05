@@ -25,9 +25,13 @@ class SalonBookingWidget extends StatelessWidget {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Container(
-                          child: Center(
-                            child: Text(categoryItems[index]),
+                        return Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            child: Center(
+                              child: Text(categoryItems[index].title ?? ""),
+                            ),
                           ),
                         );
                       },
