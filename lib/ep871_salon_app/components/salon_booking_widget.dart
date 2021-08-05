@@ -13,7 +13,12 @@ class SalonBookingWidget extends StatelessWidget {
               decoration: BoxDecoration(color: Colors.white),
               child: Column(
                 children: [
-                  Expanded(child: Text("My Bookings")),
+                  Expanded(
+                      child: Center(
+                          child: Text(
+                    "My Bookings",
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ))),
                   Divider(),
                   Expanded(
                     child: ListView.builder(
@@ -27,9 +32,7 @@ class SalonBookingWidget extends StatelessWidget {
                 ],
               ),
             )),
-        SizedBox(
-          height: 16,
-        ),
+        SizedBox(height: 8),
         Expanded(flex: 15, child: Placeholder()),
       ],
     );
