@@ -24,23 +24,21 @@ class _SalonHomePageState extends State<SalonHomePage> with SingleTickerProvider
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: SafeArea(
-        child: Expanded(
-          child: PageView(
-            controller: _pageController,
-            physics: NeverScrollableScrollPhysics(),
-            children: [
-              Container(
-                color: Colors.green,
-              ),
-              SalonBookingWidget(),
-              Container(
-                color: Colors.blue,
-              ),
-              Container(
-                color: Colors.orange,
-              ),
-            ],
-          ),
+        child: PageView(
+          controller: _pageController,
+          physics: NeverScrollableScrollPhysics(),
+          children: [
+            Container(
+              color: Colors.green,
+            ),
+            Expanded(child: SalonBookingWidget()),
+            Container(
+              color: Colors.blue,
+            ),
+            Container(
+              color: Colors.orange,
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
