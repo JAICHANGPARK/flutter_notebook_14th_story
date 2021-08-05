@@ -14,13 +14,13 @@ class SalonBookingWidget extends StatelessWidget {
               decoration: BoxDecoration(color: Colors.white),
               child: Column(
                 children: [
-                 const  Expanded(
+                  const Expanded(
                       child: Center(
                           child: Text(
                     "My Bookings",
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ))),
-                  Divider(),
+                  const Divider(),
                   Expanded(
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
@@ -29,9 +29,7 @@ class SalonBookingWidget extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                            decoration: BoxDecoration(
-
-                            ),
+                            decoration: BoxDecoration(),
                             child: Center(
                               child: Text(categoryItems[index].title ?? ""),
                             ),
