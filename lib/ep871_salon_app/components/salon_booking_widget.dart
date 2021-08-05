@@ -32,7 +32,7 @@ class _SalonBookingWidgetState extends State<SalonBookingWidget> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
                           child: GestureDetector(
                             onTap: (){
                               setState(() {
