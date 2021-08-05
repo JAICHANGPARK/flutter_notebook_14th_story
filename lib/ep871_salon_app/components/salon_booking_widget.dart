@@ -10,29 +10,27 @@ class SalonBookingWidget extends StatelessWidget {
         Expanded(
             flex: 4,
             child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white
-              ),
+              decoration: BoxDecoration(color: Colors.white),
               child: Column(
                 children: [
-                  Text("My Bookings"),
+                  Expanded(child: Text("My Bookings")),
                   Divider(),
-                  ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index){
-                    return Container();
-                  },
-
-                  itemCount: 10,),
-
-
+                  Expanded(
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container();
+                      },
+                      itemCount: 10,
+                    ),
+                  ),
                 ],
               ),
             )),
-        SizedBox(height: 16,),
-        Expanded(
-            flex: 15,
-            child: Placeholder()),
+        SizedBox(
+          height: 16,
+        ),
+        Expanded(flex: 15, child: Placeholder()),
       ],
     );
   }
