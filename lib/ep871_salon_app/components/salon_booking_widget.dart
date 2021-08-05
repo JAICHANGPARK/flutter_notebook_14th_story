@@ -32,7 +32,7 @@ class _SalonBookingWidgetState extends State<SalonBookingWidget> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                           child: GestureDetector(
                             onTap: (){
                               setState(() {
@@ -42,7 +42,8 @@ class _SalonBookingWidgetState extends State<SalonBookingWidget> {
                             child: Container(
                               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                               decoration: BoxDecoration(
-                                color: _index == index ? Colors.black :Colors.grey[400]
+                                color: _index == index ? Colors.black :Colors.grey[400],
+                                borderRadius: BorderRadius.circular(24)
                               ),
                               child: Center(
                                 child: Text(categoryItems[index].title ?? ""),
