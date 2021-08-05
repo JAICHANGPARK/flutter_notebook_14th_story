@@ -31,7 +31,7 @@ class _SalonHomePageState extends State<SalonHomePage> with SingleTickerProvider
             Container(
               color: Colors.green,
             ),
-            Expanded(child: SalonBookingWidget()),
+            SalonBookingWidget(),
             Container(
               color: Colors.blue,
             ),
