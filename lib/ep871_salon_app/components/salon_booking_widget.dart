@@ -42,11 +42,14 @@ class _SalonBookingWidgetState extends State<SalonBookingWidget> {
                             child: Container(
                               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                               decoration: BoxDecoration(
-                                color: _index == index ? Colors.black :Colors.grey[400],
+                                color: _index == index ? Colors.black :Colors.grey[200],
                                 borderRadius: BorderRadius.circular(24)
                               ),
                               child: Center(
-                                child: Text(categoryItems[index].title ?? ""),
+                                child: Text(categoryItems[index].title ?? "",
+                                style: TextStyle(
+                                  color: _index == index ? Colors.white :Colors.grey[500],
+                                ),),
                               ),
                             ),
                           ),
