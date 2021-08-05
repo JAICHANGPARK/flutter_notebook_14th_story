@@ -10,7 +10,11 @@ class SalonBookingWidget extends StatelessWidget {
         Expanded(
             flex: 4,
             child: Container(
-              color: Colors.white,
+              height: double.infinity,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.white
+              ),
               child: Column(
                 children: [
                   Text("My Bookings"),
