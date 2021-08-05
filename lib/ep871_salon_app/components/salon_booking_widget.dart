@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep871_salon_app/model/category.dart';
 
 class SalonBookingWidget extends StatelessWidget {
   const SalonBookingWidget({Key? key}) : super(key: key);
@@ -24,9 +25,13 @@ class SalonBookingWidget extends StatelessWidget {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Container();
+                        return Container(
+                          child: Center(
+                            child: Text(categoryItems[index]),
+                          ),
+                        );
                       },
-                      itemCount: 10,
+                      itemCount: categoryItems.length,
                     ),
                   ),
                 ],
