@@ -73,7 +73,23 @@ class _SalonBookingWidgetState extends State<SalonBookingWidget> {
             )),
         SizedBox(height: 8),
         Expanded(flex: 15, child: PageView(
-          children: [],
+          physics: NeverScrollableScrollPhysics(),
+          children: [
+
+            Container(
+              child: Text("Pending"),
+            ),
+            Container(
+              child: Text("Accepted"),
+            ),
+            Container(
+              child: Text("Completed"),
+            ),
+            Container(
+              child: Text("Pending"),
+            )
+
+          ],
           controller: _pageController,
         )),
       ],
