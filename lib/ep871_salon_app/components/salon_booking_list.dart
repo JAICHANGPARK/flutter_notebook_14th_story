@@ -16,10 +16,11 @@ class SalonBookingList extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("BOOKING #${bookingItems[index].code}"),
+                Text("BOOKING #${bookingItems[index].code}", style: TextStyle(fontSize: 12),),
                 Row(
                   children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("${bookingItems[index].title}"),
                         Text("${bookingItems[index].moreTitle}"),
