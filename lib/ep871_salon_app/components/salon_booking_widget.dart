@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep871_salon_app/model/category.dart';
 
+import 'salon_booking_list.dart';
+
 class SalonBookingWidget extends StatefulWidget {
   const SalonBookingWidget({Key? key}) : super(key: key);
 
@@ -76,9 +78,7 @@ class _SalonBookingWidgetState extends State<SalonBookingWidget> {
           physics: NeverScrollableScrollPhysics(),
           children: [
 
-            Container(
-              child: Text("Pending"),
-            ),
+            SalonBookingList(),
             Container(
               child: Text("Accepted"),
             ),
