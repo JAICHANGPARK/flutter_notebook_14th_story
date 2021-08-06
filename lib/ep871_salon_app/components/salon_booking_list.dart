@@ -8,25 +8,35 @@ class SalonBookingList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemBuilder: (context, index) {
-        return Container(
-          padding: EdgeInsets.all(16),
-          decoration: BoxDecoration(color: Colors.white),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text("BOOKING #${bookingItems[index].code}"),
-              Row(
-                children: [
-                  Column(
-                    children: [
-                      Text("${bookingItems[index].title}"),
-                      Text("${bookingItems[index].moreTitle}"),
-                      Text("${bookingItems[index].subTitle}"),
-                    ],
-                  ),
-                ],
-              )
-            ],
+        return Padding(
+          padding: const EdgeInsets.symmetric(vertical: 4),
+          child: Container(
+            padding: EdgeInsets.all(16),
+            decoration: BoxDecoration(color: Colors.white),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("BOOKING #${bookingItems[index].code}"),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Text("${bookingItems[index].title}"),
+                        Text("${bookingItems[index].moreTitle}"),
+                        Text("${bookingItems[index].subTitle}"),
+                      ],
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200]
+                      ),
+                      padding: EdgeInsets.all(8),
+                      child: Text("\$ ${bookingItems[index].price}"),
+                    )
+                  ],
+                )
+              ],
+            ),
           ),
         );
       },
