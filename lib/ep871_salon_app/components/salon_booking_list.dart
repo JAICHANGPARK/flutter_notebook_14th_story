@@ -27,15 +27,20 @@ class SalonBookingList extends StatelessWidget {
                         Text("${bookingItems[index].title}", style: TextStyle(fontSize: 12),),
                         Text("${bookingItems[index].moreTitle}", style: TextStyle(fontSize: 10),),
                         SizedBox(height: 8,),
-                        Text("${bookingItems[index].subTitle}", style: TextStyle(fontSize: 10),),
+                        Text("${bookingItems[index].subTitle}", style: TextStyle(fontSize: 10,
+                        color: Colors.grey),),
                       ],
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[200]
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(8)
                       ),
                       padding: EdgeInsets.all(8),
-                      child: Text("\$ ${bookingItems[index].price}"),
+                      child: Text("\$ ${bookingItems[index].price}",style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16
+                      ),),
                     )
                   ],
                 )
