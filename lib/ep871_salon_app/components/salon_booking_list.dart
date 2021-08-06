@@ -10,7 +10,15 @@ class SalonBookingList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(itemBuilder: (context, index){
 
-      return Container();
+      return Container(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+                Text("BOOKING #${bookingItems[index].code}"),
+
+          ],
+        ),
+      );
 
     },
     itemCount: bookingItems.length,);
