@@ -22,9 +22,10 @@ class SalonBookingList extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("${bookingItems[index].title}"),
-                        Text("${bookingItems[index].moreTitle}"),
-                        Text("${bookingItems[index].subTitle}"),
+                        Text("${bookingItems[index].title}", style: TextStyle(fontSize: 12),),
+                        Text("${bookingItems[index].moreTitle}", style: TextStyle(fontSize: 10),),
+                        SizedBox(height: 8,),
+                        Text("${bookingItems[index].subTitle}", style: TextStyle(fontSize: 10),),
                       ],
                     ),
                     Container(
