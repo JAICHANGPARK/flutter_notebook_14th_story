@@ -86,7 +86,10 @@ class _SalonBookingWidgetState extends State<SalonBookingWidget> {
               child: Text("Completed"),
             ),
             Container(
-              child: Text("Pending"),
+              child: Text("Decline"),
+            ),
+            Container(
+              child: Text("Other"),
             )
 
           ],
