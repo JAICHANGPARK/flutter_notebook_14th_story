@@ -44,6 +44,7 @@ class SalonBookingList extends StatelessWidget {
                     )
                   ],
                 ),
+                SizedBox(height: 12,),
                 bookingItems[index].isPaid ?? false ? Container(
                   decoration: BoxDecoration(
                     color: Colors.green,
