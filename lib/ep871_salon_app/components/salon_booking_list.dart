@@ -49,6 +49,7 @@ class SalonBookingList extends StatelessWidget {
                     color: Colors.green,
                     borderRadius: BorderRadius.circular(4)
                   ),
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   child: Text("10% ADVANCE PAID", style: TextStyle(
                     fontSize: 12,
                     color: Colors.white
