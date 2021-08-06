@@ -44,13 +44,14 @@ class SalonBookingList extends StatelessWidget {
                     )
                   ],
                 ),
+                SizedBox(height: 23,),
                 SizedBox(
                   height: 42,
                   child: Row(
                     children: [
                       Expanded(child: Container(
                         color: Colors.red[100],
-                      )),
+                      )),SizedBox(width: 8,),
                       Expanded(child: Container(
                         color: Colors.grey[200],
                       )),
