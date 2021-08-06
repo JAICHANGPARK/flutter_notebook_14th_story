@@ -46,6 +46,7 @@ class _SalonBookingWidgetState extends State<SalonBookingWidget> {
                             onTap: (){
                               setState(() {
                                 _index = index;
+                                _pageController.jumpToPage(_index);
                               });
                             },
                             child: Container(
