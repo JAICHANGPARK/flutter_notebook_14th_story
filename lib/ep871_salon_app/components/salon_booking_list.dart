@@ -9,6 +9,8 @@ class SalonBookingList extends StatelessWidget {
     return ListView.builder(
       itemBuilder: (context, index) {
         return Container(
+          padding: EdgeInsets.all(16),
+          decoration: BoxDecoration(color: Colors.white),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
