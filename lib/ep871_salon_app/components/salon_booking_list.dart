@@ -82,14 +82,14 @@ class SalonBookingList extends StatelessWidget {
                           borderRadius: BorderRadius.circular(4),
                           color: Colors.red[100],
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "Decline",
                             style: TextStyle(fontSize: 12, color: Colors.red),
                           ),
                         ),
                       )),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Expanded(
@@ -98,9 +98,11 @@ class SalonBookingList extends StatelessWidget {
                           borderRadius: BorderRadius.circular(4),
                           color: Colors.grey[200],
                         ),
-                        child: Text(
-                          "Accept",
-                          style: TextStyle(fontSize: 12),
+                        child: const Center(
+                          child: Text(
+                            "Accept",
+                            style: TextStyle(fontSize: 12),
+                          ),
                         ),
                       )),
                     ],
