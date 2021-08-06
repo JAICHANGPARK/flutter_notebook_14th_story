@@ -82,6 +82,12 @@ class SalonBookingList extends StatelessWidget {
                           borderRadius: BorderRadius.circular(4),
                           color: Colors.red[100],
                         ),
+                        child: Center(
+                          child: Text(
+                            "Decline",
+                            style: TextStyle(fontSize: 12, color: Colors.red),
+                          ),
+                        ),
                       )),
                       SizedBox(
                         width: 8,
@@ -91,6 +97,10 @@ class SalonBookingList extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(4),
                           color: Colors.grey[200],
+                        ),
+                        child: Text(
+                          "Accept",
+                          style: TextStyle(fontSize: 12),
                         ),
                       )),
                     ],
