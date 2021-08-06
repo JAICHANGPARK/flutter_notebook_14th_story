@@ -62,7 +62,7 @@ class _SalonBookingWidgetState extends State<SalonBookingWidget> {
               ),
             )),
         SizedBox(height: 8),
-        Expanded(flex: 15, child: Placeholder()),
+        Expanded(flex: 15, child: PageView()),
       ],
     );
   }
