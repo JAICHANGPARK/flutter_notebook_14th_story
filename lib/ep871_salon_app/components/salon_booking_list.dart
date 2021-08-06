@@ -17,7 +17,9 @@ class SalonBookingList extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("BOOKING #${bookingItems[index].code}", style: TextStyle(fontSize: 12),),
+                SizedBox(height: 8,),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
