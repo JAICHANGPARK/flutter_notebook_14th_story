@@ -45,7 +45,14 @@ class SalonBookingList extends StatelessWidget {
                   ],
                 ),
                 bookingItems[index].isPaid ?? false ? Container(
-                  child: Text(""),
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(4)
+                  ),
+                  child: Text("10% ADVANCE PAID", style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.white
+                  ),),
                 ) : Container(),
                 SizedBox(height: 23,),
                 SizedBox(
