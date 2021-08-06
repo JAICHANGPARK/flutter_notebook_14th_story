@@ -85,7 +85,7 @@ class SalonBookingList extends StatelessWidget {
                         child: const Center(
                           child: Text(
                             "Decline",
-                            style: TextStyle(fontSize: 12, color: Colors.red),
+                            style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Colors.red),
                           ),
                         ),
                       )),
@@ -101,7 +101,7 @@ class SalonBookingList extends StatelessWidget {
                         child: const Center(
                           child: Text(
                             "Accept",
-                            style: TextStyle(fontSize: 12),
+                            style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
                           ),
                         ),
                       )),
