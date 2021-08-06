@@ -10,6 +10,15 @@ class SalonBookingWidget extends StatefulWidget {
 
 class _SalonBookingWidgetState extends State<SalonBookingWidget> {
   var _index = 0;
+  late PageController _pageController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -62,8 +71,19 @@ class _SalonBookingWidgetState extends State<SalonBookingWidget> {
               ),
             )),
         SizedBox(height: 8),
-        Expanded(flex: 15, child: PageView()),
+        Expanded(flex: 15, child: PageView(
+          children: [],
+          controller: _pageController,
+        )),
       ],
     );
   }
 }
+
+
+
+
+
+
+
+
