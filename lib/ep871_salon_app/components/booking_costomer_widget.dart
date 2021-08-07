@@ -47,6 +47,11 @@ class BookingCustomerWidget extends StatelessWidget {
                     ],
                   ),
                 ),
+                Spacer(),
+
+                CircleAvatar(backgroundColor: Colors.grey[200],),
+                SizedBox(width: 12,),
+                CircleAvatar(backgroundColor: Colors.grey[200],),
 
               ],
             ),
