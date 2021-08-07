@@ -41,7 +41,7 @@ class BookingCustomerWidget extends StatelessWidget {
                         height: 8,
                       ),
                       Text(
-                        "1234 56789",
+                        "Booking at 7 Jun 2021. 08:30 PM",
                         style: TextStyle(fontSize: 12, color: Colors.grey),
                       )
                     ],
