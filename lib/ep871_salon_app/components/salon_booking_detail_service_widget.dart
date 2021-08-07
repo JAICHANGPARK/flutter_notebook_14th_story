@@ -11,7 +11,10 @@ class SalonBookingDetailServiceWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Services".toUpperCase(),style: TextStyle(fontSize: 12, color: Colors.grey),),
+          Text(
+            "Services".toUpperCase(),
+            style: TextStyle(fontSize: 12, color: Colors.grey),
+          ),
           SizedBox(height: 16),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,19 +27,25 @@ class SalonBookingDetailServiceWidget extends StatelessWidget {
                           Container(
                             height: 48,
                             width: 48,
-                            decoration: BoxDecoration(
-                                color: Colors.blue,
-                              borderRadius: BorderRadius.circular(16)
-                            ),
-
+                            decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(16)),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [Text("Haircut(Women)",style: TextStyle(fontSize: 14),),
-                            
-                                Text("Duration 30 Mins",style: TextStyle(fontSize: 12, color: Colors.grey),)],
+                              children: [
+                                Text(
+                                  "Haircut(Women)",
+                                  style: TextStyle(fontSize: 14),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "Duration 30 Mins",
+                                  style: TextStyle(fontSize: 12, color: Colors.grey),
+                                )
+                              ],
                             ),
                           ),
                           Spacer(),
