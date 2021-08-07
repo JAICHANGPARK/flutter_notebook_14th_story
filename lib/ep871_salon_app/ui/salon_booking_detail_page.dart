@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep871_salon_app/components/booking_staff_widget.dart';
 import 'package:flutter_notebook_14th_story/ep871_salon_app/components/salon_booking_detail_service_widget.dart';
 
 class SalonBookingDetailPage extends StatelessWidget {
@@ -24,7 +25,10 @@ class SalonBookingDetailPage extends StatelessWidget {
         child: Column(
           children: [
             SalonBookingDetailServiceWidget(),
-
+            SizedBox(
+              height: 8,
+            ),
+            BookingStaffWidget(),
           ],
         ),
       ),
