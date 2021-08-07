@@ -34,9 +34,12 @@ class SalonBookingDetailServiceWidget extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [Text("Haircut(Women)"), Text("Duration 30 Mins")],
+                              children: [Text("Haircut(Women)",style: TextStyle(fontSize: 14),),
+                            
+                                Text("Duration 30 Mins",style: TextStyle(fontSize: 12, color: Colors.grey),)],
                             ),
                           ),
+                          Spacer(),
                           Container(
                             decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
                             padding: EdgeInsets.all(8),
