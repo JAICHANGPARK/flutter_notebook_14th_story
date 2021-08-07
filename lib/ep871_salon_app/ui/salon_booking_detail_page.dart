@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep871_salon_app/components/salon_booking_detail_service_widget.dart';
 
 class SalonBookingDetailPage extends StatelessWidget {
   String title;
@@ -8,6 +9,7 @@ class SalonBookingDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200],
       appBar: AppBar(
         elevation: 1,
         iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
@@ -20,7 +22,10 @@ class SalonBookingDetailPage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: [],
+          children: [
+            SalonBookingDetailServiceWidget(),
+
+          ],
         ),
       ),
     );
