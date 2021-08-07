@@ -11,25 +11,31 @@ class SalonBookingDetailServiceWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Services".toUpperCase()),
-          SizedBox(
-            height: 16,
-          ),
+          Text("Services".toUpperCase(),style: TextStyle(fontSize: 12, color: Colors.grey),),
+          SizedBox(height: 16),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: List.generate(
                 2,
                 (index) => Padding(
-                  padding: const EdgeInsets.only(bottom: 12),
-                  child: Row(
+                      padding: const EdgeInsets.only(bottom: 12),
+                      child: Row(
                         children: [
                           Container(
-                            height: 42,
-                            width: 42,
-                            color: Colors.blue,
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(
+                                color: Colors.blue,
+                              borderRadius: BorderRadius.circular(16)
+                            ),
+
                           ),
-                          Column(
-                            children: [Text("Haircut(Women)"), Text("Duration 30 Mins")],
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [Text("Haircut(Women)"), Text("Duration 30 Mins")],
+                            ),
                           ),
                           Container(
                             decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
@@ -41,7 +47,7 @@ class SalonBookingDetailServiceWidget extends StatelessWidget {
                           )
                         ],
                       ),
-                )),
+                    )),
           )
         ],
       ),
