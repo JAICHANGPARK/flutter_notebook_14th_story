@@ -7,31 +7,41 @@ class SalonBookingDetailServiceWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
+      padding: EdgeInsets.all(16),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text("Services".toUpperCase()),
-          Row(
-            children: [
-              Container(
-                height: 42,
-                width: 42,
-                color: Colors.blue,
-              ),
-              Column(
-                children: [
-                  Text("Haircut(Women)"),
-                  Text("Duration 30 Mins")
-                ],
-              ),
-              Container(
-                decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
-                padding: EdgeInsets.all(8),
-                child: Text(
-                  "\$ ${19.99}",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                ),
-              )
-            ],
+          SizedBox(
+            height: 16,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: List.generate(
+                2,
+                (index) => Padding(
+                  padding: const EdgeInsets.only(bottom: 12),
+                  child: Row(
+                        children: [
+                          Container(
+                            height: 42,
+                            width: 42,
+                            color: Colors.blue,
+                          ),
+                          Column(
+                            children: [Text("Haircut(Women)"), Text("Duration 30 Mins")],
+                          ),
+                          Container(
+                            decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
+                            padding: EdgeInsets.all(8),
+                            child: Text(
+                              "\$ ${19.99}",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                            ),
+                          )
+                        ],
+                      ),
+                )),
           )
         ],
       ),
