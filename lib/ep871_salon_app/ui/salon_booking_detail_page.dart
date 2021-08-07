@@ -10,7 +10,7 @@ class SalonBookingDetailPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            
+
           ],
         ),
       ),
