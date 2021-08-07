@@ -13,7 +13,8 @@ class SalonBookingList extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 4),
           child: GestureDetector(
             onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => SalonBookingDetailPage()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)
+              => SalonBookingDetailPage(title: bookingItems[index].code ?? "",)));
             },
             child: Container(
               padding: EdgeInsets.all(16),
