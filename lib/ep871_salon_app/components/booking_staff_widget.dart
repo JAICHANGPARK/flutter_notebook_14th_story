@@ -15,6 +15,7 @@ class BookingStaffWidget extends StatelessWidget {
             "Staff".toUpperCase(),
             style: TextStyle(fontSize: 12, color: Colors.grey),
           ),
+          SizedBox(height: 16,),
           Padding(
             padding: const EdgeInsets.only(bottom: 12),
             child: Row(
@@ -28,16 +29,16 @@ class BookingStaffWidget extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
-                        "Haircut(Women)",
+                        "Dreamwalker",
                         style: TextStyle(fontSize: 14),
                       ),
                       SizedBox(
                         height: 8,
                       ),
                       Text(
-                        "Duration 30 Mins",
+                        "Stylist",
                         style: TextStyle(fontSize: 12, color: Colors.grey),
                       )
                     ],
