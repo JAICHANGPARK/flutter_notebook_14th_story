@@ -49,9 +49,11 @@ class BookingCustomerWidget extends StatelessWidget {
                 ),
                 Spacer(),
 
-                CircleAvatar(backgroundColor: Colors.grey[200],),
+                CircleAvatar(backgroundColor: Colors.grey[200],
+                child: Icon(Icons.call_rounded),),
                 SizedBox(width: 12,),
-                CircleAvatar(backgroundColor: Colors.grey[200],),
+                CircleAvatar(backgroundColor: Colors.grey[200],
+                  child: Icon(Icons.chat_bubble),),
 
               ],
             ),
