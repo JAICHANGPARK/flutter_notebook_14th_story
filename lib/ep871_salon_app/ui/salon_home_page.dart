@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep871_salon_app/components/salon_booking_widget.dart';
 
+import 'salon_manage_page.dart';
+
 class SalonHomePage extends StatefulWidget {
   const SalonHomePage({Key? key}) : super(key: key);
 
@@ -32,9 +34,7 @@ class _SalonHomePageState extends State<SalonHomePage> with SingleTickerProvider
               color: Colors.green,
             ),
             SalonBookingWidget(),
-            Container(
-              color: Colors.blue,
-            ),
+            SalonManagePage(),
             Container(
               color: Colors.orange,
             ),
