@@ -6,12 +6,23 @@ class SalonManagePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(child: Container(), flex: 2,),
-        Expanded(child: Placeholder(), flex: 10,),
-      ],
+    return Scaffold(
+      appBar: AppBar(title: Text("Manage Staff"),),
+      body: Column(
+        children: [
+          Expanded(child: Container(
+            color: Colors.white,
+            child: Column(
+              children: [
+
+              ],
+            ),
+          ), flex: 2,),
+          Expanded(child: Placeholder(), flex: 10,),
+        ],
+      ),
+
+
     );
   }
 }
