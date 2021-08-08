@@ -8,7 +8,7 @@ class SalonManagePage extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        title: Text("Manage Staff"),
+        title: const Text("Manage Staff"),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 1,
@@ -19,12 +19,12 @@ class SalonManagePage extends StatelessWidget {
         children: [
           Container(
             height: 64,
-            padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
             color: Colors.white,
             child: Container(
               decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(16)),
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              child: TextField(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: const TextField(
                 decoration:
                     InputDecoration(border: InputBorder.none, hintText: "Search Staff", suffixIcon: Icon(Icons.search)),
               ),
@@ -34,7 +34,9 @@ class SalonManagePage extends StatelessWidget {
             height: 8,
           ),
           Expanded(
-            child: Placeholder(),
+            child: Container(
+              color: Colors.white,
+            ),
             flex: 10,
           ),
         ],
