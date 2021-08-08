@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep871_salon_app/components/booking_costomer_widget.dart';
 import 'package:flutter_notebook_14th_story/ep871_salon_app/components/booking_staff_widget.dart';
 import 'package:flutter_notebook_14th_story/ep871_salon_app/components/salon_booking_detail_service_widget.dart';
+import 'package:flutter_notebook_14th_story/ep871_salon_app/model/booking.dart';
 
 class SalonBookingDetailPage extends StatelessWidget {
   String title;
+  Booking booking;
 
-  SalonBookingDetailPage({Key? key, required this.title}) : super(key: key);
+  SalonBookingDetailPage({Key? key, required this.title, required this.booking}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
