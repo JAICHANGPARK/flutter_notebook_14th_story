@@ -43,6 +43,8 @@ class _SalonHomePageState extends State<SalonHomePage> with SingleTickerProvider
       ),
       bottomNavigationBar: BottomNavigationBar(
         onTap: (idx) {
+          if (idx == 2) Navigator.of(context).push(MaterialPageRoute(builder: (context) => SalonManagePage()));
+
           _pageController.jumpToPage(idx);
           setState(() {
             _pageIndex = idx;
@@ -57,7 +59,10 @@ class _SalonHomePageState extends State<SalonHomePage> with SingleTickerProvider
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.receipt_long), label: "Booking"),
-          BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Manage"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: "Manage",
+          ),
           BottomNavigationBarItem(icon: Icon(Icons.storefront), label: "MyBooking")
         ],
       ),
