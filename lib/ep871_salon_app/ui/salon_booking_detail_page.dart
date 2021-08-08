@@ -34,7 +34,6 @@ class SalonBookingDetailPage extends StatelessWidget {
             SizedBox(height: 8),
             BookingCustomerWidget(),
             SizedBox(height: 8),
-
             SalonBookingItem(booking: booking)
           ],
         ),
