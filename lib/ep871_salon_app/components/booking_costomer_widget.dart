@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class BookingCustomerWidget extends StatelessWidget {
   const BookingCustomerWidget({Key? key}) : super(key: key);
 
@@ -16,7 +15,9 @@ class BookingCustomerWidget extends StatelessWidget {
             "customers".toUpperCase(),
             style: TextStyle(fontSize: 12, color: Colors.grey),
           ),
-          SizedBox(height: 16,),
+          SizedBox(
+            height: 16,
+          ),
           Padding(
             padding: const EdgeInsets.only(bottom: 12),
             child: Row(
@@ -48,13 +49,19 @@ class BookingCustomerWidget extends StatelessWidget {
                   ),
                 ),
                 Spacer(),
+                CircleAvatar(
+                  backgroundColor: Colors.grey[200],
+                  foregroundColor: Colors.black,
+                  child: Icon(Icons.call_rounded,),
 
-                CircleAvatar(backgroundColor: Colors.grey[200],
-                child: Icon(Icons.call_rounded),),
-                SizedBox(width: 12,),
-                CircleAvatar(backgroundColor: Colors.grey[200],
-                  child: Icon(Icons.chat_bubble),),
-
+                ),
+                SizedBox(
+                  width: 12,
+                ),
+                CircleAvatar(
+                  backgroundColor: Colors.grey[200],
+                  child: Icon(Icons.chat_bubble),
+                ),
               ],
             ),
           )
