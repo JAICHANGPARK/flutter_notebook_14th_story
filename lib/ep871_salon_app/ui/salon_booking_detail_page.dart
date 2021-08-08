@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep871_salon_app/components/booking_costomer_widget.dart';
 import 'package:flutter_notebook_14th_story/ep871_salon_app/components/booking_staff_widget.dart';
 import 'package:flutter_notebook_14th_story/ep871_salon_app/components/salon_booking_detail_service_widget.dart';
+import 'package:flutter_notebook_14th_story/ep871_salon_app/components/salon_booking_item.dart';
 import 'package:flutter_notebook_14th_story/ep871_salon_app/model/booking.dart';
 
 class SalonBookingDetailPage extends StatelessWidget {
@@ -33,6 +34,8 @@ class SalonBookingDetailPage extends StatelessWidget {
             SizedBox(height: 8),
             BookingCustomerWidget(),
             SizedBox(height: 8),
+
+            SalonBookingItem(booking: booking)
           ],
         ),
       ),
