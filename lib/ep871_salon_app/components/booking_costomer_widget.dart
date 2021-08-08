@@ -60,6 +60,7 @@ class BookingCustomerWidget extends StatelessWidget {
                 ),
                 CircleAvatar(
                   backgroundColor: Colors.grey[200],
+                  foregroundColor: Colors.black,
                   child: Icon(Icons.chat_bubble),
                 ),
               ],
