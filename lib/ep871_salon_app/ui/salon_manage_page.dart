@@ -9,7 +9,8 @@ class SalonManagePage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-
+        Expanded(child: Container(), flex: 2,),
+        Expanded(child: Placeholder(), flex: 10,),
       ],
     );
   }
