@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_advanced_switch/flutter_advanced_switch.dart';
 import 'package:flutter_notebook_14th_story/ep871_salon_app/model/staff.dart';
 
 class SalonManagePage extends StatelessWidget {
@@ -67,6 +68,14 @@ class SalonManagePage extends StatelessWidget {
                                 Text("${manageStaffItems[index].services}", )
                               ],
                             ),
+                          ),
+                          Spacer(),
+                          Column(
+                            children: [
+                              Icon(Icons.more_horiz),
+                              Spacer(),
+                              AdvancedSwitch(),
+                            ],
                           )
                         ],
                       ),
