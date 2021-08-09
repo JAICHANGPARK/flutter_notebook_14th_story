@@ -50,13 +50,23 @@ class SalonManagePage extends StatelessWidget {
                                   image: NetworkImage("${manageStaffItems[index].profileImg}"),
                                 )),
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("${manageStaffItems[index].name}"),
-                              Text("${manageStaffItems[index].subtitle}"),
-                              Text("${manageStaffItems[index].services}")
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "${manageStaffItems[index].name}",
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 4),
+                                  child: Text("${manageStaffItems[index].subtitle}",
+                                    style: TextStyle(fontSize: 12, color: Colors.grey),),
+                                ),
+                                Text("${manageStaffItems[index].services}", )
+                              ],
+                            ),
                           )
                         ],
                       ),
