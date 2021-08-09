@@ -36,7 +36,7 @@ class SalonManagePage extends StatelessWidget {
           Expanded(
               child: ListView.separated(
                   itemBuilder: (context, index) {
-                    final controller = AdvancedSwitchController();
+                    final controller = AdvancedSwitchController(manageStaffItems[index].isOn);
                     return Container(
                       color: Colors.white,
                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
