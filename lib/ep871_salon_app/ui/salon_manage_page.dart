@@ -30,15 +30,8 @@ class SalonManagePage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            height: 8,
-          ),
-          Expanded(
-            child: Container(
-              color: Colors.white,
-            ),
-            flex: 10,
-          ),
+          SizedBox(height: 8),
+          Expanded(child: Container(color: Colors.white), flex: 10),
         ],
       ),
     );
