@@ -71,9 +71,10 @@ class SalonManagePage extends StatelessWidget {
                           ),
                           Spacer(),
                           Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Icon(Icons.more_horiz),
-                              Spacer(),
+                              SizedBox(height: 16,),
                               AdvancedSwitch(),
                             ],
                           )
