@@ -41,11 +41,22 @@ class SalonManagePage extends StatelessWidget {
                       child: Row(
                         children: [
                           Container(
-                            height: 48,
-                            width: 48,
+                            height: 54,
+                            width: 54,
                             decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(8),
+                                image: DecorationImage(
+                                  image: NetworkImage("${manageStaffItems[index].profileImg}"),
+                                )),
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("${manageStaffItems[index].name}"),
+                              Text("${manageStaffItems[index].subtitle}"),
+                              Text("${manageStaffItems[index].services}")
+                            ],
                           )
                         ],
                       ),
