@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep871_salon_app/model/staff.dart';
 
 class SalonManagePage extends StatelessWidget {
   const SalonManagePage({Key? key}) : super(key: key);
@@ -31,7 +32,19 @@ class SalonManagePage extends StatelessWidget {
             ),
           ),
           SizedBox(height: 8),
-          Expanded(child: Container(color: Colors.white), flex: 10),
+          Expanded(
+              child: ListView.separated(
+                  itemBuilder: (context, index) {
+                    return Container(
+                      color: Colors.white,
+                    );
+                  },
+                  separatorBuilder: (context, index) => Divider(
+                        color: Colors.grey[300],
+                        thickness: 4,
+                      ),
+                  itemCount: manageStaffItems.length),
+              flex: 10),
         ],
       ),
     );
