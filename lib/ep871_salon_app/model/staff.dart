@@ -10,11 +10,11 @@ class Staff {
   Staff({this.profileImg, this.name, this.subtitle, this.services, this.isOn = true});
 }
 
-List<Staff> manageStaffItems = [
-  Staff(
-      profileImg: "https://cdn.pixabay.com/photo/2017/12/01/08/02/paint-2990357__340.jpg",
-      name: RpgNameGenerator.getName("human", 'male'),
-      subtitle: "stylist",
-      services: "Caters to all/23 Services",
-      isOn: true),
-];
+List<Staff> manageStaffItems = List.generate(
+    10,
+    (index) => Staff(
+        profileImg: "https://cdn.pixabay.com/photo/2017/12/01/08/02/paint-2990357__340.jpg",
+        name: RpgNameGenerator.getName("human", 'male'),
+        subtitle: "stylist",
+        services: "Caters to all/23 Services",
+        isOn: index % 3 == 0 ? true : false));
