@@ -20,6 +20,7 @@ dependencies:
   date_picker_timeline: any
 
   rpgnamegenerator: "1.0.2"
+  flutter_advanced_switch: ^2.1.0
 
 dev_dependencies:
   flutter_test:
