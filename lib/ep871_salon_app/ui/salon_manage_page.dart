@@ -37,11 +37,23 @@ class SalonManagePage extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Container(
                       color: Colors.white,
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                            ),
+                          )
+                        ],
+                      ),
                     );
                   },
                   separatorBuilder: (context, index) => Divider(
-                        color: Colors.grey[300],
-                        thickness: 4,
+                        color: Colors.grey[200],
+                        thickness: 5,
                       ),
                   itemCount: manageStaffItems.length),
               flex: 10),
