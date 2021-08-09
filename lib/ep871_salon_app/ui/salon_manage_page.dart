@@ -36,6 +36,7 @@ class SalonManagePage extends StatelessWidget {
           Expanded(
               child: ListView.separated(
                   itemBuilder: (context, index) {
+                    final controller = AdvancedSwitchController();
                     return Container(
                       color: Colors.white,
                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
@@ -75,7 +76,9 @@ class SalonManagePage extends StatelessWidget {
                             children: [
                               Icon(Icons.more_horiz),
                               SizedBox(height: 16,),
-                              AdvancedSwitch(),
+                              AdvancedSwitch(
+                                controller: controller,
+                              ),
                             ],
                           )
                         ],
