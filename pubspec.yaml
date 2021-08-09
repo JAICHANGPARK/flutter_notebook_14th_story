@@ -19,6 +19,8 @@ dependencies:
   google_fonts: any
   date_picker_timeline: any
 
+  rpgnamegenerator: "1.0.2"
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
