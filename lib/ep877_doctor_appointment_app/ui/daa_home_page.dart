@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class DAAHomePage extends StatefulWidget {
   const DAAHomePage({Key? key}) : super(key: key);
 
@@ -14,12 +13,13 @@ class _DAAHomePageState extends State<DAAHomePage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(flex : 6,child: Container(
-            child:
-            ,
-          )),
-          Expanded(flex : 7,child: Placeholder()),
-          Expanded(flex : 2,child: Placeholder()),
+          Expanded(
+              flex: 6,
+              child: Container(
+                color: Colors.teal[300],
+              )),
+          Expanded(flex: 7, child: Placeholder()),
+          Expanded(flex: 2, child: Placeholder()),
         ],
       ),
     );
