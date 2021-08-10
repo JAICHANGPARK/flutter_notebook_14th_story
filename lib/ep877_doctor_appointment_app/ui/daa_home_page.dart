@@ -31,6 +31,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
                     decoration: BoxDecoration(color: Colors.white,
+                      borderRadius: BorderRadius.circular(32)
                     ),
                   ),
                       )),
