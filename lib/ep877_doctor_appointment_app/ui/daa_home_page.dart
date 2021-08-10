@@ -30,8 +30,12 @@ class _DAAHomePageState extends State<DAAHomePage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("👋 Hello,"),
+                                Text("👋 Hello,",style: TextStyle(
+                                  color: Colors.white.withOpacity(0.5)
+                                ),),
                                 Text("Dreamwalker")
                               ],
                             ),
