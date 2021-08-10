@@ -19,16 +19,27 @@ class _DAAHomePageState extends State<DAAHomePage> {
               color: Colors.teal[300],
               child: Column(
                 children: [
-                  SizedBox(height: 64,),
-                  Expanded(child: Placeholder()),
-                  Expanded(child: Container(
-                    decoration: BoxDecoration(),
-                  )),
-                  Expanded(child: Placeholder()),
+                  SizedBox(
+                    height: 64,
+                  ),
+                  Expanded(
+                      flex: 2,
+                      child: Placeholder()),
+                  Expanded(
+                    flex: 2,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                    decoration: BoxDecoration(color: Colors.white,
+                    ),
+                  ),
+                      )),
+                  Expanded(
+                      flex: 3,
+                      child: Placeholder()),
                 ],
               ),
             ),
-
           ),
           Expanded(flex: 7, child: Placeholder()),
           Expanded(flex: 2, child: Placeholder()),
