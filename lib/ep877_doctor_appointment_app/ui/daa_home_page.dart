@@ -21,7 +21,9 @@ class _DAAHomePageState extends State<DAAHomePage> {
                 children: [
                   SizedBox(height: 64,),
                   Expanded(child: Placeholder()),
-                  Expanded(child: Placeholder()),
+                  Expanded(child: Container(
+                    decoration: BoxDecoration(),
+                  )),
                   Expanded(child: Placeholder()),
                 ],
               ),
