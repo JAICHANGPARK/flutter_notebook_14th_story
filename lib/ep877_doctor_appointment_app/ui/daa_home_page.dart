@@ -14,11 +14,12 @@ class _DAAHomePageState extends State<DAAHomePage> {
       body: Column(
         children: [
           Expanded(
-            flex: 6,
+            flex: 7,
             child: Container(
               color: Colors.teal[300],
               child: Column(
                 children: [
+                  SizedBox(height: 64,),
                   Expanded(child: Placeholder()),
                   Expanded(child: Placeholder()),
                   Expanded(child: Placeholder()),
