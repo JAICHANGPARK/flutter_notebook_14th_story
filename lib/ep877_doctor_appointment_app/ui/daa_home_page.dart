@@ -14,7 +14,10 @@ class _DAAHomePageState extends State<DAAHomePage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(flex : 6,child: Placeholder()),
+          Expanded(flex : 6,child: Container(
+            child:
+            ,
+          )),
           Expanded(flex : 7,child: Placeholder()),
           Expanded(flex : 2,child: Placeholder()),
         ],
