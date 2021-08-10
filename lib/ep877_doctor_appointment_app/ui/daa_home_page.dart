@@ -25,7 +25,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                   Expanded(
                       flex: 2,
                       child: Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -40,7 +40,11 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                 SizedBox(
                                   height: 12,
                                 ),
-                                Text("Dreamwalker")
+                                Text("Dreamwalker",style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white
+                                ),)
                               ],
                             ),
                             CircleAvatar()
