@@ -56,8 +56,8 @@ class _DAAHomePageState extends State<DAAHomePage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
                           decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(32)),
-                          
-                          child: Center(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: const Center(
                             child: const TextField(
                               decoration: InputDecoration(
                                   border: InputBorder.none, hintText: "Search", icon: Icon(Icons.search)),
