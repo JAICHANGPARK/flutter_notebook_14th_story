@@ -24,7 +24,21 @@ class _DAAHomePageState extends State<DAAHomePage> {
                   ),
                   Expanded(
                       flex: 2,
-                      child: Placeholder()),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              children: [
+                                Text("👋 Hello,"),
+                                Text("Dreamwalker")
+                              ],
+                            ),
+                            CircleAvatar()
+                          ],
+                        ),
+                      )),
                   Expanded(
                     flex: 2,
                       child: Padding(
