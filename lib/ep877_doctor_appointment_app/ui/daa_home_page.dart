@@ -40,11 +40,10 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                 SizedBox(
                                   height: 12,
                                 ),
-                                Text("Dreamwalker",style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white
-                                ),)
+                                Text(
+                                  "Dreamwalker",
+                                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+                                )
                               ],
                             ),
                             CircleAvatar()
@@ -57,6 +56,13 @@ class _DAAHomePageState extends State<DAAHomePage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
                           decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(32)),
+                          
+                          child: Center(
+                            child: const TextField(
+                              decoration: InputDecoration(
+                                  border: InputBorder.none, hintText: "Search", icon: Icon(Icons.search)),
+                            ),
+                          ),
                         ),
                       )),
                   Expanded(flex: 3, child: Placeholder()),
