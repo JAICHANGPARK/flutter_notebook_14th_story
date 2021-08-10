@@ -37,6 +37,9 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                   "👋 Hello,",
                                   style: TextStyle(color: Colors.white),
                                 ),
+                                SizedBox(
+                                  height: 12,
+                                ),
                                 Text("Dreamwalker")
                               ],
                             ),
