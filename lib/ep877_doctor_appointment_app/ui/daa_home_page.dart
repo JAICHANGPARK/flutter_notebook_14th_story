@@ -112,6 +112,42 @@ class _DAAHomePageState extends State<DAAHomePage> {
                               color: value == 1 ? Colors.orange : Colors.blueGrey,
                             ),
                           ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              height: 3,
+                              width: 24,
+                              decoration: BoxDecoration(
+                                color: value == 2 ? Colors.orange : Colors.white,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () {
+                                _bottomIndex.value = 2;
+                              },
+                              icon: Icon(Icons.calendar_today),
+                              color: value == 2 ? Colors.orange : Colors.blueGrey,
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              height: 3,
+                              width: 24,
+                              decoration: BoxDecoration(
+                                color: value == 3 ? Colors.orange : Colors.white,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () {
+                                _bottomIndex.value = 3;
+                              },
+                              icon: Icon(Icons.settings_outlined),
+                              color: value == 3 ? Colors.orange : Colors.blueGrey,
+                            ),
+                          ],
                         )
                       ],
                     ),
