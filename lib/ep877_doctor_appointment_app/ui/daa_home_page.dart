@@ -66,18 +66,25 @@ class _DAAHomePageState extends State<DAAHomePage> {
               ),
             ),
           ),
-          Expanded(flex: 7, child: Placeholder()),
-          Expanded(flex: 2, child: Container(
-            child: Row(
-              children: [
-                Column(
+          Expanded(flex: 12, child: Placeholder()),
+          Expanded(
+              flex: 2,
+              child: Container(
+                child: Row(
                   children: [
-                    
+                    Column(
+                      children: [
+                        Container(
+                          height: 3,
+                          width: 24,
+                          decoration: BoxDecoration(color: Colors.orange),
+                        ),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+                      ],
+                    )
                   ],
-                )
-              ],
-            ),
-          )),
+                ),
+              )),
         ],
       ),
     );
