@@ -8,6 +8,8 @@ class DAAHomePage extends StatefulWidget {
 }
 
 class _DAAHomePageState extends State<DAAHomePage> {
+  ValueNotifier<int> _bottomIndex = ValueNotifier(0);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,21 +71,26 @@ class _DAAHomePageState extends State<DAAHomePage> {
           Expanded(flex: 12, child: Placeholder()),
           Expanded(
               flex: 2,
-              child: Container(
-                child: Row(
-                  children: [
-                    Column(
+              child: ValueListenableBuilder(
+                builder: (context, value, child) {
+                  return Container(
+                    child: Row(
                       children: [
-                        Container(
-                          height: 3,
-                          width: 24,
-                          decoration: BoxDecoration(color: Colors.orange),
-                        ),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+                        Column(
+                          children: [
+                            Container(
+                              height: 3,
+                              width: 24,
+                              decoration: BoxDecoration(color: Colors.orange),
+                            ),
+                            IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+                          ],
+                        )
                       ],
-                    )
-                  ],
-                ),
+                    ),
+                  );
+                },
+                valueListenable: _bottomIndex,
               )),
         ],
       ),
