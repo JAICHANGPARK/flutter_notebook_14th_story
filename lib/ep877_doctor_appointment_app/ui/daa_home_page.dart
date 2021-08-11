@@ -34,13 +34,8 @@ class _DAAHomePageState extends State<DAAHomePage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
-                                  "👋 Hello,",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                                SizedBox(
-                                  height: 12,
-                                ),
+                                Text("👋 Hello,", style: TextStyle(color: Colors.white)),
+                                SizedBox(height: 12),
                                 Text(
                                   "Dreamwalker",
                                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
@@ -72,7 +67,17 @@ class _DAAHomePageState extends State<DAAHomePage> {
             ),
           ),
           Expanded(flex: 7, child: Placeholder()),
-          Expanded(flex: 2, child: Placeholder()),
+          Expanded(flex: 2, child: Container(
+            child: Row(
+              children: [
+                Column(
+                  children: [
+                    
+                  ],
+                )
+              ],
+            ),
+          )),
         ],
       ),
     );
