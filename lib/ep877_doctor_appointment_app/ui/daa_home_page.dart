@@ -105,7 +105,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                               onPressed: () {
                                 _bottomIndex.value = 1;
                               },
-                              icon: Icon(Icons.home),
+                              icon: Icon(Icons.document_scanner),
                               color: value == 1 ? Colors.orange : Colors.blueGrey,
                             ),
                           ],
