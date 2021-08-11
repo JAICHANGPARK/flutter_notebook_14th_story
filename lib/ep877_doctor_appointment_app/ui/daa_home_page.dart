@@ -15,7 +15,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
       body: Column(
         children: [
           Expanded(
-            flex: 7,
+            flex: 9,
             child: Container(
               color: Colors.teal[300],
               child: Column(
@@ -24,9 +24,9 @@ class _DAAHomePageState extends State<DAAHomePage> {
                     height: 64,
                   ),
                   Expanded(
-                      flex: 2,
+                      flex: 4,
                       child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -47,7 +47,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                         ),
                       )),
                   Expanded(
-                      flex: 2,
+                      flex: 4,
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
@@ -61,7 +61,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                           ),
                         ),
                       )),
-                  Expanded(flex: 3, child: Placeholder()),
+                  Expanded(flex: 6, child: Placeholder()),
                 ],
               ),
             ),
