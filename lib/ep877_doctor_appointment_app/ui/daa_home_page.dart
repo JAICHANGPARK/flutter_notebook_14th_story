@@ -71,7 +71,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
           Expanded(flex: 12, child: Placeholder()),
           Expanded(
               flex: 2,
-              child: ValueListenableBuilder(
+              child: ValueListenableBuilder<int>(
                 builder: (context, value, child) {
                   return Container(
                     child: Row(
@@ -83,7 +83,31 @@ class _DAAHomePageState extends State<DAAHomePage> {
                               width: 24,
                               decoration: BoxDecoration(color: Colors.orange),
                             ),
-                            IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+                            IconButton(
+                              onPressed: () {
+                                _bottomIndex.value = 0;
+                              },
+                              icon: Icon(Icons.home),
+                              color: value == 0 ? Colors.orange : Colors.blueGrey,
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              height: 3,
+                              width: 24,
+                              decoration: BoxDecoration(
+                                color: value == 1 ? Colors.orange : Colors.white,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () {
+                                _bottomIndex.value = 1;
+                              },
+                              icon: Icon(Icons.home),
+                              color: value == 1 ? Colors.orange : Colors.blueGrey,
+                            ),
                           ],
                         )
                       ],
