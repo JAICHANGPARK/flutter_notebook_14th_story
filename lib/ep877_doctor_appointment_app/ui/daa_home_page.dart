@@ -81,7 +81,9 @@ class _DAAHomePageState extends State<DAAHomePage> {
                             Container(
                               height: 3,
                               width: 24,
-                              decoration: BoxDecoration(color: Colors.orange),
+                              decoration: BoxDecoration(
+                                color: value == 0 ? Colors.orange : Colors.white,
+                              ),
                             ),
                             IconButton(
                               onPressed: () {
