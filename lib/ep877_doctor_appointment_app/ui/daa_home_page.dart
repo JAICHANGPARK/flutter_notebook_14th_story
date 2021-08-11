@@ -16,7 +16,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
       resizeToAvoidBottomInset: false,
       body: Column(
         children: [
-          ValueListenableBuilder(valueListenable: _bottomIndex, builder: (context, value, child){
+          ValueListenableBuilder<int>(valueListenable: _bottomIndex, builder: (context, value, child){
             if(value == 0) {
               return Column(
                 children: [
@@ -75,7 +75,9 @@ class _DAAHomePageState extends State<DAAHomePage> {
                   Expanded(flex: 12, child: Placeholder()),
                 ],
               );
-            }
+            }else if(value == 1) return Container(child: Center(child: Text("Page2"),),);
+            else if(value == 2) return Container(child: Center(child: Text("Page3"),),);
+            else  return Container(child: Center(child: Text("else"),),);
           }),
 
           Expanded(
