@@ -75,6 +75,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                 builder: (context, value, child) {
                   return Container(
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Column(
                           children: [
