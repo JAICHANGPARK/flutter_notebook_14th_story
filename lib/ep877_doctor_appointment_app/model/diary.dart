@@ -1,9 +1,9 @@
 class Diary {
-  String weekend;
+  String weekday;
   String day;
   bool isEvent;
 
-  Diary(this.weekend, this.day, this.isEvent);
+  Diary(this.weekday, this.day, this.isEvent);
 }
 
 List<Diary> calItems = List.generate(7, (index) {
