@@ -80,6 +80,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                     scrollDirection: Axis.horizontal,
                                     itemBuilder: (context, index) {
                                       return Column(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
                                             calItems[index].weekday,
@@ -92,7 +93,9 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                           ),
                                           Row(
                                             children: [
-                                              
+                                              CircleAvatar(radius: 2, backgroundColor: Colors.white,),
+                                              SizedBox(width: 8,),
+                                              CircleAvatar(radius: 2, backgroundColor: Colors.white,)
                                             ],
                                           )
                                         ],
