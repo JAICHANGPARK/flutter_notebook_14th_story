@@ -74,7 +74,11 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                       ),
                                     )),
                                 Expanded(flex: 6, child: ListView.builder(itemBuilder: (context, index){
-                                  return C
+                                  return Column(
+                                    children: [
+
+                                    ],
+                                  );
                                 },
                                 itemCount: 10,),),
                               ],
