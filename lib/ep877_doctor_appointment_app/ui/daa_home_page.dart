@@ -79,8 +79,10 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                   itemBuilder: (context, index){
                                   return Column(
                                     children: [
-                                        Text(calItems[index].weekend),
-                                      Text(calItems[index].weekend),
+                                        Text(calItems[index].weekday),
+                                      CircleAvatar(
+                                          child:
+                                          Text(calItems[index].day)),
                                     ],
                                   );
                                 },
