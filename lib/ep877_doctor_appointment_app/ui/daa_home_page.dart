@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep877_doctor_appointment_app/model/diary.dart';
 
 class DAAHomePage extends StatefulWidget {
   const DAAHomePage({Key? key}) : super(key: key);
@@ -73,14 +74,17 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                         ),
                                       ),
                                     )),
-                                Expanded(flex: 6, child: ListView.builder(itemBuilder: (context, index){
+                                Expanded(flex: 6, child: ListView.builder(
+
+                                  itemBuilder: (context, index){
                                   return Column(
                                     children: [
-
+                                        Text(calItems[index].weekend),
+                                      Text(calItems[index].weekend),
                                     ],
                                   );
                                 },
-                                itemCount: 10,),),
+                                itemCount: calItems.length,),),
                               ],
                             ),
                           ),
