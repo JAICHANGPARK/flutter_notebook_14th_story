@@ -74,20 +74,25 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                         ),
                                       ),
                                     )),
-                                Expanded(flex: 6, child: ListView.builder(
-                                  scrollDirection: Axis.horizontal,
-
-                                  itemBuilder: (context, index){
-                                  return Column(
-                                    children: [
-                                        Text(calItems[index].weekday),
-                                      CircleAvatar(
-                                          child:
-                                          Text(calItems[index].day)),
-                                    ],
-                                  );
-                                },
-                                itemCount: calItems.length,),),
+                                Expanded(
+                                  flex: 6,
+                                  child: ListView.builder(
+                                    scrollDirection: Axis.horizontal,
+                                    itemBuilder: (context, index) {
+                                      return Column(
+                                        children: [
+                                          Text(
+                                            calItems[index].weekday,
+                                            style: TextStyle(color: Colors.white),
+                                          ),
+                                          CircleAvatar(child: Text(calItems[index].day),
+                                          backgroundColor: Colors.white.withOpacity(0.2),),
+                                        ],
+                                      );
+                                    },
+                                    itemCount: calItems.length,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
