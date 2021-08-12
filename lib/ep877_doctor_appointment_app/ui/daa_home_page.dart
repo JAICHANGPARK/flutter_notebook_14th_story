@@ -85,8 +85,16 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                             calItems[index].weekday,
                                             style: TextStyle(color: Colors.white),
                                           ),
-                                          CircleAvatar(child: Text(calItems[index].day),
-                                          backgroundColor: Colors.white.withOpacity(0.2),),
+                                          CircleAvatar(
+                                            child: Text(calItems[index].day),
+                                            backgroundColor: Colors.white.withOpacity(0.2),
+                                            foregroundColor: Colors.white,
+                                          ),
+                                          Row(
+                                            children: [
+                                              
+                                            ],
+                                          )
                                         ],
                                       );
                                     },
