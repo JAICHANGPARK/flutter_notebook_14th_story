@@ -104,7 +104,9 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                               ),
                                               CircleAvatar(
                                                 radius: 2,
-                                                backgroundColor: Colors.white,
+                                                backgroundColor:
+                                                calItems[index].isEvent ? Colors.white :
+                                                Colors.transparent,
                                               )
                                             ],
                                           )
