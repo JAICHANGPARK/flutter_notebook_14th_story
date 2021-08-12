@@ -73,7 +73,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                         ),
                                       ),
                                     )),
-                                Expanded(flex: 6, child: Placeholder()),
+                                Expanded(flex: 6, child: ListView.()),
                               ],
                             ),
                           ),
