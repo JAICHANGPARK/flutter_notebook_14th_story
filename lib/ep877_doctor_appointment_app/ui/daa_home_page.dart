@@ -79,38 +79,41 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
                                     itemBuilder: (context, index) {
-                                      return Column(
-                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                        children: [
-                                          Text(
-                                            calItems[index].weekday,
-                                            style: TextStyle(color: Colors.white),
-                                          ),
-                                          CircleAvatar(
-                                            child: Text(calItems[index].day),
-                                            backgroundColor: Colors.white.withOpacity(0.2),
-                                            foregroundColor: Colors.white,
-                                          ),
-                                          Row(
-                                            children: [
-                                              CircleAvatar(
-                                                radius: 2,
-                                                backgroundColor:
-                                                    calItems[index].isEvent ? Colors.white :
-                                                    Colors.transparent,
-                                              ),
-                                              SizedBox(
-                                                width: 8,
-                                              ),
-                                              CircleAvatar(
-                                                radius: 2,
-                                                backgroundColor:
-                                                calItems[index].isEvent ? Colors.white :
-                                                Colors.transparent,
-                                              )
-                                            ],
-                                          )
-                                        ],
+                                      return Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                                        child: Column(
+                                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                          children: [
+                                            Text(
+                                              calItems[index].weekday,
+                                              style: TextStyle(color: Colors.white),
+                                            ),
+                                            CircleAvatar(
+                                              child: Text(calItems[index].day),
+                                              backgroundColor: Colors.white.withOpacity(0.2),
+                                              foregroundColor: Colors.white,
+                                            ),
+                                            Row(
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 2,
+                                                  backgroundColor:
+                                                      calItems[index].isEvent ? Colors.white :
+                                                      Colors.transparent,
+                                                ),
+                                                SizedBox(
+                                                  width: 8,
+                                                ),
+                                                CircleAvatar(
+                                                  radius: 2,
+                                                  backgroundColor:
+                                                  calItems[index].isEvent ? Colors.white :
+                                                  Colors.transparent,
+                                                )
+                                              ],
+                                            )
+                                          ],
+                                        ),
                                       );
                                     },
                                     itemCount: calItems.length,
