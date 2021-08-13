@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class DoctorsPage extends StatefulWidget {
   const DoctorsPage({Key? key}) : super(key: key);
 
@@ -15,8 +14,20 @@ class _DoctorsPageState extends State<DoctorsPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
+            Expanded(
+              child: Container(
+                color: Colors.teal,
+              ),
+              flex: 4,
+            ),
+            Expanded(
+              child: ListView(
+                children: [
+                  
+                ],
+              ),
+              flex: 12,
+            ),
           ],
         ),
       ),
