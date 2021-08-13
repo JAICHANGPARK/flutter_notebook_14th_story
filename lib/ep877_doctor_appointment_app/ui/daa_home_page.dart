@@ -127,7 +127,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                               padding: EdgeInsets.zero,
                               children: [
                                 Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: ),
+                                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                                   child: Column(
                                     children: [
                                       Row(
