@@ -21,10 +21,22 @@ class _DoctorsPageState extends State<DoctorsPage> {
                   children: [
                     Row(
                       children: [
-                        IconButton(onPressed: () => Navigator.of(context).pop(), icon: Icon(Icons.arrow_back_ios)),
-                        Text("DOCTORS"),
+                        IconButton(
+                            color: Colors.white,
+                            onPressed: () => Navigator.of(context).pop(),
+                            icon: Icon(Icons.arrow_back_ios)),
+                        Text(
+                          "DOCTORS",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                         Spacer(),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.info_outline))
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.info_outline),
+                          color: Colors.white,
+                        )
                       ],
                     )
                   ],
