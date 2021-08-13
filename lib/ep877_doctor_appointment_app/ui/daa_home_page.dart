@@ -121,12 +121,16 @@ class _DAAHomePageState extends State<DAAHomePage> {
                             ),
                           ),
                         ),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Expanded(
                             flex: 12,
                             child: ListView(
                               padding: EdgeInsets.zero,
                               children: [
                                 Container(
+                                  color: Colors.white,
                                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                                   child: Column(
                                     children: [
@@ -135,7 +139,11 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                           Text(
                                             "Services".toUpperCase(),
                                             style: TextStyle(fontWeight: FontWeight.bold),
-                                          )
+                                          ),
+                                          Text(
+                                            "See All".toUpperCase(),
+                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                          ),
                                         ],
                                       )
                                     ],
