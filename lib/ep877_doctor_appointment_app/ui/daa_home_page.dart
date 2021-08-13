@@ -124,8 +124,10 @@ class _DAAHomePageState extends State<DAAHomePage> {
                         Expanded(
                             flex: 12,
                             child: ListView(
+                              padding: EdgeInsets.zero,
                               children: [
                                 Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: ),
                                   child: Column(
                                     children: [
                                       Row(
