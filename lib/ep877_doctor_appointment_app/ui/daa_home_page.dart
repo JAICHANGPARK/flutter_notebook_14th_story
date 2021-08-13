@@ -190,9 +190,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                           Column(
                                             children: [
                                               GestureDetector(
-                                                onTap: () {
-                                                  Navigator.of(context).pushNamed("/doctors");
-                                                },
+                                                onTap: () => Navigator.of(context).pushNamed("/doctors"),
                                                 child: Container(
                                                   height: 64,
                                                   width: 64,
