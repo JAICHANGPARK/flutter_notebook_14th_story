@@ -135,6 +135,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                   child: Column(
                                     children: [
                                       Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
                                             "Services".toUpperCase(),
@@ -142,7 +143,8 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                           ),
                                           Text(
                                             "See All".toUpperCase(),
-                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                            style: TextStyle(fontWeight: FontWeight.bold,
+                                            color: Colors.orange),
                                           ),
                                         ],
                                       )
