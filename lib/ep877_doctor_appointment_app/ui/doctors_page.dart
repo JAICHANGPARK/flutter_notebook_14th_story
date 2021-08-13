@@ -17,14 +17,24 @@ class _DoctorsPageState extends State<DoctorsPage> {
             Expanded(
               child: Container(
                 color: Colors.teal,
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        IconButton(onPressed: () => Navigator.of(context).pop(), icon: Icon(Icons.arrow_back_ios)),
+                        Text("DOCTORS"),
+                        Spacer(),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.info_outline))
+                      ],
+                    )
+                  ],
+                ),
               ),
               flex: 4,
             ),
             Expanded(
               child: ListView(
-                children: [
-                  
-                ],
+                children: [],
               ),
               flex: 12,
             ),
