@@ -143,12 +143,10 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                           ),
                                           Text(
                                             "See All".toUpperCase(),
-                                            style: TextStyle(fontWeight: FontWeight.bold,
-                                            color: Colors.orange),
+                                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange),
                                           ),
                                         ],
                                       ),
-
                                       Row(
                                         children: [
                                           Column(
@@ -158,14 +156,15 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                                 height: 64,
                                                 width: 64,
                                               ),
+                                              SizedBox(
+                                                height: 16,
+                                              ),
                                               Text("Covid-19")
                                             ],
                                           )
                                         ],
                                       )
                                     ],
-
-
                                   ),
                                 )
                               ],
