@@ -121,11 +121,26 @@ class _DAAHomePageState extends State<DAAHomePage> {
                             ),
                           ),
                         ),
-                        Expanded(flex: 12, child: ListView(
-                          children: [
-                            
-                          ],
-                        )),
+                        Expanded(
+                            flex: 12,
+                            child: ListView(
+                              children: [
+                                Container(
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Text(
+                                            "Services".toUpperCase(),
+                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            )),
                       ],
                     );
                   } else if (value == 1)
