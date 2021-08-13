@@ -157,7 +157,8 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                                 color: Colors.teal[200]!,
                                                 height: 64,
                                                 width: 64,
-                                              )
+                                              ),
+                                              Text("Covid-19")
                                             ],
                                           )
                                         ],
