@@ -151,11 +151,11 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                         height: 16,
                                       ),
                                       Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
                                           Column(
                                             children: [
                                               Container(
-
                                                 height: 64,
                                                 width: 64,
                                                 child: Stack(
@@ -185,6 +185,108 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                                 height: 16,
                                               ),
                                               Text("Covid-19")
+                                            ],
+                                          ),
+                                          Column(
+                                            children: [
+                                              Container(
+                                                height: 64,
+                                                width: 64,
+                                                child: Stack(
+                                                  children: [
+                                                    Positioned(
+                                                      left: 0,
+                                                      right: 0,
+                                                      top: 0,
+                                                      bottom: 0,
+                                                      child: CircleAvatar(
+                                                        backgroundColor: Colors.teal[200]!,
+                                                      ),
+                                                    ),
+                                                    Positioned(
+                                                      left: 8,
+                                                      right: 8,
+                                                      top: 8,
+                                                      bottom: 8,
+                                                      child: CircleAvatar(
+                                                        backgroundColor: Colors.teal[500]!,
+                                                      ),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 16,
+                                              ),
+                                              Text("Doctors")
+                                            ],
+                                          ),
+                                          Column(
+                                            children: [
+                                              Container(
+                                                height: 64,
+                                                width: 64,
+                                                child: Stack(
+                                                  children: [
+                                                    Positioned(
+                                                      left: 0,
+                                                      right: 0,
+                                                      top: 0,
+                                                      bottom: 0,
+                                                      child: CircleAvatar(
+                                                        backgroundColor: Colors.teal[200]!,
+                                                      ),
+                                                    ),
+                                                    Positioned(
+                                                      left: 8,
+                                                      right: 8,
+                                                      top: 8,
+                                                      bottom: 8,
+                                                      child: CircleAvatar(
+                                                        backgroundColor: Colors.teal[500]!,
+                                                      ),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 16,
+                                              ),
+                                              Text("Hospitals")
+                                            ],
+                                          ),
+                                          Column(
+                                            children: [
+                                              Container(
+                                                height: 64,
+                                                width: 64,
+                                                child: Stack(
+                                                  children: [
+                                                    Positioned(
+                                                      left: 0,
+                                                      right: 0,
+                                                      top: 0,
+                                                      bottom: 0,
+                                                      child: CircleAvatar(
+                                                        backgroundColor: Colors.teal[200]!,
+                                                      ),
+                                                    ),
+                                                    Positioned(
+                                                      left: 8,
+                                                      right: 8,
+                                                      top: 8,
+                                                      bottom: 8,
+                                                      child: CircleAvatar(
+                                                        backgroundColor: Colors.teal[500]!,
+                                                      ),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 16,
+                                              ),
+                                              Text("Medicines")
                                             ],
                                           )
                                         ],
