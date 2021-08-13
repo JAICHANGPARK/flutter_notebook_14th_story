@@ -98,8 +98,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                                 CircleAvatar(
                                                   radius: 2,
                                                   backgroundColor:
-                                                      calItems[index].isEvent ? Colors.white :
-                                                      Colors.transparent,
+                                                      calItems[index].isEvent ? Colors.white : Colors.transparent,
                                                 ),
                                                 SizedBox(
                                                   width: 8,
@@ -107,8 +106,7 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                                 CircleAvatar(
                                                   radius: 2,
                                                   backgroundColor:
-                                                  calItems[index].isEvent ? Colors.white :
-                                                  Colors.transparent,
+                                                      calItems[index].isEvent ? Colors.white : Colors.transparent,
                                                 )
                                               ],
                                             )
@@ -123,7 +121,11 @@ class _DAAHomePageState extends State<DAAHomePage> {
                             ),
                           ),
                         ),
-                        Expanded(flex: 12, child: Placeholder()),
+                        Expanded(flex: 12, child: ListView(
+                          children: [
+                            
+                          ],
+                        )),
                       ],
                     );
                   } else if (value == 1)
