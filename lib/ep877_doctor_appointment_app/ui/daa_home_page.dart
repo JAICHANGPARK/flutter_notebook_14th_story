@@ -147,6 +147,9 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                           ),
                                         ],
                                       ),
+                                      SizedBox(
+                                        height: 16,
+                                      ),
                                       Row(
                                         children: [
                                           Column(
