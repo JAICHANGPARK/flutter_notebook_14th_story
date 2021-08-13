@@ -147,8 +147,24 @@ class _DAAHomePageState extends State<DAAHomePage> {
                                             color: Colors.orange),
                                           ),
                                         ],
+                                      ),
+
+                                      Row(
+                                        children: [
+                                          Column(
+                                            children: [
+                                              Container(
+                                                color: Colors.teal[200]!,
+                                                height: 64,
+                                                width: 64,
+                                              )
+                                            ],
+                                          )
+                                        ],
                                       )
                                     ],
+
+
                                   ),
                                 )
                               ],
