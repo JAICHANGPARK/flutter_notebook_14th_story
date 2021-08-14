@@ -68,17 +68,23 @@ class _DoctorsPageState extends State<DoctorsPage> {
               child: ListView.builder(
                 itemCount: doctorItems.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return Container(
-                    color: Colors.white,
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Text("Doctor nearby".toUpperCase()),
-                            Text("See all".toUpperCase())
-                          ],
-                        )
-                      ],
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 6),
+                    child: Container(
+                      color: Colors.white,
+                      padding: const EdgeInsets.all(16),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Doctor nearby".toUpperCase()),
+
+                              Text("See all".toUpperCase())
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   );
                 },
