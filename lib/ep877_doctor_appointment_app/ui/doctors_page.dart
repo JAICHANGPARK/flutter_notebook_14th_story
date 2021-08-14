@@ -82,7 +82,9 @@ class _DoctorsPageState extends State<DoctorsPage> {
                               Text("See all".toUpperCase()),
                             ],
                           ),
-                          SizedBox(height: 16,),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Row(
                             children: [
                               CircleAvatar(
@@ -90,6 +92,7 @@ class _DoctorsPageState extends State<DoctorsPage> {
                                 backgroundImage: NetworkImage(doctorItems[index].profileImg ?? ""),
                               ),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(doctorItems[index].name ?? "Dreamwalker"),
                                   Text(doctorItems[index].subtitle ?? "Dreamwalker"),
@@ -98,13 +101,33 @@ class _DoctorsPageState extends State<DoctorsPage> {
                                       CircleAvatar(
                                         radius: 10,
                                       ),
+                                      SizedBox(width: 4),
                                       Text("${doctorItems[index].year} years"),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
                                       CircleAvatar(
                                         radius: 10,
+                                      ),
+                                      SizedBox(
+                                        width: 4,
                                       ),
                                       Text("${doctorItems[index].like} %"),
                                     ],
                                   )
+                                ],
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Text("Total fee"),
+                                  Text("\$${doctorItems[index].price}"),
                                 ],
                               )
                             ],
