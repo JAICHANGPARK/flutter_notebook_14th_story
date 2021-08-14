@@ -45,12 +45,15 @@ class _DoctorsPageState extends State<DoctorsPage> {
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
                         height: 64,
-                        decoration: BoxDecoration(color: Colors.white,
-                            borderRadius: BorderRadius.circular(36)),
-                        child: TextField(
-                          controller: _textEditingController,
-                          decoration: InputDecoration(
-                            
+                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(36)),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: TextField(
+                            controller: _textEditingController,
+                            decoration:
+                                InputDecoration(hintText: "Search",
+                                    icon: Icon(Icons.search),
+                                    border: InputBorder.none),
                           ),
                         ),
                       ),
