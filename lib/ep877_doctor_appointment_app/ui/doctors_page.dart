@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep877_doctor_appointment_app/model/doctor.dart';
 
 class DoctorsPage extends StatefulWidget {
   const DoctorsPage({Key? key}) : super(key: key);
@@ -13,6 +14,8 @@ class _DoctorsPageState extends State<DoctorsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200],
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Column(
           children: [
@@ -51,9 +54,7 @@ class _DoctorsPageState extends State<DoctorsPage> {
                           child: TextField(
                             controller: _textEditingController,
                             decoration:
-                                InputDecoration(hintText: "Search",
-                                    icon: Icon(Icons.search),
-                                    border: InputBorder.none),
+                                InputDecoration(hintText: "Search", icon: Icon(Icons.search), border: InputBorder.none),
                           ),
                         ),
                       ),
@@ -64,8 +65,11 @@ class _DoctorsPageState extends State<DoctorsPage> {
               flex: 3,
             ),
             Expanded(
-              child: ListView(
-                children: [],
+              child: ListView.builder(
+                itemCount: doctorItems.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return Container();
+                },
               ),
               flex: 12,
             ),
