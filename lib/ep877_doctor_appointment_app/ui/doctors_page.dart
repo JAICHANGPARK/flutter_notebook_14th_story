@@ -40,6 +40,13 @@ class _DoctorsPageState extends State<DoctorsPage> {
                           color: Colors.white,
                         )
                       ],
+                    ),
+                    Container(
+                      height: 64,
+                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24)),
+                      child: TextField(
+                        controller: _textEditingController,
+                      ),
                     )
                   ],
                 ),
