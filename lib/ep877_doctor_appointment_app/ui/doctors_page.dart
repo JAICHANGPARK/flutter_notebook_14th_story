@@ -41,17 +41,24 @@ class _DoctorsPageState extends State<DoctorsPage> {
                         )
                       ],
                     ),
-                    Container(
-                      height: 64,
-                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24)),
-                      child: TextField(
-                        controller: _textEditingController,
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: 64,
+                        decoration: BoxDecoration(color: Colors.white,
+                            borderRadius: BorderRadius.circular(36)),
+                        child: TextField(
+                          controller: _textEditingController,
+                          decoration: InputDecoration(
+                            
+                          ),
+                        ),
                       ),
                     )
                   ],
                 ),
               ),
-              flex: 4,
+              flex: 3,
             ),
             Expanded(
               child: ListView(
