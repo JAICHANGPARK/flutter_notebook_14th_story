@@ -48,7 +48,7 @@ class _DoctorsPageState extends State<DoctorsPage> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
-                        height: 64,
+                        height: 58,
                         decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(36)),
                         padding: EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
@@ -80,7 +80,10 @@ class _DoctorsPageState extends State<DoctorsPage> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("Doctor nearby".toUpperCase()),
-                              Text("See all".toUpperCase()),
+                              Text(
+                                "See all".toUpperCase(),
+                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange),
+                              ),
                             ],
                           ),
                           SizedBox(
@@ -104,8 +107,10 @@ class _DoctorsPageState extends State<DoctorsPage> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.symmetric(vertical: 8),
-                                    child: Text(doctorItems[index].subtitle ?? "Dreamwalker",
-                                      style: TextStyle(fontSize: 12, color: Colors.blueGrey),),
+                                    child: Text(
+                                      doctorItems[index].subtitle ?? "Dreamwalker",
+                                      style: TextStyle(fontSize: 12, color: Colors.blueGrey),
+                                    ),
                                   ),
                                   Row(
                                     children: [
