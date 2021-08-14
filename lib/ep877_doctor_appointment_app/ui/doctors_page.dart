@@ -95,8 +95,14 @@ class _DoctorsPageState extends State<DoctorsPage> {
                                   Text(doctorItems[index].subtitle ?? "Dreamwalker"),
                                   Row(
                                     children: [
-                                      CircleAvatar(),
+                                      CircleAvatar(
+                                        radius: 10,
+                                      ),
                                       Text("${doctorItems[index].year} years"),
+                                      CircleAvatar(
+                                        radius: 10,
+                                      ),
+                                      Text("${doctorItems[index].like} %"),
                                     ],
                                   )
                                 ],
