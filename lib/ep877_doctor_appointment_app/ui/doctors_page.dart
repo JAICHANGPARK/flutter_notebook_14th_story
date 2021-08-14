@@ -79,8 +79,28 @@ class _DoctorsPageState extends State<DoctorsPage> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("Doctor nearby".toUpperCase()),
-
-                              Text("See all".toUpperCase())
+                              Text("See all".toUpperCase()),
+                            ],
+                          ),
+                          SizedBox(height: 16,),
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 32,
+                                backgroundImage: NetworkImage(doctorItems[index].profileImg ?? ""),
+                              ),
+                              Column(
+                                children: [
+                                  Text(doctorItems[index].name ?? "Dreamwalker"),
+                                  Text(doctorItems[index].subtitle ?? "Dreamwalker"),
+                                  Row(
+                                    children: [
+                                      CircleAvatar(),
+                                      Text("${doctorItems[index].year} years"),
+                                    ],
+                                  )
+                                ],
+                              )
                             ],
                           )
                         ],
