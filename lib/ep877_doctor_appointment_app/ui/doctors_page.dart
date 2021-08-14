@@ -68,7 +68,19 @@ class _DoctorsPageState extends State<DoctorsPage> {
               child: ListView.builder(
                 itemCount: doctorItems.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return Container();
+                  return Container(
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text("Doctor nearby".toUpperCase()),
+                            Text("See all".toUpperCase())
+                          ],
+                        )
+                      ],
+                    ),
+                  );
                 },
               ),
               flex: 12,
