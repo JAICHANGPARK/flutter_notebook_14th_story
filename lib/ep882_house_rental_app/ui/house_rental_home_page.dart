@@ -23,7 +23,29 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder(), flex: 5,),
+            Expanded(child: Column(
+              children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            Icon(Icons.location_on),
+                            Text("Location")
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Text("")
+                          ],
+                        )
+                      ],
+                    )
+                  ],
+                )
+              ],
+            ), flex: 6,),
             TabBar(
               tabs: [
                 Tab(text: "Recommended",),
