@@ -8,7 +8,19 @@ class HouseRentalHomePage extends StatefulWidget {
   _HouseRentalHomePageState createState() => _HouseRentalHomePageState();
 }
 
-class _HouseRentalHomePageState extends State<HouseRentalHomePage> {
+class _HouseRentalHomePageState extends State<HouseRentalHomePage>
+with SingleTickerProviderStateMixin{
+  late TabController _tabController;
+
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 3, vsync: this);
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
