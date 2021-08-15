@@ -57,9 +57,11 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                                   content: Text("Vienna, Austria"),
                                                 ));
                                       },
-                                      child: Icon(Icons.keyboard_arrow_down))
+                                      child: Icon(Icons.keyboard_arrow_down,
+                                        color: Colors.blue,))
                                 ],
-                              )
+                              ),
+                              
                             ],
                           )
                         ],
