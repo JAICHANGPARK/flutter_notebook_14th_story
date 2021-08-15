@@ -11,6 +11,15 @@ class HouseRentalHomePage extends StatefulWidget {
 class _HouseRentalHomePageState extends State<HouseRentalHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder())
+          ],
+        ),
+      ),
+    );
   }
 }
