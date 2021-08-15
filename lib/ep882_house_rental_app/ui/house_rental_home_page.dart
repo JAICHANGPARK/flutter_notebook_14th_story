@@ -16,6 +16,7 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> {
         child: Column(
           children: [
             Expanded(child: Placeholder()),
+            TabBar(tabs: []),
             Expanded(child: Placeholder())
           ],
         ),
