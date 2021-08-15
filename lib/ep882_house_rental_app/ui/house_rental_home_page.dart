@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HouseRentalHomePage extends StatefulWidget {
   const HouseRentalHomePage({Key? key}) : super(key: key);
 
@@ -8,10 +7,8 @@ class HouseRentalHomePage extends StatefulWidget {
   _HouseRentalHomePageState createState() => _HouseRentalHomePageState();
 }
 
-class _HouseRentalHomePageState extends State<HouseRentalHomePage>
-with SingleTickerProviderStateMixin{
+class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTickerProviderStateMixin {
   late TabController _tabController;
-
 
   @override
   void initState() {
@@ -20,7 +17,6 @@ with SingleTickerProviderStateMixin{
     _tabController = TabController(length: 3, vsync: this);
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +24,14 @@ with SingleTickerProviderStateMixin{
         child: Column(
           children: [
             Expanded(child: Placeholder()),
-            TabBar(tabs: []),
+            TabBar(
+              tabs: [
+                Tab(text: "Recommended",),
+                Tab(text: "Nearest",),
+                Tab(text: "Popular",),
+              ],
+              controller: _tabController,
+            ),
             Expanded(child: Placeholder())
           ],
         ),
