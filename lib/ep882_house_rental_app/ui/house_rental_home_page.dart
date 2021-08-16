@@ -81,7 +81,8 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                       ),
                       Container(
                         height: 48,
-                        decoration: BoxDecoration(color: Colors.white),
+                        decoration: BoxDecoration(color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),),
                         child: Row(
                           children: [
                             Expanded(
