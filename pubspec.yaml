@@ -22,11 +22,14 @@ dependencies:
   rpgnamegenerator: "1.0.2"
   flutter_advanced_switch: ^2.1.0
 
+  freezed_annotation: any
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^1.0.4
+  freezed: any
 
 flutter:
   uses-material-design: true
