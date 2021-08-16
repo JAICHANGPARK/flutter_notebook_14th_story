@@ -17,6 +17,7 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
     _tabController = TabController(length: 3, vsync: this);
   }
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,6 +25,7 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
                 child: Padding(
@@ -57,12 +59,19 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                                   content: Text("Vienna, Austria"),
                                                 ));
                                       },
-                                      child: Icon(Icons.keyboard_arrow_down,
-                                        color: Colors.blue,))
+                                      child: Icon(
+                                        Icons.keyboard_arrow_down,
+                                        color: Colors.blue,
+                                      ))
                                 ],
                               ),
-                              
                             ],
+                          ),
+                          Spacer(),
+                          Container(
+                            height: 32,
+                            width: 32,
+                            decoration: BoxDecoration(color: Colors.blue),
                           )
                         ],
                       )
@@ -72,6 +81,10 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                 flex: 6,
               ),
               TabBar(
+                isScrollable: true,
+                labelColor: Colors.black,
+                unselectedLabelColor: Colors.grey,
+                indicatorColor: Colors.transparent,
                 tabs: [
                   Tab(
                     text: "Recommended",
