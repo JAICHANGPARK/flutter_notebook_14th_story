@@ -20,6 +20,7 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -81,9 +82,29 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                         height: 48,
                         decoration: BoxDecoration(color: Colors.white),
                         child: Row(
-                          children: [Expanded(child: TextField()),
-                            SizedBox(width: 16,),
-                            Container()],
+                          children: [
+                            Expanded(child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: TextField(
+                                decoration: InputDecoration(),
+                              ),
+                            )),
+                            SizedBox(
+                              width: 16,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(8)
+                              ),
+                              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 0),
+                              child: Center(
+
+                                child: Icon(Icons.filter_alt, color: Colors.white,),
+
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ],
