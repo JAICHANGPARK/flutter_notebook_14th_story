@@ -1,6 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'house.g.dart';
-import 'house.freezed.dart';
+
+part 'house.g.dart';
+part 'house.freezed.dart';
 
 @freezed
 class House with _$House {
