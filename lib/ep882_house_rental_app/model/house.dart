@@ -14,3 +14,6 @@ class House with _$House {
     String? area,
   }) = _House;
 }
+
+
+List<House> houseItems = [];
