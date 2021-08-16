@@ -71,7 +71,8 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                           Container(
                             height: 36,
                             width: 36,
-                            decoration: BoxDecoration(color: Colors.blue),
+                            decoration: BoxDecoration(color: Colors.blue,
+                              borderRadius: BorderRadius.circular(8),),
                           )
                         ],
                       ),
