@@ -83,10 +83,12 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                         decoration: BoxDecoration(color: Colors.white),
                         child: Row(
                           children: [
-                            Expanded(child: Padding(
+                            Expanded(
+                                child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: TextField(
-                                decoration: InputDecoration(),
+                                decoration: InputDecoration(
+                                    hintText: "Search", icon: Icon(Icons.search), border: InputBorder.none),
                               ),
                             )),
                             SizedBox(
@@ -95,13 +97,14 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.blue,
-                                borderRadius: BorderRadius.circular(8)
+                                borderRadius: BorderRadius.circular(8),
                               ),
                               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 0),
                               child: Center(
-
-                                child: Icon(Icons.filter_alt, color: Colors.white,),
-
+                                child: Icon(
+                                  Icons.filter_alt,
+                                  color: Colors.white,
+                                ),
                               ),
                             )
                           ],
@@ -131,7 +134,14 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                 controller: _tabController,
               ),
               Expanded(
-                child: Placeholder(),
+                child: TabBarView(
+                  controller: _tabController,
+                  children: [
+                    Container(),
+                    Container(),
+                    Container(),
+                  ],
+                ),
                 flex: 15,
               )
             ],
