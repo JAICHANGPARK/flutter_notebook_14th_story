@@ -69,12 +69,21 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                           ),
                           Spacer(),
                           Container(
-                            height: 32,
-                            width: 32,
+                            height: 36,
+                            width: 36,
                             decoration: BoxDecoration(color: Colors.blue),
                           )
                         ],
-                      )
+                      ),
+                      Container(
+                        height: 48,
+                        
+                        child: Row(
+                          children: [
+                            Expanded(child: TextField())
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),
