@@ -17,7 +17,6 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
     _tabController = TabController(length: 3, vsync: this);
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,19 +74,18 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                           )
                         ],
                       ),
+                      SizedBox(height: 24,),
                       Container(
                         height: 48,
-                        
+                        decoration: BoxDecoration(color: Colors.white),
                         child: Row(
-                          children: [
-                            Expanded(child: TextField())
-                          ],
+                          children: [Expanded(child: TextField())],
                         ),
                       ),
                     ],
                   ),
                 ),
-                flex: 6,
+                flex: 4,
               ),
               TabBar(
                 isScrollable: true,
