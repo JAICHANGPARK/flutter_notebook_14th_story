@@ -71,8 +71,10 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                           Container(
                             height: 36,
                             width: 36,
-                            decoration: BoxDecoration(color: Colors.blue,
-                              borderRadius: BorderRadius.circular(8),),
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
                           )
                         ],
                       ),
@@ -81,8 +83,10 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                       ),
                       Container(
                         height: 48,
-                        decoration: BoxDecoration(color: Colors.white,
-                          borderRadius: BorderRadius.circular(8),),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                         child: Row(
                           children: [
                             Expanded(
@@ -122,6 +126,7 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                 labelColor: Colors.black,
                 unselectedLabelColor: Colors.grey,
                 indicatorColor: Colors.transparent,
+                labelStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 tabs: [
                   Tab(
                     text: "Recommended",
