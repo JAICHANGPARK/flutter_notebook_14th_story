@@ -74,12 +74,16 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                           )
                         ],
                       ),
-                      SizedBox(height: 24,),
+                      SizedBox(
+                        height: 24,
+                      ),
                       Container(
                         height: 48,
                         decoration: BoxDecoration(color: Colors.white),
                         child: Row(
-                          children: [Expanded(child: TextField())],
+                          children: [Expanded(child: TextField()),
+                            SizedBox(width: 16,),
+                            Container()],
                         ),
                       ),
                     ],
