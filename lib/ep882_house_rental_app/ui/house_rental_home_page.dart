@@ -134,7 +134,6 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                   Tab(text: "Nearest"),
                   Tab(text: "Popular"),
                 ],
-
               ),
               Expanded(
                 child: TabBarView(
@@ -142,19 +141,24 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                   children: [
                     ListView.builder(
                         itemCount: houseItems.length,
-                        itemBuilder: (context, index){
-                      return Card(
-                        child: Column(
-                          children: [
-                            Container(
-                              height: MediaQuery.of(context).size.height / 3,
-                              
-
-                            )
-                          ],
-                        ),
-                      );
-                    }),
+                        itemBuilder: (context, index) {
+                          return Card(
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: MediaQuery.of(context).size.height / 3,
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        child: Image.network(houseItems[index].img ?? ""),
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          );
+                        }),
                     Container(
                       child: Center(
                         child: Text("2"),
