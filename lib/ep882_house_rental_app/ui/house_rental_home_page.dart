@@ -222,6 +222,7 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Icon(
                                             Icons.location_on,
@@ -234,10 +235,10 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                           ),
                                           Text("${houseItems[index].rooms}"),
                                           Icon(
-                                            Icons.bed,
+                                            Icons.crop_square,
                                             color: Colors.blue,
                                           ),
-                                          Text("${houseItems[index].rooms}"),
+                                          Text("${houseItems[index].area}"),
                                         ],
                                       ),
                                     )
