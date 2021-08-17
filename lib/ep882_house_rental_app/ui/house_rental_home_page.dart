@@ -139,11 +139,9 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                 child: TabBarView(
                   controller: _tabController,
                   children: [
-                    Container(
-                      child: Center(
-                        child: Text("1"),
-                      ),
-                    ),
+                    ListView.builder(itemBuilder: (context, index){
+                      
+                    }),
                     Container(
                       child: Center(
                         child: Text("2"),
