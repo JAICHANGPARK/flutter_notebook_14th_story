@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep882_house_rental_app/model/house.dart';
 
 class HouseRentalHomePage extends StatefulWidget {
   const HouseRentalHomePage({Key? key}) : super(key: key);
@@ -139,8 +140,12 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                 child: TabBarView(
                   controller: _tabController,
                   children: [
-                    ListView.builder(itemBuilder: (context, index){
-                      
+                    ListView.builder(
+                        itemCount: houseItems.length,
+                        itemBuilder: (context, index){
+                      return Card(
+
+                      );
                     }),
                     Container(
                       child: Center(
