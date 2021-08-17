@@ -208,13 +208,38 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                         ),
                                       ),
                                     ),
-                                    Row(
-                                      children: [
-                                        Text("${houseItems[index].title}"),
-                                        Spacer(),
-                                        Text("${houseItems[index].pricePerNight}"),
-                                        Text("/ Night"),
-                                      ],
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Row(
+                                        children: [
+                                          Text("${houseItems[index].title}"),
+                                          Spacer(),
+                                          Text("${houseItems[index].pricePerNight}"),
+                                          Text("/ Night"),
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Row(
+                                        children: [
+                                          Icon(
+                                            Icons.location_on,
+                                            color: Colors.blue,
+                                          ),
+                                          Text("${houseItems[index].location}"),
+                                          Icon(
+                                            Icons.bed,
+                                            color: Colors.blue,
+                                          ),
+                                          Text("${houseItems[index].rooms}"),
+                                          Icon(
+                                            Icons.bed,
+                                            color: Colors.blue,
+                                          ),
+                                          Text("${houseItems[index].rooms}"),
+                                        ],
+                                      ),
                                     )
                                   ],
                                 ),
