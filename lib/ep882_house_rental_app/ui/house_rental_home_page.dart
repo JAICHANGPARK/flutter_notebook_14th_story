@@ -168,19 +168,25 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                             ),
                                           ),
                                           Positioned(
-                                              left: 8,
-                                              right: 8,
-                                              top: 8,
+                                              left: 16,
+                                              right: 16,
+                                              top: 16,
                                               child: Row(
                                                 children: [
-                                                  Row(
-                                                    children: [
-                                                      Icon(
-                                                        Icons.star,
-                                                        color: Colors.blue,
-                                                      ),
-                                                      Text(houseItems[index].star ?? "")
-                                                    ],
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.white,
+                                                      borderRadius: BorderRadius.circular(8),
+                                                    ),
+                                                    child: Row(
+                                                      children: [
+                                                        Icon(
+                                                          Icons.star,
+                                                          color: Colors.blue,
+                                                        ),
+                                                        Text(houseItems[index].star ?? "")
+                                                      ],
+                                                    ),
                                                   )
                                                 ],
                                               ))
