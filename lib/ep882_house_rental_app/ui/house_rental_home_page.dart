@@ -213,6 +213,11 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                         ],
                                       ),
                                     ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      
+                                    ],
                                   )
                                 ],
                               ),
