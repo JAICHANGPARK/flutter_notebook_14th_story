@@ -181,16 +181,11 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                                         color: Colors.white,
                                                         borderRadius: BorderRadius.circular(8),
                                                       ),
-                                                      padding: EdgeInsets.all(8),
+                                                      padding: const EdgeInsets.all(8),
                                                       child: Row(
                                                         children: [
-                                                          Icon(
-                                                            Icons.star,
-                                                            color: Colors.blue,
-                                                          ),
-                                                          SizedBox(
-                                                            width: 8,
-                                                          ),
+                                                          const Icon(Icons.star, color: Colors.blue),
+                                                          const SizedBox(width: 8),
                                                           Text(houseItems[index].star ?? "")
                                                         ],
                                                       ),
@@ -200,13 +195,10 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                                         color: Colors.white,
                                                         borderRadius: BorderRadius.circular(8),
                                                       ),
-                                                      padding: EdgeInsets.all(8),
+                                                      padding: const EdgeInsets.all(8),
                                                       child: Row(
                                                         children: [
-                                                          Icon(
-                                                            Icons.favorite,
-                                                            color: Colors.blue[500],
-                                                          ),
+                                                          Icon(Icons.favorite, color: Colors.blue[500]),
                                                         ],
                                                       ),
                                                     )
@@ -218,7 +210,10 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                     ),
                                     Row(
                                       children: [
-
+                                        Text("${houseItems[index].title}"),
+                                        Spacer(),
+                                        Text("${houseItems[index].pricePerNight}"),
+                                        Text("/ Night"),
                                       ],
                                     )
                                   ],
