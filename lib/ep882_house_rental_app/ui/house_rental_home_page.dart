@@ -142,84 +142,87 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                     ListView.builder(
                         itemCount: houseItems.length,
                         itemBuilder: (context, index) {
-                          return Card(
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Container(
-                                      height: MediaQuery.of(context).size.height / 3,
-                                      child: Stack(
-                                        children: [
-                                          Positioned(
-                                            left: 0,
-                                            right: 0,
-                                            top: 0,
-                                            bottom: 0,
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.circular(8),
-                                                image: DecorationImage(
-                                                    image: NetworkImage(houseItems[index].img ?? ""),
-                                                    fit: BoxFit.cover),
+                          return Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Card(
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: SizedBox(
+                                        height: MediaQuery.of(context).size.height / 3,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 0,
+                                              right: 0,
+                                              top: 0,
+                                              bottom: 0,
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius.circular(8),
+                                                  image: DecorationImage(
+                                                      image: NetworkImage(houseItems[index].img ?? ""),
+                                                      fit: BoxFit.cover),
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          Positioned(
-                                              left: 16,
-                                              right: 16,
-                                              top: 16,
-                                              child: Row(
-                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                children: [
-                                                  Container(
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.white,
-                                                      borderRadius: BorderRadius.circular(8),
+                                            Positioned(
+                                                left: 16,
+                                                right: 16,
+                                                top: 16,
+                                                child: Row(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  children: [
+                                                    Container(
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.white,
+                                                        borderRadius: BorderRadius.circular(8),
+                                                      ),
+                                                      padding: EdgeInsets.all(8),
+                                                      child: Row(
+                                                        children: [
+                                                          Icon(
+                                                            Icons.star,
+                                                            color: Colors.blue,
+                                                          ),
+                                                          SizedBox(
+                                                            width: 8,
+                                                          ),
+                                                          Text(houseItems[index].star ?? "")
+                                                        ],
+                                                      ),
                                                     ),
-                                                    padding: EdgeInsets.all(8),
-                                                    child: Row(
-                                                      children: [
-                                                        Icon(
-                                                          Icons.star,
-                                                          color: Colors.blue,
-                                                        ),
-                                                        SizedBox(
-                                                          width: 8,
-                                                        ),
-                                                        Text(houseItems[index].star ?? "")
-                                                      ],
-                                                    ),
-                                                  ),
-                                                  Container(
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.white,
-                                                      borderRadius: BorderRadius.circular(8),
-                                                    ),
-                                                    padding: EdgeInsets.all(8),
-                                                    child: Row(
-                                                      children: [
-                                                        Icon(
-                                                          Icons.favorite,
-                                                          color: Colors.blue[500],
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  )
-                                                ],
-                                              ))
-                                        ],
+                                                    Container(
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.white,
+                                                        borderRadius: BorderRadius.circular(8),
+                                                      ),
+                                                      padding: EdgeInsets.all(8),
+                                                      child: Row(
+                                                        children: [
+                                                          Icon(
+                                                            Icons.favorite,
+                                                            color: Colors.blue[500],
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    )
+                                                  ],
+                                                ))
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Row(
-                                    children: [
+                                    Row(
+                                      children: [
 
-                                    ],
-                                  )
-                                ],
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           );
