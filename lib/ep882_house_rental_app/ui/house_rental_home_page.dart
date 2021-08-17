@@ -217,9 +217,11 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                           Spacer(),
-                                          Text("${houseItems[index].pricePerNight}",
-                                            style: TextStyle(fontWeight: FontWeight.bold,
-                                            color: Colors.blue, fontSize: 18),),
+                                          Text(
+                                            "${houseItems[index].pricePerNight}",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 21),
+                                          ),
                                           Text("/ Night"),
                                         ],
                                       ),
@@ -233,17 +235,26 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                             Icons.location_on,
                                             color: Colors.blue,
                                           ),
-                                          Text("${houseItems[index].location}"),
+                                          Text(
+                                            "${houseItems[index].location}",
+                                            style: TextStyle(fontSize: 12),
+                                          ),
                                           Icon(
                                             Icons.bed,
                                             color: Colors.blue,
                                           ),
-                                          Text("${houseItems[index].rooms}"),
+                                          Text(
+                                            "${houseItems[index].rooms}",
+                                            style: TextStyle(fontSize: 12),
+                                          ),
                                           Icon(
                                             Icons.crop_square,
                                             color: Colors.blue,
                                           ),
-                                          Text("${houseItems[index].area}"),
+                                          Text(
+                                            "${houseItems[index].area}",
+                                            style: TextStyle(fontSize: 12),
+                                          ),
                                         ],
                                       ),
                                     )
