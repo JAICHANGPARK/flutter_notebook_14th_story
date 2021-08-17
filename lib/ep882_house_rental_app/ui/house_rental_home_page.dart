@@ -172,6 +172,7 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                               right: 16,
                                               top: 16,
                                               child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 children: [
                                                   Container(
                                                     decoration: BoxDecoration(
@@ -189,6 +190,21 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                                           width: 8,
                                                         ),
                                                         Text(houseItems[index].star ?? "")
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.white,
+                                                      borderRadius: BorderRadius.circular(8),
+                                                    ),
+                                                    padding: EdgeInsets.all(8),
+                                                    child: Row(
+                                                      children: [
+                                                        Icon(
+                                                          Icons.favorite,
+                                                          color: Colors.blue[500],
+                                                        ),
                                                       ],
                                                     ),
                                                   )
