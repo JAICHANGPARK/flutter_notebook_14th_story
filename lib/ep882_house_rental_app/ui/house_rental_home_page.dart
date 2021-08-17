@@ -178,11 +178,15 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                                       color: Colors.white,
                                                       borderRadius: BorderRadius.circular(8),
                                                     ),
+                                                    padding: EdgeInsets.all(8),
                                                     child: Row(
                                                       children: [
                                                         Icon(
                                                           Icons.star,
                                                           color: Colors.blue,
+                                                        ),
+                                                        SizedBox(
+                                                          width: 8,
                                                         ),
                                                         Text(houseItems[index].star ?? "")
                                                       ],
