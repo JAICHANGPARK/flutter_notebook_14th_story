@@ -127,15 +127,15 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                 unselectedLabelColor: Colors.grey,
                 indicatorColor: Colors.transparent,
                 labelStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                tabs: [
+                tabs: const [
                   Tab(
-                    text: "Recommended",
+                    text: "Recommended"
                   ),
                   Tab(
-                    text: "Nearest",
+                    text: "Nearest"
                   ),
                   Tab(
-                    text: "Popular",
+                    text: "Popular"
                   ),
                 ],
                 controller: _tabController,
