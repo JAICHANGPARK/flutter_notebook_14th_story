@@ -212,9 +212,14 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                       padding: const EdgeInsets.all(8.0),
                                       child: Row(
                                         children: [
-                                          Text("${houseItems[index].title}"),
+                                          Text(
+                                            "${houseItems[index].title}",
+                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                          ),
                                           Spacer(),
-                                          Text("${houseItems[index].pricePerNight}"),
+                                          Text("${houseItems[index].pricePerNight}",
+                                            style: TextStyle(fontWeight: FontWeight.bold,
+                                            color: Colors.blue, fontSize: 18),),
                                           Text("/ Night"),
                                         ],
                                       ),
