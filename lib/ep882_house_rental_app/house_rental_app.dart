@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'ui/house_filter_page.dart';
 import 'ui/house_rental_home_page.dart';
 
 class HouseRentalApp extends StatelessWidget {
@@ -9,7 +10,8 @@ class HouseRentalApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/" : (context) => HouseRentalHomePage()
+        "/" : (context) => HouseRentalHomePage(),
+        "/search/filter" : (context) => HouseFilterPage()
       },
     );
   }
