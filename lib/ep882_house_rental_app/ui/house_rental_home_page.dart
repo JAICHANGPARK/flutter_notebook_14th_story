@@ -102,9 +102,7 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                               width: 16,
                             ),
                             GestureDetector(
-                              onTap: (){
-                                    Navigator.of(context).pushNamed(  "/search/filter");
-                              },
+                              onTap: () => Navigator.of(context).pushNamed("/search/filter"),
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Colors.blue,
