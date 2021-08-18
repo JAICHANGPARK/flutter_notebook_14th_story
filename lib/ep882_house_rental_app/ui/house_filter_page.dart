@@ -35,19 +35,30 @@ class HouseFilterPage extends StatelessWidget {
                         )
                       ],
                     ),
-                    Row(
-                      children: [
-                        Text("Price Nightly"),
-                        Consumer<HouseFilterProvider>(
-                          builder: (context, value, child) {
-                            return Container(
-                              child: Center(
-                                child: Text("${value.priceMin}"),
-                              ),
-                            );
-                          },
-                        )
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Row(
+                        children: [
+                          Text("Price Nightly"),
+                          Consumer<HouseFilterProvider>(
+                            builder: (context, value, child) {
+                              return Container(
+                                padding: EdgeInsets.symmetric(horizontal: 3, vertical: 5),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue[100],
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "${value.priceMin}",
+                                    style: TextStyle(color: Colors.blue,
+                                    ),
+                                  ),
+                                ),
+                              );
+                            },
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
