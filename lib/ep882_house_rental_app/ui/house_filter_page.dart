@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep882_house_rental_app/provider/house_filter_provider.dart';
 import 'package:provider/provider.dart';
 
+import '../price_range_slider_widget.dart';
+
 class HouseFilterPage extends StatelessWidget {
   const HouseFilterPage({Key? key}) : super(key: key);
 
@@ -84,7 +86,8 @@ class HouseFilterPage extends StatelessWidget {
                           ),
                         ],
                       ),
-                    )
+                    ),
+                    PriceRangeSliderWidget(),
                   ],
                 ),
               ),
