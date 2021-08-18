@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep882_house_rental_app/provider/house_filter_provider.dart';
+import 'package:provider/provider.dart';
 
 class HouseFilterPage extends StatelessWidget {
   const HouseFilterPage({Key? key}) : super(key: key);
@@ -30,6 +32,20 @@ class HouseFilterPage extends StatelessWidget {
                             "Filter",
                             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                           ),
+                        )
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Text("Price Nightly"),
+                        Consumer<HouseFilterProvider>(
+                          builder: (context, value, child) {
+                            return Container(
+                              child: Center(
+                                child: Text("${value.priceMin}"),
+                              ),
+                            );
+                          },
                         )
                       ],
                     )
