@@ -10,21 +10,34 @@ class HouseFilterPage extends StatelessWidget {
         child: Column(
           children: [
             Expanded(
-              child: Placeholder(),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        IconButton(onPressed: () => Navigator.pop(context), icon: Icon(Icons.clear)),
+                      ],
+                    )
+                  ],
+                ),
+              ),
               flex: 10,
             ),
             Expanded(
                 child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: Center(
-                  child: Text(
-                    "Show Me",
-                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              child: GestureDetector(
+                onTap: () {},
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Show Me",
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                    ),
                   ),
                 ),
               ),
