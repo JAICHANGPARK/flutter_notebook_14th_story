@@ -101,16 +101,21 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                             SizedBox(
                               width: 16,
                             ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 0),
-                              child: Center(
-                                child: Icon(
-                                  Icons.filter_alt,
-                                  color: Colors.white,
+                            GestureDetector(
+                              onTap: (){
+                                    Navigator.of(context).pushNamed(  "/search/filter");
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 0),
+                                child: Center(
+                                  child: Icon(
+                                    Icons.filter_alt,
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             )
