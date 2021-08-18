@@ -11,7 +11,18 @@ class HouseFilterPage extends StatelessWidget {
         child: Column(
           children: [
             Expanded(child: Placeholder(), flex: 10,),
-            Expanded(child: Placeholder()),
+            Expanded(child:  Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Center(
+                  child: Text("Show Me"),
+                ),
+              ),
+            )),
           ],
         ),
       ),
