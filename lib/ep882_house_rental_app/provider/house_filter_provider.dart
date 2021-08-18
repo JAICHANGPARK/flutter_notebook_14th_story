@@ -2,8 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class HouseFilterProvider extends ChangeNotifier {
-  double _priceMin = 0.0;
-  double _priceMax = 0.0;
+  double _priceMin = 300;
+  double _priceMax = 2500.0;
 
   double get priceMin => _priceMin;
 
@@ -16,4 +16,11 @@ class HouseFilterProvider extends ChangeNotifier {
   late RangeValues _priceRangeValues;
 
   RangeValues get priceRangeValues => _priceRangeValues;
+
+  setPriceRangeValues(RangeValues rangeValues){
+    _priceRangeValues = rangeValues;
+    _priceMin =  _priceRangeValues.start;
+    _priceMax =  _priceRangeValues.end;
+    notifyListeners();
+  }
 }
