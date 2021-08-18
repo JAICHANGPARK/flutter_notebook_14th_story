@@ -44,10 +44,8 @@ class HouseFilterPage extends StatelessWidget {
                             builder: (context, value, child) {
                               return Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 5),
-                                decoration: BoxDecoration(
-                                  color: Colors.blue[100],
-                                  borderRadius: BorderRadius.circular(8)
-                                ),
+                                decoration:
+                                    BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(8)),
                                 child: Center(
                                   child: Text(
                                     "${value.priceMin}",
@@ -58,7 +56,11 @@ class HouseFilterPage extends StatelessWidget {
                                 ),
                               );
                             },
-                          )
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                            child: Text("-"),
+                          ),
                         ],
                       ),
                     )
