@@ -43,14 +43,16 @@ class HouseFilterPage extends StatelessWidget {
                           Consumer<HouseFilterProvider>(
                             builder: (context, value, child) {
                               return Container(
-                                padding: EdgeInsets.symmetric(horizontal: 3, vertical: 5),
+                                padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 5),
                                 decoration: BoxDecoration(
                                   color: Colors.blue[100],
+                                  borderRadius: BorderRadius.circular(8)
                                 ),
                                 child: Center(
                                   child: Text(
                                     "${value.priceMin}",
-                                    style: TextStyle(color: Colors.blue,
+                                    style: const TextStyle(
+                                      color: Colors.blue,
                                     ),
                                   ),
                                 ),
