@@ -15,14 +15,21 @@ class HouseFilterPage extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        IconButton(
-                          onPressed: () => Navigator.pop(context),
-                          icon: Icon(Icons.clear),
-                          color: Colors.blue,
+                        Expanded(
+                          child: Align(
+                            alignment: Alignment.centerLeft,
+                            child: IconButton(
+                              onPressed: () => Navigator.pop(context),
+                              icon: Icon(Icons.clear),
+                              color: Colors.blue,
+                            ),
+                          ),
                         ),
-                        Text(
-                          "Filter",
-                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        Expanded(
+                          child: Text(
+                            "Filter",
+                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
                         )
                       ],
                     )
