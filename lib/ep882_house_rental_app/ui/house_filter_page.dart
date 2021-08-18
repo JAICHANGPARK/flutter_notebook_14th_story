@@ -40,6 +40,7 @@ class HouseFilterPage extends StatelessWidget {
                       child: Row(
                         children: [
                           Text("Price Nightly"),
+                          Spacer(),
                           Consumer<HouseFilterProvider>(
                             builder: (context, value, child) {
                               return Container(
@@ -48,7 +49,7 @@ class HouseFilterPage extends StatelessWidget {
                                     BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(8)),
                                 child: Center(
                                   child: Text(
-                                    "${value.priceMin}",
+                                    "\$${value.priceMin}",
                                     style: const TextStyle(
                                       color: Colors.blue,
                                     ),
@@ -59,7 +60,27 @@ class HouseFilterPage extends StatelessWidget {
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 8),
-                            child: Text("-"),
+                            child: Text(
+                              "-",
+                              style: const TextStyle(color: Colors.blue, fontSize: 16, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          Consumer<HouseFilterProvider>(
+                            builder: (context, value, child) {
+                              return Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 5),
+                                decoration:
+                                    BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(8)),
+                                child: Center(
+                                  child: Text(
+                                    "\$${value.priceMax}",
+                                    style: const TextStyle(
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                ),
+                              );
+                            },
                           ),
                         ],
                       ),
