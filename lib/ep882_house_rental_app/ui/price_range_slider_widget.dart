@@ -8,7 +8,9 @@ class PriceRangeSliderWidget extends StatelessWidget {
     final hfProvider = Provider.of<HouseFilterProvider>(context);
     return RangeSlider(
       values: hfProvider.priceRangeValues,
-      onChanged: (rv) {},
+      onChanged: (rv) {
+        hfProvider.setPriceRangeValues(rv);
+      },
       min: 0,
       max: 5000,
     );
