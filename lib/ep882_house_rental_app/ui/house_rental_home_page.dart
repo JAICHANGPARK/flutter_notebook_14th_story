@@ -90,15 +90,15 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                         ),
                         child: Row(
                           children: [
-                            Expanded(
+                            const Expanded(
                                 child: Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: EdgeInsets.all(8.0),
                               child: TextField(
                                 decoration: InputDecoration(
                                     hintText: "Search", icon: Icon(Icons.search), border: InputBorder.none),
                               ),
                             )),
-                            SizedBox(
+                            const SizedBox(
                               width: 16,
                             ),
                             GestureDetector(
@@ -108,8 +108,8 @@ class _HouseRentalHomePageState extends State<HouseRentalHomePage> with SingleTi
                                   color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
-                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 0),
-                                child: Center(
+                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 0),
+                                child: const Center(
                                   child: Icon(
                                     Icons.filter_alt,
                                     color: Colors.white,
