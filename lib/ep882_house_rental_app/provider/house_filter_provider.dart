@@ -19,8 +19,8 @@ class HouseFilterProvider extends ChangeNotifier {
 
   setPriceRangeValues(RangeValues rangeValues){
     _priceRangeValues = rangeValues;
-    _priceMin =  _priceRangeValues.start;
-    _priceMax =  _priceRangeValues.end;
+    _priceMin =  _priceRangeValues.start.floorToDouble();
+    _priceMax =  _priceRangeValues.end.floorToDouble();
     notifyListeners();
   }
 }
