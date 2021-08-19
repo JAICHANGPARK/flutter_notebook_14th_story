@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep882_house_rental_app/provider/house_filter_area_provider.dart';
 import 'package:flutter_notebook_14th_story/ep882_house_rental_app/provider/house_filter_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -206,9 +207,9 @@ class HouseFilterPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Row(
                         children: [
-                          const Text("Price Nightly"),
+                          const Text("Area"),
                           const Spacer(),
-                          Consumer<HouseFilterProvider>(
+                          Consumer<HouseFilterAreaProvider>(
                             builder: (context, value, child) {
                               return Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 5),
@@ -216,7 +217,7 @@ class HouseFilterPage extends StatelessWidget {
                                 BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(8)),
                                 child: Center(
                                   child: Text(
-                                    "\$${value.priceMin}",
+                                    "\$${value.areaMin}",
                                     style: const TextStyle(
                                       color: Colors.blue,
                                     ),
@@ -232,7 +233,7 @@ class HouseFilterPage extends StatelessWidget {
                               style: TextStyle(color: Colors.blue, fontSize: 16, fontWeight: FontWeight.bold),
                             ),
                           ),
-                          Consumer<HouseFilterProvider>(
+                          Consumer<HouseFilterAreaProvider>(
                             builder: (context, value, child) {
                               return Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 5),
@@ -240,7 +241,7 @@ class HouseFilterPage extends StatelessWidget {
                                 BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(8)),
                                 child: Center(
                                   child: Text(
-                                    "\$${value.priceMax}",
+                                    "\$${value.areaMax}",
                                     style: const TextStyle(
                                       color: Colors.blue,
                                     ),
