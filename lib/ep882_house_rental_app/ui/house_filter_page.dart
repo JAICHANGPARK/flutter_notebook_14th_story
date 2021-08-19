@@ -95,11 +95,14 @@ class HouseFilterPage extends StatelessWidget {
                       height: 16,
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text("Rooms"),
+                          const SizedBox(
+                            height: 16,
+                          ),
                           ValueListenableBuilder<int>(
                             valueListenable: selectedRooms,
                             builder: (context, value, child) {
@@ -111,54 +114,83 @@ class HouseFilterPage extends StatelessWidget {
                                       onTap: () {
                                         selectedRooms.value = 0;
                                       },
-                                      child: Container(
+                                      child: AnimatedContainer(
                                         decoration: BoxDecoration(
                                             color: value == 0 ? Colors.blue : Colors.white,
                                             border: Border.all(color: Colors.grey[400]!),
                                             borderRadius: BorderRadius.circular(4)),
                                         padding: const EdgeInsets.all(8),
+                                        duration: Duration(milliseconds: 250),
                                         child: const Text("3"),
                                       ),
                                     ),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                          border: Border.all(color: Colors.grey[400]!),
-                                          borderRadius: BorderRadius.circular(4)),
-                                      padding: const EdgeInsets.all(8),
-                                      child: const Text("4"),
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        selectedRooms.value = 1;
+                                      },
+                                      child: AnimatedContainer(
+                                        decoration: BoxDecoration(
+                                            color: value == 1 ? Colors.blue : Colors.white,
+                                            border: Border.all(color: Colors.grey[400]!),
+                                            borderRadius: BorderRadius.circular(4)),
+                                        padding: const EdgeInsets.all(8),
+                                        duration: Duration(milliseconds: 250),
+                                        child: const Text("4"),
+                                      ),
                                     ),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                          border: Border.all(color: Colors.grey[400]!),
-                                          borderRadius: BorderRadius.circular(4)),
-                                      padding: const EdgeInsets.all(8),
-                                      child: const Text("5"),
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        selectedRooms.value = 2;
+                                      },
+                                      child: AnimatedContainer(
+                                        decoration: BoxDecoration(
+                                            color: value == 2 ? Colors.blue : Colors.white,
+                                            border: Border.all(color: Colors.grey[400]!),
+                                            borderRadius: BorderRadius.circular(4)),
+                                        padding: const EdgeInsets.all(8),
+                                        duration: Duration(milliseconds: 250),
+                                        child: const Text("5"),
+                                      ),
                                     ),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                          border: Border.all(color: Colors.grey[400]!),
-                                          borderRadius: BorderRadius.circular(4)),
-                                      padding: const EdgeInsets.all(8),
-                                      child: const Text("6"),
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        selectedRooms.value = 3;
+                                      },
+                                      child: AnimatedContainer(
+                                        decoration: BoxDecoration(
+                                            color: value == 3 ? Colors.blue : Colors.white,
+                                            border: Border.all(color: Colors.grey[400]!),
+                                            borderRadius: BorderRadius.circular(4)),
+                                        padding: const EdgeInsets.all(8),
+                                        duration: Duration(milliseconds: 250),
+                                        child: const Text("6"),
+                                      ),
                                     ),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                          border: Border.all(color: Colors.grey[400]!),
-                                          borderRadius: BorderRadius.circular(4)),
-                                      padding: const EdgeInsets.all(8),
-                                      child: const Text("7+"),
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        selectedRooms.value = 4;
+                                      },
+                                      child: AnimatedContainer(
+                                        decoration: BoxDecoration(
+                                            color: value == 4 ? Colors.blue : Colors.white,
+                                            border: Border.all(color: Colors.grey[400]!),
+                                            borderRadius: BorderRadius.circular(4)),
+                                        padding: const EdgeInsets.all(8),
+                                        duration: Duration(milliseconds: 250),
+                                        child: const Text("7+"),
+                                      ),
                                     ),
                                   ),
                                 ],
