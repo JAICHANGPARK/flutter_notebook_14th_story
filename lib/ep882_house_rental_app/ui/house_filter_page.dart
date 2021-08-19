@@ -91,11 +91,13 @@ class HouseFilterPage extends StatelessWidget {
                       ),
                     ),
                     PriceRangeSliderWidget(),
-
+                    SizedBox(
+                      height: 16,
+                    ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
-
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text("Rooms"),
                           Row(
@@ -155,7 +157,6 @@ class HouseFilterPage extends StatelessWidget {
                         ],
                       ),
                     )
-
                   ],
                 ),
               ),
