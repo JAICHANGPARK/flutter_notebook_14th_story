@@ -26,12 +26,12 @@ class HouseFilterPage extends StatelessWidget {
                             alignment: Alignment.centerLeft,
                             child: IconButton(
                               onPressed: () => Navigator.pop(context),
-                              icon: Icon(Icons.clear),
+                              icon: const Icon(Icons.clear),
                               color: Colors.blue,
                             ),
                           ),
                         ),
-                        Expanded(
+                        const Expanded(
                           child: Text(
                             "Filter",
                             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
@@ -43,8 +43,8 @@ class HouseFilterPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Row(
                         children: [
-                          Text("Price Nightly"),
-                          Spacer(),
+                          const Text("Price Nightly"),
+                          const Spacer(),
                           Consumer<HouseFilterProvider>(
                             builder: (context, value, child) {
                               return Container(
@@ -62,11 +62,11 @@ class HouseFilterPage extends StatelessWidget {
                               );
                             },
                           ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                          const Padding(
+                            padding:  EdgeInsets.symmetric(horizontal: 8),
                             child: Text(
                               "-",
-                              style: const TextStyle(color: Colors.blue, fontSize: 16, fontWeight: FontWeight.bold),
+                              style:  TextStyle(color: Colors.blue, fontSize: 16, fontWeight: FontWeight.bold),
                             ),
                           ),
                           Consumer<HouseFilterProvider>(
