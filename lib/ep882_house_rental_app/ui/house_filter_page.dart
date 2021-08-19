@@ -100,59 +100,64 @@ class HouseFilterPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text("Rooms"),
-                          Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.grey[400]!),
-                                      borderRadius: BorderRadius.circular(4)),
-                                  padding: const EdgeInsets.all(8),
-                                  child: const Text("3"),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.grey[400]!),
-                                      borderRadius: BorderRadius.circular(4)),
-                                  padding: const EdgeInsets.all(8),
-                                  child: const Text("4"),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.grey[400]!),
-                                      borderRadius: BorderRadius.circular(4)),
-                                  padding: const EdgeInsets.all(8),
-                                  child: const Text("5"),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.grey[400]!),
-                                      borderRadius: BorderRadius.circular(4)),
-                                  padding: const EdgeInsets.all(8),
-                                  child: const Text("6"),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.grey[400]!),
-                                      borderRadius: BorderRadius.circular(4)),
-                                  padding: const EdgeInsets.all(8),
-                                  child: const Text("7+"),
-                                ),
-                              ),
-                            ],
+                          ValueListenableBuilder(
+                            valueListenable: selectedRooms,
+                            builder: (context, value , child){
+                              return  Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey[400]!),
+                                          borderRadius: BorderRadius.circular(4)),
+                                      padding: const EdgeInsets.all(8),
+                                      child: const Text("3"),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey[400]!),
+                                          borderRadius: BorderRadius.circular(4)),
+                                      padding: const EdgeInsets.all(8),
+                                      child: const Text("4"),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey[400]!),
+                                          borderRadius: BorderRadius.circular(4)),
+                                      padding: const EdgeInsets.all(8),
+                                      child: const Text("5"),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey[400]!),
+                                          borderRadius: BorderRadius.circular(4)),
+                                      padding: const EdgeInsets.all(8),
+                                      child: const Text("6"),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey[400]!),
+                                          borderRadius: BorderRadius.circular(4)),
+                                      padding: const EdgeInsets.all(8),
+                                      child: const Text("7+"),
+                                    ),
+                                  ),
+                                ],
+                              );
+                            },
                           )
                         ],
                       ),
