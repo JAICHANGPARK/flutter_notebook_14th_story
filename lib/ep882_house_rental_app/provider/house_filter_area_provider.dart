@@ -6,7 +6,7 @@ class HouseFilterAreaProvider extends ChangeNotifier {
   double _areaMax = 2500.0;
 
   late RangeValues _areaRangeValues;
-  
+
   HouseFilterAreaProvider() {
     _areaRangeValues = RangeValues(_areaMin, _areaMax);
   }
