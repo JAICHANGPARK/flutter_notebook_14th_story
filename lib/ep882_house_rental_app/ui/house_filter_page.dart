@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'price_range_slider_widget.dart';
 
 class HouseFilterPage extends StatelessWidget {
-  const HouseFilterPage({Key? key}) : super(key: key);
+  HouseFilterPage({Key? key}) : super(key: key);
 
   ValueNotifier<int> selectedRooms = ValueNotifier(0);
 
