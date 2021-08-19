@@ -90,10 +90,15 @@ class HouseFilterPage extends StatelessWidget {
                       ),
                     ),
                     PriceRangeSliderWidget(),
-                    Text("Rooms"),
+                    const Text("Rooms"),
                     Row(
                       children: [
-                        Container(),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(),
+                            borderRadius: BorderRadius.circular(4)
+                          ),
+                        ),
                         Container(),
                         Container(),
                         Container(),
