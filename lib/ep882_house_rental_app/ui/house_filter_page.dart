@@ -119,7 +119,7 @@ class HouseFilterPage extends StatelessWidget {
                                       border: Border.all(color: Colors.grey[400]!),
                                       borderRadius: BorderRadius.circular(4)),
                                   padding: const EdgeInsets.all(8),
-                                  child: const Text("3"),
+                                  child: const Text("4"),
                                 ),
                               ),
                               Padding(
@@ -129,7 +129,7 @@ class HouseFilterPage extends StatelessWidget {
                                       border: Border.all(color: Colors.grey[400]!),
                                       borderRadius: BorderRadius.circular(4)),
                                   padding: const EdgeInsets.all(8),
-                                  child: const Text("3"),
+                                  child: const Text("5"),
                                 ),
                               ),
                               Padding(
@@ -139,7 +139,7 @@ class HouseFilterPage extends StatelessWidget {
                                       border: Border.all(color: Colors.grey[400]!),
                                       borderRadius: BorderRadius.circular(4)),
                                   padding: const EdgeInsets.all(8),
-                                  child: const Text("3"),
+                                  child: const Text("6"),
                                 ),
                               ),
                               Padding(
@@ -149,7 +149,7 @@ class HouseFilterPage extends StatelessWidget {
                                       border: Border.all(color: Colors.grey[400]!),
                                       borderRadius: BorderRadius.circular(4)),
                                   padding: const EdgeInsets.all(8),
-                                  child: const Text("3"),
+                                  child: const Text("7+"),
                                 ),
                               ),
                             ],
