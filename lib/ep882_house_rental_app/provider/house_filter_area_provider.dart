@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class HouseFilterAreaProvider extends ChangeNotifier {
   double _areaMin = 300;
-  double _areaMax = 2500.0;
+  double _areaMax = 1200.0;
 
   late RangeValues _areaRangeValues;
 
