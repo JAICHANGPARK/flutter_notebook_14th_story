@@ -91,26 +91,67 @@ class HouseFilterPage extends StatelessWidget {
                       ),
                     ),
                     PriceRangeSliderWidget(),
-                    const Text("Rooms"),
-                    Row(
+
+                    Column(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                            decoration: BoxDecoration(border: Border.all(
-                              color: Colors.grey[400]
+                        const Text("Rooms"),
+                        Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.grey[400]!),
+                                    borderRadius: BorderRadius.circular(4)),
+                                padding: const EdgeInsets.all(8),
+                                child: const Text("3"),
+                              ),
                             ),
-                                borderRadius: BorderRadius.circular(4)),
-                            padding: const EdgeInsets.all(8),
-                            child: const Text("3"),
-                          ),
-                        ),
-                        Container(),
-                        Container(),
-                        Container(),
-                        Container(),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.grey[400]!),
+                                    borderRadius: BorderRadius.circular(4)),
+                                padding: const EdgeInsets.all(8),
+                                child: const Text("3"),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.grey[400]!),
+                                    borderRadius: BorderRadius.circular(4)),
+                                padding: const EdgeInsets.all(8),
+                                child: const Text("3"),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.grey[400]!),
+                                    borderRadius: BorderRadius.circular(4)),
+                                padding: const EdgeInsets.all(8),
+                                child: const Text("3"),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.grey[400]!),
+                                    borderRadius: BorderRadius.circular(4)),
+                                padding: const EdgeInsets.all(8),
+                                child: const Text("3"),
+                              ),
+                            ),
+                          ],
+                        )
                       ],
                     )
+
                   ],
                 ),
               ),
