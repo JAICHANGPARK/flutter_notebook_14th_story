@@ -97,7 +97,9 @@ class HouseFilterPage extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Container(
-                            decoration: BoxDecoration(border: Border.all(),
+                            decoration: BoxDecoration(border: Border.all(
+                              color: Colors.grey[400]
+                            ),
                                 borderRadius: BorderRadius.circular(4)),
                             padding: const EdgeInsets.all(8),
                             child: const Text("3"),
