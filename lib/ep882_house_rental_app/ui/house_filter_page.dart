@@ -91,7 +91,7 @@ class HouseFilterPage extends StatelessWidget {
                       ),
                     ),
                     PriceRangeSliderWidget(),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     Padding(
@@ -100,19 +100,25 @@ class HouseFilterPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text("Rooms"),
-                          ValueListenableBuilder(
+                          ValueListenableBuilder<int>(
                             valueListenable: selectedRooms,
-                            builder: (context, value , child){
-                              return  Row(
+                            builder: (context, value, child) {
+                              return Row(
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                          border: Border.all(color: Colors.grey[400]!),
-                                          borderRadius: BorderRadius.circular(4)),
-                                      padding: const EdgeInsets.all(8),
-                                      child: const Text("3"),
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        selectedRooms.value = 0;
+                                      },
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            color: value == 0 ? Colors.blue : Colors.white,
+                                            border: Border.all(color: Colors.grey[400]!),
+                                            borderRadius: BorderRadius.circular(4)),
+                                        padding: const EdgeInsets.all(8),
+                                        child: const Text("3"),
+                                      ),
                                     ),
                                   ),
                                   Padding(
