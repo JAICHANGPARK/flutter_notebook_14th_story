@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep882_house_rental_app/provider/house_filter_provider.dart';
 import 'package:provider/provider.dart';
 
+import 'area_range_slider_widget.dart';
 import 'price_range_slider_widget.dart';
 
 class HouseFilterPage extends StatelessWidget {
@@ -92,7 +93,7 @@ class HouseFilterPage extends StatelessWidget {
                     ),
                     PriceRangeSliderWidget(),
                     const SizedBox(
-                      height: 16,
+                      height: 16
                     ),
                     Padding(
                       padding: const EdgeInsets.all(16.0),
@@ -199,7 +200,59 @@ class HouseFilterPage extends StatelessWidget {
                           )
                         ],
                       ),
-                    )
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Row(
+                        children: [
+                          const Text("Price Nightly"),
+                          const Spacer(),
+                          Consumer<HouseFilterProvider>(
+                            builder: (context, value, child) {
+                              return Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 5),
+                                decoration:
+                                BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(8)),
+                                child: Center(
+                                  child: Text(
+                                    "\$${value.priceMin}",
+                                    style: const TextStyle(
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 8),
+                            child: Text(
+                              "-",
+                              style: TextStyle(color: Colors.blue, fontSize: 16, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          Consumer<HouseFilterProvider>(
+                            builder: (context, value, child) {
+                              return Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 5),
+                                decoration:
+                                BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(8)),
+                                child: Center(
+                                  child: Text(
+                                    "\$${value.priceMax}",
+                                    style: const TextStyle(
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ],
+                      ),
+                    ),
+                    AreaRangeSliderWidget(),
                   ],
                 ),
               ),
