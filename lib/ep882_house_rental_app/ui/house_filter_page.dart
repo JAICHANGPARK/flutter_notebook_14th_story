@@ -18,6 +18,7 @@ class HouseFilterPage extends StatelessWidget {
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
@@ -63,10 +64,10 @@ class HouseFilterPage extends StatelessWidget {
                             },
                           ),
                           const Padding(
-                            padding:  EdgeInsets.symmetric(horizontal: 8),
+                            padding: EdgeInsets.symmetric(horizontal: 8),
                             child: Text(
                               "-",
-                              style:  TextStyle(color: Colors.blue, fontSize: 16, fontWeight: FontWeight.bold),
+                              style: TextStyle(color: Colors.blue, fontSize: 16, fontWeight: FontWeight.bold),
                             ),
                           ),
                           Consumer<HouseFilterProvider>(
@@ -93,10 +94,13 @@ class HouseFilterPage extends StatelessWidget {
                     const Text("Rooms"),
                     Row(
                       children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(),
-                            borderRadius: BorderRadius.circular(4)
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            decoration: BoxDecoration(border: Border.all(),
+                                borderRadius: BorderRadius.circular(4)),
+                            padding: const EdgeInsets.all(8),
+                            child: const Text("3"),
                           ),
                         ),
                         Container(),
