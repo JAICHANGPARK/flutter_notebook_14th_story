@@ -7,6 +7,8 @@ import 'price_range_slider_widget.dart';
 class HouseFilterPage extends StatelessWidget {
   const HouseFilterPage({Key? key}) : super(key: key);
 
+  ValueNotifier<int> selectedRooms = ValueNotifier(0);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -91,7 +93,11 @@ class HouseFilterPage extends StatelessWidget {
                     Text("Rooms"),
                     Row(
                       children: [
-                        
+                        Container(),
+                        Container(),
+                        Container(),
+                        Container(),
+                        Container(),
                       ],
                     )
                   ],
