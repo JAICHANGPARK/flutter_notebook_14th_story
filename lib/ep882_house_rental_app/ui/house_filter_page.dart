@@ -88,6 +88,12 @@ class HouseFilterPage extends StatelessWidget {
                       ),
                     ),
                     PriceRangeSliderWidget(),
+                    Text("Rooms"),
+                    Row(
+                      children: [
+                        
+                      ],
+                    )
                   ],
                 ),
               ),
