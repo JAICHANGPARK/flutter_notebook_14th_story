@@ -33,7 +33,11 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
         ],
       ),
       body: Column(
-        children: const [Expanded(child: Placeholder())],
+        children: const [
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+
+        ],
       ),
     );
   }
