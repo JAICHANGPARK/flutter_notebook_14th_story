@@ -23,7 +23,7 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
           });
         },
         currentIndex: _tabIndex,
-        items: [
+        items:const [
           BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
           BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
           BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
