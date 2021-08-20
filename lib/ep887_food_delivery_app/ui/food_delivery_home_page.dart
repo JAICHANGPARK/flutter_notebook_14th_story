@@ -13,6 +13,8 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.red,
+        unselectedItemColor: Colors.black,
         items: [
           BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
           BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
