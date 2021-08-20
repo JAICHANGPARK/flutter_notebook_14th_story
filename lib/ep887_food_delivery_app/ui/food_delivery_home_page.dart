@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:line_icons/line_icons.dart';
 
 class FoodDeliveryHomePage extends StatefulWidget {
   const FoodDeliveryHomePage({Key? key}) : super(key: key);
@@ -12,10 +12,17 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
+          BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
+          BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
+          BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
+          BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
         ],
+      ),
+      body: Column(
+        children: const [Expanded(child: Placeholder())],
       ),
     );
   }
