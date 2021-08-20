@@ -9,13 +9,20 @@ class FoodDeliveryHomePage extends StatefulWidget {
 }
 
 class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
+  int _tabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.black,
-        onTap: (idx) {},
+        onTap: (idx) {
+          setState(() {
+            _tabIndex = idx;
+          });
+        },
+        currentIndex: _tabIndex,
         items: [
           BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
           BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
