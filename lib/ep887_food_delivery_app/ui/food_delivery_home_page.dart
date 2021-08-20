@@ -14,7 +14,7 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
     return Scaffold(
       body: Column(
         children: [
-          
+
         ],
       ),
     );
