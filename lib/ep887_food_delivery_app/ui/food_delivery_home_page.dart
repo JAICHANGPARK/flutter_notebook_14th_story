@@ -32,12 +32,13 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
           BottomNavigationBarItem(icon: Icon(LineIcons.heart), label: "Nutrition"),
         ],
       ),
-      body: Column(
-        children: const [
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-
-        ],
+      body: SafeArea(
+        child: Column(
+          children: const [
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+          ],
+        ),
       ),
     );
   }
