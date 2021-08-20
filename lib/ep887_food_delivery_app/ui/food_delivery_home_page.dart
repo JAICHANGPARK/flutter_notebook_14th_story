@@ -23,12 +23,13 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
           });
         },
         currentIndex: _tabIndex,
-        items:const [
+        type: BottomNavigationBarType.fixed,
+        items: const [
           BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
-          BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
-          BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
-          BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
-          BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
+          BottomNavigationBarItem(icon: Icon(LineIcons.chargingStation), label: "Go Out"),
+          BottomNavigationBarItem(icon: Icon(LineIcons.alternateShield), label: "Pro"),
+          BottomNavigationBarItem(icon: Icon(LineIcons.store), label: "Grocery"),
+          BottomNavigationBarItem(icon: Icon(LineIcons.heart), label: "Nutrition"),
         ],
       ),
       body: Column(
