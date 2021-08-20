@@ -15,6 +15,7 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.black,
+        onTap: (idx) {},
         items: [
           BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
           BottomNavigationBarItem(icon: Icon(LineIcons.shoppingBag), label: "Order"),
