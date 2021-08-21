@@ -13,6 +13,15 @@ class FoodDeliveryHomePage extends StatefulWidget {
 class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
   int _tabIndex = 0;
 
+  late PageController _pageController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController(initialPage: _tabIndex);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,6 +29,7 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.black,
         onTap: (idx) {
+          _pageController.jumpToPage(idx);
           setState(() {
             _tabIndex = idx;
           });
@@ -38,7 +48,7 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
         child: PageView(
           physics: NeverScrollableScrollPhysics(),
           onPageChanged: (idx){
-            
+
           },
           children: [
             FdOrderPage(),
