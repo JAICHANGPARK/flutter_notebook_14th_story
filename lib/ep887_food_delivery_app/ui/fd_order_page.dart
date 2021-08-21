@@ -14,27 +14,33 @@ class _FdOrderPageState extends State<FdOrderPage> {
       children: [
         Expanded(
             flex: 2,
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                CircleAvatar(),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Row(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  CircleAvatar(),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("Home"),
-                        Icon(Icons.keyboard_arrow_down),
+                        Row(
+                          children: [
+                            Text("Home"),
+                            Icon(Icons.keyboard_arrow_down),
+                          ],
+                        ),
+                        Text("South Korea, Seoul"),
                       ],
                     ),
-                    Text("South Korea, Seoul"),
-                  ],
-                ),
-                Spacer(),
-                IconButton(onPressed: (){}, icon: Icon(Icons.search)),
-                CircleAvatar(),
-              ],
+                  ),
+                  Spacer(),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+                  CircleAvatar(),
+                ],
+              ),
             )),
         Expanded(flex: 15, child: Placeholder()),
       ],
