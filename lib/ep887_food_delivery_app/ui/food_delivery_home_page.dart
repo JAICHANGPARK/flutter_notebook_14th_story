@@ -3,6 +3,7 @@ import 'package:line_icons/line_icons.dart';
 
 import 'fd_go_out_page.dart';
 import 'fd_grocery_page.dart';
+import 'fd_nutrition_page.dart';
 import 'fd_order_page.dart';
 import 'fd_pro_page.dart';
 
@@ -57,7 +58,7 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
             FdGoOutPage(),
             FdProPage(),
             FdGroceryPage(),
-
+            FdNutritionPage(),
           ],
         ),
       ),
