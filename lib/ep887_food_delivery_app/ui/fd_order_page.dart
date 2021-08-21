@@ -11,6 +11,11 @@ class FdOrderPage extends StatefulWidget {
 class _FdOrderPageState extends State<FdOrderPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Column(
+      children: [
+        Expanded(child: Placeholder()),
+        Expanded(child: Placeholder()),
+      ],
+    );
   }
 }
