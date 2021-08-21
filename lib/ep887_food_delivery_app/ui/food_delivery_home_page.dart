@@ -36,7 +36,7 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
         child: PageView(
           physics: NeverScrollableScrollPhysics(),
           children: [
-          
+
           ],
 
         ),
