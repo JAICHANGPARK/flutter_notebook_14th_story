@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
+import 'fd_order_page.dart';
+
 class FoodDeliveryHomePage extends StatefulWidget {
   const FoodDeliveryHomePage({Key? key}) : super(key: key);
 
@@ -35,8 +37,11 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
       body: SafeArea(
         child: PageView(
           physics: NeverScrollableScrollPhysics(),
+          onPageChanged: (idx){
+            
+          },
           children: [
-
+            FdOrderPage(),
           ],
 
         ),
