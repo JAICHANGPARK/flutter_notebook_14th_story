@@ -34,10 +34,11 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
       ),
       body: SafeArea(
         child: PageView(
+          physics: NeverScrollableScrollPhysics(),
           children: [
-
-          ],
           
+          ],
+
         ),
       ),
     );
