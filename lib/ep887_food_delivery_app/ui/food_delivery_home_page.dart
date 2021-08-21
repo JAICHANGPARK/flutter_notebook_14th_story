@@ -30,9 +30,10 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.black,
         onTap: (idx) {
-          _pageController.jumpToPage(idx);
+
           setState(() {
             _tabIndex = idx;
+            _pageController.jumpToPage(idx);
           });
         },
         currentIndex: _tabIndex,
