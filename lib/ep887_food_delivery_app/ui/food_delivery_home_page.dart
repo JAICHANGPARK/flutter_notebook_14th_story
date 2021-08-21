@@ -3,6 +3,7 @@ import 'package:line_icons/line_icons.dart';
 
 import 'fd_go_out_page.dart';
 import 'fd_order_page.dart';
+import 'fd_pro_page.dart';
 
 class FoodDeliveryHomePage extends StatefulWidget {
   const FoodDeliveryHomePage({Key? key}) : super(key: key);
@@ -53,6 +54,7 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
           children: [
             FdOrderPage(),
             FdGoOutPage(),
+            FdProPage(),
           ],
         ),
       ),
