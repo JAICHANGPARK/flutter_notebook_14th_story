@@ -15,11 +15,12 @@ class _FdOrderPageState extends State<FdOrderPage> {
         Expanded(
             flex: 2,
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 CircleAvatar(),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Row(
                       children: [
@@ -29,7 +30,10 @@ class _FdOrderPageState extends State<FdOrderPage> {
                     ),
                     Text("South Korea, Seoul"),
                   ],
-                )
+                ),
+                Spacer(),
+                IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+                CircleAvatar(),
               ],
             )),
         Expanded(flex: 15, child: Placeholder()),
