@@ -30,10 +30,9 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.black,
         onTap: (idx) {
-
+          _pageController.jumpToPage(idx);
           setState(() {
             _tabIndex = idx;
-            _pageController.jumpToPage(idx);
           });
         },
         currentIndex: _tabIndex,
@@ -48,6 +47,7 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
       ),
       body: SafeArea(
         child: PageView(
+          controller: _pageController,
           physics: const NeverScrollableScrollPhysics(),
           onPageChanged: (idx) {},
           children: [
