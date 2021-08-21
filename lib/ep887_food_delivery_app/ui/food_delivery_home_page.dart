@@ -57,6 +57,7 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
             FdGoOutPage(),
             FdProPage(),
             FdGroceryPage(),
+
           ],
         ),
       ),
