@@ -35,12 +35,8 @@ class _FoodDeliveryHomePageState extends State<FoodDeliveryHomePage> {
       body: SafeArea(
         child: Column(
           children: const [
-            Expanded(
-                flex: 3,
-                child: Placeholder()),
-            Expanded(
-                flex: 20,
-                child: Placeholder()),
+            Expanded(flex: 3, child: Placeholder()),
+            Expanded(flex: 20, child: Placeholder()),
           ],
         ),
       ),
