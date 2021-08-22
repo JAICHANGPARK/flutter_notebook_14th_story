@@ -76,22 +76,28 @@ class _FdOrderPageState extends State<FdOrderPage> {
                     ),
                   ),
                   const Text("Eat whay makes you happy"),
-                  SizedBox(
-                    height: 64,
-                    child: ListView.builder(
-                      itemBuilder: (context, index) {
-                        return Column(
-                          children: [
-                            CircleAvatar(
-                              radius: 36,
-                              backgroundColor: Colors.red[100]!,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 8, top: 8, bottom: 8),
+                    child: SizedBox(
+                      height: 84,
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 8),
+                            child: Column(
+                              children: [
+                                CircleAvatar(
+                                  radius: 32,
+                                  backgroundColor: Colors.red[100]!,
+                                ),
+                                Text("Healthy")
+                              ],
                             ),
-                            Text("Healthy")
-                          ],
-                        );
-                      },
-                      itemCount: 8,
-                      scrollDirection: Axis.horizontal,
+                          );
+                        },
+                        itemCount: 8,
+                        scrollDirection: Axis.horizontal,
+                      ),
                     ),
                   )
                 ],
