@@ -53,18 +53,32 @@ class _FdOrderPageState extends State<FdOrderPage> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Container(
-                    height: 240,
-                    decoration: BoxDecoration(color: Colors.red),
-                    child: Swiper(
-                      outer: false,
-                      itemCount: 10,
-                      itemBuilder: (context, index) {
-                        return Card(
-                          child: Text("$index"),
-                        );
-                      },
-                      pagination: SwiperPagination(),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: SizedBox(
+                      height: 200,
+                      // decoration: BoxDecoration(color: Colors.red),
+                      child: Swiper(
+                        outer: false,
+                        itemCount: 3,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            decoration: BoxDecoration(
+                              color: Colors.red[200],
+                              borderRadius: BorderRadius.circular(24)
+                            ),
+                            child: Text("$index"),
+                          );
+                        },
+                        pagination: SwiperPagination(
+                          builder: DotSwiperPaginationBuilder(
+                            activeColor: Colors.grey,
+                            color: Colors.white,
+
+                          )
+
+                        ),
+                      ),
                     ),
                   )
                 ],
