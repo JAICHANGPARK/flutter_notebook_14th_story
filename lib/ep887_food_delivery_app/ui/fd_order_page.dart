@@ -93,7 +93,9 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                   radius: 32,
                                   backgroundColor: Colors.red[100]!,
                                 ),
-                                Text("Healthy")
+                                SizedBox(height: 4,),
+                                Text("Healthy",
+                                  style: TextStyle(fontSize: 12),)
                               ],
                             ),
                           );
