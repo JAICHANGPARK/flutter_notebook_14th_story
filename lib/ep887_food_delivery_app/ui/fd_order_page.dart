@@ -77,7 +77,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
                     ),
                   ),
                   const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
                     child: Text(
                       "Eat what makes you happy",
                       style: TextStyle(fontWeight: FontWeight.bold),
@@ -111,6 +111,20 @@ class _FdOrderPageState extends State<FdOrderPage> {
                         itemCount: 8,
                         scrollDirection: Axis.horizontal,
                       ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8,),
+                    child: Row(
+                      children: const [
+                        Text("127 restaurants around you",
+                          style: TextStyle(fontWeight: FontWeight.bold),),
+                        Spacer(),
+                        Icon(Icons.import_export_outlined,
+                        size: 18,),
+                        Text("Popular",
+                          style: TextStyle(fontWeight: FontWeight.bold , fontSize: 12),)
+                      ],
                     ),
                   )
                 ],
