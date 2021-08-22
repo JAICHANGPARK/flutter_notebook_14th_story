@@ -52,6 +52,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
             flex: 15,
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -67,7 +68,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
                             child: Text("$index"),
                           );
                         },
-                        pagination: SwiperPagination(
+                        pagination: const SwiperPagination(
                             builder: DotSwiperPaginationBuilder(
                           activeColor: Colors.grey,
                           color: Colors.white,
@@ -75,9 +76,12 @@ class _FdOrderPageState extends State<FdOrderPage> {
                       ),
                     ),
                   ),
-                  const Text(
-                    "Eat what makes you happy",
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    child: Text(
+                      "Eat what makes you happy",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 8, top: 8, bottom: 8),
@@ -93,9 +97,13 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                   radius: 32,
                                   backgroundColor: Colors.red[100]!,
                                 ),
-                                SizedBox(height: 4,),
-                                Text("Healthy",
-                                  style: TextStyle(fontSize: 12),)
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Healthy",
+                                  style: TextStyle(fontSize: 12),
+                                )
                               ],
                             ),
                           );
