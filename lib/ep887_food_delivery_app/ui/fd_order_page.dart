@@ -22,7 +22,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
                 children: [
                   CircleAvatar(
                     backgroundColor: Colors.red[400],
-                    child: Icon(Icons.location_on),
+                    child: Icon(Icons.location_on_outlined),
                     foregroundColor: Colors.white,
                   ),
                   Padding(
@@ -47,7 +47,13 @@ class _FdOrderPageState extends State<FdOrderPage> {
                 ],
               ),
             )),
-        Expanded(flex: 15, child: Placeholder()),
+        Expanded(flex: 15, child: SingleChildScrollView(
+          child: Column(
+            children: [
+              
+            ],
+          ),
+        )),
       ],
     );
   }
