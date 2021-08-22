@@ -63,29 +63,35 @@ class _FdOrderPageState extends State<FdOrderPage> {
                         itemCount: 3,
                         itemBuilder: (context, index) {
                           return Container(
-                            decoration: BoxDecoration(
-                              color: Colors.red[200],
-                              borderRadius: BorderRadius.circular(24)
-                            ),
+                            decoration: BoxDecoration(color: Colors.red[200], borderRadius: BorderRadius.circular(24)),
                             child: Text("$index"),
                           );
                         },
                         pagination: SwiperPagination(
-                          builder: DotSwiperPaginationBuilder(
-                            activeColor: Colors.grey,
-                            color: Colors.white,
-
-                          )
-
-                        ),
+                            builder: DotSwiperPaginationBuilder(
+                          activeColor: Colors.grey,
+                          color: Colors.white,
+                        )),
                       ),
                     ),
                   ),
-                  Text("Eat whay makes you happy"),
+                  const Text("Eat whay makes you happy"),
                   SizedBox(
                     height: 64,
-                    child: ListView.builder(itemBuilder: (context, index){},
-                    itemCount: 8,
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Column(
+                          children: [
+                            CircleAvatar(
+                              radius: 36,
+                              backgroundColor: Colors.red[100]!,
+                            ),
+                            Text("Healthy")
+                          ],
+                        );
+                      },
+                      itemCount: 8,
+                      scrollDirection: Axis.horizontal,
                     ),
                   )
                 ],
