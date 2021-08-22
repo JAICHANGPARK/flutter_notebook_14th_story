@@ -50,7 +50,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
         Expanded(flex: 15, child: SingleChildScrollView(
           child: Column(
             children: [
-              
+
             ],
           ),
         )),
