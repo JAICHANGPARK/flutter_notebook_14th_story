@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 
 class FdOrderPage extends StatefulWidget {
   const FdOrderPage({Key? key}) : super(key: key);
@@ -19,7 +20,11 @@ class _FdOrderPageState extends State<FdOrderPage> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  CircleAvatar(),
+                  CircleAvatar(
+                    backgroundColor: Colors.red[400],
+                    child: Icon(Icons.location_on),
+                    foregroundColor: Colors.white,
+                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: Column(
@@ -27,7 +32,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Row(
-                          children: [
+                          children: const [
                             Text("Home"),
                             Icon(Icons.keyboard_arrow_down),
                           ],
@@ -37,7 +42,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
                     ),
                   ),
                   Spacer(),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.search)),
                   CircleAvatar(),
                 ],
               ),
