@@ -75,7 +75,10 @@ class _FdOrderPageState extends State<FdOrderPage> {
                       ),
                     ),
                   ),
-                  const Text("Eat whay makes you happy"),
+                  const Text(
+                    "Eat what makes you happy",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(left: 8, top: 8, bottom: 8),
                     child: SizedBox(
