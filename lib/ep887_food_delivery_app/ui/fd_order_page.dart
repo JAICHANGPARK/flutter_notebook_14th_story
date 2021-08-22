@@ -114,7 +114,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8,),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                     child: Row(
                       children: const [
                         Text("127 restaurants around you",
