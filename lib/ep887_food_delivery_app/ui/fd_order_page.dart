@@ -1,3 +1,4 @@
+import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
@@ -50,6 +51,13 @@ class _FdOrderPageState extends State<FdOrderPage> {
         Expanded(flex: 15, child: SingleChildScrollView(
           child: Column(
             children: [
+              Container(
+                height: 240,
+                decoration: BoxDecoration(
+                  color: Colors.red
+                ),
+                child: Swiper(itemCount: 10,),
+              )
 
             ],
           ),
