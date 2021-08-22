@@ -54,7 +54,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     child: SizedBox(
                       height: 200,
                       // decoration: BoxDecoration(color: Colors.red),
@@ -79,6 +79,13 @@ class _FdOrderPageState extends State<FdOrderPage> {
 
                         ),
                       ),
+                    ),
+                  ),
+                  Text("Eat whay makes you happy"),
+                  SizedBox(
+                    height: 64,
+                    child: ListView.builder(itemBuilder: (context, index){},
+                    itemCount: 8,
                     ),
                   )
                 ],
