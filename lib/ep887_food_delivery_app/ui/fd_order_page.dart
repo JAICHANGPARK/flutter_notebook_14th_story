@@ -204,30 +204,43 @@ class _FdOrderPageState extends State<FdOrderPage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
                       height: 264,
-                      decoration: BoxDecoration(color: Colors.red,
-                      borderRadius: BorderRadius.circular(16)),
+                      decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(16)),
                       child: Column(
                         children: [
-                          Expanded(child: Placeholder(), flex: 6,),
-
-                          Expanded(child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Text("Sultan Kacchi Biryani"),
-                                  Container(
-                                    child: Row(
-                                      children: [
-                                        Text("4.3"),
-                                        Icon(Icons.star, color: Colors.yellow, size: 12,)
-                                      ],
-                                    ),
-                                  )
-                                ],
-                              ),
-                              Divider(),
-                            ],
-                          ), flex: 4,),
+                          Expanded(
+                            child: Placeholder(),
+                            flex: 6,
+                          ),
+                          Expanded(
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Text("Sultan Kacchi Biryani"),
+                                    Spacer(),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.green,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          Text("4.3"),
+                                          Icon(
+                                            Icons.star,
+                                            color: Colors.yellow,
+                                            size: 12,
+                                          )
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                Divider(),
+                              ],
+                            ),
+                            flex: 4,
+                          ),
                         ],
                       ),
                     ),
