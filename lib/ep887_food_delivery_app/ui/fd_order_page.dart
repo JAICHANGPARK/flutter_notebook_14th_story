@@ -208,7 +208,14 @@ class _FdOrderPageState extends State<FdOrderPage> {
                       child: Column(
                         children: [
                           Expanded(
-                            child: Placeholder(),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2016/03/09/12/07/meal-1246287_960_720.jpg",
+                                      ),
+                                      fit: BoxFit.cover)),
+                            ),
                             flex: 6,
                           ),
                           Expanded(
@@ -242,19 +249,27 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                         ],
                                       ),
                                     ),
-
                                   ],
                                 ),
-                                SizedBox(height: 8,),
+                                SizedBox(
+                                  height: 3,
+                                ),
                                 Row(
                                   children: [
-                                    Text("Biryani, Desserts, Kacchi",
+                                    Text(
+                                      "Biryani, Desserts, Kacchi",
                                       style: GoogleFonts.metrophobic(
-                                          fontSize: 14,),),
+                                        fontSize: 14,
+                                      ),
+                                    ),
                                     Spacer(),
-                                    Text("Price Range \$12.00 - \$14.00",
+                                    Text(
+                                      "Price Range \$12.00 - \$14.00",
                                       style: GoogleFonts.metrophobic(
-                                        fontSize: 14, fontWeight: FontWeight.bold,),)
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    )
                                   ],
                                 ),
                                 Divider(),
