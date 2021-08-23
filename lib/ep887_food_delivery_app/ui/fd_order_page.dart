@@ -77,14 +77,23 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                 children: [
                                   Positioned(
                                       left: 8,
-                                      top: 7,
-                                      bottom: 8,
+                                      top: 16,
+                                      bottom: 16,
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Up To"),
-                                          Text("70% OFF"),
-                                          Text("with free delivery"),
+                                          Text("Up To",style: GoogleFonts.metrophobic(
+                                            color: Colors.white,
+                                            fontSize: 15
+                                          ),),
+                                          Text("70% OFF",style: GoogleFonts.metrophobic(
+                                              color: Colors.white,
+                                              fontSize: 15
+                                          ),),
+                                          Text("with free delivery",style: GoogleFonts.metrophobic(
+                                              color: Colors.white,
+                                              fontSize: 15
+                                          ),),
                                           SizedBox(
                                             child: Divider(
                                               color: Colors.white,
