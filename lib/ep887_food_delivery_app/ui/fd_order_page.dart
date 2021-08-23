@@ -88,11 +88,11 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                           ),),
                                           Text("70% OFF",style: GoogleFonts.metrophobic(
                                               color: Colors.white,
-                                              fontSize: 15
+                                              fontSize: 32
                                           ),),
                                           Text("with free delivery",style: GoogleFonts.metrophobic(
                                               color: Colors.white,
-                                              fontSize: 15
+                                              fontSize: 24
                                           ),),
                                           SizedBox(
                                             child: Divider(
