@@ -228,7 +228,11 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                       ),
                                       child: Row(
                                         children: [
-                                          Text("4.3"),
+                                          Text(
+                                            "4.3",
+                                            style: GoogleFonts.metrophobic(
+                                                fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
+                                          ),
                                           Icon(
                                             Icons.star,
                                             color: Colors.yellow,
