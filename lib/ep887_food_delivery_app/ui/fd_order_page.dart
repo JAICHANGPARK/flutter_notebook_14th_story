@@ -58,24 +58,20 @@ class _FdOrderPageState extends State<FdOrderPage> {
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     child: SizedBox(
                       height: 200,
-
                       child: Swiper(
                         outer: false,
                         itemCount: 3,
                         itemBuilder: (context, index) {
                           return Container(
-                              decoration:
-                                  BoxDecoration(color: Colors.red[200],
-                                      gradient: LinearGradient(
-                                          colors: [
-                                            Colors.red[400]!,
-                                            Colors.red[300]!,
-                                            Colors.red[200]!,
-                                            Colors.red[100]!,
-                                          ]
-                                      ),
-
-                                      borderRadius: BorderRadius.circular(24)),
+                              decoration: BoxDecoration(
+                                  color: Colors.red[200],
+                                  gradient: LinearGradient(colors: [
+                                    Colors.red[400]!,
+                                    Colors.red[300]!,
+                                    Colors.red[200]!,
+                                    Colors.red[100]!,
+                                  ]),
+                                  borderRadius: BorderRadius.circular(24)),
                               child: Stack(
                                 children: [
                                   Positioned(
@@ -83,13 +79,18 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                       top: 7,
                                       bottom: 8,
                                       child: Column(
-                                    children: [
-                                      Text("Up To"),
-                                      Text("70% OFF"),
-                                      Text("with free delivery"),
-                                      Divider(),
-                                    ],
-                                  )),
+                                        children: [
+                                          Text("Up To"),
+                                          Text("70% OFF"),
+                                          Text("with free delivery"),
+                                          SizedBox(
+                                            child: Divider(
+                                              color: Colors.white,
+                                            ),
+                                            width: 64,
+                                          ),
+                                        ],
+                                      )),
                                   Positioned(
                                     child: Image.asset("assets/fd_main_img_01.png"),
                                     right: 8,
