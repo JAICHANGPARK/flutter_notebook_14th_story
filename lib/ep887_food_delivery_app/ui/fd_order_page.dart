@@ -206,6 +206,12 @@ class _FdOrderPageState extends State<FdOrderPage> {
                       height: 264,
                       decoration: BoxDecoration(color: Colors.red,
                       borderRadius: BorderRadius.circular(16)),
+                      child: Column(
+                        children: [
+                          Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder()),
+                        ],
+                      ),
                     ),
                   )
                 ],
