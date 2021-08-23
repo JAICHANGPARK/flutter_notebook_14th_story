@@ -245,6 +245,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
 
                                   ],
                                 ),
+                                SizedBox(height: 8,),
                                 Row(
                                   children: [
                                     Text("Biryani, Desserts, Kacchi",
