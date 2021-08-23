@@ -208,8 +208,26 @@ class _FdOrderPageState extends State<FdOrderPage> {
                       borderRadius: BorderRadius.circular(16)),
                       child: Column(
                         children: [
-                          Expanded(child: Placeholder()),
-                          Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder(), flex: 6,),
+
+                          Expanded(child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Text("Sultan Kacchi Biryani"),
+                                  Container(
+                                    child: Row(
+                                      children: [
+                                        Text("4.3"),
+                                        Icon(Icons.star, color: Colors.yellow, size: 12,)
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                              Divider(),
+                            ],
+                          ), flex: 4,),
                         ],
                       ),
                     ),
