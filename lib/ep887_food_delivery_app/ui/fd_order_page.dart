@@ -204,7 +204,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
                       height: 264,
-                      decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(16)),
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
                       child: Column(
                         children: [
                           Expanded(
@@ -216,7 +216,10 @@ class _FdOrderPageState extends State<FdOrderPage> {
                               children: [
                                 Row(
                                   children: [
-                                    Text("Sultan Kacchi Biryani"),
+                                    Text(
+                                      "Sultan Kacchi Biryani",
+                                      style: GoogleFonts.metrophobic(fontSize: 20, fontWeight: FontWeight.bold),
+                                    ),
                                     Spacer(),
                                     Container(
                                       decoration: BoxDecoration(
