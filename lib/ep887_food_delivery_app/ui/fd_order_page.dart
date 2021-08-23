@@ -56,24 +56,25 @@ class _FdOrderPageState extends State<FdOrderPage> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                    child: Container(
+                    child: SizedBox(
                       height: 200,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [
-                            Colors.red[600]!,
-                            Colors.red[400]!,
-                            Colors.red[200]!,
-                          ]
-                        )
-                      ),
+
                       child: Swiper(
                         outer: false,
                         itemCount: 3,
                         itemBuilder: (context, index) {
                           return Container(
                               decoration:
-                                  BoxDecoration(color: Colors.red[200], borderRadius: BorderRadius.circular(24)),
+                                  BoxDecoration(color: Colors.red[200],
+                                      gradient: LinearGradient(
+                                          colors: [
+                                            Colors.red[600]!,
+                                            Colors.red[400]!,
+                                            Colors.red[200]!,
+                                          ]
+                                      )
+
+                                      borderRadius: BorderRadius.circular(24)),
                               child: Stack(
                                 children: [
                                   Positioned(
