@@ -203,7 +203,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      height: 314,
+                      height: 330,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
                       child: Column(
                         children: [
