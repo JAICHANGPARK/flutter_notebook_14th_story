@@ -1,5 +1,6 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
 
 class FdOrderPage extends StatefulWidget {
@@ -90,10 +91,19 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                             ),
                                             width: 64,
                                           ),
-                                          Text("no COOking"),
+                                          Text(
+                                            "no COOKing",
+                                            style: GoogleFonts.molle(color: Colors.white, fontSize: 24),
+                                          ),
                                           Row(
                                             children: [
-                                              Text("July"),
+                                              Text(
+                                                "July",
+                                                style: GoogleFonts.molle(color: Colors.white, fontSize: 24),
+                                              ),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
                                               CircleAvatar(
                                                 backgroundColor: Colors.white,
                                                 radius: 12,
