@@ -64,9 +64,17 @@ class _FdOrderPageState extends State<FdOrderPage> {
                         itemCount: 3,
                         itemBuilder: (context, index) {
                           return Container(
-                            decoration: BoxDecoration(color: Colors.red[200], borderRadius: BorderRadius.circular(24)),
-                            child: Text("$index"),
-                          );
+                              decoration:
+                                  BoxDecoration(color: Colors.red[200], borderRadius: BorderRadius.circular(24)),
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    child: Image.asset("assets/fd_main_img_01.png"),
+                                    right: 8,
+                                    bottom: 0,
+                                  )
+                                ],
+                              ));
                         },
                         pagination: const SwiperPagination(
                             builder: DotSwiperPaginationBuilder(
@@ -117,13 +125,19 @@ class _FdOrderPageState extends State<FdOrderPage> {
                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                     child: Row(
                       children: const [
-                        Text("127 restaurants around you",
-                          style: TextStyle(fontWeight: FontWeight.bold),),
+                        Text(
+                          "127 restaurants around you",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
                         Spacer(),
-                        Icon(Icons.import_export_outlined,
-                        size: 18,),
-                        Text("Popular",
-                          style: TextStyle(fontWeight: FontWeight.bold , fontSize: 12),)
+                        Icon(
+                          Icons.import_export_outlined,
+                          size: 18,
+                        ),
+                        Text(
+                          "Popular",
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                        )
                       ],
                     ),
                   )
