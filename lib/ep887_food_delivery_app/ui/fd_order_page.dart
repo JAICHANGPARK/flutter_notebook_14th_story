@@ -247,8 +247,13 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                 ),
                                 Row(
                                   children: [
-                                    Text("Biryani, Desserts, Kacchi"),
-                                    Text("Price Range \$12.00 - \$14.00")
+                                    Text("Biryani, Desserts, Kacchi",
+                                      style: GoogleFonts.metrophobic(
+                                          fontSize: 14,),),
+                                    Spacer(),
+                                    Text("Price Range \$12.00 - \$14.00",
+                                      style: GoogleFonts.metrophobic(
+                                        fontSize: 14, fontWeight: FontWeight.bold,),)
                                   ],
                                 ),
                                 Divider(),
