@@ -68,11 +68,12 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                   BoxDecoration(color: Colors.red[200],
                                       gradient: LinearGradient(
                                           colors: [
-                                            Colors.red[600]!,
                                             Colors.red[400]!,
+                                            Colors.red[300]!,
                                             Colors.red[200]!,
+                                            Colors.red[100]!,
                                           ]
-                                      )
+                                      ),
 
                                       borderRadius: BorderRadius.circular(24)),
                               child: Stack(
