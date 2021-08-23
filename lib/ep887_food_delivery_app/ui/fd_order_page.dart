@@ -226,6 +226,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                         color: Colors.green,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
+                                      padding: EdgeInsets.symmetric(horizontal: 4),
                                       child: Row(
                                         children: [
                                           Text(
