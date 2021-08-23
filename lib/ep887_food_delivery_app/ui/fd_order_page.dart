@@ -210,6 +210,10 @@ class _FdOrderPageState extends State<FdOrderPage> {
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(16),
+                                    topRight: Radius.circular(16),
+                                  ),
                                   image: DecorationImage(
                                       image: NetworkImage(
                                         "https://cdn.pixabay.com/photo/2016/03/09/12/07/meal-1246287_960_720.jpg",
