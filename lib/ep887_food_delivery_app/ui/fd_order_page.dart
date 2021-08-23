@@ -241,7 +241,14 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                           )
                                         ],
                                       ),
-                                    )
+                                    ),
+
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text("Biryani, Desserts, Kacchi"),
+                                    Text("Price Range \$12.00 - \$14.00")
                                   ],
                                 ),
                                 Divider(),
