@@ -79,7 +79,8 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                       top: 7,
                                       bottom: 8,
                                       child: Column(
-                                        children: [
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: const [
                                           Text("Up To"),
                                           Text("70% OFF"),
                                           Text("with free delivery"),
@@ -89,6 +90,16 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                             ),
                                             width: 64,
                                           ),
+                                          Text("no COOking"),
+                                          Row(
+                                            children: [
+                                              Text("July"),
+                                              CircleAvatar(
+                                                backgroundColor: Colors.white,
+                                                child: Icon(Icons.arrow_forward),
+                                              )
+                                            ],
+                                          )
                                         ],
                                       )),
                                   Positioned(
