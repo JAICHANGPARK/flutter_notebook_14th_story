@@ -203,7 +203,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      height: 264,
+                      height: 314,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
                       child: Column(
                         children: [
@@ -223,61 +223,73 @@ class _FdOrderPageState extends State<FdOrderPage> {
                             flex: 6,
                           ),
                           Expanded(
-                            child: Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Text(
-                                      "Sultan Kacchi Biryani",
-                                      style: GoogleFonts.metrophobic(fontSize: 20, fontWeight: FontWeight.bold),
-                                    ),
-                                    Spacer(),
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.green,
-                                        borderRadius: BorderRadius.circular(4),
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "Sultan Kacchi Biryani",
+                                        style: GoogleFonts.metrophobic(fontSize: 20, fontWeight: FontWeight.bold),
                                       ),
-                                      padding: EdgeInsets.symmetric(horizontal: 4),
-                                      child: Row(
-                                        children: [
-                                          Text(
-                                            "4.3",
-                                            style: GoogleFonts.metrophobic(
-                                                fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
-                                          ),
-                                          Icon(
-                                            Icons.star,
-                                            color: Colors.yellow,
-                                            size: 12,
-                                          )
-                                        ],
+                                      Spacer(),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.green,
+                                          borderRadius: BorderRadius.circular(4),
+                                        ),
+                                        padding: EdgeInsets.symmetric(horizontal: 4),
+                                        child: Row(
+                                          children: [
+                                            Text(
+                                              "4.3",
+                                              style: GoogleFonts.metrophobic(
+                                                  fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
+                                            ),
+                                            Icon(
+                                              Icons.star,
+                                              color: Colors.yellow,
+                                              size: 12,
+                                            )
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 3,
-                                ),
-                                Row(
-                                  children: [
-                                    Text(
-                                      "Biryani, Desserts, Kacchi",
-                                      style: GoogleFonts.metrophobic(
-                                        fontSize: 14,
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 3,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "Biryani, Desserts, Kacchi",
+                                        style: GoogleFonts.metrophobic(
+                                          fontSize: 12,
+                                        ),
                                       ),
-                                    ),
-                                    Spacer(),
-                                    Text(
-                                      "Price Range \$12.00 - \$14.00",
-                                      style: GoogleFonts.metrophobic(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    )
-                                  ],
-                                ),
-                                Divider(),
-                              ],
+                                      Spacer(),
+                                      Text(
+                                        "Price Range \$12.00 - \$14.00",
+                                        style: GoogleFonts.metrophobic(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                  Divider(),
+                                  Wrap(
+                                    children: [
+                                      Text("Zomato funds environmental projects to offset delivery carbon footprint"),
+                                      CircleAvatar(
+                                        radius: 12,
+                                        backgroundColor: Colors.deepPurpleAccent[100],
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ),
                             flex: 4,
                           ),
