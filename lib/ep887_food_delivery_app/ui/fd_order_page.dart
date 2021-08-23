@@ -79,6 +79,18 @@ class _FdOrderPageState extends State<FdOrderPage> {
                               child: Stack(
                                 children: [
                                   Positioned(
+                                      left: 8,
+                                      top: 7,
+                                      bottom: 8,
+                                      child: Column(
+                                    children: [
+                                      Text("Up To"),
+                                      Text("70% OFF"),
+                                      Text("with free delivery"),
+                                      Divider(),
+                                    ],
+                                  )),
+                                  Positioned(
                                     child: Image.asset("assets/fd_main_img_01.png"),
                                     right: 8,
                                     bottom: 0,
