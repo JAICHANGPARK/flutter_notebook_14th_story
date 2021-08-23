@@ -161,6 +161,8 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                 CircleAvatar(
                                   radius: 32,
                                   backgroundColor: Colors.red[100]!,
+                                  backgroundImage: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032__340.jpg"),
                                 ),
                                 SizedBox(
                                   height: 4,
@@ -196,6 +198,14 @@ class _FdOrderPageState extends State<FdOrderPage> {
                           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                         )
                       ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 264,
+                      decoration: BoxDecoration(color: Colors.red,
+                      borderRadius: BorderRadius.circular(16)),
                     ),
                   )
                 ],
