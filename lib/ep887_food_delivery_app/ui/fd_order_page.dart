@@ -80,7 +80,7 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                       bottom: 8,
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: const [
+                                        children: [
                                           Text("Up To"),
                                           Text("70% OFF"),
                                           Text("with free delivery"),
@@ -96,7 +96,12 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                               Text("July"),
                                               CircleAvatar(
                                                 backgroundColor: Colors.white,
-                                                child: Icon(Icons.arrow_forward),
+                                                radius: 12,
+                                                child: Icon(
+                                                  Icons.arrow_forward,
+                                                  size: 14,
+                                                ),
+                                                foregroundColor: Colors.black,
                                               )
                                             ],
                                           )
