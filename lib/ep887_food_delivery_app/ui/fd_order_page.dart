@@ -82,22 +82,21 @@ class _FdOrderPageState extends State<FdOrderPage> {
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Up To",style: GoogleFonts.metrophobic(
-                                            color: Colors.white,
-                                            fontSize: 15
-                                          ),),
-                                          Text("70% OFF",style: GoogleFonts.metrophobic(
-                                              color: Colors.white,
-                                              fontSize: 32
-                                          ),),
-                                          Text("with free delivery",style: GoogleFonts.metrophobic(
-                                              color: Colors.white,
-                                              fontSize: 24
-                                          ),),
+                                          Text(
+                                            "Up To",
+                                            style: GoogleFonts.metrophobic(color: Colors.white, fontSize: 15),
+                                          ),
+                                          Text(
+                                            "70% OFF",
+                                            style: GoogleFonts.metrophobic(
+                                                color: Colors.white, fontSize: 32, fontWeight: FontWeight.bold),
+                                          ),
+                                          Text(
+                                            "with free delivery",
+                                            style: GoogleFonts.metrophobic(color: Colors.white, fontSize: 24),
+                                          ),
                                           SizedBox(
-                                            child: Divider(
-                                              color: Colors.white,
-                                            ),
+                                            child: Divider(color: Colors.white),
                                             width: 64,
                                           ),
                                           Text(
