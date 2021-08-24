@@ -19,6 +19,19 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+          child: Row(
+            children: [
+              IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.pie_chart_outline_outlined)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.account_balance_wallet_outlined)),
+              IconButton(onPressed: () {}, icon: Icon(Icons.person_outline)),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
