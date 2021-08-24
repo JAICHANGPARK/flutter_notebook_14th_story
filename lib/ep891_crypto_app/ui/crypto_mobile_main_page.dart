@@ -11,7 +11,9 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: SafeArea(
+        child: Column(),
+      ),
     );
   }
 }
