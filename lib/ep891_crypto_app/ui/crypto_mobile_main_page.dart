@@ -8,6 +8,8 @@ class CryptoMobileMainPage extends StatefulWidget {
 }
 
 class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
+  ValueNotifier<int> _tabIndex = ValueNotifier(0);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,8 +25,13 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
         child: Container(
           height: 72,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+              GestureDetector(
+                  onTap: () {
+                    _tabIndex.value = 0;
+                  },
+                  child: IconButton(onPressed: () {}, icon: Icon(Icons.home))),
               IconButton(onPressed: () {}, icon: Icon(Icons.pie_chart_outline_outlined)),
               IconButton(onPressed: () {}, icon: Icon(Icons.account_balance_wallet_outlined)),
               IconButton(onPressed: () {}, icon: Icon(Icons.person_outline)),
