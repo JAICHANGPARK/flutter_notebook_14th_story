@@ -34,22 +34,54 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                       onPressed: () {
                         _tabIndex.value = 0;
                       },
-                      icon: Icon(Icons.home)),
+                      icon: value == 0
+                          ? Icon(
+                              Icons.home,
+                              color: Colors.indigo,
+                            )
+                          : Icon(
+                              Icons.home_outlined,
+                              color: Colors.grey,
+                            )),
                   IconButton(
                       onPressed: () {
                         _tabIndex.value = 1;
                       },
-                      icon: Icon(Icons.pie_chart_outline_outlined)),
+                      icon: value == 1
+                          ? Icon(
+                              Icons.pie_chart,
+                              color: Colors.indigo,
+                            )
+                          : Icon(
+                              Icons.pie_chart_outline_outlined,
+                              color: Colors.grey,
+                            )),
                   IconButton(
                       onPressed: () {
                         _tabIndex.value = 2;
                       },
-                      icon: Icon(Icons.account_balance_wallet_outlined)),
+                      icon: value == 2
+                          ? Icon(
+                              Icons.account_balance_wallet,
+                              color: Colors.indigo,
+                            )
+                          : Icon(
+                              Icons.account_balance_wallet_outlined,
+                              color: Colors.grey,
+                            )),
                   IconButton(
                       onPressed: () {
                         _tabIndex.value = 3;
                       },
-                      icon: Icon(Icons.person_outline)),
+                      icon: value == 3
+                          ? Icon(
+                              Icons.person,
+                              color: Colors.indigo,
+                            )
+                          : Icon(
+                              Icons.person_outline,
+                              color: Colors.grey,
+                            )),
                 ],
               );
             },
