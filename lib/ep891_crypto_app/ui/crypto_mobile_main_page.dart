@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CryptoMobileMainPage extends StatefulWidget {
-  const CryptoMobileMainPage({Key key}) : super(key: key);
+  const CryptoMobileMainPage({Key? key}) : super(key: key);
 
   @override
   _CryptoMobileMainPageState createState() => _CryptoMobileMainPageState();
