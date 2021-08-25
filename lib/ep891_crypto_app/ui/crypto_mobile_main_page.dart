@@ -78,7 +78,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                             ),
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Container(
                           decoration: BoxDecoration(color: Colors.indigo, borderRadius: BorderRadius.circular(24)),
                           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
@@ -103,7 +103,15 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                           ),
                         ),
                       ],
-                    )
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      child: Text("My Assets"),
+                    ),
+                    Expanded(child: ListView.builder(itemBuilder: (context, index){
+
+                    }))
                   ],
                 ),
               ),
