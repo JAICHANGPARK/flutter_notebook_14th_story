@@ -47,6 +47,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
+                    SizedBox(height: 8,),
                     Row(
                       children: [
                         Container(
