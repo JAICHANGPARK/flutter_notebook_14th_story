@@ -56,17 +56,22 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                          color: Colors.green[200],
+                          color: Colors.indigo,
                         ),
                         child: Row(
                           children: [
-                            Icon(Icons.account_balance_wallet_outlined),
+                            Icon(
+                              Icons.account_balance_wallet_outlined,
+                              color: Colors.white,
+                            ),
+                            SizedBox(
+                              width: 4,
+                            ),
                             Text(
                               "Top Up",
                               style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.green,
-                                fontWeight: FontWeight.bold,
+                                fontSize: 14,
+                                color: Colors.white,
                               ),
                             ),
                           ],
