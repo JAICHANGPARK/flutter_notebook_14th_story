@@ -33,7 +33,10 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                         ),
                       ],
                     ),
-                    const Text("\$ 23,874.45"),
+                    const Text("\$ 23,874.45", style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),),
                     Row(
                       children: [
                         Container(
