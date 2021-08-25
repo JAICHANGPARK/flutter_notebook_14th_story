@@ -20,11 +20,17 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
               flex: 6,
               child: Column(
                 children: [
-                  Text("Balance"),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.no_accounts_outlined),
-                  ),
+                  Row(
+                    children: [
+                      Text("Balance"),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.notifications_outlined),
+                      ),
+
+                    ],
+                  )
+
                 ],
               ),
             ),
