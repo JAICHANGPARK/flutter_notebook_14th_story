@@ -22,7 +22,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Container(
+        child: SizedBox(
           height: 72,
           child: ValueListenableBuilder<int>(
             valueListenable: _tabIndex,
@@ -35,11 +35,11 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                         _tabIndex.value = 0;
                       },
                       icon: value == 0
-                          ? Icon(
+                          ? const Icon(
                               Icons.home,
                               color: Colors.indigo,
                             )
-                          : Icon(
+                          : const Icon(
                               Icons.home_outlined,
                               color: Colors.grey,
                             )),
@@ -48,11 +48,11 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                         _tabIndex.value = 1;
                       },
                       icon: value == 1
-                          ? Icon(
+                          ? const Icon(
                               Icons.pie_chart,
                               color: Colors.indigo,
                             )
-                          : Icon(
+                          : const Icon(
                               Icons.pie_chart_outline_outlined,
                               color: Colors.grey,
                             )),
@@ -61,11 +61,11 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                         _tabIndex.value = 2;
                       },
                       icon: value == 2
-                          ? Icon(
+                          ? const Icon(
                               Icons.account_balance_wallet,
                               color: Colors.indigo,
                             )
-                          : Icon(
+                          : const Icon(
                               Icons.account_balance_wallet_outlined,
                               color: Colors.grey,
                             )),
@@ -74,11 +74,11 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                         _tabIndex.value = 3;
                       },
                       icon: value == 3
-                          ? Icon(
+                          ? const Icon(
                               Icons.person,
                               color: Colors.indigo,
                             )
-                          : Icon(
+                          : const Icon(
                               Icons.person_outline,
                               color: Colors.grey,
                             )),
