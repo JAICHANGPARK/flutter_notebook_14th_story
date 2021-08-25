@@ -27,10 +27,26 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                         onPressed: () {},
                         icon: Icon(Icons.notifications_outlined),
                       ),
-
+                    ],
+                  ),
+                  Text("\$ 23,874.45"),
+                  Row(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.green[200],
+                        ),
+                        child: Text(
+                          "This Week",
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.green,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      )
                     ],
                   )
-
                 ],
               ),
             ),
