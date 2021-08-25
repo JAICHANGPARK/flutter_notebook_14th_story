@@ -109,7 +109,9 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       child: Text("My Assets"),
                     ),
-                    Expanded(child: ListView.builder(itemBuilder: (context, index){
+                    Expanded(child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index){
 
                     }))
                   ],
