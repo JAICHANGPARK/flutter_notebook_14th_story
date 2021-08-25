@@ -57,12 +57,15 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.indigo,
+                          borderRadius: BorderRadius.circular(24)
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                         child: Row(
                           children: [
                             Icon(
                               Icons.account_balance_wallet_outlined,
                               color: Colors.white,
+                              size: 16,
                             ),
                             SizedBox(
                               width: 4,
