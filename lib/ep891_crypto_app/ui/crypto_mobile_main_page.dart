@@ -47,7 +47,9 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(height: 8,),
+                    SizedBox(
+                      height: 8,
+                    ),
                     Row(
                       children: [
                         Container(
@@ -65,14 +67,18 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                             ),
                           ),
                         ),
-                        Text(
-                          "+ 6.78%",
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.green,
-                            fontWeight: FontWeight.bold,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8),
+                          child: Text(
+                            "+ 6.78%",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.green,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
+                        Spacer(),
                         Container(
                           decoration: BoxDecoration(color: Colors.indigo, borderRadius: BorderRadius.circular(24)),
                           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
