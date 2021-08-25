@@ -26,7 +26,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Balance",
                           style: TextStyle(
                             fontSize: 14,
@@ -36,7 +36,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                         ),
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.notifications_outlined),
+                          icon: const Icon(Icons.notifications_outlined),
                         ),
                       ],
                     ),
@@ -47,7 +47,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     Row(
@@ -58,7 +58,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                             borderRadius: BorderRadius.circular(24),
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 4),
-                          child: Text(
+                          child: const Text(
                             "This Week",
                             style: TextStyle(
                               fontSize: 12,
@@ -67,7 +67,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                             ),
                           ),
                         ),
-                        Padding(
+                        const Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8),
                           child: Text(
                             "+ 6.78%",
