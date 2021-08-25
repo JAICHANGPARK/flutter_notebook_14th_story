@@ -26,17 +26,27 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Balance"),
+                        Text(
+                          "Balance",
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         IconButton(
                           onPressed: () {},
                           icon: Icon(Icons.notifications_outlined),
                         ),
                       ],
                     ),
-                    const Text("\$ 23,874.45", style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),),
+                    const Text(
+                      "\$ 23,874.45",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     Row(
                       children: [
                         Container(
