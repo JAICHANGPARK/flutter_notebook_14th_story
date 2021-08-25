@@ -59,9 +59,9 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                           color: Colors.indigo,
                           borderRadius: BorderRadius.circular(24)
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                        padding:const  EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                         child: Row(
-                          children: [
+                          children: const [
                             Icon(
                               Icons.account_balance_wallet_outlined,
                               color: Colors.white,
