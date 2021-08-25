@@ -19,6 +19,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
             Expanded(
               flex: 6,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
@@ -44,7 +45,33 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                      )
+                      ),
+                      Text(
+                        "+ 6.78%",
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.green[200],
+                        ),
+                        child: Row(
+                          children: [
+                            Icon(Icons.account_balance_wallet_outlined),
+                            Text(
+                              "Top Up",
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.green,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   )
                 ],
