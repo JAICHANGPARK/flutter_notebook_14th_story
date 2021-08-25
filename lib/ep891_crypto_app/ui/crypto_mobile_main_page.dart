@@ -117,7 +117,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                               return Padding(
                                 padding: const EdgeInsets.only(right: 8),
                                 child: Container(
-                                  width: 120,
+                                  width: 140,
                                   decoration: BoxDecoration(
                                     color: Colors.blue,
                                   ),
