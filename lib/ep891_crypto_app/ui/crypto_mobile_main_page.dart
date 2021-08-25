@@ -15,8 +15,15 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: const [
-            Expanded(flex: 6, child: Placeholder()),
+          children: [
+            Expanded(
+              flex: 6,
+              child: Column(
+                children: [
+                  
+                ],
+              ),
+            ),
             Expanded(flex: 7, child: Placeholder()),
           ],
         ),
