@@ -19,7 +19,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
             Expanded(
               flex: 6,
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(12.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -106,16 +106,21 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 12),
-                      child: Text("My Assets"),
+                      child: Text("My Assets",style: TextStyle(
+                        fontSize: 12,
+                      ),),
                     ),
                     Expanded(
                         child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
-                              return Container(
-                                width: 84,
-                                decoration: BoxDecoration(
-                                  color: Colors.blue,
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 8),
+                                child: Container(
+                                  width: 120,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                  ),
                                 ),
                               );
                             }))
