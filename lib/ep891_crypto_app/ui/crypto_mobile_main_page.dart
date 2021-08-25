@@ -18,71 +18,74 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
           children: [
             Expanded(
               flex: 6,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text("Balance"),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.notifications_outlined),
-                      ),
-                    ],
-                  ),
-                  Text("\$ 23,874.45"),
-                  Row(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.green[200],
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Balance"),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.notifications_outlined),
                         ),
-                        child: Text(
-                          "This Week",
+                      ],
+                    ),
+                    const Text("\$ 23,874.45"),
+                    Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.green[100],
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 4),
+                          child: Text(
+                            "This Week",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.green,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          "+ 6.78%",
                           style: TextStyle(
                             fontSize: 12,
                             color: Colors.green,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                      ),
-                      Text(
-                        "+ 6.78%",
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.green,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.indigo,
-                          borderRadius: BorderRadius.circular(24)
-                        ),
-                        padding:const  EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                        child: Row(
-                          children: const [
-                            Icon(
-                              Icons.account_balance_wallet_outlined,
-                              color: Colors.white,
-                              size: 16,
-                            ),
-                            SizedBox(
-                              width: 4,
-                            ),
-                            Text(
-                              "Top Up",
-                              style: TextStyle(
-                                fontSize: 14,
+                        Container(
+                          decoration: BoxDecoration(color: Colors.indigo, borderRadius: BorderRadius.circular(24)),
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: Row(
+                            children: const [
+                              Icon(
+                                Icons.account_balance_wallet_outlined,
                                 color: Colors.white,
+                                size: 16,
                               ),
-                            ),
-                          ],
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Text(
+                                "Top Up",
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
-                  )
-                ],
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
             Expanded(flex: 7, child: Placeholder()),
