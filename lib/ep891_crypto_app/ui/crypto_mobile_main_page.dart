@@ -136,7 +136,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                 child: Container(
                                   width: 140,
                                   decoration:
-                                      BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(16)),
+                                      BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                                   padding: EdgeInsets.all(7),
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -147,7 +147,9 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                           CircleAvatar(
                                             radius: 12,
                                           ),
-                                          SizedBox(width: 8,),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
                                           Text("${_myAsset.myAssets?[index].coin}"),
                                         ],
                                       ),
@@ -163,7 +165,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                           ),
                                           Text(
                                             "${_myAsset.myAssets?[index].change?.upDown == "up" ? "+" : "-"}"
-                                                " ${_myAsset.myAssets?[index].change?.rate}%",
+                                            " ${_myAsset.myAssets?[index].change?.rate}%",
                                           ),
                                         ],
                                       ),
