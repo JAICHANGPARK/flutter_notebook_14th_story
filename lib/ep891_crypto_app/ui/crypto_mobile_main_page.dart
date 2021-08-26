@@ -13,16 +13,16 @@ class CryptoMobileMainPage extends StatefulWidget {
 class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
   ValueNotifier<int> _tabIndex = ValueNotifier(0);
 
+  late MyAsset _myAsset;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
 
-    var result = MyAsset.fromJson(jsonDecode(kCryptoMyAsset));
-    print(result);
+    _myAsset = MyAsset.fromJson(jsonDecode(kCryptoMyAsset));
+    print(_myAsset);
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -54,9 +54,9 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                         ),
                       ],
                     ),
-                    const Text(
-                      "\$ 23,874.45",
-                      style: TextStyle(
+                    Text(
+                      "\$ ${_myAsset.balance}",
+                      style: const TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
