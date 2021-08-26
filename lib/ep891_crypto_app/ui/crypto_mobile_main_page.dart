@@ -137,13 +137,17 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                   width: 140,
                                   decoration:
                                       BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(16)),
+                                  padding: EdgeInsets.all(7),
                                   child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Row(
                                         children: [
                                           CircleAvatar(
                                             radius: 12,
                                           ),
+                                          SizedBox(width: 8,),
                                           Text("${_myAsset.myAssets?[index].coin}"),
                                         ],
                                       ),
