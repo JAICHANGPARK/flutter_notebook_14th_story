@@ -22,6 +22,9 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
 
     _myAsset = MyAsset.fromJson(jsonDecode(kCryptoMyAsset));
     print(_myAsset);
+    setState(() {
+      
+    });
   }
 
   @override
