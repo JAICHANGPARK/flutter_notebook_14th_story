@@ -106,9 +106,12 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 12),
-                      child: Text("My Assets",style: TextStyle(
-                        fontSize: 12,
-                      ),),
+                      child: Text(
+                        "My Assets",
+                        style: TextStyle(
+                          fontSize: 12,
+                        ),
+                      ),
                     ),
                     Expanded(
                         child: ListView.builder(
@@ -118,9 +121,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                 padding: const EdgeInsets.only(right: 8),
                                 child: Container(
                                   width: 140,
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                  ),
+                                  decoration: BoxDecoration(color: Colors.blue),
                                 ),
                               );
                             }))
