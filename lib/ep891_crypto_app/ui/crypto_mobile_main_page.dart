@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep891_crypto_app/model/my_assets.dart';
 
 class CryptoMobileMainPage extends StatefulWidget {
-  const CryptoMobileMainPage({Key? key}) : super(key: key);
+  CryptoMobileMainPage({Key? key}) : super(key: key);
 
   @override
   _CryptoMobileMainPageState createState() => _CryptoMobileMainPageState();
@@ -21,10 +21,8 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
     super.initState();
 
     _myAsset = MyAsset.fromJson(jsonDecode(kCryptoMyAsset));
-    print(_myAsset);
-    setState(() {
-      
-    });
+    print(_myAsset.balance);
+    setState(() {});
   }
 
   @override
@@ -64,9 +62,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(
-                      height: 8,
-                    ),
+                    const SizedBox(height: 8),
                     Row(
                       children: [
                         Container(
@@ -84,10 +80,10 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                             ),
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8),
                           child: Text(
-                            "+ 6.78%",
+                            "+ ${_myAsset.thisWeek}%",
                             style: TextStyle(
                               fontSize: 12,
                               color: Colors.green,
