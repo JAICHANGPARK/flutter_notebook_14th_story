@@ -158,10 +158,22 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                       Row(
                                         children: [
                                           CircleAvatar(
-                                            radius: 8,
-                                            backgroundColor: _myAsset.myAssets?[index].change?.upDown == "up"
-                                                ? Colors.green
-                                                : Colors.red,
+                                              radius: 8,
+                                              backgroundColor: _myAsset.myAssets?[index].change?.upDown == "up"
+                                                  ? Colors.green
+                                                  : Colors.red,
+                                              foregroundColor: Colors.white,
+                                              child: _myAsset.myAssets?[index].change?.upDown == "up"
+                                                  ? Icon(
+                                                      Icons.arrow_upward,
+                                                      size: 8,
+                                                    )
+                                                  : Icon(
+                                                      Icons.arrow_downward,
+                                                      size: 8,
+                                                    )),
+                                          SizedBox(
+                                            width: 8,
                                           ),
                                           Text(
                                             "${_myAsset.myAssets?[index].change?.upDown == "up" ? "+" : "-"}"
