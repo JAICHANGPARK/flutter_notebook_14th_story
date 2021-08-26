@@ -32,7 +32,26 @@ class MyAsset {
 
   MyAsset({this.balance, this.thisWeek, this.myAssets});
 
-  MyAsset.fromJson(Map<String, dynamic> json) {}
+  MyAsset.fromJson(Map<String, dynamic> json) {
+    balance = json['balance'];
+    thisWeek = json['this_week'];
+    if (json['my_assets'] != null) {
+      myAssets = [];
+      json['my_assets'].forEach((v) {
+        myAssets?.add(MyAssets.fromJson(v));
+      });
+    }
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['balance'] = balance;
+    data['this_week'] = thisWeek;
+    if (myAssets != null) {
+      data['my_assets'] = myAssets?.map((v) => v.toJson()).toList();
+    }
+    return data;
+  }
 }
 
 class MyAssets {
