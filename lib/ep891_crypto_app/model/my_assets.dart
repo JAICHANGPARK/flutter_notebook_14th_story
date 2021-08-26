@@ -10,6 +10,7 @@ String kCryptoMyAsset = '''
             "change" : {
               "up_down" : "up",
               "rate" : "3.05"
+              }
         },
         {
             "coin" : "Ethereum",
@@ -18,8 +19,8 @@ String kCryptoMyAsset = '''
             "change" : {
               "up_down" : "up",
               "rate" : "3.64"
+              }
         }
-    }
   ]
 }
 ''';
