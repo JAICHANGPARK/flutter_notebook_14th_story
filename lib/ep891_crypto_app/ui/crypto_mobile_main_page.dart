@@ -179,7 +179,11 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                           Text(
                                             "${_myAsset.myAssets?[index].change?.upDown == "up" ? "+" : "-"}"
                                             " ${_myAsset.myAssets?[index].change?.rate}%",
-                                            style: TextStyle(),
+                                            style: TextStyle(
+                                                color: _myAsset.myAssets?[index].change?.upDown == "up"
+                                                    ? Colors.green
+                                                    : Colors.red,
+                                                fontWeight: FontWeight.bold),
                                           ),
                                         ],
                                       ),
