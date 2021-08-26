@@ -28,10 +28,10 @@ class MyAsset {
 }
 
 class MyAssets {
-    String coin;
-    String unit;
-    String price;
-    Change change;
+    String? coin;
+    String? unit;
+    String? price;
+    Change? change;
 
     MyAssets({this.coin, this.unit, this.price, this.change});
 
@@ -40,11 +40,11 @@ class MyAssets {
         unit = json['unit'];
         price = json['price'];
         change =
-        json['change'] != null ? new Change.fromJson(json['change']) : null;
+        json['change'] != null ?  Change.fromJson(json['change']) : null;
     }
 
     Map<String, dynamic> toJson() {
-        final Map<String, dynamic> data = new Map<String, dynamic>();
+        final Map<String, dynamic> data =  <String, dynamic>{};
         data['coin'] = this.coin;
         data['unit'] = this.unit;
         data['price'] = this.price;
@@ -56,8 +56,8 @@ class MyAssets {
 }
 
 class Change {
-    String upDown;
-    String rate;
+    String? upDown;
+    String? rate;
 
     Change({this.upDown, this.rate});
 
@@ -67,7 +67,7 @@ class Change {
     }
 
     Map<String, dynamic> toJson() {
-        final Map<String, dynamic> data = new Map<String, dynamic>();
+        final Map<String, dynamic> data = <String, dynamic>{};
         data['up_down'] = this.upDown;
         data['rate'] = this.rate;
         return data;
