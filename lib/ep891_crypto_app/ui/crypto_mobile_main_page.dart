@@ -154,7 +154,10 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                         ],
                                       ),
                                       Text("${_myAsset.myAssets?[index].unit}"),
-                                      Text("USD ${_myAsset.myAssets?[index].price}"),
+                                      Text(
+                                        "USD ${_myAsset.myAssets?[index].price}",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ),
                                       Row(
                                         children: [
                                           CircleAvatar(
@@ -164,20 +167,19 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                                   : Colors.red,
                                               foregroundColor: Colors.white,
                                               child: _myAsset.myAssets?[index].change?.upDown == "up"
-                                                  ? Icon(
+                                                  ? const Icon(
                                                       Icons.arrow_upward,
                                                       size: 8,
                                                     )
-                                                  : Icon(
+                                                  : const Icon(
                                                       Icons.arrow_downward,
                                                       size: 8,
                                                     )),
-                                          SizedBox(
-                                            width: 8,
-                                          ),
+                                          const SizedBox(width: 8),
                                           Text(
                                             "${_myAsset.myAssets?[index].change?.upDown == "up" ? "+" : "-"}"
                                             " ${_myAsset.myAssets?[index].change?.rate}%",
+                                            style: TextStyle(),
                                           ),
                                         ],
                                       ),
