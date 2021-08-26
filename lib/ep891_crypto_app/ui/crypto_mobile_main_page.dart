@@ -129,12 +129,42 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                     Expanded(
                         child: ListView.builder(
                             scrollDirection: Axis.horizontal,
+                            itemCount: _myAsset.myAssets!.length,
                             itemBuilder: (context, index) {
                               return Padding(
                                 padding: const EdgeInsets.only(right: 8),
                                 child: Container(
                                   width: 140,
-                                  decoration: BoxDecoration(color: Colors.blue),
+                                  decoration:
+                                      BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(16)),
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          CircleAvatar(
+                                            radius: 12,
+                                          ),
+                                          Text("${_myAsset.myAssets?[index].coin}"),
+                                        ],
+                                      ),
+                                      Text("${_myAsset.myAssets?[index].unit}"),
+                                      Text("USD ${_myAsset.myAssets?[index].price}"),
+                                      Row(
+                                        children: [
+                                          CircleAvatar(
+                                            radius: 8,
+                                            backgroundColor: _myAsset.myAssets?[index].change?.upDown == "up"
+                                                ? Colors.green
+                                                : Colors.red,
+                                          ),
+                                          Text(
+                                            "${_myAsset.myAssets?[index].change?.upDown == "up" ? "+" : "-"}"
+                                                " ${_myAsset.myAssets?[index].change?.rate}%",
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               );
                             }))
