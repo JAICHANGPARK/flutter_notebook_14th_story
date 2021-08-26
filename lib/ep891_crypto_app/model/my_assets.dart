@@ -17,4 +17,13 @@ String kCryptoMyAsset = '''
     }
     ''';
 
+class MyAsset {
+    String balance;
+    String thisWeek;
+    List<MyAssets> myAssets;
+    MyAsset({this.balance, this.thisWeek, this.myAssets});
 
+    
+
+
+}
