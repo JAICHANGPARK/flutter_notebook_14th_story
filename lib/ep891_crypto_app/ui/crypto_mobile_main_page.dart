@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep891_crypto_app/model/my_assets.dart';
 
 class CryptoMobileMainPage extends StatefulWidget {
   const CryptoMobileMainPage({Key? key}) : super(key: key);
@@ -9,6 +12,17 @@ class CryptoMobileMainPage extends StatefulWidget {
 
 class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
   ValueNotifier<int> _tabIndex = ValueNotifier(0);
+
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    var result = MyAsset.fromJson(jsonDecode(kCryptoMyAsset));
+    print(result);
+  }
+
 
   @override
   Widget build(BuildContext context) {
