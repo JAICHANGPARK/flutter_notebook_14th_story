@@ -137,7 +137,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                   width: 140,
                                   decoration:
                                       BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
-                                  padding: EdgeInsets.all(7),
+                                  padding: const EdgeInsets.all(7),
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -150,7 +150,10 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                           SizedBox(
                                             width: 8,
                                           ),
-                                          Text("${_myAsset.myAssets?[index].coin}"),
+                                          Text(
+                                            "${_myAsset.myAssets?[index].coin}",
+                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                          ),
                                         ],
                                       ),
                                       Text("${_myAsset.myAssets?[index].unit}"),
