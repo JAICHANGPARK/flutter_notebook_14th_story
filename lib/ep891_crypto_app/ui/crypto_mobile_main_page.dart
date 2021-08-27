@@ -248,7 +248,16 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                             Text("${_cryptoAsset.cryptoAssets?[index].unit}"),
                                           ],
                                         ),
+                                      ),
+                                      Column(
+                                        children: [
+                                          Text(
+                                            "USD ${_cryptoAsset.cryptoAssets?[index].price}",
+                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                          ),
+                                        ],
                                       )
+
                                     ],
                                   ),
                                 );
