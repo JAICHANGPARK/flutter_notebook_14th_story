@@ -199,7 +199,16 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                 ),
               ),
             ),
-            Expanded(flex: 7, child: Placeholder()),
+            Expanded(
+                flex: 7,
+                child: Column(
+                  children: [
+                    Text("Crypto Assets"),
+                    Expanded(child: ListView.builder(itemBuilder: (context, index) {
+                      return Card();
+                    })),
+                  ],
+                )),
           ],
         ),
       ),
