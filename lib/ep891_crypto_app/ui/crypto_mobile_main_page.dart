@@ -208,8 +208,8 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 15),
+                     const Padding(
+                        padding:  EdgeInsets.symmetric(vertical: 15),
                         child: Text(
                           "Crypto Assets",
                           style: TextStyle(fontWeight: FontWeight.bold),
@@ -223,7 +223,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                   padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
                                   child: Row(
                                     children: [
-                                      SizedBox(
+                                      const SizedBox(
                                         child: Card(
                                           elevation: 4,
                                           child: Center(
@@ -235,12 +235,16 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                         height: 64,
                                         width: 64,
                                       ),
-                                      Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text("${_cryptoAsset.cryptoAssets?[index].coin}"),
-                                          Text("${_cryptoAsset.cryptoAssets?[index].unit}"),
-                                        ],
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text("${_cryptoAsset.cryptoAssets?[index].coin}"),
+                                            const SizedBox(height: 8),
+                                            Text("${_cryptoAsset.cryptoAssets?[index].unit}"),
+                                          ],
+                                        ),
                                       )
                                     ],
                                   ),
