@@ -249,13 +249,14 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                           ],
                                         ),
                                       ),
-                                      Spacer(),
+                                      const Spacer(),
                                       Column(
                                         children: [
                                           Text(
                                             "USD ${_cryptoAsset.cryptoAssets?[index].price}",
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
+                                          const SizedBox(height: 8),
                                           Row(
                                             children: [
                                               CircleAvatar(
