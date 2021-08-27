@@ -60,17 +60,17 @@ class CryptoAsset {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = {};
     if (cryptoAssets != null) {
-      data['crypto_assets'] = cryptoAssets.map((v) => v.toJson()).toList();
+      data['crypto_assets'] = cryptoAssets?.map((v) => v.toJson()).toList();
     }
     return data;
   }
 }
 
 class CryptoAssets {
-  String coin;
-  String unit;
-  String price;
-  Change change;
+  String? coin;
+  String? unit;
+  String? price;
+  Change? change;
 
   CryptoAssets({this.coin, this.unit, this.price, this.change});
 
@@ -78,16 +78,16 @@ class CryptoAssets {
     coin = json['coin'];
     unit = json['unit'];
     price = json['price'];
-    change = json['change'] != null ? new Change.fromJson(json['change']) : null;
+    change = Change.fromJson(json['change']);
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['coin'] = this.coin;
-    data['unit'] = this.unit;
-    data['price'] = this.price;
-    if (this.change != null) {
-      data['change'] = this.change.toJson();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['coin'] = coin;
+    data['unit'] = unit;
+    data['price'] = price;
+    if (change != null) {
+      data['change'] = change?.toJson();
     }
     return data;
   }
