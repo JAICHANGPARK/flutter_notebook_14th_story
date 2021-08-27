@@ -214,11 +214,19 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                               return Row(
                                 children: [
                                   SizedBox(
-                                    child: Card(),
-                                    height: 48,
-                                    width: 48,
+                                    child: Card(
+                                      elevation: 4,
+                                      child: Center(
+                                        child: CircleAvatar(
+                                          radius: 16,
+                                        ),
+                                      ),
+                                    ),
+                                    height: 64,
+                                    width: 64,
                                   ),
                                   Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text("${_cryptoAsset.cryptoAssets?[index].coin}"),
                                       Text("${_cryptoAsset.cryptoAssets?[index].unit}"),
