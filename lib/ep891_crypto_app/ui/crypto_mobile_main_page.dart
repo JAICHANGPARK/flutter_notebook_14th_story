@@ -204,12 +204,12 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
             Expanded(
                 flex: 7,
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.fromLTRB(8, 0, 8, 0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        padding: const EdgeInsets.symmetric(vertical: 15),
                         child: Text(
                           "Crypto Assets",
                           style: TextStyle(fontWeight: FontWeight.bold),
