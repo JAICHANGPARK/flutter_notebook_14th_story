@@ -208,8 +208,8 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                     const Padding(
-                        padding:  EdgeInsets.symmetric(vertical: 15),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 15),
                         child: Text(
                           "Crypto Assets",
                           style: TextStyle(fontWeight: FontWeight.bold),
@@ -240,7 +240,10 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            Text("${_cryptoAsset.cryptoAssets?[index].coin}"),
+                                            Text(
+                                              "${_cryptoAsset.cryptoAssets?[index].coin}",
+                                              style: TextStyle(fontWeight: FontWeight.bold),
+                                            ),
                                             const SizedBox(height: 8),
                                             Text("${_cryptoAsset.cryptoAssets?[index].unit}"),
                                           ],
