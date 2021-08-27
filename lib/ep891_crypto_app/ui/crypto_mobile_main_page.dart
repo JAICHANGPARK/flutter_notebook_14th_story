@@ -249,6 +249,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                           ],
                                         ),
                                       ),
+                                      Spacer(),
                                       Column(
                                         children: [
                                           Text(
