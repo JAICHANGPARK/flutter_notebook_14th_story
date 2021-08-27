@@ -255,9 +255,38 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                             "USD ${_cryptoAsset.cryptoAssets?[index].price}",
                                             style: TextStyle(fontWeight: FontWeight.bold),
                                           ),
+                                          Row(
+                                            children: [
+                                              CircleAvatar(
+                                                  radius: 8,
+                                                  backgroundColor:
+                                                      _cryptoAsset.cryptoAssets?[index].change?.upDown == "up"
+                                                          ? Colors.green
+                                                          : Colors.red,
+                                                  foregroundColor: Colors.white,
+                                                  child: _cryptoAsset.cryptoAssets?[index].change?.upDown == "up"
+                                                      ? const Icon(
+                                                          Icons.arrow_upward,
+                                                          size: 8,
+                                                        )
+                                                      : const Icon(
+                                                          Icons.arrow_downward,
+                                                          size: 8,
+                                                        )),
+                                              const SizedBox(width: 8),
+                                              Text(
+                                                "${_cryptoAsset.cryptoAssets?[index].change?.upDown == "up" ? "+" : "-"}"
+                                                " ${_cryptoAsset.cryptoAssets?[index].change?.rate}%",
+                                                style: TextStyle(
+                                                    color: _cryptoAsset.cryptoAssets?[index].change?.upDown == "up"
+                                                        ? Colors.green
+                                                        : Colors.red,
+                                                    fontWeight: FontWeight.bold),
+                                              ),
+                                            ],
+                                          ),
                                         ],
                                       )
-
                                     ],
                                   ),
                                 );
