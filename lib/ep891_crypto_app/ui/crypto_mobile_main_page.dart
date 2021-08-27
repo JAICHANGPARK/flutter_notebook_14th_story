@@ -206,15 +206,25 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                 child: Column(
                   children: [
                     Text("Crypto Assets"),
-                    Expanded(child: ListView.builder(
-                        itemCount: _cryptoAsset.cryptoAssets?.length ?? 1,
-                        itemBuilder: (context, index) {
-                      return Row(
-                        children: [
-                          SizedBox(child: Card(), height: 48, width: 48,)
-                        ],
-                      );
-                    })),
+                    Expanded(
+                        child: ListView.builder(
+                            itemCount: _cryptoAsset.cryptoAssets?.length ?? 1,
+                            itemBuilder: (context, index) {
+                              return Row(
+                                children: [
+                                  SizedBox(
+                                    child: Card(),
+                                    height: 48,
+                                    width: 48,
+                                  ),
+                                  Column(
+                                    children: [Text("${_cryptoAsset.cryptoAssets?[index].coin}"),
+                                      Text("${_cryptoAsset.cryptoAssets?[index].unit}"),
+                                    ],
+                                  )
+                                ],
+                              );
+                            })),
                   ],
                 )),
           ],
