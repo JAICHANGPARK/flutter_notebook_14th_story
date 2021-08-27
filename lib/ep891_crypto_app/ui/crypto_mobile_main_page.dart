@@ -23,7 +23,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
     super.initState();
 
     _myAsset = MyAsset.fromJson(jsonDecode(kCryptoMyAsset));
-    print(_myAsset.balance);
+    _cryptoAsset = CryptoAsset.fromJson(jsonDecode(kCryptoAsset));
     setState(() {});
   }
 
@@ -206,8 +206,14 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                 child: Column(
                   children: [
                     Text("Crypto Assets"),
-                    Expanded(child: ListView.builder(itemBuilder: (context, index) {
-                      return Card();
+                    Expanded(child: ListView.builder(
+                        itemCount: _cryptoAsset.cryptoAssets?.length ?? 1,
+                        itemBuilder: (context, index) {
+                      return Row(
+                        children: [
+                          SizedBox(child: Card(), height: 48, width: 48,)
+                        ],
+                      );
                     })),
                   ],
                 )),
