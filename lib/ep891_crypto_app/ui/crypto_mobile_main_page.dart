@@ -204,6 +204,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
             Expanded(
                 flex: 7,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Crypto Assets"),
                     Expanded(
@@ -218,7 +219,8 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                     width: 48,
                                   ),
                                   Column(
-                                    children: [Text("${_cryptoAsset.cryptoAssets?[index].coin}"),
+                                    children: [
+                                      Text("${_cryptoAsset.cryptoAssets?[index].coin}"),
                                       Text("${_cryptoAsset.cryptoAssets?[index].unit}"),
                                     ],
                                   )
