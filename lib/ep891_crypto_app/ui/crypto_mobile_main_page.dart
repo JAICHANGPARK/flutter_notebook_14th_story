@@ -203,39 +203,48 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
             ),
             Expanded(
                 flex: 7,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Crypto Assets"),
-                    Expanded(
-                        child: ListView.builder(
-                            itemCount: _cryptoAsset.cryptoAssets?.length ?? 1,
-                            itemBuilder: (context, index) {
-                              return Row(
-                                children: [
-                                  SizedBox(
-                                    child: Card(
-                                      elevation: 4,
-                                      child: Center(
-                                        child: CircleAvatar(
-                                          radius: 16,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        child: Text(
+                          "Crypto Assets",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Expanded(
+                          child: ListView.builder(
+                              itemCount: _cryptoAsset.cryptoAssets?.length ?? 1,
+                              itemBuilder: (context, index) {
+                                return Row(
+                                  children: [
+                                    SizedBox(
+                                      child: Card(
+                                        elevation: 4,
+                                        child: Center(
+                                          child: CircleAvatar(
+                                            radius: 16,
+                                          ),
                                         ),
                                       ),
+                                      height: 64,
+                                      width: 64,
                                     ),
-                                    height: 64,
-                                    width: 64,
-                                  ),
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text("${_cryptoAsset.cryptoAssets?[index].coin}"),
-                                      Text("${_cryptoAsset.cryptoAssets?[index].unit}"),
-                                    ],
-                                  )
-                                ],
-                              );
-                            })),
-                  ],
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("${_cryptoAsset.cryptoAssets?[index].coin}"),
+                                        Text("${_cryptoAsset.cryptoAssets?[index].unit}"),
+                                      ],
+                                    )
+                                  ],
+                                );
+                              })),
+                    ],
+                  ),
                 )),
           ],
         ),
