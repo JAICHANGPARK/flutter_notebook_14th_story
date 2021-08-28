@@ -61,7 +61,7 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
                   style: TextStyle(fontSize: 13, fontWeight: FontWeight.normal, color: Colors.grey),
                 ),
                 Text(
-                  "\$23,874.45",
+                  "\$ 23,874.45",
                   style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                 ),
               ],
@@ -75,12 +75,25 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
                   style: TextStyle(fontSize: 13, fontWeight: FontWeight.normal, color: Colors.grey),
                 ),
                 Text(
-                  "\$23,874.45",
+                  "\$ 34.45",
                   style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                 ),
               ],
             ),
             SizedBox(height: 16),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Realized Profit",
+                  style: TextStyle(fontSize: 13, fontWeight: FontWeight.normal, color: Colors.grey),
+                ),
+                Text(
+                  "\$ 4,553.55",
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
           ],
         ),
       ),
