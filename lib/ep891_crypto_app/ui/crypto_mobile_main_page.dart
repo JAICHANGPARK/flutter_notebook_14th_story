@@ -33,6 +33,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
       body: SafeArea(
         child:
         ValueListenableBuilder<int>(
+          valueListenable: _tabIndex,
           builder: (context, value, child){
             if(value == 0){
               return  Column(
@@ -301,6 +302,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                 ],
               );
             }
+            return Container();
           },
         )
 
