@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 
 class CryptoPortfolioPage extends StatefulWidget {
-  const CryptoPortfolioPage({Key? key}) : super(key: key);
+  CryptoPortfolioPage({Key? key}) : super(key: key);
 
   @override
   _CryptoPortfolioPageState createState() => _CryptoPortfolioPageState();
