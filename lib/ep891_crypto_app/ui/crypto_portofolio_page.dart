@@ -11,25 +11,42 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Column(
-        children: [
-          Text("Portofolio"),
-          Row(
-            children: [
-              Column(
-                children: [Text("\$23,874.45"), Text("Portofolio balance")],
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              "Portofolio",
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("\$23,874.45",
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+                      Text("Portofolio balance"),
+                    ],
+                  ),
+                  FloatingActionButton(
+                    mini: true,
+                    onPressed: () {},
+                    child: Icon(Icons.arrow_forward),
+                    backgroundColor: Colors.white,
+                    elevation: 3,
+                    foregroundColor: Colors.black,
+                  )
+                ],
               ),
-              FloatingActionButton(
-                mini: true,
-                onPressed: () {},
-                child: Icon(Icons.arrow_forward),
-                backgroundColor: Colors.white,
-                elevation: 3,
-                foregroundColor: Colors.black,
-              )
-            ],
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }
