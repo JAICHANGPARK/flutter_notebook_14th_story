@@ -5,6 +5,8 @@ import 'package:flutter_notebook_14th_story/ep891_crypto_app/model/crypto_asset.
 import 'package:flutter_notebook_14th_story/ep891_crypto_app/model/my_assets.dart';
 import 'package:flutter_notebook_14th_story/ep891_crypto_app/ui/crypto_portofolio_page.dart';
 
+import 'crypto_balance_page.dart';
+
 class CryptoMobileMainPage extends StatefulWidget {
   CryptoMobileMainPage({Key? key}) : super(key: key);
 
@@ -15,18 +17,7 @@ class CryptoMobileMainPage extends StatefulWidget {
 class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
   ValueNotifier<int> _tabIndex = ValueNotifier(0);
 
-  late MyAsset _myAsset;
-  late CryptoAsset _cryptoAsset;
 
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-
-    _myAsset = MyAsset.fromJson(jsonDecode(kCryptoMyAsset));
-    _cryptoAsset = CryptoAsset.fromJson(jsonDecode(kCryptoAsset));
-    setState(() {});
-  }
 
   @override
   Widget build(BuildContext context) {
