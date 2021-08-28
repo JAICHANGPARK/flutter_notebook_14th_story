@@ -121,83 +121,77 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
-                ListView.builder(
-                    shrinkWrap: true,
-                    itemCount: _myAsset.myAssets?.length ?? 1,
-                    itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-                        child: Row(
-                          children: [
-                            const SizedBox(
-                              child: Card(
-                                elevation: 4,
-                                child: Center(
-                                  child: CircleAvatar(
-                                    radius: 16,
-                                  ),
-                                ),
-                              ),
-                              height: 64,
-                              width: 64,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                Column(
+                    children: _myAsset.myAssets!
+                        .map((e) => Padding(
+                              padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
+                              child: Row(
                                 children: [
-                                  Text(
-                                    "${_myAsset.myAssets?[index].coin}",
-                                    style: const TextStyle(fontWeight: FontWeight.bold),
+                                  const SizedBox(
+                                    child: Card(
+                                      elevation: 4,
+                                      child: Center(
+                                        child: CircleAvatar(
+                                          radius: 16,
+                                        ),
+                                      ),
+                                    ),
+                                    height: 64,
+                                    width: 64,
                                   ),
-                                  const SizedBox(height: 8),
-                                  Text("${_myAsset.myAssets?[index].unit}"),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "${e.coin}",
+                                          style: const TextStyle(fontWeight: FontWeight.bold),
+                                        ),
+                                        const SizedBox(height: 8),
+                                        Text("${e.unit}"),
+                                      ],
+                                    ),
+                                  ),
+                                  const Spacer(),
+                                  Column(
+                                    children: [
+                                      Text(
+                                        "USD ${e.price}",
+                                        style: const TextStyle(fontWeight: FontWeight.bold),
+                                      ),
+                                      const SizedBox(height: 8),
+                                      Row(
+                                        children: [
+                                          CircleAvatar(
+                                              radius: 8,
+                                              backgroundColor: e.change?.upDown == "up" ? Colors.green : Colors.red,
+                                              foregroundColor: Colors.white,
+                                              child: e.change?.upDown == "up"
+                                                  ? const Icon(
+                                                      Icons.arrow_upward,
+                                                      size: 8,
+                                                    )
+                                                  : const Icon(
+                                                      Icons.arrow_downward,
+                                                      size: 8,
+                                                    )),
+                                          const SizedBox(width: 8),
+                                          Text(
+                                            "${e.change?.upDown == "up" ? "+" : "-"}"
+                                            " ${e.change?.rate}%",
+                                            style: TextStyle(
+                                                color: e.change?.upDown == "up" ? Colors.green : Colors.red,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  )
                                 ],
                               ),
-                            ),
-                            const Spacer(),
-                            Column(
-                              children: [
-                                Text(
-                                  "USD ${_myAsset.myAssets?[index].price}",
-                                  style: const TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                const SizedBox(height: 8),
-                                Row(
-                                  children: [
-                                    CircleAvatar(
-                                        radius: 8,
-                                        backgroundColor: _myAsset.myAssets?[index].change?.upDown == "up"
-                                            ? Colors.green
-                                            : Colors.red,
-                                        foregroundColor: Colors.white,
-                                        child: _myAsset.myAssets?[index].change?.upDown == "up"
-                                            ? const Icon(
-                                          Icons.arrow_upward,
-                                          size: 8,
-                                        )
-                                            : const Icon(
-                                          Icons.arrow_downward,
-                                          size: 8,
-                                        )),
-                                    const SizedBox(width: 8),
-                                    Text(
-                                      "${_myAsset.myAssets?[index].change?.upDown == "up" ? "+" : "-"}"
-                                          " ${_myAsset.myAssets?[index].change?.rate}%",
-                                      style: TextStyle(
-                                          color: _myAsset.myAssets?[index].change?.upDown == "up"
-                                              ? Colors.green
-                                              : Colors.red,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      );
-                    }),
+                            ))
+                        .toList()),
               ],
             ),
             Column(
@@ -211,7 +205,7 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
                   ),
                 ),
                 ListView.builder(
-                  shrinkWrap: true,
+                    shrinkWrap: true,
                     itemCount: _cryptoAsset.cryptoAssets?.length ?? 1,
                     itemBuilder: (context, index) {
                       return Padding(
@@ -262,17 +256,17 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
                                         foregroundColor: Colors.white,
                                         child: _cryptoAsset.cryptoAssets?[index].change?.upDown == "up"
                                             ? const Icon(
-                                          Icons.arrow_upward,
-                                          size: 8,
-                                        )
+                                                Icons.arrow_upward,
+                                                size: 8,
+                                              )
                                             : const Icon(
-                                          Icons.arrow_downward,
-                                          size: 8,
-                                        )),
+                                                Icons.arrow_downward,
+                                                size: 8,
+                                              )),
                                     const SizedBox(width: 8),
                                     Text(
                                       "${_cryptoAsset.cryptoAssets?[index].change?.upDown == "up" ? "+" : "-"}"
-                                          " ${_cryptoAsset.cryptoAssets?[index].change?.rate}%",
+                                      " ${_cryptoAsset.cryptoAssets?[index].change?.rate}%",
                                       style: TextStyle(
                                           color: _cryptoAsset.cryptoAssets?[index].change?.upDown == "up"
                                               ? Colors.green
