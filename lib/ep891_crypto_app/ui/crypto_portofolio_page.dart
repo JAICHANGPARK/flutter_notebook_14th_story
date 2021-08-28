@@ -20,7 +20,6 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
               "Portofolio",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 16),
               child: Row(
@@ -29,9 +28,17 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("\$23,874.45",
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
-                      Text("Portofolio balance"),
+                      Text(
+                        "\$23,874.45",
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Text(
+                        "Portofolio balance",
+                        style: TextStyle(fontSize: 13, fontWeight: FontWeight.normal, color: Colors.grey),
+                      ),
                     ],
                   ),
                   FloatingActionButton(
