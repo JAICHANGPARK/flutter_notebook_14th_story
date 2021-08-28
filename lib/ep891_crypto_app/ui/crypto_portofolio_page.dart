@@ -52,6 +52,7 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
                 ],
               ),
             ),
+            SizedBox(height: 16),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -61,25 +62,25 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
                 ),
                 Text(
                   "\$23,874.45",
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                 ),
               ],
             ),
-            SizedBox(height: 8),
+            SizedBox(height: 16),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Today's Results",
+                  "Estimated Profit",
                   style: TextStyle(fontSize: 13, fontWeight: FontWeight.normal, color: Colors.grey),
                 ),
                 Text(
                   "\$23,874.45",
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                 ),
               ],
             ),
-            SizedBox(height: 8),
+            SizedBox(height: 16),
           ],
         ),
       ),
