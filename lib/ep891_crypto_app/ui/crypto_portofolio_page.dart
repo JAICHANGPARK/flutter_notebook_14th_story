@@ -1,4 +1,8 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep891_crypto_app/model/crypto_asset.dart';
+import 'package:flutter_notebook_14th_story/ep891_crypto_app/model/my_assets.dart';
 
 class CryptoPortfolioPage extends StatefulWidget {
   CryptoPortfolioPage({Key? key}) : super(key: key);
@@ -8,6 +12,20 @@ class CryptoPortfolioPage extends StatefulWidget {
 }
 
 class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
+
+  late MyAsset _myAsset;
+  late CryptoAsset _cryptoAsset;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    _myAsset = MyAsset.fromJson(jsonDecode(kCryptoMyAsset));
+    _cryptoAsset = CryptoAsset.fromJson(jsonDecode(kCryptoAsset));
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
