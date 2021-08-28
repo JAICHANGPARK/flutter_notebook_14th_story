@@ -15,7 +15,7 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          
+
         ],
       ),
     );
