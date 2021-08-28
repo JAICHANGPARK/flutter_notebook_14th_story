@@ -86,7 +86,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                           padding: const EdgeInsets.symmetric(horizontal: 8),
                           child: Text(
                             "+ ${_myAsset.thisWeek}%",
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 12,
                               color: Colors.green,
                               fontWeight: FontWeight.bold,
@@ -123,9 +123,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       child: const Text(
                         "My Assets",
-                        style: TextStyle(
-                          fontSize: 12,
-                        ),
+                        style: const TextStyle(fontSize: 12),
                       ),
                     ),
                     Expanded(
@@ -145,11 +143,11 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Row(
-                                        children: const [
-                                          CircleAvatar(
+                                        children: [
+                                          const CircleAvatar(
                                             radius: 12,
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 8,
                                           ),
                                           Text(
@@ -161,7 +159,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                       Text("${_myAsset.myAssets?[index].unit}"),
                                       Text(
                                         "USD ${_myAsset.myAssets?[index].price}",
-                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                        style: const TextStyle(fontWeight: FontWeight.bold),
                                       ),
                                       Row(
                                         children: [
