@@ -20,6 +20,7 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
                 children: [Text("\$23,874.45"), Text("Portofolio balance")],
               ),
               FloatingActionButton(
+                mini: true,
                 onPressed: () {},
                 child: Icon(Icons.arrow_forward),
                 backgroundColor: Colors.white,
