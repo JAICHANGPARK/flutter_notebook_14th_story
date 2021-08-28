@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep891_crypto_app/model/crypto_asset.dart';
+import 'package:flutter_notebook_14th_story/ep891_crypto_app/model/my_assets.dart';
 
 class CryptoBalancePage extends StatefulWidget {
   const CryptoBalancePage({Key? key}) : super(key: key);
@@ -7,7 +9,20 @@ class CryptoBalancePage extends StatefulWidget {
   _CryptoBalancePageState createState() => _CryptoBalancePageState();
 }
 
-class _CryptoBalancePageState extends State<CryptoBalancePage> {
+class _CryptoBalancePageState extends State<CryptoBalancePage> with AutomaticKeepAliveClientMixin {
+  late MyAsset _myAsset;
+  late CryptoAsset _cryptoAsset;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    _myAsset = MyAsset.fromJson(jsonDecode(kCryptoMyAsset));
+    _cryptoAsset = CryptoAsset.fromJson(jsonDecode(kCryptoAsset));
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -114,8 +129,7 @@ class _CryptoBalancePageState extends State<CryptoBalancePage> {
                             padding: const EdgeInsets.only(right: 8),
                             child: Container(
                               width: 140,
-                              decoration:
-                              BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                               padding: const EdgeInsets.all(7),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -150,17 +164,17 @@ class _CryptoBalancePageState extends State<CryptoBalancePage> {
                                           foregroundColor: Colors.white,
                                           child: _myAsset.myAssets?[index].change?.upDown == "up"
                                               ? const Icon(
-                                            Icons.arrow_upward,
-                                            size: 8,
-                                          )
+                                                  Icons.arrow_upward,
+                                                  size: 8,
+                                                )
                                               : const Icon(
-                                            Icons.arrow_downward,
-                                            size: 8,
-                                          )),
+                                                  Icons.arrow_downward,
+                                                  size: 8,
+                                                )),
                                       const SizedBox(width: 8),
                                       Text(
                                         "${_myAsset.myAssets?[index].change?.upDown == "up" ? "+" : "-"}"
-                                            " ${_myAsset.myAssets?[index].change?.rate}%",
+                                        " ${_myAsset.myAssets?[index].change?.rate}%",
                                         style: TextStyle(
                                             color: _myAsset.myAssets?[index].change?.upDown == "up"
                                                 ? Colors.green
@@ -238,24 +252,23 @@ class _CryptoBalancePageState extends State<CryptoBalancePage> {
                                         children: [
                                           CircleAvatar(
                                               radius: 8,
-                                              backgroundColor:
-                                              _cryptoAsset.cryptoAssets?[index].change?.upDown == "up"
+                                              backgroundColor: _cryptoAsset.cryptoAssets?[index].change?.upDown == "up"
                                                   ? Colors.green
                                                   : Colors.red,
                                               foregroundColor: Colors.white,
                                               child: _cryptoAsset.cryptoAssets?[index].change?.upDown == "up"
                                                   ? const Icon(
-                                                Icons.arrow_upward,
-                                                size: 8,
-                                              )
+                                                      Icons.arrow_upward,
+                                                      size: 8,
+                                                    )
                                                   : const Icon(
-                                                Icons.arrow_downward,
-                                                size: 8,
-                                              )),
+                                                      Icons.arrow_downward,
+                                                      size: 8,
+                                                    )),
                                           const SizedBox(width: 8),
                                           Text(
                                             "${_cryptoAsset.cryptoAssets?[index].change?.upDown == "up" ? "+" : "-"}"
-                                                " ${_cryptoAsset.cryptoAssets?[index].change?.rate}%",
+                                            " ${_cryptoAsset.cryptoAssets?[index].change?.rate}%",
                                             style: TextStyle(
                                                 color: _cryptoAsset.cryptoAssets?[index].change?.upDown == "up"
                                                     ? Colors.green
@@ -276,4 +289,8 @@ class _CryptoBalancePageState extends State<CryptoBalancePage> {
       ],
     );
   }
+
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 }
