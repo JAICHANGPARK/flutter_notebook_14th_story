@@ -121,7 +121,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 12),
-                      child: Text(
+                      child: const Text(
                         "My Assets",
                         style: TextStyle(
                           fontSize: 12,
@@ -145,7 +145,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Row(
-                                        children: [
+                                        children: const [
                                           CircleAvatar(
                                             radius: 12,
                                           ),
@@ -242,7 +242,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                           children: [
                                             Text(
                                               "${_cryptoAsset.cryptoAssets?[index].coin}",
-                                              style: TextStyle(fontWeight: FontWeight.bold),
+                                              style: const TextStyle(fontWeight: FontWeight.bold),
                                             ),
                                             const SizedBox(height: 8),
                                             Text("${_cryptoAsset.cryptoAssets?[index].unit}"),
@@ -254,7 +254,7 @@ class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
                                         children: [
                                           Text(
                                             "USD ${_cryptoAsset.cryptoAssets?[index].price}",
-                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                            style: const TextStyle(fontWeight: FontWeight.bold),
                                           ),
                                           const SizedBox(height: 8),
                                           Row(
