@@ -65,9 +65,7 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
                 ),
               ],
             ),
-            SizedBox(
-              height: 4,
-            ),
+            SizedBox(height: 8),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -81,9 +79,7 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
                 ),
               ],
             ),
-            SizedBox(
-              height: 4,
-            ),
+            SizedBox(height: 8),
           ],
         ),
       ),
