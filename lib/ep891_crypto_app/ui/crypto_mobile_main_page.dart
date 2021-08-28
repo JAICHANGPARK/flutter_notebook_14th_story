@@ -17,8 +17,6 @@ class CryptoMobileMainPage extends StatefulWidget {
 class _CryptoMobileMainPageState extends State<CryptoMobileMainPage> {
   ValueNotifier<int> _tabIndex = ValueNotifier(0);
 
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
