@@ -12,7 +12,6 @@ class CryptoPortfolioPage extends StatefulWidget {
 }
 
 class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
-
   late MyAsset _myAsset;
   late CryptoAsset _cryptoAsset;
 
@@ -112,6 +111,71 @@ class _CryptoPortfolioPageState extends State<CryptoPortfolioPage> {
                 ),
               ],
             ),
+            ListView.builder(
+                shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
+                itemCount: _myAsset.myAssets!.length,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: Container(
+                      width: 140,
+                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                      padding: const EdgeInsets.all(7),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              const CircleAvatar(
+                                radius: 12,
+                              ),
+                              const SizedBox(
+                                width: 8,
+                              ),
+                              Text(
+                                "${_myAsset.myAssets?[index].coin}",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                            ],
+                          ),
+                          Text("${_myAsset.myAssets?[index].unit}"),
+                          Text(
+                            "USD ${_myAsset.myAssets?[index].price}",
+                            style: const TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                  radius: 8,
+                                  backgroundColor:
+                                      _myAsset.myAssets?[index].change?.upDown == "up" ? Colors.green : Colors.red,
+                                  foregroundColor: Colors.white,
+                                  child: _myAsset.myAssets?[index].change?.upDown == "up"
+                                      ? const Icon(
+                                          Icons.arrow_upward,
+                                          size: 8,
+                                        )
+                                      : const Icon(
+                                          Icons.arrow_downward,
+                                          size: 8,
+                                        )),
+                              const SizedBox(width: 8),
+                              Text(
+                                "${_myAsset.myAssets?[index].change?.upDown == "up" ? "+" : "-"}"
+                                " ${_myAsset.myAssets?[index].change?.rate}%",
+                                style: TextStyle(
+                                    color: _myAsset.myAssets?[index].change?.upDown == "up" ? Colors.green : Colors.red,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                })
           ],
         ),
       ),
