@@ -242,6 +242,11 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_web_plugins:
+    dependency: transitive
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   freezed:
     dependency: "direct dev"
     description:
@@ -520,6 +525,15 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  slider_button:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: master
+      resolved-ref: "14a32f1a9bf98709be64b7f507c13c751feb8e10"
+      url: "https://github.com/Shiba-Kar/Slider-Button.git"
+    source: git
+    version: "1.0.0"
   source_gen:
     dependency: transitive
     description:
@@ -597,6 +611,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  vibration:
+    dependency: transitive
+    description:
+      name: vibration
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.7.4-nullsafety.0"
+  vibration_web:
+    dependency: transitive
+    description:
+      name: vibration_web
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.6.3-nullsafety.0"
   watcher:
     dependency: transitive
     description:
@@ -617,7 +645,7 @@ packages:
       name: win32
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.2.5"
+    version: "2.2.7"
   xdg_directories:
     dependency: transitive
     description:
