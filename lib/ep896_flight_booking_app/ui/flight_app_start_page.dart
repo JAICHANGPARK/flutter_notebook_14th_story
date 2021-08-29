@@ -34,13 +34,14 @@ class FlightAppStartPage extends StatelessWidget {
                 right: 16,
                 bottom: 32,
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Swipe Right"),
                     SliderButton(
                       action: () {},
                       height: 48,
-                      width: 120,
-                      buttonSize: 32,
+                      width: 160,
+                      buttonSize: 42,
                     ),
                   ],
                 ))
