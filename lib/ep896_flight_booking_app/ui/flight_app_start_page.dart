@@ -7,7 +7,7 @@ class FlightAppStartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
   }
 }
