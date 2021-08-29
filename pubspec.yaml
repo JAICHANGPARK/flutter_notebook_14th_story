@@ -28,6 +28,11 @@ dependencies:
 
   card_swiper: ^1.0.4
 
+  slider_button:
+    git:
+      url: https://github.com/Shiba-Kar/Slider-Button.git
+      ref: master
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
