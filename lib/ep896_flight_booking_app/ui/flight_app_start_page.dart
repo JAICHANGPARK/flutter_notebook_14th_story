@@ -28,6 +28,16 @@ class FlightAppStartPage extends StatelessWidget {
                     Text("best flight experience", style: TextStyle(fontSize: 14)),
                   ],
                 )),
+            Positioned(
+                left: 16,
+                right: 16,
+                bottom: 32,
+                child: Row(
+              children: [
+                Text("Swipe Right"),
+
+              ],
+            ))
           ],
         ),
       ),
