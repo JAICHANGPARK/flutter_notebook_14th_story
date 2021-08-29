@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FlightAppStartPage extends StatelessWidget {
   const FlightAppStartPage({Key? key}) : super(key: key);
 
@@ -14,25 +13,21 @@ class FlightAppStartPage extends StatelessWidget {
                 left: 16,
                 top: 84,
                 right: 0,
-
                 child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("Easily book",style: TextStyle(
-                  fontSize: 32
-                ),),
-                Text("Flight",style: TextStyle(
-                    fontSize: 32
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Easily book",
+                      style: TextStyle(fontSize: 32),
+                    ),
+                    Text("Flight", style: TextStyle(fontSize: 32)),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Text("We can easily help you to find the", style: TextStyle(fontSize: 14)),
+                    Text("best flight experience", style: TextStyle(fontSize: 14)),
+                  ],
                 )),
-                Text("We can easily help you to find the",style: TextStyle(
-                    fontSize: 14
-                )),
-                Text("best flight experience",style: TextStyle(
-                    fontSize: 14
-                )),
-              ],
-            )),
-
           ],
         ),
       ),
