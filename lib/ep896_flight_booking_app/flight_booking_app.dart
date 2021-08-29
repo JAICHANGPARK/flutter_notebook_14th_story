@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'ui/flight_app_start_page.dart';
+
 
 class FlightBookingApp extends StatelessWidget {
   const FlightBookingApp({Key? key}) : super(key: key);
@@ -8,7 +10,9 @@ class FlightBookingApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      
+      routes: {
+        "/" : (context) =>FlightAppStartPage(),
+      },
     );
   }
 }
