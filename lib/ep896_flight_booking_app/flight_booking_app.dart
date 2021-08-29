@@ -11,6 +11,7 @@ class FlightBookingApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      initialRoute: "/",
       routes: {
         "/" : (context) =>FlightAppStartPage(),
         "/ticket" : (context) => FlightTicketPage()
