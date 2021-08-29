@@ -19,9 +19,9 @@ class FlightAppStartPage extends StatelessWidget {
                   children: [
                     Text(
                       "Easily book",
-                      style: TextStyle(fontSize: 32),
+                      style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
                     ),
-                    Text("Flight", style: TextStyle(fontSize: 32)),
+                    Text("Flight", style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold)),
                     SizedBox(
                       height: 16,
                     ),
@@ -38,6 +38,10 @@ class FlightAppStartPage extends StatelessWidget {
                   children: [
                     Text("Swipe Right"),
                     SliderButton(
+                      backgroundColor: Colors.black,
+                      icon: Icon(Icons.arrow_forward_ios),
+                      label: Text("Lets go"),
+                      dismissible: false,
                       action: () {},
                       height: 48,
                       width: 160,
