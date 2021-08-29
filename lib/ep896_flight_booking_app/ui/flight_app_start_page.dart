@@ -21,7 +21,15 @@ class FlightAppStartPage extends StatelessWidget {
                 Text("Easily book",style: TextStyle(
                   fontSize: 32
                 ),),
-                Text("Flight")
+                Text("Flight",style: TextStyle(
+                    fontSize: 32
+                )),
+                Text("We can easily help you to find the",style: TextStyle(
+                    fontSize: 14
+                )),
+                Text("best flight experience",style: TextStyle(
+                    fontSize: 14
+                )),
               ],
             )),
 
