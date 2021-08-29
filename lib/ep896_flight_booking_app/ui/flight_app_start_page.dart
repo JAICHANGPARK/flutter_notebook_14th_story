@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:slider_button/slider_button.dart';
 
 class FlightAppStartPage extends StatelessWidget {
   const FlightAppStartPage({Key? key}) : super(key: key);
@@ -33,11 +34,16 @@ class FlightAppStartPage extends StatelessWidget {
                 right: 16,
                 bottom: 32,
                 child: Row(
-              children: [
-                Text("Swipe Right"),
-
-              ],
-            ))
+                  children: [
+                    Text("Swipe Right"),
+                    SliderButton(
+                      action: () {},
+                      height: 48,
+                      width: 120,
+                      buttonSize: 32,
+                    ),
+                  ],
+                ))
           ],
         ),
       ),
