@@ -30,16 +30,17 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
             top: 200,
           ),
           Positioned(
-              top: 8,
+              top: 48,
               left: 16,
               right: 16,
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         "Itneraries",
-                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                        style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                       IconButton(
                         onPressed: () {},
