@@ -57,8 +57,9 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                     height: 58,
                     decoration: BoxDecoration(
                       color: Colors.white,
-
+                      borderRadius: BorderRadius.circular(8),
                     ),
+                    child: ,
                   ),
                 ],
               )),
