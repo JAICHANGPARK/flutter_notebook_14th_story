@@ -59,7 +59,9 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: ,
+                    child: TextField(
+                      
+                    ),
                   ),
                 ],
               )),
