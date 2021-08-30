@@ -17,16 +17,17 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
           Positioned(
             child: Container(
               decoration: BoxDecoration(
-                  color: Colors.grey[100],
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(16),
-                    topLeft: Radius.circular(16),
-                  )),
+                color: Colors.grey[100],
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(36),
+                  topLeft: Radius.circular(36),
+                ),
+              ),
             ),
             bottom: 0,
             left: 0,
             right: 0,
-            top: 120,
+            top: 200,
           )
         ],
       ),
