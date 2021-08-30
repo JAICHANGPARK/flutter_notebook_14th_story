@@ -34,6 +34,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
               top: 48,
               left: 16,
               right: 16,
+              bottom: 48,
               child: Column(
                 children: [
                   Row(
@@ -76,9 +77,14 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                   SizedBox(
                     height: 16,
                   ),
-                  Expanded(child: ListView.builder(itemBuilder: (context, index) {
-                    return Card();
-                  }))
+                  Expanded(
+                      child: ListView.builder(
+                          itemCount: 8,
+                          itemBuilder: (context, index) {
+                            return Card(
+                              child: Text("Sample"),
+                            );
+                          }))
                 ],
               )),
           Positioned(
