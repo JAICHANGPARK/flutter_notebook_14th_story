@@ -16,6 +16,10 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
       body: Stack(
         children: [
           Positioned(
+            bottom: 0,
+            left: 0,
+            right: 0,
+            top: 200,
             child: Container(
               decoration: BoxDecoration(
                 color: Colors.grey[100],
@@ -25,10 +29,6 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                 ),
               ),
             ),
-            bottom: 0,
-            left: 0,
-            right: 0,
-            top: 200,
           ),
           Positioned(
               top: 48,
@@ -60,13 +60,16 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 8,),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 8,
+                    ),
                     child: Center(
                       child: TextField(
-                        decoration:
-                            InputDecoration(hintText: "Search",
-                                hintStyle: TextStyle(fontSize: 24),
-                                icon: Icon(Icons.search), border: InputBorder.none),
+                        decoration: InputDecoration(
+                            hintText: "Search",
+                            hintStyle: TextStyle(fontSize: 24),
+                            icon: Icon(Icons.search),
+                            border: InputBorder.none),
                       ),
                     ),
                   ),
