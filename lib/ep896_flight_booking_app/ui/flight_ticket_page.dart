@@ -40,7 +40,11 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                     children: [
                       Text(
                         "Itneraries",
-                        style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       IconButton(
                         onPressed: () {},
@@ -48,7 +52,8 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                         color: Colors.white,
                       )
                     ],
-                  )
+                  ),
+
                 ],
               )),
           Positioned(
