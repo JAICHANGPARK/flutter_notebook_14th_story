@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:slider_button/slider_button.dart';
 
+import 'flight_ticket_page.dart';
+
 class FlightAppStartPage extends StatelessWidget {
   const FlightAppStartPage({Key? key}) : super(key: key);
 
@@ -30,7 +32,6 @@ class FlightAppStartPage extends StatelessWidget {
                     Text("best flight experience", style: TextStyle(fontSize: 14)),
                   ],
                 )),
-            
             Positioned(
               child: RotatedBox(
                   quarterTurns: 1,
@@ -53,9 +54,7 @@ class FlightAppStartPage extends StatelessWidget {
                       backgroundColor: Colors.black,
                       icon: Icon(Icons.arrow_forward_ios),
                       label: Text("Lets go"),
-                      action: () {
-                        Get.toNamed("/ticket");
-                      },
+                      action: () => Get.to(FlightTicketPage()),
                       height: 48,
                       width: 160,
                       buttonSize: 42,
