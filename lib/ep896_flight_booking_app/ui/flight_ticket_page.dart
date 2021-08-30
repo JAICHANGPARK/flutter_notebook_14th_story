@@ -60,10 +60,9 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: TextField(
-                      decoration: InputDecoration(
-                        hintText: "Search",
-                        icon: Icon(Icons.search),
-                      ),
+                      decoration:
+                          InputDecoration(hintText: "Search",
+                              icon: Icon(Icons.search), border: InputBorder.none),
                     ),
                   ),
                 ],
