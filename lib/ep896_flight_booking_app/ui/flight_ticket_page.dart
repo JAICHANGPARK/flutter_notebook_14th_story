@@ -59,10 +59,13 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: TextField(
-                      decoration:
-                          InputDecoration(hintText: "Search",
-                              icon: Icon(Icons.search), border: InputBorder.none),
+                    padding: EdgeInsets.symmetric(horizontal: 8,),
+                    child: Center(
+                      child: TextField(
+                        decoration:
+                            InputDecoration(hintText: "Search",
+                                icon: Icon(Icons.search), border: InputBorder.none),
+                      ),
                     ),
                   ),
                 ],
