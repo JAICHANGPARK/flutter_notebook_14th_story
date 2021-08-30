@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FlightTicketPage extends StatefulWidget {
   const FlightTicketPage({Key? key}) : super(key: key);
 
@@ -11,6 +10,6 @@ class FlightTicketPage extends StatefulWidget {
 class _FlightTicketPageState extends State<FlightTicketPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
