@@ -76,7 +76,9 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                   SizedBox(
                     height: 16,
                   ),
-                  Expanded(child: ListView.builder(itemBuilder: (context, index) {}))
+                  Expanded(child: ListView.builder(itemBuilder: (context, index) {
+                    return Card();
+                  }))
                 ],
               )),
           Positioned(
