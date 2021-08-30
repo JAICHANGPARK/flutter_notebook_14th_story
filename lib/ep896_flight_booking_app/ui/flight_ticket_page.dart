@@ -29,7 +29,13 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
             right: 0,
             top: 200,
           ),
-          Positioned(child: child)
+          Positioned(
+              top: 8,
+              left: 16,
+              right: 16,
+              child: Column(
+                children: [],
+              )),
           Positioned(
               left: 8,
               right: 8,
