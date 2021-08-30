@@ -34,12 +34,28 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
               right: 8,
               bottom: 8,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  IconButton(onPressed: () {}, icon: Icon(Icons.home_outlined)),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.list_alt_outlined)),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.location_on_outlined)),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.person_outline)),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.home_outlined),
+                    color: Colors.grey,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.list_alt_outlined),
+                    color: Colors.grey,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.location_on_outlined),
+                    color: Colors.grey,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.person_outline),
+                    color: Colors.grey,
+                  ),
                 ],
               ))
         ],
