@@ -11,9 +11,13 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      backgroundColor: Colors.black,
+      body: Stack(
         children: [
-          
+          Positioned(child: Container(), bottom: 0,
+          left: 0,
+          right: 0,
+          top: 120,)
         ],
       ),
     );
