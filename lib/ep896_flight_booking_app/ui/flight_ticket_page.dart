@@ -64,6 +64,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                       child: TextField(
                         decoration:
                             InputDecoration(hintText: "Search",
+                                hintStyle: TextStyle(fontSize: 24),
                                 icon: Icon(Icons.search), border: InputBorder.none),
                       ),
                     ),
