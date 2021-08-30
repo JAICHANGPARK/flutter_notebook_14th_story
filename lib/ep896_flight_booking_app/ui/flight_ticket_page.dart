@@ -34,7 +34,21 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
               left: 16,
               right: 16,
               child: Column(
-                children: [],
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        "Itneraries",
+                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.settings),
+                        color: Colors.white,
+                      )
+                    ],
+                  )
+                ],
               )),
           Positioned(
               left: 8,
