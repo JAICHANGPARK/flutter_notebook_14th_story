@@ -80,6 +80,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                   Expanded(
                       child: ListView.builder(
                           itemCount: 8,
+                          padding: EdgeInsets.zero,
                           itemBuilder: (context, index) {
                             return Card(
                               child: Text("Sample"),
