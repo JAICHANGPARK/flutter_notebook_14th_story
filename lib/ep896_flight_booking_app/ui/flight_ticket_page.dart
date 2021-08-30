@@ -73,6 +73,9 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                       ),
                     ),
                   ),
+                  SizedBox(
+                    height: 16,
+                  ),
                 ],
               )),
           Positioned(
