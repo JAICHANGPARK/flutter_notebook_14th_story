@@ -53,7 +53,11 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                       )
                     ],
                   ),
-
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                  ),
                 ],
               )),
           Positioned(
