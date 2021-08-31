@@ -3,7 +3,9 @@
 class FlightTicket{
     String? title;
     String? fromDate;
-    String? toDate;
+    String? fromTime;
+    String? arriveDate;
+    String? arriveTime;
     String? origin;
     String? destination;
 
