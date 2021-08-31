@@ -86,10 +86,13 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                           itemBuilder: (context, index) {
                             FlightTicket _ticket =  ticketItems[index];
                             return Card(
-                              child: Column(
-                                children: [
-                                  Text("Sample"),
-                                ],
+                              child: Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: Column(
+                                  children: [
+                                    Text(_ticket.title ?? "UNKNOWN"),
+                                  ],
+                                ),
                               ),
                             );
                           }))
