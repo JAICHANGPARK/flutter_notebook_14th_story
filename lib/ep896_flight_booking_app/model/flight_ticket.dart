@@ -21,4 +21,14 @@ class FlightTicket {
       this.isRunning});
 }
 
-List<FlightTicket> ticketItems = [FlightTicket()];
+List<FlightTicket> ticketItems = [
+  FlightTicket(
+    title: "VACATION IN EGYPT",
+  ),
+  FlightTicket(
+    title: "VACATION IN PARIS",
+  ),
+  FlightTicket(
+    title: "VACATION IN PARIS",
+  )
+];
