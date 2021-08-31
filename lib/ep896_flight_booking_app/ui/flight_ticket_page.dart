@@ -168,7 +168,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                       children: [
                                         Text(
                                           _ticket.fromTime ?? "UNKNOWN",
-                                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                                          style: TextStyle( fontSize: 12),
                                         ),
                                         Text(
                                           _ticket.elapsedTime ?? "UNKNOWN",
@@ -176,7 +176,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                         ),
                                         Text(
                                           _ticket.arriveTime ?? "UNKNOWN",
-                                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                                          style: TextStyle( fontSize: 12),
                                         ),
                                       ],
                                     )
