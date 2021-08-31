@@ -112,24 +112,32 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                     ),
                                     SizedBox(
                                       height: 48,
+                                      width: double.infinity,
                                       child: Container(
                                         color: Colors.blue,
                                         child: Row(
                                           children: [
-                                            Text(_ticket.origin ?? "UNKNOWN",
-                                              style: TextStyle(color: Colors.grey, fontSize: 12),),
+                                            Text(
+                                              _ticket.origin ?? "UNKNOWN",
+                                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                                            ),
                                             Padding(
                                               padding: const EdgeInsets.symmetric(horizontal: 8),
                                               child: Expanded(
                                                   child: Stack(
                                                 children: [
-                                                  Positioned(child: CircleAvatar(radius: 4,
-                                                  backgroundColor: Colors.black,)),
+                                                  Positioned(
+                                                      child: CircleAvatar(
+                                                    radius: 4,
+                                                    backgroundColor: Colors.black,
+                                                  )),
                                                 ],
                                               )),
                                             ),
-                                            Text(_ticket.origin ?? "UNKNOWN",
-                                              style: TextStyle(color: Colors.grey, fontSize: 12),)
+                                            Text(
+                                              _ticket.origin ?? "UNKNOWN",
+                                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                                            )
                                           ],
                                         ),
                                       ),
