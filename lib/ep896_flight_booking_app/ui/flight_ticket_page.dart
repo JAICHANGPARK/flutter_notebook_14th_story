@@ -164,6 +164,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                       ),
                                     ),
                                     Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text(
                                           _ticket.fromTime ?? "UNKNOWN",
