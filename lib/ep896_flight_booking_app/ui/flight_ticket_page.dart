@@ -82,16 +82,30 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                       child: ListView.builder(
                           itemCount: ticketItems.length,
                           padding: EdgeInsets.zero,
-
                           itemBuilder: (context, index) {
-                            FlightTicket _ticket =  ticketItems[index];
+                            FlightTicket _ticket = ticketItems[index];
                             return Card(
                               child: Padding(
                                 padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(_ticket.title ?? "UNKNOWN"),
+                                    Text(
+                                      _ticket.title ?? "UNKNOWN",
+                                      style: TextStyle(fontWeight: FontWeight.bold),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          _ticket.fromDate ?? "UNKNOWN",
+                                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                                        ),
+                                        Text(
+                                          _ticket.arriveDate ?? "UNKNOWN",
+                                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                                        ),
+                                      ],
+                                    )
                                   ],
                                 ),
                               ),
