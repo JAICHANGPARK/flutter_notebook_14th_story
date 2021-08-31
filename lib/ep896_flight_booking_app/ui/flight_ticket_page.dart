@@ -97,7 +97,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                       style: TextStyle(fontWeight: FontWeight.bold),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      padding: const EdgeInsets.symmetric(vertical: 12),
                                       child: Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
@@ -114,53 +114,52 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                     ),
                                     SizedBox(
                                       height: 48,
-                                      child: Container(
-                                        child: Row(
-                                          children: [
-                                            Text(
-                                              _ticket.origin ?? "UNKNOWN",
-                                              style: TextStyle( fontSize: 12),
-                                            ),
-                                            Expanded(
-                                                child: Padding(
-                                              padding: const EdgeInsets.symmetric(horizontal: 8),
-                                              child: Stack(
-                                                children: const [
-                                                  Positioned(
+                                      child: Row(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            _ticket.origin ?? "UNKNOWN",
+                                            style: TextStyle(fontSize: 12),
+                                          ),
+                                          Expanded(
+                                              child: Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                                            child: Stack(
+                                              children: const [
+                                                Positioned(
+                                                  right: 0,
+                                                  bottom: 0,
+                                                  top: 0,
+                                                  left: 0,
+                                                  child: TicketSeparator(
+                                                    height: 2,
+                                                    color: Colors.grey,
+                                                  ),
+                                                ),
+                                                Positioned(
+                                                    left: 0,
+                                                    bottom: 0,
+                                                    top: 0,
+                                                    child: CircleAvatar(
+                                                      radius: 4,
+                                                      backgroundColor: Colors.black,
+                                                    )),
+                                                Positioned(
                                                     right: 0,
                                                     bottom: 0,
                                                     top: 0,
-                                                    left: 0,
-                                                    child: TicketSeparator(
-                                                      height: 2,
-                                                      color: Colors.grey,
-                                                    ),
-                                                  ),
-                                                  Positioned(
-                                                      left: 0,
-                                                      bottom: 0,
-                                                      top: 0,
-                                                      child: CircleAvatar(
-                                                        radius: 4,
-                                                        backgroundColor: Colors.black,
-                                                      )),
-                                                  Positioned(
-                                                      right: 0,
-                                                      bottom: 0,
-                                                      top: 0,
-                                                      child: CircleAvatar(
-                                                        radius: 4,
-                                                        backgroundColor: Colors.black,
-                                                      )),
-                                                ],
-                                              ),
-                                            )),
-                                            Text(
-                                              _ticket.origin ?? "UNKNOWN",
-                                              style: TextStyle(fontSize: 12),
-                                            )
-                                          ],
-                                        ),
+                                                    child: CircleAvatar(
+                                                      radius: 4,
+                                                      backgroundColor: Colors.black,
+                                                    )),
+                                              ],
+                                            ),
+                                          )),
+                                          Text(
+                                            _ticket.origin ?? "UNKNOWN",
+                                            style: TextStyle(fontSize: 12),
+                                          )
+                                        ],
                                       ),
                                     ),
                                     Row(
@@ -168,7 +167,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                       children: [
                                         Text(
                                           _ticket.fromTime ?? "UNKNOWN",
-                                          style: TextStyle( fontSize: 12),
+                                          style: TextStyle(fontSize: 12),
                                         ),
                                         Text(
                                           _ticket.elapsedTime ?? "UNKNOWN",
@@ -176,7 +175,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                         ),
                                         Text(
                                           _ticket.arriveTime ?? "UNKNOWN",
-                                          style: TextStyle( fontSize: 12),
+                                          style: TextStyle(fontSize: 12),
                                         ),
                                       ],
                                     )
