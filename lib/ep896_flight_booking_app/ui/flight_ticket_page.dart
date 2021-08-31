@@ -115,7 +115,6 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                     SizedBox(
                                       height: 48,
                                       child: Container(
-                                        color: Colors.red,
                                         child: Row(
                                           children: [
                                             Text(
