@@ -10,15 +10,20 @@ class TicketSeparator extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
       final boxWidth = constraints.constrainWidth();
-      final dashWidth = 10.0;
+      final dashWidth = 5.0;
       final dashHeight = height;
+      final dashCount = (boxWidth / (2 * dashWidth)).floor();
       return Flex(
         direction: Axis.horizontal,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: List.generate(
-            8,
+            dashCount,
             (index) => SizedBox(
                   height: dashHeight,
                   width: dashWidth,
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(color: color),
+                  ),
                 )),
       );
     });
