@@ -29,6 +29,9 @@ List<FlightTicket> ticketItems = [
     title: "VACATION IN PARIS",
   ),
   FlightTicket(
-    title: "VACATION IN PARIS",
+    title: "BIZ TRIP TO NEW YORK",
+  ),
+  FlightTicket(
+    title: "VACATION IN BERLIN",
   )
 ];
