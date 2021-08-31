@@ -125,7 +125,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                                 child: Padding(
                                               padding: const EdgeInsets.symmetric(horizontal: 8),
                                               child: Stack(
-                                                children: [
+                                                children: const [
                                                   Positioned(
                                                     right: 0,
                                                     bottom: 0,
@@ -136,7 +136,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                                       color: Colors.grey,
                                                     ),
                                                   ),
-                                                  const Positioned(
+                                                  Positioned(
                                                       left: 0,
                                                       bottom: 0,
                                                       top: 0,
@@ -144,8 +144,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                                         radius: 4,
                                                         backgroundColor: Colors.black,
                                                       )),
-
-                                                  const Positioned(
+                                                  Positioned(
                                                       right: 0,
                                                       bottom: 0,
                                                       top: 0,
@@ -163,6 +162,22 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                           ],
                                         ),
                                       ),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          _ticket.fromTime ?? "UNKNOWN",
+                                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                                        ),
+                                        Text(
+                                          _ticket.elapsedTime ?? "UNKNOWN",
+                                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                                        ),
+                                        Text(
+                                          _ticket.arriveTime ?? "UNKNOWN",
+                                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                                        ),
+                                      ],
                                     )
                                   ],
                                 ),
