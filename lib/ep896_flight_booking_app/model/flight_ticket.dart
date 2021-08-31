@@ -9,3 +9,5 @@ class FlightTicket {
   String? elapsedTime;
   bool? isRunning;
 }
+
+List<FlightTicket> ticketItems = [];
