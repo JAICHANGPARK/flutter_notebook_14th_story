@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep896_flight_booking_app/model/flight_ticket.dart';
 
 class FlightTicketPage extends StatefulWidget {
   const FlightTicketPage({Key? key}) : super(key: key);
@@ -79,9 +80,11 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                   ),
                   Expanded(
                       child: ListView.builder(
-                          itemCount: 8,
+                          itemCount: ticketItems.length,
                           padding: EdgeInsets.zero,
+
                           itemBuilder: (context, index) {
+                            FlightTicket _ticket =  ticketItems[index];
                             return Card(
                               child: Text("Sample"),
                             );
