@@ -94,17 +94,21 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                       _ticket.title ?? "UNKNOWN",
                                       style: TextStyle(fontWeight: FontWeight.bold),
                                     ),
-                                    Row(
-                                      children: [
-                                        Text(
-                                          _ticket.fromDate ?? "UNKNOWN",
-                                          style: TextStyle(color: Colors.grey, fontSize: 12),
-                                        ),
-                                        Text(
-                                          _ticket.arriveDate ?? "UNKNOWN",
-                                          style: TextStyle(color: Colors.grey, fontSize: 12),
-                                        ),
-                                      ],
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            _ticket.fromDate ?? "UNKNOWN",
+                                            style: TextStyle(color: Colors.grey, fontSize: 12),
+                                          ),
+                                          Text(
+                                            _ticket.arriveDate ?? "UNKNOWN",
+                                            style: TextStyle(color: Colors.grey, fontSize: 12),
+                                          ),
+                                        ],
+                                      ),
                                     )
                                   ],
                                 ),
