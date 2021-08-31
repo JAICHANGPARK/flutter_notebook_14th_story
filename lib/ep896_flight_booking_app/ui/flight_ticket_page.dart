@@ -119,7 +119,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                           children: [
                                             Text(
                                               _ticket.origin ?? "UNKNOWN",
-                                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                                              style: TextStyle( fontSize: 12),
                                             ),
                                             Expanded(
                                                 child: Padding(
@@ -157,7 +157,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                             )),
                                             Text(
                                               _ticket.origin ?? "UNKNOWN",
-                                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                                              style: TextStyle(fontSize: 12),
                                             )
                                           ],
                                         ),
