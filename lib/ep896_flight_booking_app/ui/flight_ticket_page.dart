@@ -120,7 +120,10 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                               style: TextStyle(color: Colors.grey, fontSize: 12),),
                                             Expanded(
                                                 child: Stack(
-                                              children: [],
+                                              children: [
+                                                Positioned(child: CircleAvatar(radius: 8,
+                                                backgroundColor: Colors.black,)),
+                                              ],
                                             )),
                                             Text(_ticket.origin ?? "UNKNOWN",
                                               style: TextStyle(color: Colors.grey, fontSize: 12),)
