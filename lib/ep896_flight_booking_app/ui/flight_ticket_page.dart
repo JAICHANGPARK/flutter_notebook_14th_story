@@ -89,6 +89,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                               child: Padding(
                                 padding: const EdgeInsets.all(12.0),
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(_ticket.title ?? "UNKNOWN"),
                                   ],
