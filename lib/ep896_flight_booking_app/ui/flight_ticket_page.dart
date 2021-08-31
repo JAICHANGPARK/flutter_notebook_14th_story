@@ -112,7 +112,6 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                     ),
                                     SizedBox(
                                       height: 48,
-                                      width: double.infinity,
                                       child: Container(
                                         color: Colors.blue,
                                         child: Row(
@@ -127,10 +126,21 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                                   child: Stack(
                                                 children: [
                                                   Positioned(
+                                                      left: 0,
+                                                      bottom: 0,
+                                                      top: 0,
                                                       child: CircleAvatar(
-                                                    radius: 4,
-                                                    backgroundColor: Colors.black,
-                                                  )),
+                                                        radius: 4,
+                                                        backgroundColor: Colors.black,
+                                                      )),
+                                                  Positioned(
+                                                      right: 0,
+                                                      bottom: 0,
+                                                      top: 0,
+                                                      child: CircleAvatar(
+                                                        radius: 4,
+                                                        backgroundColor: Colors.black,
+                                                      )),
                                                 ],
                                               )),
                                             ),
