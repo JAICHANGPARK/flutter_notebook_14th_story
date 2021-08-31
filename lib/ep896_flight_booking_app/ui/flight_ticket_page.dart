@@ -109,6 +109,23 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                           ),
                                         ],
                                       ),
+                                    ),
+                                    SizedBox(
+                                      height: 48,
+                                      child: Container(
+                                        color: Colors.blue,
+                                        child: Row(
+                                          children: [
+                                            Text(_ticket.origin ?? "UNKNOWN"),
+                                            Expanded(child: Stack(
+                                              children: [
+                                                
+                                              ],
+                                            )),
+                                            Text(_ticket.origin ?? "UNKNOWN")
+                                          ],
+                                        ),
+                                      ),
                                     )
                                   ],
                                 ),
