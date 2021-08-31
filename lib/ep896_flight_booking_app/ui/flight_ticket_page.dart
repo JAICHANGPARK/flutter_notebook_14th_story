@@ -116,13 +116,14 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                         color: Colors.blue,
                                         child: Row(
                                           children: [
-                                            Text(_ticket.origin ?? "UNKNOWN"),
-                                            Expanded(child: Stack(
-                                              children: [
-                                                
-                                              ],
+                                            Text(_ticket.origin ?? "UNKNOWN",
+                                              style: TextStyle(color: Colors.grey, fontSize: 12),),
+                                            Expanded(
+                                                child: Stack(
+                                              children: [],
                                             )),
-                                            Text(_ticket.origin ?? "UNKNOWN")
+                                            Text(_ticket.origin ?? "UNKNOWN",
+                                              style: TextStyle(color: Colors.grey, fontSize: 12),)
                                           ],
                                         ),
                                       ),
