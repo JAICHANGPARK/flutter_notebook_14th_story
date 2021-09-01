@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_14th_story/ep896_flight_booking_app/model/flight_ticket.dart';
+import 'package:get/get.dart';
 
+import 'qr_scan_page.dart';
 import 'ticket_seperator.dart';
 
 class FlightTicketPage extends StatefulWidget {
@@ -87,112 +89,117 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                           itemBuilder: (context, index) {
                             FlightTicket _ticket = ticketItems[index];
                             bool _isRunning = _ticket.isRunning ?? false;
-                            return Card(
-                              child: Padding(
-                                padding: const EdgeInsets.all(12.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      _ticket.title ?? "UNKNOWN",
-                                      style: TextStyle(fontWeight: FontWeight.bold),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(vertical: 12),
-                                      child: Row(
+                            return GestureDetector(
+                              onTap: () {
+                                Get.to(QrScanPage());
+                              },
+                              child: Card(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        _ticket.title ?? "UNKNOWN",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 12),
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              _ticket.fromDate ?? "UNKNOWN",
+                                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                                            ),
+                                            Text(
+                                              _ticket.arriveDate ?? "UNKNOWN",
+                                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 48,
+                                        child: Row(
+                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          children: [
+                                            Text(
+                                              _ticket.origin ?? "UNKNOWN",
+                                              style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                                            ),
+                                            Expanded(
+                                                child: Padding(
+                                              padding: const EdgeInsets.symmetric(horizontal: 8),
+                                              child: Stack(
+                                                children: [
+                                                  Positioned(
+                                                    right: 0,
+                                                    bottom: 0,
+                                                    top: 0,
+                                                    left: 0,
+                                                    child: TicketSeparator(
+                                                      height: 2,
+                                                      color: Colors.grey,
+                                                    ),
+                                                  ),
+                                                  AnimatedPositioned(
+                                                      right: 0,
+                                                      bottom: 0,
+                                                      top: 0,
+                                                      left: 0,
+                                                      duration: Duration(milliseconds: 150),
+                                                      child: RotatedBox(
+                                                          quarterTurns: 1,
+                                                          child: Icon(
+                                                            Icons.flight,
+                                                            color: _isRunning ? Colors.purpleAccent : Colors.black,
+                                                          ))),
+                                                  Positioned(
+                                                      left: 0,
+                                                      bottom: 0,
+                                                      top: 0,
+                                                      child: CircleAvatar(
+                                                        radius: 4,
+                                                        backgroundColor: Colors.black,
+                                                      )),
+                                                  Positioned(
+                                                      right: 0,
+                                                      bottom: 0,
+                                                      top: 0,
+                                                      child: CircleAvatar(
+                                                        radius: 4,
+                                                        backgroundColor: Colors.purpleAccent,
+                                                      )),
+                                                ],
+                                              ),
+                                            )),
+                                            Text(
+                                              _ticket.origin ?? "UNKNOWN",
+                                              style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                      Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
-                                            _ticket.fromDate ?? "UNKNOWN",
+                                            _ticket.fromTime ?? "UNKNOWN",
+                                            style: TextStyle(fontSize: 12),
+                                          ),
+                                          Text(
+                                            _ticket.elapsedTime ?? "UNKNOWN",
                                             style: TextStyle(color: Colors.grey, fontSize: 12),
                                           ),
                                           Text(
-                                            _ticket.arriveDate ?? "UNKNOWN",
-                                            style: TextStyle(color: Colors.grey, fontSize: 12),
+                                            _ticket.arriveTime ?? "UNKNOWN",
+                                            style: TextStyle(fontSize: 12),
                                           ),
                                         ],
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 48,
-                                      child: Row(
-                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                        children: [
-                                          Text(
-                                            _ticket.origin ?? "UNKNOWN",
-                                            style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
-                                          ),
-                                          Expanded(
-                                              child: Padding(
-                                            padding: const EdgeInsets.symmetric(horizontal: 8),
-                                            child: Stack(
-                                              children: [
-                                                Positioned(
-                                                  right: 0,
-                                                  bottom: 0,
-                                                  top: 0,
-                                                  left: 0,
-                                                  child: TicketSeparator(
-                                                    height: 2,
-                                                    color: Colors.grey,
-                                                  ),
-                                                ),
-                                                AnimatedPositioned(
-                                                    right: 0,
-                                                    bottom: 0,
-                                                    top: 0,
-                                                    left: 0,
-                                                    duration: Duration(milliseconds: 150),
-                                                    child: RotatedBox(
-                                                        quarterTurns: 1,
-                                                        child: Icon(
-                                                          Icons.flight,
-                                                          color: _isRunning ? Colors.purpleAccent : Colors.black,
-                                                        ))),
-                                                Positioned(
-                                                    left: 0,
-                                                    bottom: 0,
-                                                    top: 0,
-                                                    child: CircleAvatar(
-                                                      radius: 4,
-                                                      backgroundColor: Colors.black,
-                                                    )),
-                                                Positioned(
-                                                    right: 0,
-                                                    bottom: 0,
-                                                    top: 0,
-                                                    child: CircleAvatar(
-                                                      radius: 4,
-                                                      backgroundColor: Colors.purpleAccent,
-                                                    )),
-                                              ],
-                                            ),
-                                          )),
-                                          Text(
-                                            _ticket.origin ?? "UNKNOWN",
-                                            style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text(
-                                          _ticket.fromTime ?? "UNKNOWN",
-                                          style: TextStyle(fontSize: 12),
-                                        ),
-                                        Text(
-                                          _ticket.elapsedTime ?? "UNKNOWN",
-                                          style: TextStyle(color: Colors.grey, fontSize: 12),
-                                        ),
-                                        Text(
-                                          _ticket.arriveTime ?? "UNKNOWN",
-                                          style: TextStyle(fontSize: 12),
-                                        ),
-                                      ],
-                                    )
-                                  ],
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                             );
