@@ -43,7 +43,7 @@ List<FlightTicket> ticketItems = [
       origin: "IFK",
       isRunning: false),
   FlightTicket(
-    title: "BIZ TRIP TO NEW YORK",
+      title: "BIZ TRIP TO NEW YORK",
       fromDate: "AUG 22",
       fromTime: "06:35 AM",
       arriveDate: "AUG 28",
@@ -51,8 +51,7 @@ List<FlightTicket> ticketItems = [
       elapsedTime: "12h 10m",
       origin: "GOT",
       destination: "CGN",
-      isRunning: true
-  ),
+      isRunning: true),
   FlightTicket(
     title: "VACATION IN BERLIN",
   )
