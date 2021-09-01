@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:slider_button/slider_button.dart';
 
 class QrScanPage extends StatefulWidget {
   const QrScanPage({Key? key}) : super(key: key);
@@ -58,8 +59,20 @@ class _QrScanPageState extends State<QrScanPage> {
                       bottom: 0,
                       right: 0,
                       child: Column(
-                    children: [],
-                  ))
+                        children: [
+                          Text("My Ticket"),
+                          SliderButton(
+
+                            backgroundColor: Colors.black,
+                            disable: true,
+                            label: Text("Book Now >>>>>>>"),
+                            height: 48,
+                            width: 160,
+                            buttonSize: 42,
+                            action: () {},
+                          ),
+                        ],
+                      ))
                 ],
               ),
               flex: 15,
