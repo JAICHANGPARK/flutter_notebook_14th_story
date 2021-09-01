@@ -56,9 +56,14 @@ class _QrScanPageState extends State<QrScanPage> {
               flex: 3,
             ),
             Expanded(
+              flex: 15,
               child: Stack(
                 children: [
                   Positioned(
+                    left: 0,
+                    top: 0,
+                    bottom: 0,
+                    right: 0,
                     child: Row(
                       children: [
                         Expanded(child: Container()),
@@ -68,10 +73,6 @@ class _QrScanPageState extends State<QrScanPage> {
                         )),
                       ],
                     ),
-                    left: 0,
-                    top: 0,
-                    bottom: 0,
-                    right: 0,
                   ),
                   Positioned(
                       left: 0,
@@ -93,13 +94,16 @@ class _QrScanPageState extends State<QrScanPage> {
                           Container(
                             height: 48,
                             width: 240,
-                            decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(24),
+                            ),
                           )
                         ],
                       ))
                 ],
               ),
-              flex: 15,
+
             ),
           ],
         ),
