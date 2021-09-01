@@ -137,11 +137,12 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                                     color: Colors.grey,
                                                   ),
                                                 ),
-                                                Positioned(
+                                                AnimatedPositioned(
                                                     right: 0,
                                                     bottom: 0,
                                                     top: 0,
                                                     left: 0,
+                                                    duration: Duration(milliseconds: 150),
                                                     child: RotatedBox(
                                                         quarterTurns: 1,
                                                         child: Icon(
