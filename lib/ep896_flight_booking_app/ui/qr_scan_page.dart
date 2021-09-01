@@ -28,7 +28,7 @@ class _QrScanPageState extends State<QrScanPage> {
                         child: Icon(Icons.arrow_back),
                       ),
                     ),
-                    Center(child: Text("Swipe downyo see details"))
+                    Center(child: Text("Swipe down yo see details"))
                   ],
                 ),
               ),
@@ -37,7 +37,21 @@ class _QrScanPageState extends State<QrScanPage> {
             Expanded(
               child: Stack(
                 children: [
-                  
+                  Positioned(
+                    child: Row(
+                      children: [
+                        Expanded(child: Container()),
+                        Expanded(
+                            child: Container(
+                          color: Colors.grey[200],
+                        )),
+                      ],
+                    ),
+                    left: 0,
+                    top: 0,
+                    bottom: 0,
+                    right: 0,
+                  )
                 ],
               ),
               flex: 15,
