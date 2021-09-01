@@ -24,6 +24,9 @@ class FlightTicket {
 List<FlightTicket> ticketItems = [
   FlightTicket(
     title: "VACATION IN EGYPT",
+    fromDate: "AUG 20",
+    arriveDate: "AUG 20",
+    arriveTime: "12:35 PM"
   ),
   FlightTicket(
     title: "VACATION IN PARIS",
