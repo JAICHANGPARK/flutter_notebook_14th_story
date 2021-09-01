@@ -16,6 +16,7 @@ class _QrScanPageState extends State<QrScanPage> {
           children: [
             Expanded(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     height: 24,
@@ -24,7 +25,8 @@ class _QrScanPageState extends State<QrScanPage> {
                     child: Center(
                       child: Icon(Icons.arrow_back),
                     ),
-                  )
+                  ),
+                  Center(child: Text("Swipe downyo see details"))
                 ],
               ),
               flex: 3,
