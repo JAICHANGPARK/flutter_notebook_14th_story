@@ -14,7 +14,8 @@ class _QrScanPageState extends State<QrScanPage> {
     return Scaffold(
       body: Column(
         children: [
-          
+          Expanded(child: Placeholder(), flex: 3,),
+          Expanded(child: Placeholder(), flex: 15,),
         ],
       ),
     );
