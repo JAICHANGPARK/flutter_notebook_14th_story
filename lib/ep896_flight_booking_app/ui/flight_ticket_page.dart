@@ -150,7 +150,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                                     top: 0,
                                                     child: CircleAvatar(
                                                       radius: 4,
-                                                      backgroundColor: Colors.black,
+                                                      backgroundColor: Colors.purpleAccent,
                                                     )),
                                               ],
                                             ),
