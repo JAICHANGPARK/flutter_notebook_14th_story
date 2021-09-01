@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:slider_button/slider_button.dart';
 
 class QrScanPage extends StatefulWidget {
@@ -21,12 +22,17 @@ class _QrScanPageState extends State<QrScanPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
-                      height: 24,
-                      width: 24,
-                      decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
-                      child: Center(
-                        child: Icon(Icons.arrow_back),
+                    GestureDetector(
+                      onTap: () {
+                        Get.back();
+                      },
+                      child: Container(
+                        height: 24,
+                        width: 24,
+                        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                        child: Center(
+                          child: Icon(Icons.arrow_back),
+                        ),
                       ),
                     ),
                     Center(child: Text("Swipe down yo see details"))
@@ -61,16 +67,10 @@ class _QrScanPageState extends State<QrScanPage> {
                       child: Column(
                         children: [
                           Text("My Ticket"),
-                          SliderButton(
-
-                            backgroundColor: Colors.black,
-                            disable: true,
-                            label: Text("Book Now >>>>>>>"),
+                          Container(
                             height: 48,
-                            width: 160,
-                            buttonSize: 42,
-                            action: () {},
-                          ),
+                            width: 240,
+                          )
                         ],
                       ))
                 ],
