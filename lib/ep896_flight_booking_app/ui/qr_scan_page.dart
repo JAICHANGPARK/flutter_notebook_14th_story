@@ -66,10 +66,15 @@ class _QrScanPageState extends State<QrScanPage> {
                       right: 0,
                       child: Column(
                         children: [
-                          Text("My Ticket"),
+                          Text(
+                            "My Ticket",
+                            style: TextStyle(fontWeight: FontWeight.bold,
+                            fontSize: 18),
+                          ),
                           Container(
                             height: 48,
                             width: 240,
+                            decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
                           )
                         ],
                       ))
