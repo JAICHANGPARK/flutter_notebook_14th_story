@@ -137,15 +137,21 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                                   ),
                                                 ),
                                                 Positioned(
-                                                  right: 0,
-                                                  bottom: 0,
-                                                  top: 0,
-                                                  left: 0,
-                                                  child: RotatedBox(
-                                                      quarterTurns: 1,
-                                                      child: Icon(Icons.flight,
-                                                      color: _ticket?.isRunning ?? false ? Colors.black :
-                                                        Colors.purpleAccent,))
+                                                    right: 0,
+                                                    bottom: 0,
+                                                    top: 0,
+                                                    left: 0,
+                                                    child: RotatedBox(
+                                                        quarterTurns: 1,
+                                                        child:
+                                                        _ticket?.isRunning  ?? false == true ?
+                                                        Icon(
+                                                          Icons.flight,
+                                                        ):Icon(
+                                                          Icons.flight,
+                                                        )
+
+                                                    )
                                                 ),
                                                 Positioned(
                                                     left: 0,
