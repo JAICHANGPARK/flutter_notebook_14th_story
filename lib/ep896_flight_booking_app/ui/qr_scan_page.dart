@@ -61,15 +61,15 @@ class _QrScanPageState extends State<QrScanPage> {
                   ),
                   Positioned(
                       left: 0,
-                      top: 0,
-                      bottom: 0,
+                      top: 64,
+                      bottom: 64,
                       right: 0,
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
                             "My Ticket",
-                            style: TextStyle(fontWeight: FontWeight.bold,
-                            fontSize: 18),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
                           Container(
                             height: 48,
