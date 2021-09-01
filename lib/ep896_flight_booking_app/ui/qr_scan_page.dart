@@ -1,5 +1,6 @@
 import 'package:barcode/barcode.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:slider_button/slider_button.dart';
 
@@ -13,6 +14,7 @@ class QrScanPage extends StatefulWidget {
 class _QrScanPageState extends State<QrScanPage> {
   final dm = Barcode.qrCode();
   String svg = "";
+
   @override
   void initState() {
     // TODO: implement initState
@@ -20,10 +22,8 @@ class _QrScanPageState extends State<QrScanPage> {
     setState(() {
       svg = dm.toSvg("test");
     });
-
-
-
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,6 +84,11 @@ class _QrScanPageState extends State<QrScanPage> {
                           Text(
                             "My Ticket",
                             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                          ),
+                          Container(
+                            height: 120,
+                            width: 120,
+                            child: SvgPicture.string(svg),
                           ),
                           Container(
                             height: 48,
