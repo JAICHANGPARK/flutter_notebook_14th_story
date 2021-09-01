@@ -86,6 +86,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                           padding: EdgeInsets.zero,
                           itemBuilder: (context, index) {
                             FlightTicket _ticket = ticketItems[index];
+                            bool _isRunning = _ticket.isRunning ?? false;
                             return Card(
                               child: Padding(
                                 padding: const EdgeInsets.all(12.0),
@@ -125,7 +126,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                               child: Padding(
                                             padding: const EdgeInsets.symmetric(horizontal: 8),
                                             child: Stack(
-                                              children: const [
+                                              children: [
                                                 Positioned(
                                                   right: 0,
                                                   bottom: 0,
@@ -145,7 +146,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                                                         quarterTurns: 1,
                                                         child: Icon(
                                                           Icons.flight,
-                                                          color: Colors.black,
+                                                          color: _isRunning ? Colors.purpleAccent : Colors.black,
                                                         ))),
                                                 Positioned(
                                                     left: 0,
