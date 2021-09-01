@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class QrScanPage extends StatefulWidget {
   const QrScanPage({Key? key}) : super(key: key);
 
@@ -12,11 +11,30 @@ class _QrScanPageState extends State<QrScanPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(child: Placeholder(), flex: 3,),
-          Expanded(child: Placeholder(), flex: 15,),
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              child: Column(
+                children: [
+                  Container(
+                    height: 24,
+                    width: 24,
+                    decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                    child: Center(
+                      child: Icon(Icons.arrow_back),
+                    ),
+                  )
+                ],
+              ),
+              flex: 3,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 15,
+            ),
+          ],
+        ),
       ),
     );
   }
