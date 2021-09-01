@@ -33,10 +33,25 @@ List<FlightTicket> ticketItems = [
       origin: "ARN",
       isRunning: false),
   FlightTicket(
-    title: "VACATION IN PARIS",
-  ),
+      title: "VACATION IN PARIS",
+      fromDate: "AUG 22",
+      fromTime: "06:35 AM",
+      arriveDate: "AUG 28",
+      arriveTime: "12:35 PM",
+      elapsedTime: "12h 10m",
+      destination: "COG",
+      origin: "IFK",
+      isRunning: false),
   FlightTicket(
     title: "BIZ TRIP TO NEW YORK",
+      fromDate: "AUG 22",
+      fromTime: "06:35 AM",
+      arriveDate: "AUG 28",
+      arriveTime: "12:35 PM",
+      elapsedTime: "12h 10m",
+      origin: "GOT",
+      destination: "CGN",
+      isRunning: true
   ),
   FlightTicket(
     title: "VACATION IN BERLIN",
