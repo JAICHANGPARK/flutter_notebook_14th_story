@@ -86,13 +86,14 @@ class _QrScanPageState extends State<QrScanPage> {
                             "My Ticket",
                             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                           ),
-                          SizedBox(
-                            height: 36,
-                          ),
+                          SizedBox(height: 24),
                           Container(
                             height: 180,
                             width: 180,
                             child: SvgPicture.string(svg, fit: BoxFit.cover),
+                          ),
+                          SizedBox(
+                            height: 24,
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
@@ -117,6 +118,9 @@ class _QrScanPageState extends State<QrScanPage> {
                                 )
                               ],
                             ),
+                          ),
+                          SizedBox(
+                            height: 70,
                           ),
                           Container(
                               height: 48,
