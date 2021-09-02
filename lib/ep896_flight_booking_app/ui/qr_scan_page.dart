@@ -115,6 +115,7 @@ class _QrScanPageState extends State<QrScanPage> {
                                               top: 0,
                                               bottom: 0,
                                               child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.center,
                                                 children: List.generate(
                                                   15,
                                                   (index) => Icon(
