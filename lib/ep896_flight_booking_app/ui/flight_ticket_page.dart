@@ -90,7 +90,7 @@ class _FlightTicketPageState extends State<FlightTicketPage> {
                             FlightTicket _ticket = ticketItems[index];
                             bool _isRunning = _ticket.isRunning ?? false;
                             return GestureDetector(
-                              onTap: () => Get.to(QrScanPage(flightTicket: ,)),
+                              onTap: () => Get.to(QrScanPage(flightTicket: _ticket,)),
                               child: Card(
                                 child: Padding(
                                   padding: const EdgeInsets.all(12.0),
