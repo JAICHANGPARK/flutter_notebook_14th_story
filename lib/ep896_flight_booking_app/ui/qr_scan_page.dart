@@ -109,7 +109,20 @@ class _QrScanPageState extends State<QrScanPage> {
                                     Expanded(
                                       child: Stack(
                                         children: [
-                                          
+                                          Positioned(
+                                              left: 0,
+                                              right: 0,
+                                              top: 0,
+                                              bottom: 0,
+                                              child: Row(
+                                                children: List.generate(
+                                                  15,
+                                                  (index) => Icon(
+                                                    Icons.keyboard_arrow_right,
+                                                    size: 14,
+                                                  ),
+                                                ),
+                                              ))
                                         ],
                                       ),
                                     ),
