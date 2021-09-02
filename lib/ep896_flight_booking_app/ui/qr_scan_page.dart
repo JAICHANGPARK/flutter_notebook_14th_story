@@ -89,10 +89,7 @@ class _QrScanPageState extends State<QrScanPage> {
                           Container(
                             height: 180,
                             width: 180,
-                            child: SvgPicture.string(
-                              svg,
-                              fit: BoxFit.cover,
-                            ),
+                            child: SvgPicture.string(svg, fit: BoxFit.cover),
                           ),
                           Container(
                               height: 48,
