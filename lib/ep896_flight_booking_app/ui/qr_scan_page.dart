@@ -102,8 +102,21 @@ class _QrScanPageState extends State<QrScanPage> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("${widget.flightTicket?.origin ?? "UNKNWON"}"),
-                                    Text("${widget.flightTicket?.destination ?? "UNKNWON"}"),
+                                    Text(
+                                      "${widget.flightTicket?.origin ?? "UNKNWON"}",
+                                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                    ),
+                                    Expanded(
+                                      child: Stack(
+                                        children: [
+                                          
+                                        ],
+                                      ),
+                                    ),
+                                    Text(
+                                      "${widget.flightTicket?.destination ?? "UNKNWON"}",
+                                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                    ),
                                   ],
                                 ),
                                 SizedBox(
@@ -126,7 +139,7 @@ class _QrScanPageState extends State<QrScanPage> {
                             ),
                           ),
                           SizedBox(
-                            height: 70,
+                            height: 64,
                           ),
                           Container(
                               height: 48,
