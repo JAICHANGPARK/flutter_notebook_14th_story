@@ -4,9 +4,9 @@ import 'package:flutter_notebook_14th_story/ep896_flight_booking_app/model/fligh
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-
 class QrScanPage extends StatefulWidget {
   FlightTicket? flightTicket;
+
   QrScanPage({Key? key, this.flightTicket}) : super(key: key);
 
   @override
@@ -39,7 +39,7 @@ class _QrScanPageState extends State<QrScanPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     GestureDetector(
-                      onTap: ()=> Get.back(),
+                      onTap: () => Get.back(),
                       child: Container(
                         height: 24,
                         width: 24,
@@ -89,7 +89,10 @@ class _QrScanPageState extends State<QrScanPage> {
                           Container(
                             height: 180,
                             width: 180,
-                            child: SvgPicture.string(svg, fit: BoxFit.cover,),
+                            child: SvgPicture.string(
+                              svg,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                           Container(
                             height: 48,
@@ -98,12 +101,12 @@ class _QrScanPageState extends State<QrScanPage> {
                               color: Colors.black,
                               borderRadius: BorderRadius.circular(24),
                             ),
+                            child: TextStyle(fontSize: 16, color: Colors.white),
                           )
                         ],
                       ))
                 ],
               ),
-
             ),
           ],
         ),
