@@ -122,11 +122,18 @@ class _QrScanPageState extends State<QrScanPage> {
                                                   (index) => Icon(
                                                     Icons.keyboard_arrow_right,
                                                     size: 14,
+                                                    color: Colors.indigo,
                                                   ),
                                                 ),
                                               )),
-                                          Positioned(child: Center(
-                                            child: Icon(Icons.flight_outlined),
+                                          Positioned(
+                                              child: Center(
+                                            child: RotatedBox(
+                                                quarterTurns: 1,
+                                                child: Icon(
+                                                  Icons.flight_outlined,
+                                                  color: Colors.indigo,
+                                                )),
                                           )),
                                         ],
                                       ),
