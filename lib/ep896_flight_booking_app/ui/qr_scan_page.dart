@@ -1,11 +1,13 @@
 import 'package:barcode/barcode.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_14th_story/ep896_flight_booking_app/model/flight_ticket.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:slider_button/slider_button.dart';
+
 
 class QrScanPage extends StatefulWidget {
-  const QrScanPage({Key? key}) : super(key: key);
+  FlightTicket? flightTicket;
+  QrScanPage({Key? key, this.flightTicket}) : super(key: key);
 
   @override
   _QrScanPageState createState() => _QrScanPageState();
@@ -37,9 +39,7 @@ class _QrScanPageState extends State<QrScanPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     GestureDetector(
-                      onTap: () {
-                        Get.back();
-                      },
+                      onTap: ()=> Get.back(),
                       child: Container(
                         height: 24,
                         width: 24,
