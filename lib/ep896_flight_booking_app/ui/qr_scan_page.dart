@@ -84,11 +84,11 @@ class _QrScanPageState extends State<QrScanPage> {
                         children: [
                           Text(
                             "My Ticket",
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                           ),
                           Container(
-                            height: 120,
-                            width: 120,
+                            height: 200,
+                            width: 200,
                             child: SvgPicture.string(svg, fit: BoxFit.cover,),
                           ),
                           Container(
