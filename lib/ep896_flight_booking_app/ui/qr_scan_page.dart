@@ -95,14 +95,16 @@ class _QrScanPageState extends State<QrScanPage> {
                             ),
                           ),
                           Container(
-                            height: 48,
-                            width: 240,
-                            decoration: BoxDecoration(
-                              color: Colors.black,
-                              borderRadius: BorderRadius.circular(24),
-                            ),
-                            child: TextStyle(fontSize: 16, color: Colors.white),
-                          )
+                              height: 48,
+                              width: 240,
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              child: Text(
+                                "Book Now >>>>",
+                                style: TextStyle(fontSize: 16, color: Colors.white),
+                              ))
                         ],
                       ))
                 ],
