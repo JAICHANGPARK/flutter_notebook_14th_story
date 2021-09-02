@@ -123,7 +123,8 @@ class _QrScanPageState extends State<QrScanPage> {
                                                     size: 14,
                                                   ),
                                                 ),
-                                              ))
+                                              )),
+                                          Positioned(child: Center()),
                                         ],
                                       ),
                                     ),
