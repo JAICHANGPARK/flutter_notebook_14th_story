@@ -101,9 +101,11 @@ class _QrScanPageState extends State<QrScanPage> {
                                 color: Colors.black,
                                 borderRadius: BorderRadius.circular(24),
                               ),
-                              child: Text(
-                                "Book Now >>>>",
-                                style: TextStyle(fontSize: 16, color: Colors.white),
+                              child: Center(
+                                child: Text(
+                                  "Book Now >>>>",
+                                  style: TextStyle(fontSize: 16, color: Colors.white),
+                                ),
                               ))
                         ],
                       ))
