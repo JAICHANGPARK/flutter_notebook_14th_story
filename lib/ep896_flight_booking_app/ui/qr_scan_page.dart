@@ -125,7 +125,9 @@ class _QrScanPageState extends State<QrScanPage> {
                                                   ),
                                                 ),
                                               )),
-                                          Positioned(child: Center()),
+                                          Positioned(child: Center(
+                                            child: Icon(Icons.flight_outlined),
+                                          )),
                                         ],
                                       ),
                                     ),
@@ -155,7 +157,7 @@ class _QrScanPageState extends State<QrScanPage> {
                             ),
                           ),
                           SizedBox(
-                            height: 64,
+                            height: 58,
                           ),
                           Container(
                               height: 48,
