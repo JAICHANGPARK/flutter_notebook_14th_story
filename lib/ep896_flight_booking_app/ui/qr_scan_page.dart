@@ -112,8 +112,14 @@ class _QrScanPageState extends State<QrScanPage> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("San francisco"),
-                                    Text("New York"),
+                                    Text(
+                                      "San francisco",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
+                                    Text(
+                                      "New York",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
                                   ],
                                 )
                               ],
