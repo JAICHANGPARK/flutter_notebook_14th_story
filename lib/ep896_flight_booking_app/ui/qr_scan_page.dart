@@ -86,27 +86,37 @@ class _QrScanPageState extends State<QrScanPage> {
                             "My Ticket",
                             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                           ),
+                          SizedBox(
+                            height: 36,
+                          ),
                           Container(
                             height: 180,
                             width: 180,
                             child: SvgPicture.string(svg, fit: BoxFit.cover),
                           ),
-                          Column(
-                            children: [
-                              Row(
-                                children: [
-
-
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text("San francisco"),
-                                  Text("New York"),
-                                ],
-                              )
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
+                            child: Column(
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("${widget.flightTicket?.origin ?? "UNKNWON"}"),
+                                    Text("${widget.flightTicket?.destination ?? "UNKNWON"}"),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("San francisco"),
+                                    Text("New York"),
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                           Container(
                               height: 48,
