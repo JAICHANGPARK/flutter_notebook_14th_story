@@ -1,6 +1,6 @@
 # flutter_notebook_14th_story
 
-A new Flutter project.
+A Flutter live coding se17
 
 ## Getting Started
 
